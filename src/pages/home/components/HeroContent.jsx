@@ -31,7 +31,7 @@ const HeroContent = () => {
       "
       >
         <div className="w-full lg:w-[50%]">
-          <div className="max-lg:mt-10">
+          <div className="max-lg:mt-6">
             <AspectRatio
               variant="plain"
               ratio="4/3"
@@ -58,7 +58,7 @@ const HeroContent = () => {
           </p>
           <button className="my-6 bg-[#5484F2] text-[20px] font-[600] text-[#F5F5F5] group relative inline-flex items-end overflow-hidden">
             <span className="h-0 w-full group-hover:h-full absolute block transition-all bg-[#022581] opacity-100 duration-500 ease"></span>
-            <span className="relative m-3">Contact Us</span>
+            <span className="z-10 m-3">Contact Us</span>
           </button>
           <h2 className="text-[#5484F2] font-[600] text-xl">
             Founder of Belinskiy

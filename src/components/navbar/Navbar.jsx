@@ -21,7 +21,7 @@ const Navbar = () => {
       <img
         src={logoBelinsky}
         alt="logoBelinsky"
-        className="absolute left-0 top-0 w-[8rem] bg-white rounded-b-xl md:hidden shadow-lg z-10"
+        className="fixed left-0 top-0 w-[8rem] bg-white rounded-br-xl md:hidden shadow-lg z-10"
       />
       <BiMenuAltRight
         size={30}

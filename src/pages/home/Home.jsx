@@ -20,21 +20,21 @@ const Home = () => {
   return (
     <section className="relative w-full min-h-screen group">
       {/* carousel/slider bg image */}
-      {/* {carouselData.map(({ image, title }) => (
+      {carouselData.map(({ image, title }) => (
         <img
           src={carouselData[currentIndex].image}
           alt="bg-home"
           className="absolute top-0 left-0 object-cover w-full h-full"
         />
-      ))} */}
+      ))}
 
-      <div
+      {/* <div
         style={{ backgroundImage: `url(${carouselData[currentIndex].image})` }}
-        className="transition ease-in-out duration=700 absolute top-0 left-0 w-full h-full bg-cover"
-      ></div>
+        className="transition ease-in-out duration=700 top-0 left-0 w-full h-full bg-cover bg-black"
+      ></div> */}
 
       {/* bg overlay */}
-      <div className="absolute top-0 left-0 w-full min-h-screen bg-black/50" />
+      {/* <div className="absolute top-0 left-0 w-full min-h-screen bg-black/50" /> */}
 
       {/* Content */}
       <div className="absolute top-[60%] left-[20%] md:left-[12%] md:top-[60%] text-white">

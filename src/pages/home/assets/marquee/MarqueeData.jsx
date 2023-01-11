@@ -32,9 +32,9 @@ const marqueeData = [
 
 const MarqueeData = () => {
   return (
-    <section className="bg-transparent py-12 w-full">
+    <section className="bg-transparent py-8 w-full">
       <div className="container mx-auto">
-        <div className="flex justify-around">
+        <div className="flex justify-around gap-6">
           {marqueeData.map((e) => {
             return (
               <div className="flex items-center ">

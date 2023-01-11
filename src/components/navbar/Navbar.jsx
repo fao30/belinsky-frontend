@@ -1,0 +1,65 @@
+import React, { useState } from "react";
+import { NavItems } from "./NavItems";
+import { BiMenuAltRight } from "react-icons/bi";
+import logoBelinsky from "../../assets/logo-belinsky.png";
+
+const Navbar = () => {
+  // Toggle mobile menu
+  const [nav, setNav] = useState(false);
+  const handleNav = () => {
+    setNav(!nav);
+    if (!nav) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "scroll";
+    }
+  };
+
+  return (
+    <div className="sticky top-0 z-10 w-full flex justify-between px-[6vw] py-[3.5vh] md:py-[2vh] items-center bg-[#5484F2]">
+      {/* burger menu icon */}
+      <img
+        src={logoBelinsky}
+        alt="logoBelinsky"
+        className="absolute left-0 top-0 w-[8rem] bg-white rounded-b-xl md:hidden shadow-lg z-10"
+      />
+      <BiMenuAltRight
+        size={30}
+        className="text-white cursor-pointer z-30 md:hidden absolute top-0 right-4 my-[2vh]"
+        onClick={handleNav}
+      />
+
+      {/* Desktop Menu */}
+      <div className="w-[100%] h-full hidden md:flex z-20 mx-auto relative">
+        <ul className="flex w-full text-lg font-bold text-[#F5F5F5] justify-evenly">
+          {NavItems.map(({ label, type }) =>
+            type === "img" ? (
+              <li key={label} className="md:w-[8rem]">
+                {label}
+              </li>
+            ) : (
+              <li key={label}>{label}</li>
+            )
+          )}
+        </ul>
+      </div>
+
+      {/* Mobile Menu */}
+      <div
+        className={
+          nav
+            ? `transition ease-in-out duration-300 fixed text-white left-0 top-0 w-full h-screen bg-black px-4 py-7 z-10`
+            : `transition ease-in-out duration-500 absolute top-0 h-screen left-[-100%]`
+        }
+      >
+        <ul className="flex flex-col items-center justify-center w-full h-full gap-10 text-4xl font-semibold">
+          {NavItems.map(({ label, type }) =>
+            type === "img" ? "" : <li key={label}>{label}</li>
+          )}
+        </ul>
+      </div>
+    </div>
+  );
+};
+
+export default Navbar;

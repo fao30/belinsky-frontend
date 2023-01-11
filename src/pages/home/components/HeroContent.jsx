@@ -10,7 +10,7 @@ import AspectRatio from "@mui/joy/AspectRatio";
 const HeroContent = () => {
   return (
     <div className="px-[5vw] pt-[5vw] bg-zinc-100">
-      <div className="flex items-center justify-between w-full ">
+      <div className="flex items-center justify-between w-full">
         <div className="w-[50%]">
           <AspectRatio
             variant="plain"

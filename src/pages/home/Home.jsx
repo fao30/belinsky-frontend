@@ -73,25 +73,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-
-      {/* right arrow */}
-      {/* <div className="transition ease-in-out duration-500 absolute top-[50%] right-[5%] opacity-0 group-hover:opacity-100">
-        <BsArrowRightCircle
-          size={40}
-          color="white"
-          className="cursor-pointer"
-          onClick={nextSlide}
-        />
-      </div> */}
-      {/* left arrow */}
-      {/* <div className="transition ease-in-out duration-500 absolute top-[50%] left-[5%] opacity-0 group-hover:opacity-100">
-        <BsArrowLeftCircle
-          size={40}
-          color="white"
-          className="cursor-pointer"
-          onClick={prevSlide}
-        />
-      </div> */}
     </section>
   );
 };

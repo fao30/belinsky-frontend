@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import { BsArrowRightCircle, BsArrowLeftCircle } from "react-icons/bs";
 import { RiArrowRightSLine, RiArrowLeftSLine } from "react-icons/ri";
 import { carouselData } from "./Carousel";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Home = () => {
-  const [currentIndex, setCurrentIndex] = useState(2);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   const prevSlide = () => {
     const isFirstSlide = currentIndex === 0;
@@ -31,8 +30,8 @@ const Home = () => {
       ))}
 
       {/* <div
-        style={{ backgroundImage: `url(${carouselData[currentIndex].image})` }}
-        className="transition ease-in-out duration=700 top-0 left-0 w-full h-full bg-cover bg-black"
+        style={{ backgroundImage: `url(${carouselData[0].image})` }}
+        className="transition ease-in-out duration=700 top-0 left-0 w-full h-full bg-cover"
       ></div> */}
 
       {/* bg overlay */}

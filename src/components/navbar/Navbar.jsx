@@ -34,11 +34,13 @@ const Navbar = () => {
         <ul className="flex w-full text-lg font-bold text-[#F5F5F5] justify-evenly">
           {NavItems.map(({ label, type }) =>
             type === "img" ? (
-              <li key={label} className="md:w-[8rem]">
+              <li key={label} className="md:w-[8rem] cursor-pointer">
                 {label}
               </li>
             ) : (
-              <li key={label}>{label}</li>
+              <li key={label} className="cursor-pointer">
+                {label}
+              </li>
             )
           )}
         </ul>

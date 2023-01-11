@@ -24,51 +24,40 @@ export const ProductionHouse = () => {
             </div>
 
             {/* image */}
-            <div class="grid grid-cols-1 lg:grid-cols-3 relative gap-x-8 gap-y-16  pt-12 sm:pt-20 text-black">
-              <div class="relative mx-auto ">
-                <img src={image2} alt="image" />
-                <div class="absolute text-2xl bottom-[5.38%] left-[5.62%] text-[#F5F5F5]">
+            <div className="grid grid-cols-1 lg:grid-cols-3 relative gap-x-8 gap-y-16 pt-12 sm:pt-20 text-black">
+              <div className="relative mx-auto ">
+                <img src={image2} alt="image" className=" " />
+                <div className="absolute text-3xl top-[2.24%] left-[5.62%] text-[#F5F5F5] drop-shadow-[0px_1.0px_10.0px_#424242]"></div>
+                <div className="absolute text-2xl top-[46.27%] left-[5.62%] text-[#F5F5F5] text-center drop-shadow-[0px_1.0px_15.0px_#424242]">
                   <h2>Short Movie</h2>
-                  <p class="text-sm">
+                  <p className="text-sm">
                     Belinsky has 4 short movies directed by Turah Parthayana
                     Squery Penty, Wong Tilar, Jangan Sebut Setan & Yubi
                   </p>
                 </div>
               </div>
-              <div className="h-[60vh] lg:h-[50vw] w-full lg:w-48md:w-[50vw] bg-slate-400 relative group">
-                <img
-                  src={image3}
-                  alt=""
-                  className="absolute object-cover w-full h-full"
-                />
-                <div className="group-hover:opacity-0 transition-all duration-300 absolute h-full w-full bg-gradient-to-t from-[#363636] to-transparent">
-                  <div className="absolute bottom-[45.52%] left-[4.4%]">
-                    <h3 className="text-2xl font-semibold text-white text-center">
-                      Webseries
-                    </h3>
-                    <p className="text-white drop-shadow-md">
-                      Collaborating with IndiHome creating “Join The Series”
-                      Starring Turah Prthayana, Tretan Muslim and Dustin Tiffany
-                    </p>
-                  </div>
+              <div className="relative mx-auto ">
+                <img src={image3} alt="image" className="" />
+                <div className="absolute text-3xl top-[2.24%] left-[5.62%] text-[#F5F5F5] text-center drop-shadow-[0px_1.0px_10.0px_#424242]"></div>
+                <div className="absolute text-2xl top-[46.27%] left-[5.62%] text-[#F5F5F5] text-center drop-shadow-[0px_1.0px_15.0px_#424242]">
+                  <h2>Webseries</h2>
+                  <p className="text-sm">
+                    Collaborating with IndiHome creating “Join The Series”
+                    Starring Turah Prthayana, Tretan Muslim and Dustin Tiffany
+                  </p>
                 </div>
               </div>
-              <div className="h-[60vh] lg:h-[50vw]  w-full lg:w-48md:w-[50vw] bg-slate-400 relative group">
-                <img
-                  src={image1}
-                  alt=""
-                  className="absolute object-cover w-full h-full"
-                />
-                <div className="group-hover:opacity-0 transition-all duration-300 absolute h-full w-full bg-gradient-to-t from-[#363636] to-transparent">
-                  <div className="absolute bottom-[45.52%] left-[4.4%]">
-                    <h3 className="text-2xl font-semibold text-white text-center">
-                      TVC
-                    </h3>
-                    <p className="text-white drop-shadow-md">
-                      We may help you in the production of TVC advertisement for
-                      your advertising needs.
-                    </p>
-                  </div>
+              <div className="relative mx-auto ">
+                <img src={image1} alt="image" className="" />
+                {/* <div className="absolute text-3xl top-[2.24%] left-[5.62%] text-[#F5F5F5] text-center drop-shadow-[0px_0.5px_0.5px_#424242]">
+                  <h1>Studio 3</h1>
+                </div> */}
+                <div className="absolute text-2xl top-[46.27%] left-[5.62%] text-[#F5F5F5] text-center drop-shadow-[0px_1.0px_15.0px_#424242]">
+                  <h2>TVC</h2>
+                  <p className="text-sm">
+                    We may help you in the production of TVC advertisement for
+                    your advertising needs.
+                  </p>
                 </div>
               </div>
             </div>

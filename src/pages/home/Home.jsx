@@ -43,7 +43,7 @@ const Home = () => {
           <span className="font-semibold">Menantea</span>
         </h1>
         <div className="relative group w-[95%]">
-          <p className="text-sm text-center">Explore Work</p>
+          <p className="text-sm text-center cursor-pointer">Explore Work</p>
           {/* line left */}
           <div className="transition duration-500 absolute border-b-[2px] w-[28%] md:w-[35%] left-1 top-[50%] opacity-100 group-hover:opacity-0" />
           {/* line right */}

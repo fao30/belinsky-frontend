@@ -56,7 +56,13 @@ const Navbar = () => {
       >
         <ul className="flex flex-col items-center justify-center w-full h-full gap-10 text-4xl font-semibold">
           {NavItems.map(({ label, type }) =>
-            type === "img" ? "" : <li key={label}>{label}</li>
+            type === "img" ? (
+              ""
+            ) : (
+              <li key={label} className="cursor-pointer">
+                {label}
+              </li>
+            )
           )}
         </ul>
       </div>

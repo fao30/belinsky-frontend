@@ -5,11 +5,11 @@ import img3 from "../../pages/home/assets/Studio 3.png";
 
 export const BelinskyStudio = () => {
   return (
-    <div className="flex flex-col  justify-around bg-white">
-      <div className="flex lg:justify-around justify-center flex-wrap items-center">
-        <div className="grid place-items-center items-end">
-          <div className="my-24 lg:mb-12  z-10 md:w-4/5 lg:w-full">
-            <div className="flex flex-col justify-center flex-wrap items-center mb-6">
+    <section className="flex flex-col justify-around px-[6vw] pt-[6vw] lg:px-[3vw] lg:pt-[3vw]">
+      <div className="flex flex-wrap items-center justify-center lg:justify-around">
+        <div className="grid items-end place-items-center">
+          <div className="z-10 my-24 lg:mb-12 md:w-4/5 lg:w-full">
+            <div className="flex flex-col flex-wrap items-center justify-center mb-6">
               <h1 className="md:lg:text-5xl text-4xl font-bold text-[#424242]">
                 Belinsky Studio
               </h1>
@@ -24,9 +24,9 @@ export const BelinskyStudio = () => {
             </div>
 
             {/* image */}
-            <div className="grid grid-cols-1 lg:grid-cols-3 relative gap-x-8 gap-y-16 pt-12 sm:pt-20 text-black">
+            <div className="relative grid grid-cols-1 pt-12 text-black lg:grid-cols-3 gap-x-8 gap-y-16 sm:pt-20">
               <div className="relative mx-auto ">
-                <img src={img1} alt="image" className=" " />
+                <img src={img1} alt="" className="" />
                 <div className="absolute text-3xl top-[2.24%] left-[5.62%] text-[#F5F5F5] drop-shadow-[0px_0.5px_0.5px_#424242]">
                   <h1>Studio 1</h1>
                 </div>
@@ -39,7 +39,7 @@ export const BelinskyStudio = () => {
                 </div>
               </div>
               <div className="relative mx-auto ">
-                <img src={img2} alt="image" className="" />
+                <img src={img2} alt="" className="" />
                 <div className="absolute text-3xl top-[2.24%] left-[5.62%] text-[#F5F5F5] text-center drop-shadow-[0px_0.5px_0.5px_#424242]">
                   <h1>Studio 2</h1>
                 </div>
@@ -52,7 +52,7 @@ export const BelinskyStudio = () => {
                 </div>
               </div>
               <div className="relative mx-auto ">
-                <img src={img3} alt="image" className="" />
+                <img src={img3} alt="" className="" />
                 {/* <div className="absolute text-3xl top-[2.24%] left-[5.62%] text-[#F5F5F5] text-center drop-shadow-[0px_0.5px_0.5px_#424242]">
                   <h1>Studio 3</h1>
                 </div> */}
@@ -68,6 +68,6 @@ export const BelinskyStudio = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };

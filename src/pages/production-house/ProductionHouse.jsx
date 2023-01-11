@@ -5,13 +5,13 @@ import image3 from "../../pages/home/assets/bel3.png";
 
 export const ProductionHouse = () => {
   return (
-    <div className="flex flex-col justify-around bg-white">
+    <section className="flex flex-col justify-around px-[6vw] pt-[6vw] lg:px-[3vw] lg:pt-[3vw]">
       <div className="flex flex-wrap items-center justify-center lg:justify-around">
         <div className="grid items-end place-items-center">
           <div className="z-10 my-24 lg:mb-12 md:w-4/5 lg:w-full">
             <div className="flex flex-col flex-wrap items-center justify-center mb-6">
               <h1 className="md:lg:text-5xl text-4xl font-bold text-[#424242]">
-                Belinsky Studio
+                Production House
               </h1>
               <h1 className=" text-3xl md:lg:text-2xl font-poppins  text-[#5484F2]  text-center">
                 Our Services
@@ -59,7 +59,7 @@ export const ProductionHouse = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

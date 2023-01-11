@@ -11,7 +11,7 @@ export const ProductionHouse = () => {
           <div class="my-24 lg:mb-12  z-10 md:w-4/5 lg:w-full">
             <div class="flex flex-col justify-center flex-wrap items-center mb-6">
               <h1 class="md:lg:text-5xl text-4xl font-bold text-[#424242]">
-                Belinsky Studio
+                Production House
               </h1>
               <h1 class=" text-3xl md:lg:text-2xl font-poppins  text-[#5484F2]  text-center">
                 Our Services

@@ -3,6 +3,6 @@
 @tailwind utilities;
 
 :root {
-  background-color: white;
+  /* background-color: #363534; */
   font-family: poppins;
 }

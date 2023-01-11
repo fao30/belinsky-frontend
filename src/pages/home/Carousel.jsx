@@ -3,17 +3,21 @@ import bg2 from "./assets/Background-2.png";
 import bg3 from "./assets/Background-3.png";
 import bg4 from "./assets/Background-4.png";
 
-export const bgImages = [
+export const carouselData = [
   {
-    background: bg1,
+    image: bg1,
+    title: "Menantea",
   },
   {
-    background: bg2,
+    image: bg2,
+    title: "Traveloka x Waseda",
   },
   {
-    background: bg3,
+    image: bg3,
+    title: "Abnon Timur",
   },
   {
-    background: bg4,
+    image: bg4,
+    title: "Yubi Short Movie",
   },
 ];

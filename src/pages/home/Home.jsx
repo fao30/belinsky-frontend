@@ -1,35 +1,35 @@
 import React, { useState } from "react";
 import { BsArrowRightCircle, BsArrowLeftCircle } from "react-icons/bs";
-import { bgImages } from "./BgImages";
+import { carouselData } from "./Carousel";
 
 const Home = () => {
   const [currentIndex, setCurrentIndex] = useState(2);
 
   const prevSlide = () => {
     const isFirstSlide = currentIndex === 0;
-    const newIndex = isFirstSlide ? bgImages.length - 1 : currentIndex - 1;
+    const newIndex = isFirstSlide ? carouselData.length - 1 : currentIndex - 1;
     setCurrentIndex(newIndex);
   };
 
   const nextSlide = () => {
-    const isLastSlide = currentIndex === bgImages.length - 1;
+    const isLastSlide = currentIndex === carouselData.length - 1;
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
   };
 
   return (
     <section className="relative w-full min-h-screen group">
-      {/* bg image slider/carousel */}
-      {/* {bgImages.map(({ img }) => (
+      {/* carousel/slider bg image */}
+      {/* {carouselData.map(({ image, title }) => (
         <img
-          src={img}
+          src={carouselData[currentIndex].image}
           alt="bg-home"
           className="absolute top-0 left-0 object-cover w-full h-full"
         />
       ))} */}
 
       <div
-        style={{ backgroundImage: `url(${bgImages[currentIndex].background})` }}
+        style={{ backgroundImage: `url(${carouselData[currentIndex].image})` }}
         className="transition ease-in-out duration=700 absolute top-0 left-0 w-full h-full bg-cover"
       ></div>
 

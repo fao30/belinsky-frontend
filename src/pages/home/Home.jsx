@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { BsArrowRightCircle, BsArrowLeftCircle } from "react-icons/bs";
 import { carouselData } from "./Carousel";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const Home = () => {
   const [currentIndex, setCurrentIndex] = useState(2);
@@ -21,7 +22,7 @@ const Home = () => {
     <section className="relative w-full min-h-screen group">
       {/* carousel/slider bg image */}
       {carouselData.map(({ image, title }) => (
-        <img
+        <LazyLoadImage
           src={carouselData[currentIndex].image}
           alt="bg-home"
           className="absolute top-0 left-0 object-cover w-full h-full"

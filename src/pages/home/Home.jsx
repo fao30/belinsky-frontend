@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import { RiArrowRightSLine, RiArrowLeftSLine } from "react-icons/ri";
 import { carouselData } from "./Carousel";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { BlurhashCanvas } from "react-blurhash";
 
 const Home = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isLoading, setIsLoading] = useState(false);
 
   const prevSlide = () => {
     const isFirstSlide = currentIndex === 0;
@@ -21,13 +23,27 @@ const Home = () => {
   return (
     <section className="relative w-full min-h-screen">
       {/* carousel/slider bg image */}
-      {carouselData.map(({ image, title }) => (
-        <LazyLoadImage
-          src={carouselData[currentIndex].image}
-          alt="bg-home"
-          className="absolute top-0 left-0 object-cover w-full h-full "
-        />
-      ))}
+      {carouselData.map(({ image, title }) => {
+        return (
+          <>
+            <LazyLoadImage
+              src={carouselData[currentIndex].image}
+              alt="bg-home"
+              beforeLoad={() => setIsLoading(true)}
+              afterLoad={() => setIsLoading(false)}
+              className="absolute top-0 left-0 object-cover w-full h-full "
+            />
+            {isLoading ? (
+              <BlurhashCanvas
+                hash={carouselData[currentIndex].defaultPic}
+                className="absolute top-0 left-0 object-cover w-full h-full"
+              />
+            ) : (
+              <></>
+            )}
+          </>
+        );
+      })}
 
       {/* <div
         style={{ backgroundImage: `url(${carouselData[0].image})` }}

@@ -22,14 +22,11 @@ const dataFounder = [
     name: "Turah Parthayana",
   },
 ];
-import AspectRatio from "@mui/joy/AspectRatio";
 
 const HeroContent = () => {
   return (
     <div className="px-[6vw] pt-[6vw] lg:px-[3vw] lg:pt-[3vw] bg-zinc-100">
-      <div
-        className="flex items-center justify-between w-full max-lg:flex-wrap-reverse "
-      >
+      <div className="flex items-center justify-between w-full max-lg:flex-wrap-reverse ">
         <div className="w-full lg:w-[50%]">
           <div className="max-lg:mt-6">
             <AspectRatio

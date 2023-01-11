@@ -40,9 +40,8 @@ export const ProductionHouse = () => {
                 <div class="absolute text-2xl bottom-[5.38%] left-[5.62%] text-[#F5F5F5]">
                   <h2>Webseries</h2>
                   <p class="text-sm">
-                    Collaborating with IndiHome creating “Join The
-                    Series” Starring Turah Prthayana, Tretan Muslim and Dustin
-                    Tiffany
+                    Collaborating with IndiHome creating “Join The Series
+                    Starring Turah Prthayana, Tretan Muslim and Dustin Tiffany
                   </p>
                 </div>
               </div>

@@ -34,7 +34,7 @@ const Home = () => {
       ></div> */}
 
       {/* bg overlay */}
-      {/* <div className="absolute top-0 left-0 w-full min-h-screen bg-black/50" /> */}
+      <div className="absolute top-0 left-0 w-full min-h-screen bg-black/50" />
 
       {/* Content */}
       <div className="absolute top-[60%] left-[20%] md:left-[12%] md:top-[60%] text-white">

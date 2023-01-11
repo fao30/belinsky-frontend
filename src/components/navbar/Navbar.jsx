@@ -16,7 +16,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 z-10 w-full flex justify-between px-[6vw] py-[3.5vh] md:py-[2vh] items-center bg-[#5484F2] shadow-lg shadow-black/30">
+    <nav className="fixed top-0 z-50 w-full flex justify-between px-[6vw] py-[3.5vh] md:py-[2vh] items-center bg-[#5484F2] shadow-lg shadow-black/30">
       {/* burger menu icon */}
       <img
         src={logoBelinsky}

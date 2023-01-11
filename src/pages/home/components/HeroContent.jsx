@@ -5,13 +5,23 @@ import Jehian from "../assets/Jehian.jpeg";
 import Turah from "../assets/Turah.jpeg";
 import Marquee from "react-fast-marquee";
 import MarqueeData from "../assets/marquee/MarqueeData";
+import AspectRatio from "@mui/joy/AspectRatio";
 
 const HeroContent = () => {
   return (
     <div className="px-[5vw] pt-[5vw] bg-zinc-100">
       <div className="flex items-center justify-between w-full ">
         <div className="w-[50%]">
-          <video src={HeroVideo} autoPlay muted loop />
+          <AspectRatio
+            variant="plain"
+            ratio="4/3"
+            sx={{
+              width: "100%",
+              borderRadius: "lg",
+            }}
+          >
+            <video src={HeroVideo} autoPlay muted loop />
+          </AspectRatio>
         </div>
         <div className="w-[45%] text-left">
           <h2 className="text-[#5484F2] font-[600] text-xl">

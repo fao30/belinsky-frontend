@@ -23,3 +23,5 @@ export const HoverGhost = ({
     </div>
   );
 };
+
+export default HoverGhost;

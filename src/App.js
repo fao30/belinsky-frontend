@@ -10,7 +10,7 @@ function App() {
     <>
       <Navbar />
       <Home />
-      <ProductionHouse />
+      {/* <ProductionHouse /> */}
       <BelinskyStudio />
       <Footer />
     </>

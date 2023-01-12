@@ -5,7 +5,6 @@ import {
   AiOutlineWhatsApp,
 } from "react-icons/ai";
 import { TbBrandTiktok } from "react-icons/tb";
-import { TbBuildingCommunity } from "react-icons/tb";
 import logo from "./assets/logo-belinsky.png";
 import { NavFooterItems } from "../components/NavFooterItems";
 import { ContactItems } from "./components/ContactItems";
@@ -13,9 +12,7 @@ import { ContactItems } from "./components/ContactItems";
 const Footer = () => {
   return (
     <footer className="px-[6vw] pb-[5vh] lg:px-[3vw] w-full">
-      {/* Parent */}
       <div className="flex flex-wrap w-full h-full gap-y-7">
-        {/* child 1 */}
         <div className="flex flex-col lg:w-[50%] w-[100%]">
           <img src={logo} alt="Belinsky Logo" className="w-[9rem]" />
           <p className="text-[#424242]">Let’s create creativity together</p>
@@ -29,6 +26,8 @@ const Footer = () => {
             </a>
           </div>
         </div>
+
+        {/* Feature */}
         <div className="w-[100%] lg:w-[25%]">
           <div className="flex flex-col gap-y-2 lg:gap-y-5">
             <h3 className="text-[#8B8585]">Feature</h3>
@@ -43,6 +42,8 @@ const Footer = () => {
             )}
           </div>
         </div>
+
+        {/* Contact */}
         <div className="w-[100%] lg:w-[25%]">
           <div className="flex flex-col gap-y-2 lg:gap-y-5">
             <h3 className="text-[#8B8585]">Contact</h3>

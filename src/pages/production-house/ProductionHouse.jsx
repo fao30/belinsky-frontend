@@ -1,7 +1,7 @@
 import React from "react";
-import image1 from "../../pages/home/assets/bel1.png";
-import image2 from "../../pages/home/assets/bel2.png";
-import image3 from "../../pages/home/assets/bel3.png";
+import ph1 from "./assets/PH1.png";
+import ph2 from "./assets/PH2.png";
+import ph3 from "./assets/PH3.png";
 
 export const ProductionHouse = () => {
   return (
@@ -26,7 +26,7 @@ export const ProductionHouse = () => {
             {/* image */}
             <div className="relative grid grid-cols-1 px-4 pt-12 text-black lg:grid-cols-3 gap-x-8 gap-y-16 sm:pt-20">
               <div className="relative mx-auto ">
-                <img src={image2} alt="image" />
+                <img src={ph1} alt="ph-1" />
                 <div className="absolute text-2xl bottom-[5.38%] left-[5.62%] text-[#F5F5F5]">
                   <h2>Short Movie</h2>
                   <p className="text-sm">
@@ -36,7 +36,7 @@ export const ProductionHouse = () => {
                 </div>
               </div>
               <div className="relative mx-auto ">
-                <img src={image3} alt="image" />
+                <img src={ph2} alt="ph-2" />
                 <div className="absolute text-2xl bottom-[5.38%] left-[5.62%] text-[#F5F5F5]">
                   <h2>Webseries</h2>
                   <p className="text-sm">
@@ -46,7 +46,7 @@ export const ProductionHouse = () => {
                 </div>
               </div>
               <div className="relative mx-auto ">
-                <img src={image1} alt="image" />
+                <img src={ph3} alt="ph-3" />
                 <div className="absolute text-2xl bottom-[5.38%] left-[5.62%] text-[#F5F5F5]">
                   <h2>TVC</h2>
                   <p className="text-sm">

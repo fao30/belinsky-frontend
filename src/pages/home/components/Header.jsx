@@ -1,19 +1,24 @@
 import React, { useState } from "react";
 import { RiArrowRightSLine, RiArrowLeftSLine } from "react-icons/ri";
-import { carouselData } from "./Carousel";
+import { CarouselData } from "./CarouselData";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import { BlurhashCanvas } from "react-blurhash";
 
 const Header = () => {
+  // Lazy Loader
+  const [isLoading, setIsLoading] = useState(false);
+
+  // Slider
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const prevSlide = () => {
     const isFirstSlide = currentIndex === 0;
-    const newIndex = isFirstSlide ? carouselData.length - 1 : currentIndex - 1;
+    const newIndex = isFirstSlide ? CarouselData.length - 1 : currentIndex - 1;
     setCurrentIndex(newIndex);
   };
 
   const nextSlide = () => {
-    const isLastSlide = currentIndex === carouselData.length - 1;
+    const isLastSlide = currentIndex === CarouselData.length - 1;
     const newIndex = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
   };
@@ -21,16 +26,28 @@ const Header = () => {
   return (
     <section className="relative w-full min-h-screen">
       {/* carousel/slider bg image */}
-      {carouselData.map(({ image, title }) => (
-        <LazyLoadImage
-          src={carouselData[currentIndex].image}
-          alt="bg-home"
-          className="absolute top-0 left-0 object-cover w-full h-full "
-        />
+      {CarouselData.map(({ image, title }) => (
+        <>
+          <LazyLoadImage
+            src={CarouselData[currentIndex].image}
+            alt="bg-home"
+            className="absolute top-0 left-0 object-cover w-full h-full"
+            beforeLoad={() => setIsLoading(true)}
+            afterLoad={() => setIsLoading(false)}
+          />
+          {isLoading ? (
+            <BlurhashCanvas
+              hash={CarouselData[currentIndex].blurPic}
+              className="absolute top-0 left-0 object-cover w-full h-full"
+            />
+          ) : (
+            <></>
+          )}
+        </>
       ))}
 
       {/* <div
-        style={{ backgroundImage: `url(${carouselData[0].image})` }}
+        style={{ backgroundImage: `url(${CarouselData[0].image})` }}
         className="transition ease-in-out duration=700 top-0 left-0 w-full h-full bg-cover"
       ></div> */}
 

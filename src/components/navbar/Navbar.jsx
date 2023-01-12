@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { NavItems } from "./NavItems";
 import { BiMenuAltRight } from "react-icons/bi";
 import logoBelinsky from "../../assets/logo-belinsky.png";
+import { NavFooterItems } from "../components/NavFooterItems";
 
 const Navbar = () => {
   // Toggle mobile menu
@@ -32,7 +32,7 @@ const Navbar = () => {
       {/* Desktop Menu */}
       <div className="w-[100%] h-full hidden md:flex z-20 mx-auto relative">
         <ul className="flex w-full text-lg font-bold text-[#F5F5F5] justify-evenly">
-          {NavItems.map(({ label, type }) =>
+          {NavFooterItems.map(({ label, type }) =>
             type === "img" ? (
               <li key={label} className="md:w-[8rem] cursor-pointer">
                 {label}
@@ -55,7 +55,7 @@ const Navbar = () => {
         }
       >
         <ul className="flex flex-col items-center justify-center w-full h-full gap-10 text-4xl font-semibold">
-          {NavItems.map(({ label, type }) =>
+          {NavFooterItems.map(({ label, type }) =>
             type === "img" ? (
               ""
             ) : (

@@ -1,31 +1,10 @@
-import React from "react";
-import studio1 from "./assets/studio_1.png";
-import studio2 from "./assets/studio_2.png";
-import studio3 from "./assets/studio_3.png";
 import CardOverlay from "./components/CardOverlay";
-
-const dataCardBStudio = [
-  {
-    src: studio1,
-    h3: "Korean Background",
-    p: "3 Thematic Korean background, inspired by the set up of Korean Series Our Beloved Summer",
-  },
-  {
-    src: studio2,
-    h3: "White limbo background",
-    p: "We provide self photo studio and photoshoot services by Belinsky Team",
-  },
-  {
-    src: studio3,
-    h3: "Podcast Studio",
-    p: "Classic dark green living room with table lamp Equipment provided",
-  },
-];
+import { dataCardBStudio } from "./constants/DataCardBStudio";
 
 export const BelinskyStudio = () => {
   return (
     <section className="flex flex-col w-full justify-around px-[6vw] pt-[6vw] lg:px-[3vw] lg:pt-[3vw] mb-[5vw]">
-      {/* TEXT */}
+      {/* Title */}
       <div className="flex flex-col w-full lg:flex-row">
         <div className="w-[100%] lg:w-[50%]">
           <h1 className="text-[#424242] text-5xl lg:text-6xl font-bold">

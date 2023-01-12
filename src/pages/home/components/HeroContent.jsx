@@ -58,7 +58,7 @@ const HeroContent = () => {
             <span className="z-10 mx-8 my-3">Contact Us</span>
           </button>
           <h2 className="text-[#5484F2] font-[600] text-xl">
-            Founder of Belinskiy
+            Founder of Belinsky
           </h2>
           <div className="flex items-center justify-between w-full">
             {dataFounder?.map((e) => {

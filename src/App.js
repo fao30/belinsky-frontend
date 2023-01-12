@@ -1,8 +1,8 @@
 import "./App.css";
-import { BelinskyStudio } from "./pages/belinsky-studio/BelinskyStudio";
 import Navbar from "./components/navbar/Navbar";
-import ProductionHouse from "./pages/production-house/ProductionHouse";
 import Home from "./pages/home/Home";
+import { BelinskyStudio } from "./pages/belinsky-studio/BelinskyStudio";
+import { ProductionHouse } from "./pages/production-house/ProductionHouse";
 import Footer from "./components/footer/Footer";
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
     <>
       <Navbar />
       <Home />
-      {/* <ProductionHouse /> */}
+      <ProductionHouse />
       <BelinskyStudio />
       <Footer />
     </>

@@ -1,11 +1,11 @@
 import React from "react";
-import ph1 from "./assets/PH1.png";
-import ph2 from "./assets/PH2.png";
-import ph3 from "./assets/PH3.png";
+import ph1 from "./assets/PH_1.png";
+import ph2 from "./assets/PH_2.png";
+import ph3 from "./assets/PH_3.png";
 
 export const ProductionHouse = () => {
   return (
-    <section className="flex flex-col justify-around px-[6vw] pt-[6vw] lg:px-[3vw] lg:pt-[3vw]">
+    <section className="flex flex-col justify-around px-[6vw] pt-[6vw] lg:px-[3vw] lg:pt-[3vw] bg-white">
       <div className="flex flex-wrap items-center justify-center lg:justify-around">
         <div className="grid items-end place-items-center">
           <div className="z-10 my-24 lg:mb-12 md:w-4/5 lg:w-full">
@@ -13,7 +13,7 @@ export const ProductionHouse = () => {
               <h1 className="md:lg:text-5xl text-4xl font-bold text-[#424242]">
                 Production House
               </h1>
-              <h1 className=" text-3xl md:lg:text-2xl font-poppins  text-[#5484F2]  text-center">
+              <h1 className="text-3xl md:lg:text-2xl font-poppins  text-[#5484F2]  text-center">
                 Our Services
               </h1>
               <p className="md:w-96 font-poppins lg:w-[872px] sm:text-center text-center text-[#424242] w-96 sm:w-5/12 mt-4 indent-8 text-m">

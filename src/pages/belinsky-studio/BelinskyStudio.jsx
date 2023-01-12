@@ -1,7 +1,7 @@
 import React from "react";
-import img1 from "../../pages/home/assets/Studio 1.png";
-import img2 from "../../pages/home/assets/Studio 2.png";
-import img3 from "../../pages/home/assets/Studio 3.png";
+import img1 from "./assets/studio_1.png";
+import img2 from "./assets/studio_2.png";
+import img3 from "./assets/studio_3.png";
 
 export const BelinskyStudio = () => {
   return (

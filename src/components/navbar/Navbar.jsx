@@ -51,7 +51,7 @@ const Navbar = () => {
         className={
           nav
             ? `transition ease-in-out duration-300 absolute text-white left-0 top-0 w-full h-screen bg-black px-4 py-7 z-10`
-            : `transition ease-in-out duration-500 absolute top-0 h-screen right-[-100%]`
+            : `transition ease-in-out duration-500 fixed top-0 h-screen right-[-100%]`
         }
       >
         <ul className="flex flex-col items-center justify-center w-full h-full gap-10 text-4xl font-semibold">

@@ -16,12 +16,12 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 z-50 w-full flex justify-between px-[6vw] py-[3.5vh] md:py-[2vh] items-center bg-[#5484F2] shadow-lg shadow-black/30">
+    <nav className="sticky top-0 z-50 w-full flex justify-between px-[6vw] py-[3.5vh] md:py-[2vh] items-center bg-[#022581] shadow-lg shadow-black/30">
       {/* burger menu icon */}
       <img
         src={logoBelinsky}
         alt="logoBelinsky"
-        className="fixed left-0 top-0 w-[8rem] bg-white rounded-br-xl md:hidden shadow-lg z-10"
+        className="absolute left-0 top-0 w-[8rem] bg-white rounded-br-xl md:hidden shadow-lg z-10"
       />
       <BiMenuAltRight
         size={30}
@@ -50,7 +50,7 @@ const Navbar = () => {
       <div
         className={
           nav
-            ? `transition ease-in-out duration-300 fixed text-white left-0 top-0 w-full h-screen bg-black px-4 py-7 z-10`
+            ? `transition ease-in-out duration-300 absolute text-white left-0 top-0 w-full h-screen bg-black px-4 py-7 z-10`
             : `transition ease-in-out duration-500 absolute top-0 h-screen right-[-100%]`
         }
       >

@@ -3,6 +3,90 @@
 @tailwind utilities;
 
 :root {
-  background-color: #f5f5f5;
-  font-family: poppins;
+  background-color: ;
+  font-family: "nanami-Book";
+}
+
+@font-face {
+  font-family: "nanami-thin";
+  src: url("../src/assets/fonts/nanami/Nanami-Thin.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "nanami-thin";
+  src: url("../src/assets/fonts/nanami/Nanami-ThinOblique.otf");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "nanami-black";
+  src: url("../src/assets/fonts/nanami/Nanami-Black.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "nanami-light";
+  src: url("../src/assets/fonts/nanami/Nanami-BlackOblique.otf");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "nanami-light";
+  src: url("../src/assets/fonts/nanami/Nanami-Light.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "nanami-light";
+  src: url("../src/assets/fonts/nanami/Nanami-LightOblique.otf");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "nanami-regular";
+  src: url("../src/assets/fonts/nanami/Nanami-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "nanami-regular";
+  src: url("../src/assets/fonts/nanami/Nanami-RegularOblique.otf");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "nanami-outline";
+  src: url("../src/assets/fonts/nanami/Nanami-OutlineRegular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "nanami-outline";
+  src: url("../src/assets/fonts/nanami/Nanami-OutlineOblique.otf");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "nanami-Book";
+  src: url("../src/assets/fonts/nanami/Nanami-Book.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "nanami-BookOutline";
+  src: url("../src/assets/fonts/nanami/Nanami-BookOblique.otf");
+  font-weight: normal;
+  font-style: italic;
 }

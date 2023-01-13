@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  background-color: ;
+  background-image: url("./assets/bg-paper.jpeg");
   font-family: "nanami-Book";
 }
 

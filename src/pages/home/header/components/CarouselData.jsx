@@ -1,3 +1,4 @@
+import bg0 from "../assets/logo-belinsky.png";
 import bg1 from "../assets/Background_1.png";
 import bg2 from "../assets/Background_2.png";
 import bg3 from "../assets/Background_3.png";

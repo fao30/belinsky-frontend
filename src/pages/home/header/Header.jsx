@@ -52,7 +52,7 @@ const Header = () => {
       ></div> */}
 
       {/* bg overlay */}
-      <div className="relative top-0 left-0 w-full min-h-screen bg-black/50" />
+      <div className="relative top-0 left-0 w-full min-h-screen bg-[#0225818C]" />
 
       {/* Content */}
       <div className="absolute bottom-[20%] left-[20%] md:left-[12%] md:top-[60%] text-white">

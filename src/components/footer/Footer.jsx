@@ -1,9 +1,5 @@
 import React from "react";
-import {
-  AiOutlineInstagram,
-  AiFillLinkedin,
-  AiOutlineWhatsApp,
-} from "react-icons/ai";
+import { AiOutlineInstagram } from "react-icons/ai";
 import { TbBrandTiktok } from "react-icons/tb";
 import logo from "./assets/logo-belinsky.png";
 import { NavFooterItems } from "../components/NavFooterItems";
@@ -20,7 +16,6 @@ const Footer = () => {
             <a href="https://www.instagram.com/belinsky.studio/" target="break">
               <AiOutlineInstagram size={20} className="cursor-pointer" />
             </a>
-            <AiFillLinkedin size={20} className="cursor-pointer" />
             <a href="https://www.tiktok.com/@belinsky.id" target="break">
               <TbBrandTiktok size={20} className="cursor-pointer" />
             </a>

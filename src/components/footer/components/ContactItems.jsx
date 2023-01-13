@@ -1,8 +1,4 @@
-import {
-  AiOutlineInstagram,
-  AiFillLinkedin,
-  AiOutlineWhatsApp,
-} from "react-icons/ai";
+import { AiOutlineInstagram, AiOutlineWhatsApp } from "react-icons/ai";
 import { TbBrandTiktok } from "react-icons/tb";
 import { TbBuildingCommunity } from "react-icons/tb";
 

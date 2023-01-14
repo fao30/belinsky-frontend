@@ -1,20 +1,15 @@
 import CardOverlay from "./components/CardOverlay";
 import { dataCardBStudio } from "./constants/DataCardBStudio";
 
-export const BelinskyStudio = () => {
+const BelinskyStudio = () => {
   return (
     <section className="flex flex-col w-full justify-around px-[6vw] pt-[6vw] lg:px-[3vw] lg:pt-[3vw] mb-[5vw]">
       {/* Title */}
       <div className="flex flex-col w-full lg:flex-row">
         <div className="w-[100%] lg:w-[50%]">
-          <h1 className="text-[#424242] text-5xl lg:text-6xl font-bold">
-            Belinsky Studio
-          </h1>
-          <p className="text-[#5484F2] text-lg lg:text-2xl font-medium">
-            Our Services
-          </p>
+          <h1 className="font-bold lg:text-6xl">Belinsky Studio</h1>
         </div>
-        <p className="text-[#424242] w-[100%] lg:w-[50%] my-auto">
+        <p className="w-[100%] lg:w-[50%] my-auto">
           Our specialties include model photography, food{" "}
           <br className="hidden lg:inline-block" />
           photography, corporate, family, professional photos for{" "}
@@ -33,3 +28,5 @@ export const BelinskyStudio = () => {
     </section>
   );
 };
+
+export default BelinskyStudio;

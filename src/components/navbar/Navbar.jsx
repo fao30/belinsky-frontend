@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { BiMenuAltRight } from "react-icons/bi";
+import { useNavigate, NavLink } from "react-router-dom";
 import logoBelinsky from "../../assets/logo-belinsky.png";
-import { NavFooterItems } from "../components/NavFooterItems";
+import { NavFooterItems } from "../constants/NavFooterItems";
 
 const Navbar = () => {
   // Toggle mobile menu
@@ -15,13 +16,16 @@ const Navbar = () => {
     }
   };
 
+  let navigate = useNavigate();
+
   return (
     <nav className="sticky top-0 z-50 w-full flex justify-between px-[6vw] py-[3.5vh] md:py-[2vh] items-center bg-[#022581] shadow-lg shadow-black/30">
       {/* burger menu icon */}
       <img
         src={logoBelinsky}
         alt="logoBelinsky"
-        className="absolute left-0 top-0 w-[8rem] bg-white rounded-br-xl md:hidden shadow-lg z-10"
+        className="absolute left-0 top-0 w-[8rem] bg-white rounded-br-xl md:hidden shadow-lg z-10 cursor-pointer"
+        onClick={() => navigate("/")}
       />
       <BiMenuAltRight
         size={30}
@@ -32,15 +36,25 @@ const Navbar = () => {
       {/* Desktop Menu */}
       <div className="w-[100%] h-full hidden md:flex z-20 mx-auto relative">
         <ul className="flex w-full text-lg font-bold text-[#F5F5F5] justify-evenly">
-          {NavFooterItems.map(({ label, type }) =>
+          {NavFooterItems.map(({ label, type, path }) =>
             type === "img" ? (
-              <li key={label} className="md:w-[8rem] cursor-pointer">
+              <NavLink
+                key={label}
+                to={path}
+                className="md:w-[8rem] cursor-pointer"
+              >
                 {label}
-              </li>
+              </NavLink>
             ) : (
-              <li key={label} className="cursor-pointer">
+              <NavLink
+                key={label}
+                to={path}
+                className={({ isActive }) =>
+                  isActive ? "text-[#5484F2]" : "text-white"
+                }
+              >
                 {label}
-              </li>
+              </NavLink>
             )
           )}
         </ul>
@@ -50,18 +64,25 @@ const Navbar = () => {
       <div
         className={
           nav
-            ? `transition ease-in-out duration-300 absolute text-white left-0 top-0 w-full h-screen bg-black px-4 py-7 z-10`
+            ? `transition ease-in-out duration-300 absolute text-white left-0 top-0 w-full h-screen bg-black/90 px-4 py-7`
             : `transition ease-in-out duration-500 fixed top-0 h-screen right-[-100%]`
         }
       >
         <ul className="flex flex-col items-center justify-center w-full h-full gap-10 text-4xl font-semibold">
-          {NavFooterItems.map(({ label, type }) =>
+          {NavFooterItems.map(({ label, type, path }) =>
             type === "img" ? (
               ""
             ) : (
-              <li key={label} className="cursor-pointer">
+              <NavLink
+                to={path}
+                key={label}
+                className={({ isActive }) =>
+                  isActive ? "text-[#5484F2]" : "text-white"
+                }
+                onClick={handleNav}
+              >
                 {label}
-              </li>
+              </NavLink>
             )
           )}
         </ul>

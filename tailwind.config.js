@@ -22,7 +22,7 @@ module.exports = {
     },
     fontFamily: {
       poppins: ["Poppins"],
-      sans: ["sans-sherif"],
+      nanami: ["nanami"],
     },
     extend: {},
   },

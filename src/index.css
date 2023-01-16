@@ -8,83 +8,31 @@
 }
 
 @font-face {
-  font-family: "nanami-black";
-  src: url("../src/assets/fonts/nanami/Nanami-Black.otf");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "nanami-black";
-  src: url("../src/assets/fonts/nanami/Nanami-BlackOblique.otf");
-  font-weight: normal;
+  font-family: "nanami";
+  src: url("../src/assets/fonts/nanami/Nanami-BoldOblique.otf");
+  font-weight: bold;
   font-style: italic;
 }
 
 @font-face {
-  font-family: "nanami-light";
-  src: url("../src/assets/fonts/nanami/Nanami-Light.otf");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "nanami-light";
-  src: url("../src/assets/fonts/nanami/Nanami-LightOblique.otf");
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "nanami-regular";
-  src: url("../src/assets/fonts/nanami/Nanami-Regular.otf");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "nanami-regular";
-  src: url("../src/assets/fonts/nanami/Nanami-RegularOblique.otf");
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "nanami-outline";
-  src: url("../src/assets/fonts/nanami/Nanami-OutlineRegular.otf");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "nanami-outline";
-  src: url("../src/assets/fonts/nanami/Nanami-OutlineOblique.otf");
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "nanami-Book";
+  font-family: "nanami-book";
   src: url("../src/assets/fonts/nanami/Nanami-Book.otf");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "nanami-BookOutline";
+  font-family: "nanami";
   src: url("../src/assets/fonts/nanami/Nanami-BookOblique.otf");
-  font-weight: normal;
+  font-weight: book;
   font-style: italic;
 }
 
 @layer base {
   p {
-    @apply leading-[1.25rem];
+    @apply text-[1.1rem] leading-[1.25rem];
   }
   h1 {
     @apply text-[64px] font-[700] text-[#022581] leading-[4rem];
-  }
-  h3 {
-    @apply text-[27px];
   }
 }

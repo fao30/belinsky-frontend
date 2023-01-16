@@ -34,7 +34,7 @@ export const NavFooterItems = [
   },
   {
     path: "/contact",
-    label: "Contact",
+    label: "Contact Us",
     type: "text",
   },
 ];

@@ -26,10 +26,10 @@ const OurWork = () => {
         />
         <div className="absolute h-full w-full bg-[#0225818C] text-white">
           <div className="flex flex-col items-center justify-center w-full h-full text-center text-white">
-            <h3 className="text-[70px] font-semibold text-white w-full">
+            <h3 className="text-[3.5rem] lg:text-[5rem] font-semibold text-white w-full">
               Our Work
             </h3>
-            <p className="w-full drop-shadow-md text-[25px]">
+            <p className="w-full drop-shadow-md text-[20px] lg:text-[25px]">
               “From CUE to CUT, along with Belinsky”
             </p>
           </div>

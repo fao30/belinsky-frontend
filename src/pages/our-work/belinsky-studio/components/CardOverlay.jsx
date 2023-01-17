@@ -18,12 +18,8 @@ const CardOverlay = ({ src, h3, p }) => {
             h3 === "Abang None Jakarta Timur" ? "cursor-pointer" : ""
           }`}
         >
-          <h3 className="text-[20px] lg:text-[22px] font-semibold text-white w-full">
-            {h3}
-          </h3>
-          <p className="w-full pr-6 drop-shadow-md text-[14px] lg:text-[16px]">
-            {p}
-          </p>
+          <h3 className="text-[20px] font-semibold text-white w-full">{h3}</h3>
+          <p className="w-full pr-6 drop-shadow-md text-[14px]">{p}</p>
         </div>
       </div>
     </div>

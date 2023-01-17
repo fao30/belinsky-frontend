@@ -3,6 +3,7 @@ import Graduation from "../assets/Graduation_.png";
 import Kumaw from "../assets/Kumaw_.png";
 import TomoTurah from "../assets/TomoTurah_.png";
 import LukasKenniro from "../assets/LukasKenniro_.png";
+import DuoPengacara from "../assets/DuoPengacara_.png";
 
 export const dataCardBStudio = [
   {
@@ -21,7 +22,7 @@ export const dataCardBStudio = [
     p: "Product’s Shoot By Our Photographer",
   },
   {
-    src: Kumaw,
+    src: DuoPengacara,
     h3: "Duo Pengacara",
     p: "Self Studio - We provide self photo studio and photoshoot services by Belinsky Team",
   },

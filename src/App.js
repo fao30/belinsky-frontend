@@ -9,6 +9,7 @@ import Contact from "./pages/contact-us/Contact";
 
 // OurWork project details
 import Abnon from "./pages/our-work/belinsky-studio/abnon/Abnon";
+import Menantea from "./pages/our-work/production-house/menantea/Menantea";
 
 // miscellanous components
 import Navbar from "./components/navbar/Navbar";
@@ -22,7 +23,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/ourwork" element={<OurWork />} />
-        <Route path="/ourwork/menantea" />
+        <Route path="/ourwork/menantea" element={<Menantea />} />
         <Route path="/ourwork/abnon" element={<Abnon />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>

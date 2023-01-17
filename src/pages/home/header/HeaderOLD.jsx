@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { RiArrowRightSLine, RiArrowLeftSLine } from "react-icons/ri";
-import { CarouselData } from "../../home/header/components/CarouselData";
+import { CarouselData } from "./constants/SliderData";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { BlurhashCanvas } from "react-blurhash";
 

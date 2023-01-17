@@ -1,4 +1,4 @@
-import vid1 from "../assets/Menantea_.mp4";
+import vid1 from "../../project-details/menantea/assets/Menantea.webm";
 import vid2 from "../assets/Traveloka_.mp4";
 import vid3 from "../assets/Indihome_.mp4";
 import vid4 from "../assets/WongTilar_.mp4";

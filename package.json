@@ -52,6 +52,7 @@
     ]
   },
   "devDependencies": {
+    "@iconify/react": "^4.0.1",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/line-clamp": "^0.4.2",
     "gh-pages": "^4.0.0",

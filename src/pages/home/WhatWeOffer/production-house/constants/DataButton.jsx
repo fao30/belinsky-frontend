@@ -1,22 +1,16 @@
-import React from "react";
-
-import movie from "../assets/short_movie.svg";
-// import tvc from "../assets/tvc.svg";
-import webseries from "../assets/web_series.svg";
-import { BiMovie } from "react-icons/bi";
-// import Vector from "../assets/Vector.png";
+import { Icon } from "@iconify/react";
 
 export const dataButton = [
   {
-    // icon: Vector,
+    icon: <Icon icon="fa6-solid:rectangle-ad" width="20" height="20" />,
     name: "TVC",
   },
   {
-    // icon: webseries,
+    icon: <Icon icon="emojione-monotone:cinema" width="20" height="20" />,
     name: "Web Series",
   },
   {
-    icon: <BiMovie size={20} />,
+    icon: <Icon icon="mdi:movie-open" width="20" height="20" />,
     name: "Short Movie",
   },
 ];

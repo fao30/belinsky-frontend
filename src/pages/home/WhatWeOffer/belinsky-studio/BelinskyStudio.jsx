@@ -1,7 +1,3 @@
-import studio1 from "./assets/studio_1.png";
-import studio2 from "./assets/studio_2.png";
-import studio3 from "./assets/studio_3.png";
-
 import CardOverlay from "./components/CardOverlay";
 import { dataCardBStudio } from "./constants/DataCardBStudio";
 

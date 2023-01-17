@@ -3,6 +3,41 @@
 @tailwind utilities;
 
 :root {
+<<<<<<< HEAD
   /* background-color: #363534; */
   font-family: poppins;
+=======
+  background-image: url("./assets/bg-paper.jpeg");
+  font-family: "nanami-book";
+}
+
+@font-face {
+  font-family: "nanami";
+  src: url("../src/assets/fonts/nanami/Nanami-BoldOblique.otf");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "nanami-book";
+  src: url("../src/assets/fonts/nanami/Nanami-Book.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "nanami";
+  src: url("../src/assets/fonts/nanami/Nanami-BookOblique.otf");
+  font-weight: book;
+  font-style: italic;
+}
+
+@layer base {
+  p {
+    @apply leading-[1.25rem];
+  }
+  h1 {
+    @apply font-[700] leading-[4rem];
+  }
+>>>>>>> 641a2303b40dd70f6ef2364250e57ae7bc71b767
 }

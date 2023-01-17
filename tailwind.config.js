@@ -2,6 +2,7 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
+    // defaults to these values
     textFillColor: (theme) => theme("borderColor"),
     textStrokeColor: (theme) => theme("borderColor"),
     textStrokeWidth: (theme) => theme("borderWidth"),
@@ -22,9 +23,12 @@ module.exports = {
     },
     fontFamily: {
       poppins: ["Poppins"],
-      sans: ["sans-sherif"],
+      nanami: ["nanami"],
     },
     extend: {},
   },
-  plugins: [require("tailwindcss-text-fill-stroke")()],
+  plugins: [
+    require("tailwindcss-text-fill-stroke")(),
+    require("@tailwindcss/line-clamp"),
+  ],
 };

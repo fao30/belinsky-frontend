@@ -27,12 +27,3 @@
   font-weight: book;
   font-style: italic;
 }
-
-@layer base {
-  p {
-    @apply text-[#022581] leading-[1.25rem];
-  }
-  h1 {
-    @apply font-[700] text-[#022581] leading-[4rem];
-  }
-}

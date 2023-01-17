@@ -2,8 +2,8 @@ import video from "./assets/Hero_Video.mp4";
 
 const Header = () => {
   return (
-    <section className="">
-      <div className="relative w-full min-h-screen">
+    <section className="min-h-screen w-full mb-[10vh]">
+      <div className="relative w-full h-screen">
         <video
           autoplay
           loop

@@ -1,17 +1,16 @@
-import video from "./assets/Hero_Video.mp4";
+import video from "./assets/Hero_Video.webm";
 
 const Header = () => {
   return (
     <section className="min-h-screen w-full mb-[10vh]">
       <div className="relative w-full h-screen">
         <video
-          autoplay
+          autoPlay
           loop
           muted
-          type="video/mp4"
           src={video}
           className="absolute top-0 left-0 object-cover w-full h-full"
-        />
+        ></video>
         <div className="absolute flex flex-col justify-center h-full left-[3.5rem] gap-y-4">
           <h1 className="text-5xl text-white uppercase">
             Taking off to a sky,

@@ -44,7 +44,7 @@ const ProjectDetails = ({
           <h2 className="text-[1rem] lg:text-[1.5rem] text-[#022581]">
             {desc}
           </h2>
-          <div className="flex justify-between max-lg:mt-8 lg:pt-24 flex-wrap">
+          <div className="flex flex-wrap justify-between max-lg:mt-8 lg:pt-24">
             <div className="flex flex-col w-full md:w-[55%]">
               <h2 className="text-[1.5rem] md:text-[2rem] lg:text-[2.5rem] font-[800] text-[#022581]">
                 Date

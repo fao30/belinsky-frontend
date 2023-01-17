@@ -1,15 +1,15 @@
 import React from "react";
-import ProjectDetails from "../../components/ProjectDetails";
-import { dataAbnon } from "./constants/DataAbnon";
+import ProjectDetails from "../ProjectDetails";
+import { dataMenantea } from "./constants/DataMenantea";
 
-const Abnon = () => {
+const Menantea = () => {
   return (
     <>
-      {dataAbnon?.map(
+      {dataMenantea?.map(
         ({
           title,
           byWho,
-          src,
+          srcvideo,
           byWho2,
           desc,
           date,
@@ -21,7 +21,7 @@ const Abnon = () => {
           <ProjectDetails
             title={title}
             byWho={byWho}
-            src={src}
+            srcvideo={srcvideo}
             byWho2={byWho2}
             desc={desc}
             date={date}
@@ -36,4 +36,4 @@ const Abnon = () => {
   );
 };
 
-export default Abnon;
+export default Menantea;

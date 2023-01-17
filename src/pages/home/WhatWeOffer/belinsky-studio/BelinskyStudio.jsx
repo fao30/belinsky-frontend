@@ -1,29 +1,28 @@
+import studio1 from "./assets/studio_1.png";
+import studio2 from "./assets/studio_2.png";
+import studio3 from "./assets/studio_3.png";
+
 import CardOverlay from "./components/CardOverlay";
 import { dataCardBStudio } from "./constants/DataCardBStudio";
 
 const BelinskyStudio = () => {
   return (
-    <section className="flex flex-col w-full min-h-screen justify-around px-[6vw] pt-[10vh] lg:px-[3vw] lg:pt-[3vw] my-[5vw]">
+    <section className="w-full min-h-screen">
       {/* Title */}
-      <div className="flex flex-col w-full lg:flex-row">
-        <div className="w-[100%] lg:w-[50%]">
-          <h1 className="font-bold lg:text-6xl">Belinsky Studio</h1>
-        </div>
-        <p className="w-[100%] lg:w-[50%] my-auto text-[#022581]">
-          Our specialties include model photography, food{" "}
-          <br className="hidden lg:inline-block" />
-          photography, corporate, family, professional photos for{" "}
-          <br className="hidden lg:inline-block" />
-          LinkedIn, wedding photography, and graduation
-          <br className="hidden lg:inline-block" /> photography.
+      <div className="flex flex-col md:flex-row justify-around px-[4vw] mb-[4vh] gap-y-1">
+        <h1 className="my-auto text-6xl text-center">Belinsky Studio</h1>
+        <p className="text-justify w-[100%] md:w-[40%] xl:w-[25%] leading-5 text-lg">
+          Our specialties include model photography, food photography,
+          corporate, family, professional photos for LinkedIn, wedding
+          photography, and graduation photography.
         </p>
       </div>
 
-      {/* Studio Images */}
-      <div className="flex flex-col gap-1 justify-around md:flex-row mt-[2vh] lg:mt-[4vh]">
-        {dataCardBStudio.map(({ src, h3, p }) => (
-          <CardOverlay src={src} h3={h3} p={p} />
-        ))}
+      {/* Studio images */}
+      <div className="flex flex-col justify-between w-full h-full lg:flex-row gap-y-5">
+        {dataCardBStudio.map(({ src, h2, h3, p }) => {
+          return <CardOverlay src={src} h2={h2} h3={h3} p={p} />;
+        })}
       </div>
     </section>
   );

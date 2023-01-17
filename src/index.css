@@ -30,9 +30,9 @@
 
 @layer base {
   p {
-    @apply text-[1.1rem] leading-[1.25rem];
+    @apply text-[#022581] leading-[1.25rem];
   }
   h1 {
-    @apply text-[64px] font-[700] text-[#022581] leading-[4rem];
+    @apply font-[700] text-[#022581] leading-[4rem];
   }
 }

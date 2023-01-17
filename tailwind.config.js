@@ -26,5 +26,8 @@ module.exports = {
     },
     extend: {},
   },
-  plugins: [require("tailwindcss-text-fill-stroke")()],
+  plugins: [
+    require("tailwindcss-text-fill-stroke"),
+    require("@tailwindcss/line-clamp"),
+  ],
 };

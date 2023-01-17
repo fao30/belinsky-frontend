@@ -1,14 +1,14 @@
 import React from "react";
 import Header from "./header/Header";
-import HeroContent from "./hero/HeroContent";
 import WWOffer from "./WhatWeOffer/WWOffer";
+import OurWorks from "./OurWorks/OurWorks";
 
 const Home = () => {
   return (
     <>
       <Header />
-      <HeroContent />
       <WWOffer />
+      <OurWorks />
     </>
   );
 };

@@ -1,5 +1,5 @@
 import React from "react";
-import HeroVideo from "./assets/Hero_Video.mp4";
+// import HeroVideo from "./assets/Hero_Video.mp4";
 
 const HeroContent = () => {
   return (
@@ -7,7 +7,7 @@ const HeroContent = () => {
       <div className="flex items-center justify-between w-full max-lg:flex-wrap-reverse ">
         <div className="w-full lg:w-[60%]">
           <div className="max-lg:mt-6">
-            <video src={HeroVideo} autoPlay muted loop />
+            {/* <video src={HeroVideo} autoPlay muted loop /> */}
           </div>
         </div>
         <div className="w-full lg:w-[35%] text-left">

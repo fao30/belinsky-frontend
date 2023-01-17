@@ -4,7 +4,7 @@ import video from "./assets/Hero_Video.mp4";
 const Header = () => {
   return (
     <section className="w-full min-h-screen">
-      <div className="flex items-center justify-center h-full">
+      <div className="flex items-center justify-center w-full h-full">
         <video
           type="video/mp4"
           src={video}

@@ -1,27 +1,25 @@
 import { AiOutlineInstagram, AiOutlineWhatsApp } from "react-icons/ai";
 import { TbBrandTiktok } from "react-icons/tb";
-import { TbBuildingCommunity } from "react-icons/tb";
-
+import { HiOutlineMail } from "react-icons/hi";
 export const ContactItems = [
   {
-    label: "Belinsky.studio",
-    icon: <AiOutlineInstagram />,
-    href: "https://www.instagram.com/belinsky.studio/",
-  },
-  {
-    label: "Belinsky.id",
-    icon: <TbBrandTiktok />,
-    href: "https://www.tiktok.com/@belinsky.id",
-  },
-  {
-    label: "+62 858-1055-9415",
-    icon: <AiOutlineWhatsApp />,
+    p: "+62 858-1055-9415",
+    icon: <AiOutlineWhatsApp size={20} />,
     href: "https://wa.me/6285810559415",
   },
   {
-    label:
-      "Jl. Kemang Utara No. 15, Bangka, Kec. Mampang Prpt., Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12730",
-    icon: <TbBuildingCommunity />,
-    href: "/",
+    p: "partnership@belinsky.studio",
+    icon: <HiOutlineMail size={20} />,
+    href: "mailto:partnership@belinsky.studio",
+  },
+  {
+    p: "Belinsky.studio",
+    icon: <AiOutlineInstagram size={20} />,
+    href: "https://www.instagram.com/belinsky.studio/",
+  },
+  {
+    p: "Belinsky.id",
+    icon: <TbBrandTiktok size={20} />,
+    href: "https://www.tiktok.com/@belinsky.id",
   },
 ];

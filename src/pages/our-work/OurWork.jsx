@@ -3,7 +3,6 @@ import { BelinskyStudio } from "./belinsky-studio/BelinskyStudio";
 import { ProductionHouse } from "./production-house/ProductionHouse";
 import header from "./assets/OurWorkHeader.png";
 import useLocalStrorage from "./components/LocalStorage";
-import { motion } from "framer-motion";
 
 const OurWork = () => {
   const [isProductionHouse, setIsProductionHouse] = useLocalStrorage(

@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import CardOverlay from "./components/CardOverlay";
+import CardOverlay from "../components/CardOverlay";
 import { dataCardBStudio } from "./constants/DataCardBStudio";
 
 export const BelinskyStudio = () => {

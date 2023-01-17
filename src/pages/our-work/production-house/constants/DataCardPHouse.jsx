@@ -34,6 +34,6 @@ export const dataCardBStudio = [
   {
     src: vid6,
     h3: "Squery Penty",
-    p: "“A group of young Russians, who gathered to celebrate the arrival of their friend from Indonesia. But after the celebration took place, Masha accidentally found a Squery Penty Book and since then her life changed.”",
+    p: "A group of young Russians, who gathered to celebrate the arrival of their friend from Indonesia. Masha accidentally found a Squery Penty Book and since then her life changed",
   },
 ];

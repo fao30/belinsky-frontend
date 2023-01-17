@@ -1,12 +1,19 @@
-import { React, useState } from "react";
+import { React } from "react";
 import { BelinskyStudio } from "./belinsky-studio/BelinskyStudio";
 import { ProductionHouse } from "./production-house/ProductionHouse";
 import header from "./assets/OurWorkHeader.png";
+import useLocalStrorage from "./components/LocalStorage";
 import { motion } from "framer-motion";
 
 const OurWork = () => {
-  const [isProductionHouse, setIsProductionHouse] = useState(false);
-  const [isBelinskyStudio, setIsBelinskyStudio] = useState(true);
+  const [isProductionHouse, setIsProductionHouse] = useLocalStrorage(
+    "prodution-house",
+    false
+  );
+  const [isBelinskyStudio, setIsBelinskyStudio] = useLocalStrorage(
+    "belinsky-studio",
+    true
+  );
 
   return (
     <div className="w-full">
@@ -29,7 +36,7 @@ const OurWork = () => {
         </div>
       </div>
       {/* THE BUTTONS */}
-      <div className="flex justify-center w-full items-center max-sm:gap-3 gap-6 text-center my-8 max-sm:px-6">
+      <div className="flex justify-center w-full items-center max-sm:gap-3 gap-6 my-8 max-sm:px-6">
         <button
           onClick={() => {
             setIsProductionHouse(true);

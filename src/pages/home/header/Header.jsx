@@ -33,14 +33,14 @@ const Header = () => {
               ></video>
               <div className="absolute flex flex-col justify-start h-full md:left-[3.5rem] gap-y-6 px-4 md:px-0 top-[60%]">
                 <h1
-                  className="text-2xl text-white uppercase"
+                  className="text-2xl text-white uppercase lg:text-4xl font-[900]"
                   // style={{ textShadow: "1px 1px red" }}
                 >
                   Taking off to a sky,
                   <br className="hidden md:inline-block" /> where creativity is
                   limitless
                 </h1>
-                <p className="text-lg leading-4 text-white font-[500]">
+                <p className="text-lg leading-4 text-white font-[500] lg:text-xl lg:leading-5">
                   Given that Belinsky is both a production house and a creative
                   <br className="hidden md:inline-block" />
                   studio, our areas of expertise include producing both

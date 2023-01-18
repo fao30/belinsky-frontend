@@ -1,3 +1,5 @@
+import LoadToTop from "../../../helper/LoadToTop";
+
 const CardOverlay = ({ src, srcvideo, h3, p, navigate }) => {
   return (
     <div className="h-[20rem] w-full lg:w-[27rem] bg-slate-400 relative group rounded-[1rem]">
@@ -24,6 +26,7 @@ const CardOverlay = ({ src, srcvideo, h3, p, navigate }) => {
         <div
           onClick={() => {
             navigate();
+            LoadToTop();
           }}
           className="flex flex-col items-center pt-[11.5rem] sm:pt-52 pl-7 justify-start w-full h-full text-left text-white cursor-pointer"
         >

@@ -8,8 +8,8 @@ import OurWork from "./pages/our-work/OurWork";
 import Contact from "./pages/contact-us/Contact";
 
 // OurWork project details
-import Abnon from "./pages/our-work/project-details/abnon/Abnon";
-import Menantea from "./pages/our-work/project-details/menantea/Menantea";
+import Abnon from "./pages/our-work/project-details/belinsky-studio/abnon/Abnon";
+import Menantea from "./pages/our-work/project-details/production-house/menantea/Menantea";
 
 // miscellanous components
 import Navbar from "./components/navbar/Navbar";

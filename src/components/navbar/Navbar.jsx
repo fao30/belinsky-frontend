@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { BiMenuAltRight } from "react-icons/bi";
 import { useNavigate, NavLink } from "react-router-dom";
 import logoBelinsky from "../../assets/logo-belinsky.png";
+import LoadToTop from "../../helper/LoadToTop";
 import { NavFooterItems } from "../constants/NavFooterItems";
 
 const Navbar = () => {
@@ -42,6 +43,9 @@ const Navbar = () => {
                 key={label}
                 to={path}
                 className="md:w-[8rem] cursor-pointer"
+                onClick={() => {
+                  LoadToTop();
+                }}
               >
                 {label}
               </NavLink>
@@ -54,6 +58,9 @@ const Navbar = () => {
                     ? "text-[#5484F2] drop-shadow-[0_1px_1px_black]"
                     : "text-white drop-shadow-[0_1px_1px_black]"
                 }
+                onClick={() => {
+                  LoadToTop();
+                }}
               >
                 {label}
               </NavLink>

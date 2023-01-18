@@ -24,6 +24,7 @@ module.exports = {
     fontFamily: {
       poppins: ["Poppins"],
       nanami: ["nanami"],
+      "font-family": ["Gothic A1", "sans-serif"],
     },
     extend: {},
   },

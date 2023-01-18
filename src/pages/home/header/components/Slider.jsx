@@ -2,9 +2,6 @@
 import "swiper/css";
 import "swiper/css/navigation";
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Mousewheel, Navigation, Lazy } from "swiper";
-
 const Slider = ({ src }) => {
   return (
     <>

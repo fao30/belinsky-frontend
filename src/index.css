@@ -4,18 +4,15 @@
 
 :root {
   background-image: url("./assets/bg-paper.jpeg");
-  font-family: "nanami-book";
+  font-family: "Gothic A1", sans-serif;
+}
+
+h1 {
+  font-weight: 900;
 }
 
 @font-face {
   font-family: "nanami";
-  src: url("../src/assets/fonts/nanami/Nanami-BoldOblique.otf");
-  font-weight: bold;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "nanami-book";
   src: url("../src/assets/fonts/nanami/Nanami-Book.otf");
   font-weight: normal;
   font-style: normal;
@@ -23,16 +20,21 @@
 
 @font-face {
   font-family: "nanami";
+  src: url("../src/assets/fonts/nanami/Nanami-Bold.otf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "nanami";
   src: url("../src/assets/fonts/nanami/Nanami-BookOblique.otf");
-  font-weight: book;
+  font-weight: normal;
   font-style: italic;
 }
 
-@layer base {
-  p {
-    @apply leading-[1.25rem];
-  }
-  h1 {
-    @apply font-[700] leading-[4rem];
-  }
+@font-face {
+  font-family: "nanami";
+  src: url("../src/assets/fonts/nanami/Nanami-Regular.otf");
+  font-weight: 500;
+  font-style: normal;
 }

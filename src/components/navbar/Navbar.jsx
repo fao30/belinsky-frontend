@@ -50,7 +50,9 @@ const Navbar = () => {
                 key={label}
                 to={path}
                 className={({ isActive }) =>
-                  isActive ? "text-[#5484F2]" : "text-white"
+                  isActive
+                    ? "text-[#5484F2] drop-shadow-[0_1px_1px_black]"
+                    : "text-white drop-shadow-[0_1px_1px_black]"
                 }
               >
                 {label}

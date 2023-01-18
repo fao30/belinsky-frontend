@@ -36,7 +36,7 @@ const ProjectDetails = ({
         />
       </div>
       {/* DESC */}
-      <div className="py-[6vw] lg:pt-12 lg:pb-24 px-[6vw] lg:px-[3vw] flex justify-between w-full flex-wrap">
+      <div className="py-[6vw] lg:pt-12 lg:pb-24 px-[6vw] lg:px-[10vw] flex justify-between w-full flex-wrap">
         <h2 className="text-[1.5rem] md:text-[2rem] lg:text-[2.5rem] font-[800] text-[#022581] w-full lg:w-[50%]">
           {byWho2}
         </h2>
@@ -65,13 +65,26 @@ const ProjectDetails = ({
         </div>
       </div>
       {/* IMAGES */}
-      <div className="px-[6vw] lg:px-[10vw] w-full flex justify-between pb-24 max-md:hidden">
+      <div className="px-[6vw] lg:px-[10vw] w-full h-[35rem] lg:h-[50rem] flex justify-between pb-24 max-md:hidden">
         <div className="flex flex-col justify-between w-[50%]">
-          <img src={img1} className="transition-all hover:scale-110" />
-          <img src={img2} className="transition-all hover:scale-110" />
+          <div className="h-[45%]">
+            <img
+              src={img1}
+              className="transition-all hover:scale-110 h-full w-full object-cover"
+            />
+          </div>
+          <div className="h-[45%]">
+            <img
+              src={img2}
+              className="transition-all hover:scale-110 h-full w-full object-cover"
+            />
+          </div>
         </div>
         <div className="w-[45%]">
-          <img src={img3} className="transition-all hover:scale-110 " />
+          <img
+            src={img3}
+            className="transition-all hover:scale-110 h-full w-full object-cover"
+          />
         </div>
       </div>
       {/* IMAGES MOBILE */}

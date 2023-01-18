@@ -24,12 +24,13 @@ module.exports = {
     fontFamily: {
       poppins: ["Poppins"],
       nanami: ["nanami"],
-      "font-family": ["Gothic A1", "sans-serif"],
+      "Gothic-A1": ["Gothic A1", "sans-serif"],
     },
     extend: {},
   },
   plugins: [
     require("tailwindcss-text-fill-stroke")(),
     require("@tailwindcss/line-clamp"),
+    require("tailwind-scrollbar-hide"),
   ],
 };

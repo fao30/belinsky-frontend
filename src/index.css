@@ -11,6 +11,10 @@ h1 {
   font-weight: 900;
 }
 
+p {
+  font-weight: 600;
+}
+
 @font-face {
   font-family: "nanami";
   src: url("../src/assets/fonts/nanami/Nanami-Book.otf");

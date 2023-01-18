@@ -7,8 +7,6 @@ import bg4 from "../assets/Background_4.png";
 export const sliderData = [
   {
     src: video,
-    h1: "Taking off to a sky, where creativity is limitless",
-    p: "Given that Belinsky is both a production house and a creative studio, our areas of expertise include producing both photography and filmmaking",
   },
   {
     src: bg1,

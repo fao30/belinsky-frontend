@@ -10,8 +10,9 @@ export const dataCardBStudio = [
     p: (
       <>
         3 Thematic Korean background, inspired
-        <br /> by the set up of Korean Series “Our
-        <br /> Beloved Summer”
+        <br className="hidden md:block lg:hidden" /> by the set up of Korean
+        Series “Our
+        <br className="hidden md:block lg:hidden" /> Beloved Summer”
       </>
     ),
   },

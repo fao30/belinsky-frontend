@@ -25,7 +25,7 @@ const Footer = () => {
         </div>
 
         {/* Feature */}
-        <div className="w-[100%] lg:w-[30%]">
+        <div className="w-[45%] h-[14rem] lg:w-[30%] lg:h-[18rem] self-end">
           <iframe
             title="map"
             id="gmap_canvas"
@@ -38,11 +38,11 @@ const Footer = () => {
         </div>
 
         {/* Contact */}
-        <div className="w-[100%] lg:w-[30%] self-center">
+        <div className="w-[45%] lg:w-[22%] self-end lg:self-center">
           <div className="flex gap-x-1 text-[#8B8585] font-[350] text-lg">
-            <GoLocation size={35} />
+            <GoLocation className="w-[5rem]" />
             <p className="leading-[2rem] text-justify">
-              Jl. Kemang Utara No. 15, Bangka, Kec. Mampang Prpt., Jakarta
+              Jl. Kemang Utara No. 15A, Bangka, Kec. Mampang Prpt., Jakarta
               Selatan, Daerah Khusus Ibukota Jakarta 12730
             </p>
           </div>

@@ -32,5 +32,6 @@ module.exports = {
     require("tailwindcss-text-fill-stroke")(),
     require("@tailwindcss/line-clamp"),
     require("tailwind-scrollbar-hide"),
+    require("daisyui"),
   ],
 };

@@ -1,6 +1,6 @@
 import React from "react";
-import BelinskyStudio from "./belinsky-studio/BelinskyStudio";
-import ProductionHouse from "./production-house/ProductionHouse";
+import BelinskyStudio from "./BelinskyStudio";
+import ProductionHouse from "./ProductionHouse";
 
 const OurWorks = () => {
   return (

@@ -5,7 +5,7 @@ import vid4 from "../../assets/production-house/WongTilar_.mp4";
 import vid5 from "../../assets/production-house/Yubi_.mp4";
 import vid6 from "../../assets/production-house/Penty_.mp4";
 
-export const dataCardBStudio = [
+export const dataCardPHouse = [
   {
     srcvideo: vid1,
     h3: "Menantea",

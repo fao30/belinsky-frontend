@@ -1,10 +1,15 @@
 import React from "react";
+import Founder from "./components/Founder";
+import Misi from "./components/Misi";
+import Visi from "./components/Visi";
 
 const About = () => {
   return (
-    <div>
-      <h1>ABOUT</h1>
-    </div>
+    <>
+      <Visi />
+      <Misi />
+      <Founder />
+    </>
   );
 };
 

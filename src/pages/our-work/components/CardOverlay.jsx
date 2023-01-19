@@ -31,7 +31,7 @@ const CardOverlay = ({ src, srcvideo, h3, p, navigate }) => {
           }}
           className="flex flex-col items-center pt-[11.5rem] sm:pt-48 pl-7 justify-start w-full h-full text-left text-white cursor-pointer"
         >
-          <h3 className="text-[20px] font-semibold text-white w-full">{h3}</h3>
+          <h3 className="text-[20px] font-bold text-white w-full">{h3}</h3>
           <p className="w-full pr-6 drop-shadow-md text-[14px]">{p}</p>
         </div>
       </div>

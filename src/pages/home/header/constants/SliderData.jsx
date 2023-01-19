@@ -18,13 +18,13 @@ export const sliderData = [
     src: bg2,
     h1: "Traveloka x Waseda",
     blurPic: "L8Du_N?d00D~00xB?vt900D$xbs:",
-    nav: "ourwok/traveloka",
+    nav: "ourwork/traveloka",
   },
   {
     src: bg3,
     h1: "Abnon Timur",
     blurPic: "L3H^;K^a3e7%LM^+01=:00w}Q8ia",
-    nav: "ourwok/abnon",
+    nav: "ourwork/abnon",
   },
   {
     src: bg4,

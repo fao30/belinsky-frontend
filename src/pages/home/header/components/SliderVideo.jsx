@@ -1,6 +1,8 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const SliderVideo = ({ src }) => {
+  const navigate = useNavigate();
   return (
     <>
       <video
@@ -25,7 +27,12 @@ const SliderVideo = ({ src }) => {
           studio, our areas of expertise include producing both
           <br className="hidden md:inline-block" /> photography and filmmaking
         </p>
-        <button className="self-start px-7 py-3 bg-[#5484F2] text-white font-semibold hover:bg-[#4a6cb3] active:bg-[#5484F2]">
+        <button
+          onClick={() => {
+            navigate("contact");
+          }}
+          className="self-start px-7 py-3 bg-[#5484F2] text-white font-semibold hover:bg-[#4a6cb3] active:bg-[#5484F2]"
+        >
           Contact Us
         </button>
       </div>

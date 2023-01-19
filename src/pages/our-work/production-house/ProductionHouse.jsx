@@ -5,7 +5,7 @@ import { dataCardPHouse } from "./constants/DataCardPHouse";
 export const ProductionHouse = () => {
   const navigate = useNavigate();
   return (
-    <section className="flex flex-wrap w-full justify-center gap-x-14 gap-y-8 md:gap-y-20 px-[6vw] lg:px-[3vw] pt-[6vw] lg:pt-[1vw] mb-[5vw]">
+    <section className="flex flex-wrap w-full justify-center mb-[5vw] gap-[4vw] lg:gap-[3vw] lg:px-[3vw] px-[4vw]">
       {dataCardPHouse?.map(({ srcvideo, h3, p, nav }) => (
         <CardOverlay
           srcvideo={srcvideo}

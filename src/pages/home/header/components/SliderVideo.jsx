@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import LoadToTop from "../../../../helper/LoadToTop";
 
 const SliderVideo = ({ src }) => {
   const navigate = useNavigate();
@@ -30,7 +31,8 @@ const SliderVideo = ({ src }) => {
         </p>
         <button
           onClick={() => {
-            navigate("contact");
+            navigate("/contact");
+            LoadToTop();
           }}
           className="self-start px-7 py-3 bg-[#5484F2] text-white font-semibold hover:bg-[#4a6cb3] active:bg-[#5484F2]"
         >

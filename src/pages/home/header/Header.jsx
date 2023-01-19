@@ -9,10 +9,11 @@ import "swiper/css/navigation";
 // components
 import SliderImg from "./components/SliderImg";
 import SliderVideo from "./components/SliderVideo";
-
 import { sliderData } from "./constants/SliderData";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
+  const navigate = useNavigate();
   return (
     <section className="min-h-screen w-full mb-[10vh] relative">
       <Swiper
@@ -24,14 +25,21 @@ const Header = () => {
         modules={[Mousewheel, Navigation, Lazy]}
         className="relative w-full h-screen"
       >
-        {sliderData.map(({ src, h1 }) =>
+        {sliderData.map(({ src, h1, nav }) =>
           src === video ? (
             <SwiperSlide>
               <SliderVideo src={src} />
             </SwiperSlide>
           ) : (
             <SwiperSlide>
-              <SliderImg src={src} h1={h1} p="Explore Work" />
+              <SliderImg
+                src={src}
+                h1={h1}
+                navigate={() => {
+                  navigate(`${nav}`);
+                }}
+                p="Explore Work"
+              />
             </SwiperSlide>
           )
         )}

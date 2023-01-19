@@ -1,4 +1,6 @@
-const SliderImg = ({ src, h1, p }) => {
+import LoadToTop from "../../../../helper/LoadToTop";
+
+const SliderImg = ({ src, h1, p, navigate }) => {
   return (
     <>
       <img
@@ -15,7 +17,13 @@ const SliderImg = ({ src, h1, p }) => {
         <h1 className="text-6xl md:text-8xl text-white font-[700]">{h1}</h1>
         <div className="flex justify-start w-full group">
           <div className="border-b-2 border-white w-[4.5rem] self-center group-hover:border-opacity-0 transition duration-500 ease-in-out scale-x-100 md:w-[10rem]" />
-          <p className="flex flex-col text-lg tracking-wide text-white w-[8rem] text-center">
+          <p
+            onClick={() => {
+              navigate();
+              LoadToTop();
+            }}
+            className="flex flex-col text-lg tracking-wide text-white w-[8rem] text-center cursor-pointer"
+          >
             {p}
             <span className="transition duration-500 ease-in-out scale-0 group-hover:scale-100 lg:group-hover:scale-150">
               <div className="border-b-2" />

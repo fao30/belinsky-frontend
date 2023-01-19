@@ -5,7 +5,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./pages/home/Home";
 import About from "./pages/about/About";
 import OurWork from "./pages/our-work/OurWork";
-import Contact from "./pages/contact-us/Contact";
+import ContactUs from "./pages/contact-us/ContactUs";
 
 // OurWork project details
 import Abnon from "./pages/our-work/project-details/belinsky-studio/abnon/Abnon";
@@ -25,7 +25,7 @@ function App() {
         <Route path="/ourwork" element={<OurWork />} />
         <Route path="/ourwork/menantea" element={<Menantea />} />
         <Route path="/ourwork/abnon" element={<Abnon />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/contact" element={<ContactUs />} />
       </Routes>
       <Footer />
     </>

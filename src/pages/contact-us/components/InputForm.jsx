@@ -1,4 +1,4 @@
-const InputForm = ({ label, type, name, onChange }) => {
+const InputForm = ({ label, type, name, onChange, value }) => {
   return (
     <>
       <div className="flex flex-col w-full h-full md:gap-y-2">
@@ -8,8 +8,9 @@ const InputForm = ({ label, type, name, onChange }) => {
         <input
           type={type}
           name={name}
+          value={value}
           id={name}
-          className="bg-[#E0E0E0] px-3 py-2 md:py-3 lg:py-[0.9rem] rounded-lg"
+          className="bg-[#E0E0E0] px-3 py-2 md:py-3 lg:py-[0.9rem] rounded-lg focus:ring-0 text-sm md:text-md lg:text-lg"
           onChange={onChange}
         />
       </div>

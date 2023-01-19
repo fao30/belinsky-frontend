@@ -34,8 +34,8 @@ export const dataCardBStudio = [
     p: (
       <>
         Classic dark green living
-        <br /> room with table lamp
-        <br />
+        <br className="lg:hidden" /> room with table lamp
+        <br className="lg:hidden" />
         Equipment provided
       </>
     ),

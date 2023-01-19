@@ -9,7 +9,7 @@ const CardOverlay = ({ src, h2, h3, p }) => {
         <h3 className="text-4xl font-extrabold text-center text-white xl:text-5xl">
           {h3}
         </h3>
-        <p className="mx-10 font-[500] tracking-wider text-center text-white text-md">
+        <p className="mx-10 font-[600] tracking-wider text-center text-white text-lg">
           {p}
         </p>
       </div>

@@ -3,7 +3,7 @@ import { dataCardPHouse } from "../../our-work/production-house/constants/DataCa
 
 const ProductionHouse = () => {
   return (
-    <section className="w-full min-h-screen p-[4vw]">
+    <section className="w-full mb-[10vh] p-[4vw]">
       <h1 className="text-[#022581] text-4xl lg:text-6xl text-center tracking-wide">
         Production House
       </h1>

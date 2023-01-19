@@ -3,7 +3,7 @@ import { dataCardBStudio } from "../../our-work/belinsky-studio/constants/DataCa
 
 const BelinskyStudio = () => {
   return (
-    <section className="w-full min-h-screen p-[4vw]">
+    <section className="w-full p-[4vw]">
       <h1 className="text-[#022581] text-4xl lg:text-6xl text-center tracking-wide">
         Belinsky Studio
       </h1>

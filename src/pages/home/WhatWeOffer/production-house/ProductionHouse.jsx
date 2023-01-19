@@ -39,7 +39,7 @@ const ProductionHouse = () => {
           {/* Title / description */}
           <div className="flex flex-col self-center w-[33%] gap-3">
             <h1 className="text-5xl text-[#022581]">Production House</h1>
-            <p className="text-justify text-md tracking-wide text-[#022581]">
+            <p className="text-justify text-lg md:text-xl text-[#022581]">
               Belinsky strives for great quality and exclusiveness inevery video
               that exhibits a flawless result. We may help you in the production
               of TVC advertisement for your advertising needs.

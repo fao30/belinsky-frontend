@@ -3,9 +3,9 @@ import img1 from "../../about/assets/img2_2.png";
 
 export const Misi = () => {
   return (
-    <section className="w-full min-h-screen">
+    <section className="w-full">
       {/* image on visi*/}
-      <div className="hidden w-full h-full md:flex md:justify-end">
+      <div className="w-full h-full md:flex md:justify-end">
         <div className="flex h-full">
           <div className="self-end ">
             <img
@@ -19,8 +19,10 @@ export const Misi = () => {
 
       {/* title description */}
       <div className="flex flex-col justify-end w-full p-[2vw] text-right">
-        <h1 className="text-[60px] font-bold text-[#022581]">OUR MISSION</h1>
-        <h2 className="text-[36px]  text-wrap [word-spacing:2px] text-[#022581]">
+        <h1 className="lg:text-[60px] text-[30px] font-bold text-[#022581]">
+          OUR MISSION
+        </h1>
+        <h2 className="lg:text-[36px] text-[18px] text-wrap [word-spacing:2px] text-[#022581]">
           In terms of the Belinsky studio, our mission is to provide the
           greatest ambiance and service so that clients are delighted with the
           outcomes produced by the Belinsky Team.

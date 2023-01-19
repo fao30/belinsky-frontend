@@ -9,6 +9,7 @@ const SliderVideo = ({ src }) => {
         autoPlay
         loop
         muted
+        playsInline
         src={src}
         className="absolute top-0 left-0 object-cover w-full h-full"
       ></video>

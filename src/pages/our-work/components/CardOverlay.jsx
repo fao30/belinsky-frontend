@@ -14,6 +14,7 @@ const CardOverlay = ({ src, srcvideo, h3, p, navigate }) => {
         loop
         muted
         autoPlay
+        playsInline
         src={srcvideo}
         alt=""
         className={`${

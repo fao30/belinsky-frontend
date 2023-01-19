@@ -36,13 +36,12 @@ const Navbar = () => {
 
       {/* Desktop Menu */}
       <div className="w-[100%] h-full hidden md:flex z-20 mx-auto relative">
-        <ul className="flex w-full text-lg font-bold text-[#F5F5F5] justify-evenly">
-          {NavFooterItems.map(({ label, type, path }) =>
-            type === "img" ? (
+        <ul className="flex w-full text-lg font-bold text-[#F5F5F5] justify-between lg:justify-center items-center lg:gap-10 text-center">
+          {NavFooterItems?.map(({ label, type, path }) => {
+            return type === "img" ? (
               <NavLink
-                key={label}
                 to={path}
-                className="md:w-[8rem] cursor-pointer"
+                className="w-[15%]"
                 onClick={() => {
                   LoadToTop();
                 }}
@@ -55,8 +54,8 @@ const Navbar = () => {
                 to={path}
                 className={({ isActive }) =>
                   isActive
-                    ? "text-[#5484F2] drop-shadow-[0_1px_1px_black]"
-                    : "text-white drop-shadow-[0_1px_1px_black]"
+                    ? "text-[#5484F2] drop-shadow-[0_1px_1px_black] w-[15%]"
+                    : "text-white drop-shadow-[0_1px_1px_black] w-[15%]"
                 }
                 onClick={() => {
                   LoadToTop();
@@ -64,8 +63,8 @@ const Navbar = () => {
               >
                 {label}
               </NavLink>
-            )
-          )}
+            );
+          })}
         </ul>
       </div>
 

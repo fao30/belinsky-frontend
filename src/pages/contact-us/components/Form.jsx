@@ -1,5 +1,6 @@
 import InputForm from "./InputForm";
 import { useReducer } from "react";
+import toast, { Toaster } from "react-hot-toast";
 
 // initial values
 const initialState = {
@@ -40,14 +41,29 @@ const Form = () => {
   // function handleClick
   const handleClick = (e) => {
     e.preventDefault();
-    dispatch({ type: "submit" });
-    dispatch({ type: "reset" });
+
+    if (
+      initialState.name.length &&
+      initialState.companyName.length &&
+      initialState.email.length &&
+      initialState.phone.length &&
+      initialState.textarea.length
+    ) {
+      dispatch({ type: "submit" });
+      dispatch({ type: "reset" });
+      toast.success("Request Sent");
+    } else {
+      toast.error("Error");
+    }
+
+    console.log(initialState.name.length, "DEBUG");
   };
 
   return (
     <>
+      <Toaster />
       <form className="h-fit w-[90%] p-[0.5rem] md:w-[85%] xl:w-[70rem] bg-white mx-auto -mt-16 drop-shadow-[0_1.5px_1.5px_black]">
-        <div className="flex flex-col md:flex-row p-[1.5rem] xl:px-[7rem] xl:py-[3rem] justify-center w-full h-full text-black xl:text-2xl font-semibold gap-7">
+        <div className="flex flex-col md:flex-row p-[1.5rem] xl:px-[7rem] xl:py-[3rem] justify-center w-full h-full text-[#022581] xl:text-2xl font-semibold gap-7">
           <InputForm
             label="Name"
             type="text"
@@ -93,7 +109,7 @@ const Form = () => {
               onChange={handleChange}
             ></textarea>
             <button
-              className="py-4 w-[8rem] xl:py-[1.1rem] xl:w-[25%] text-lg xl:text-xl text-center bg-[#022581] text-white mt-5 rounded-2xl uppercase font-bold"
+              className="py-[0.85rem] w-[5.5rem] md:py-4 md:w-[8rem] xl:py-[1.1rem] xl:w-[13rem] text-sm lg:text-md xl:text-lg text-center bg-[#022581] text-white mt-5 rounded-2xl uppercase font-bold"
               onClick={handleClick}
             >
               Send

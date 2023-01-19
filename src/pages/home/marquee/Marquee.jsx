@@ -2,7 +2,6 @@ import React from "react";
 import bg from "./assets/bg.png";
 import Marquee from "react-fast-marquee";
 import { dataMarquee } from "./constants/DataMarquee";
-import img1 from "./assets/azarina.png";
 
 const MarqueeSection = () => {
   return (

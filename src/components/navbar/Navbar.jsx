@@ -36,7 +36,7 @@ const Navbar = () => {
 
       {/* Desktop Menu */}
       <div className="w-[100%] h-full hidden md:flex z-20 mx-auto relative">
-        <ul className="flex w-full text-lg font-bold text-[#F5F5F5] justify-center items-center gap-6 lg:gap-10 text-center">
+        <ul className="flex w-full text-lg font-bold text-[#F5F5F5] justify-between lg:justify-center items-center lg:gap-10 text-center">
           {NavFooterItems?.map(({ label, type, path }) => {
             return type === "img" ? (
               <NavLink

@@ -13,6 +13,7 @@ const CardSlider = ({ srcvideo, src, h3, p, isHomepage }) => {
           loop
           muted
           autoPlay
+          playsInline
           src={srcvideo}
           alt=""
           className={`${

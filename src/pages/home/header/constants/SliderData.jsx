@@ -12,24 +12,24 @@ export const sliderData = [
     src: bg1,
     h1: "Menantea",
     blurPic: "LWK^Z=Djt6%g_4IUW=%Lt7Ip%Lxa",
-    nav: "ourwork/menantea",
+    nav: "/ourwork/menantea",
   },
   {
     src: bg2,
     h1: "Traveloka x Waseda",
     blurPic: "L8Du_N?d00D~00xB?vt900D$xbs:",
-    nav: "ourwork/traveloka",
+    nav: "/ourwork/traveloka",
   },
   {
     src: bg3,
     h1: "Abnon Timur",
     blurPic: "L3H^;K^a3e7%LM^+01=:00w}Q8ia",
-    nav: "ourwork/abnon",
+    nav: "/ourwork/abnon",
   },
   {
     src: bg4,
     h1: "Yubi Short Movie",
     blurPic: "LCCrAsTvw2sC}m-nNaxG7x;|J*ox",
-    nav: "ourwork/yubi",
+    nav: "/ourwork/yubi",
   },
 ];

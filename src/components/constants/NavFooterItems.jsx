@@ -3,11 +3,13 @@ import logoBelinsky from "../../assets/logo-belinsky.png";
 
 const logoBelinskyElement = () => {
   return (
-    <img
-      src={logoBelinsky}
-      alt="logo Belinsky"
-      className="absolute w-[140px] h-[85px] p-3 rounded-b-xl -top-5 bg-white shadow-xl"
-    />
+    <div className="flex justify-center ">
+      <img
+        src={logoBelinsky}
+        alt="logo Belinsky"
+        className="z-10 absolute w-[140px] h-[85px] p-3 rounded-b-xl -top-5 bg-white shadow-xl border-none"
+      />
+    </div>
   );
 };
 

@@ -1,7 +1,7 @@
 import img1 from "./assets/wwo-ph-1.png";
 import img2 from "./assets/wwo-ph-2.png";
 import img3 from "./assets/wwo-ph-3.png";
-import Button from "./components/Button";
+import ButtonCard from "./components/ButtonCard";
 import { dataButton } from "./constants/DataButton";
 
 const ProductionHouse = () => {
@@ -46,7 +46,7 @@ const ProductionHouse = () => {
             </p>
             <div className="flex flex-row gap-3 mt-4">
               {dataButton.map(({ name, icon }) => (
-                <Button name={name} icon={icon} />
+                <ButtonCard name={name} icon={icon} />
               ))}
             </div>
           </div>

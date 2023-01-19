@@ -25,7 +25,7 @@ const Navbar = () => {
       <img
         src={logoBelinsky}
         alt="logoBelinsky"
-        className="absolute left-0 top-0 w-[6rem] bg-white rounded-br-xl md:hidden shadow-lg z-10 cursor-pointer"
+        className="absolute left-0 top-0 w-[6.5rem] bg-white rounded-br-xl md:hidden shadow-lg z-10 cursor-pointer"
         onClick={() => navigate("/")}
       />
       <BiMenuAltRight

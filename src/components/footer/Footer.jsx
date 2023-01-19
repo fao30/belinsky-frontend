@@ -5,8 +5,8 @@ import logo from "./assets/logo-belinsky.png";
 const Footer = () => {
   return (
     <footer className="px-[6vw] py-[5vh] lg:px-[6vw] w-full bg-[#F5F5F5]">
-      <div className="flex flex-wrap w-full h-full space-x-5 gap-y-7">
-        <div className="flex flex-col w-[100%] lg:w-[30%]">
+      <div className="flex flex-wrap items-center w-full h-full justify-evenly gap-y-7">
+        <div className="flex flex-col w-[100%] lg:w-[40%]">
           <img src={logo} alt="Belinsky Logo" className="w-[9rem]" />
           <p className="text-[#022581]">
             Taking off to a sky, where creativity is limitless
@@ -27,7 +27,7 @@ const Footer = () => {
         </div>
 
         {/* Feature */}
-        <div className="w-[100%] h-[14rem] lg:w-[30%] lg:h-[18rem] self-end">
+        <div className="w-full h-[20rem] flex flex-col md:w-[100%] lg:w-[50%] md:flex-row md:h-[15rem] gap-x-5 sm:flex-row lg:self-end">
           <iframe
             title="map"
             id="gmap_canvas"
@@ -35,19 +35,13 @@ const Footer = () => {
             frameborder="0"
             marginheight="0"
             marginwidth="0"
-            className="w-full h-full shadow-xl rounded-xl"
+            className="w-full h-full shadow-xl rounded-xl sm:w-[50%]"
           ></iframe>
-        </div>
-
-        {/* Contact */}
-        <div className="w-[100%] lg:w-[22%] self-end lg:self-center">
-          <div className="flex gap-x-1 text-[#8B8585] font-[350] text-lg">
-            <GoLocation className="w-[5rem]" />
-            <p className="leading-[2rem] text-justify">
-              Jl. Kemang Utara No. 15A, Bangka, Kec. Mampang Prpt., Jakarta
-              Selatan, Daerah Khusus Ibukota Jakarta 12730
-            </p>
-          </div>
+          <p className="text-[#8B8585] flex gap-x-3 sm:w-[50%] h-full w-full items-center">
+            <GoLocation size={30} className="" />
+            Jl. Kemang Utara No. 15A, Bangka, Kec. Mampang Prpt., Jakarta
+            Selatan, Daerah Khusus Ibukota Jakarta 12730
+          </p>
         </div>
       </div>
     </footer>

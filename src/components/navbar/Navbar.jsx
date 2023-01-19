@@ -25,7 +25,7 @@ const Navbar = () => {
       <img
         src={logoBelinsky}
         alt="logoBelinsky"
-        className="absolute left-0 top-0 w-[8rem] bg-white rounded-br-xl md:hidden shadow-lg z-10 cursor-pointer"
+        className="absolute left-0 top-0 w-[6rem] bg-white rounded-br-xl md:hidden shadow-lg z-10 cursor-pointer"
         onClick={() => navigate("/")}
       />
       <BiMenuAltRight
@@ -77,7 +77,7 @@ const Navbar = () => {
             : `transition ease-in-out duration-500 fixed top-0 h-screen right-[-100%]`
         }
       >
-        <ul className="flex flex-col items-center justify-center w-full h-full gap-10 text-4xl font-semibold">
+        <ul className="flex flex-col items-center justify-center w-full h-full gap-10 text-4xl font-extrabold">
           {NavFooterItems.map(({ label, type, path }) =>
             type === "img" ? (
               ""

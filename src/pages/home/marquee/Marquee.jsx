@@ -7,14 +7,14 @@ import img1 from "./assets/azarina.png";
 const MarqueeSection = () => {
   return (
     <section className="mt-[5vh]">
-      <h1 className="text-[#022581] text-center text-2xl">
+      <h1 className="text-[#022581] text-center text-xl md:text-2xl">
         WHAT OUR CLIENTS SAYS ABOUT US
       </h1>
       <div className="relative w-full h-64 mb-[3vh] mt-[1vh]">
         <img alt="" src={bg} className="absolute top-0 left-0 w-full h-full" />
         <div className="absolute top-0 left-0 w-full h-full bg-[#0225818C]" />
         <div className="absolute flex flex-col items-center justify-center w-full h-full gap-5">
-          <p className="text-center text-white px-[5vw] md:px-[15vw] text-lg">
+          <p className="text-center text-white px-[2vw] md:px-[15vw] md:text-lg">
             “Our goal was to create a digital ad video to promote our latest
             product. From our initial call with Belinsky Studio to the video
             handover, they are knowledgeable, professional, and friendly
@@ -25,7 +25,7 @@ const MarqueeSection = () => {
           <h3 className="text-xl font-bold text-white">Michael, Traveloka</h3>
         </div>
       </div>
-      <h1 className="text-[#022581] text-center uppercase text-2xl mb-[1vh]">
+      <h1 className="text-[#022581] text-center uppercase text-xl md:text-2xl mb-[1vh]">
         Partners & Clients
       </h1>
       <Marquee

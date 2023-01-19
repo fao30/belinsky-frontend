@@ -12,7 +12,9 @@ const Footer = () => {
             Taking off to a sky, where creativity is limitless
           </p>
           <div className="flex flex-col mt-6 gap-y-3 md:gap-y-5 text-[#8B8585]">
-            <h3 className="mt-2 text-[#424242] text-2xl">Belinsky Studio</h3>
+            <h3 className="mt-2 text-[#424242] text-2xl font-[600]">
+              Belinsky Studio
+            </h3>
             {ContactItems.map(({ icon, p, href }) => (
               <div className="flex gap-x-1">
                 <a href={href} target="break">

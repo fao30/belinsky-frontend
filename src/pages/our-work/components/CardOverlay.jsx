@@ -5,7 +5,7 @@ const CardOverlay = ({ src, srcvideo, h3, p, navigate }) => {
     <div className="h-[20rem] w-full lg:w-[27rem] bg-slate-400 relative group rounded-[1rem]">
       <img
         src={src}
-        alt="studio1-img"
+        alt=""
         className={`${
           src ? "absolute object-cover w-full h-full rounded-[1rem]" : "hidden"
         }`}
@@ -15,7 +15,7 @@ const CardOverlay = ({ src, srcvideo, h3, p, navigate }) => {
         muted
         autoPlay
         src={srcvideo}
-        alt="studio2-vid"
+        alt=""
         className={`${
           srcvideo
             ? "absolute object-cover w-full h-full rounded-[1rem]"

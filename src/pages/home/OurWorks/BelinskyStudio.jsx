@@ -8,8 +8,8 @@ const BelinskyStudio = () => {
         Belinsky Studio
       </h1>
       <div className="carousel carousel-center gap-[3rem] bg-transparent mt-12">
-        {dataCardBStudio?.map(({ src, h3, p }) => (
-          <CardSlider src={src} h3={h3} p={p} />
+        {dataCardBStudio?.map(({ src, h3, p, isHomepage }) => (
+          <CardSlider src={src} h3={h3} p={p} isHomepage={isHomepage} />
         ))}
       </div>
     </section>

@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectDetails from "../../ProjectDetails";
-import MenanteaImg from "../../../../../assets/production-house/Menantea_.webm";
+import MenanteaVid from "../../../../../assets/production-house/Menantea_.webm";
 import img1 from "./assets/img1.jpeg";
 import img2 from "./assets/img2.jpeg";
 import img3 from "./assets/img3.jpeg";
@@ -10,7 +10,7 @@ const Menantea = () => {
     {
       title: "Menantea",
       byWho: "Production House",
-      srcvideo: MenanteaImg,
+      srcvideo: MenanteaVid,
       byWho2: "Product’s Video Advertisement",
       desc: "Menantea is a beverage business with a franchise system founded by Jerome Polin & Jehian. Menantea provides various flavors of tea as well as Indonesian people’s favorite snacks.",
       date: "12 February 2022",

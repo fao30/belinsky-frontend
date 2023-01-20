@@ -1,4 +1,4 @@
-import video from "./assets/Hero_Video.mp4";
+import video from "./assets/Hero_Video.webm";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Mousewheel, Navigation, Lazy } from "swiper";
 

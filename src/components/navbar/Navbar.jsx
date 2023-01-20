@@ -26,7 +26,10 @@ const Navbar = () => {
         src={logoBelinsky}
         alt="logoBelinsky"
         className="absolute left-0 top-0 w-[6.5rem] bg-white rounded-br-xl md:hidden shadow-lg z-10 cursor-pointer"
-        onClick={() => navigate("/")}
+        onClick={() => {
+          navigate("/");
+          LoadToTop();
+        }}
       />
       <BiMenuAltRight
         size={30}
@@ -87,7 +90,10 @@ const Navbar = () => {
                 className={({ isActive }) =>
                   isActive ? "text-[#5484F2]" : "text-white"
                 }
-                onClick={handleNav}
+                onClick={() => {
+                  handleNav();
+                  LoadToTop();
+                }}
               >
                 {label}
               </NavLink>

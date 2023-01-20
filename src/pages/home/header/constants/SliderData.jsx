@@ -1,4 +1,4 @@
-import video from "../assets/Hero_Video.mp4";
+import video from "../assets/Hero_Video.webm";
 import bg1 from "../assets/Background_1.png";
 import bg2 from "../assets/Background_2.png";
 import bg3 from "../assets/Background_3.png";

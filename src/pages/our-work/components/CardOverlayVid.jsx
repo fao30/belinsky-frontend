@@ -7,8 +7,11 @@ const CardOverlayVid = ({ srcvideo, h3, p, navigate }) => {
   return (
     <div className="h-[20rem] w-full lg:w-[27rem] bg-slate-400 relative group rounded-[1rem]">
       {isLoadingVideo ? (
-        <div className="flex justify-center w-full h-full  items-center z-10">
+        <div className="absolute items-center z-10 top-16 left-16">
           <img src={logoBelinsky} className="w-24 animate-bounce" />
+          <p className="w-[60%]">
+            taking off to a sky, where creativity is limitless
+          </p>
         </div>
       ) : (
         <></>

@@ -8,8 +8,11 @@ const CardSlider = ({ srcvideo, h3, p, isHomepage }) => {
     <div className={`${isHomepage ? "carousel-item" : "hidden"}`}>
       <div className="h-[15rem] w-[22rem] sm:h-[15rem] sm:w-[30rem] md:h-[25rem] md:w-[40rem] bg-slate-400 relative group">
         {isLoadingVideo ? (
-          <div className="flex justify-center w-full h-full items-center z-10">
+          <div className="absolute items-center z-10 top-16 left-16">
             <img src={logoBelinsky} className="w-24 animate-bounce" />
+            <p className="w-[60%]">
+              taking off to a sky, where creativity is limitless
+            </p>
           </div>
         ) : (
           <></>

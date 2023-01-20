@@ -1,4 +1,5 @@
 import React from "react";
+import TermsAndCondition from "./termsAndConditions/TermsAndCondition";
 import Founder from "./components/Founder";
 import Misi from "./components/Misi";
 import Visi from "./components/Visi";
@@ -6,9 +7,10 @@ import Visi from "./components/Visi";
 const About = () => {
   return (
     <>
-      <Visi />
+      <TermsAndCondition />
+      {/* <Visi />
       <Misi />
-      <Founder />
+      <Founder /> */}
     </>
   );
 };

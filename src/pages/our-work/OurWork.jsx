@@ -2,11 +2,11 @@ import { React } from "react";
 import header from "./assets/OurWorkHeader.png";
 import useLocalStrorage from "./components/LocalStorage";
 import { dataCardBStudio } from "./constants/DataCardBStudio";
-import CardOverlay from "./components/CardOverlay";
 import { dataCardPHouse } from "./constants/DataCardPHouse";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import CardOverlayVid from "./components/CardOverlayVid";
+import CardOverlayImg from "./components/CardOverlayImg";
 
 const OurWork = () => {
   const navigate = useNavigate();
@@ -77,7 +77,7 @@ const OurWork = () => {
           exit={{ opacity: 0 }}
         >
           {dataCardBStudio?.map(({ src, h3, p, nav, blurPic }) => (
-            <CardOverlay
+            <CardOverlayImg
               src={src}
               h3={h3}
               p={p}

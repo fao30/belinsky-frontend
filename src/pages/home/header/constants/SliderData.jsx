@@ -7,6 +7,7 @@ import bg4 from "../assets/Background_4.png";
 export const sliderData = [
   {
     src: video,
+    blurPic: "L2A^*4ER?v_30KR8IBaK00V?9FE1",
   },
   {
     src: bg1,

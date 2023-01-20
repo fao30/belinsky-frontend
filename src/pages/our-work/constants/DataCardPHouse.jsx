@@ -12,6 +12,7 @@ export const dataCardPHouse = [
     p: "Menantea provides various flavors of tea as well as indonesian people’s favorite snacks",
     nav: "menantea",
     isHomepage: true,
+    blurPic: "LZMi19Rk}6jE^JV@JVofeTjZOGW;",
   },
   {
     srcvideo: vid2,
@@ -19,6 +20,7 @@ export const dataCardPHouse = [
     p: "Jerome Polin and Waseda Boy’s go for adventure in Indonesia, visit many places like Papua",
     nav: "traveloka",
     isHomepage: true,
+    blurPic: "LvH2_zV]W.V@_Naft7bF.8fis;j[",
   },
   {
     srcvideo: vid3,
@@ -26,6 +28,7 @@ export const dataCardPHouse = [
     p: "Teknisi Magang - Web Series 12 Episodes Starring Dustin, Tiffany, and Turah",
     nav: "tvindihome",
     isHomepage: true,
+    blurPic: "L9GuI8?wIn.k}[NEsoEMK}9FIUQ-",
   },
   {
     srcvideo: vid4,
@@ -33,6 +36,7 @@ export const dataCardPHouse = [
     p: "As a result of being drunk in the middle of the forest, his friends saw Putu in love with a woman whose identify was unknown",
     nav: "wongtilar",
     isHomepage: false,
+    blurPic: "LeB#0UW=RPay?wofV@fQkXe.ofbH",
   },
   {
     srcvideo: vid5,
@@ -40,6 +44,7 @@ export const dataCardPHouse = [
     p: "Yubi hates humans who harm others. But when, he has to teach a lesson to Youtubers who like to make prank content",
     nav: "yubi",
     isHomepage: false,
+    blurPic: "L27^;:~mD$Ios}tP-:ae8~9bIWog",
   },
   {
     srcvideo: vid6,
@@ -47,5 +52,6 @@ export const dataCardPHouse = [
     p: "A group of young Russians, who gathered to celebrate the arrival of their friend from Indonesia. Masha accidentally found a Squery Penty Book and since then, her life changed",
     nav: "squerypenty",
     isHomepage: false,
+    blurPic: "LrH2.-M}D%Rk~qM|NKWC?HRjRjV@",
   },
 ];

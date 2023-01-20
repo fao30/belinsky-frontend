@@ -1,17 +1,22 @@
 import LoadToTop from "../../../helper/LoadToTop";
 import { useState } from "react";
 import logoBelinsky from "../../../assets/logo-belinsky.png";
+import { BlurhashCanvas } from "react-blurhash";
 
-const CardOverlayVid = ({ srcvideo, h3, p, navigate }) => {
+const CardOverlayVid = ({ srcvideo, h3, p, navigate, blurPic }) => {
   const [isLoadingVideo, setIsLoadingVideo] = useState(false);
   return (
     <div className="h-[20rem] w-full lg:w-[27rem] bg-slate-400 relative group rounded-[1rem]">
       {isLoadingVideo ? (
-        <div className="absolute items-center z-10 top-16 left-16">
-          <img src={logoBelinsky} className="w-24 animate-bounce" />
-          <p className="w-[60%] text-[#022581]">
-            taking off to a sky, where creativity is limitless
-          </p>
+        <div className="absolute z-10 w-full h-full">
+          <BlurhashCanvas
+            hash={blurPic}
+            className="w-full h-full rounded-[1rem]"
+          />
+          <img
+            src={logoBelinsky}
+            className="w-24 animate-bounce absolute left-16 top-16"
+          />
         </div>
       ) : (
         <></>

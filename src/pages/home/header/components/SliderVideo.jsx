@@ -1,11 +1,25 @@
-import React from "react";
+import { React, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import LoadToTop from "../../../../helper/LoadToTop";
+import logoBelinsky from "../assets/logo-belinsky.png";
+import { BlurhashCanvas } from "react-blurhash";
 
-const SliderVideo = ({ src }) => {
+const SliderVideo = ({ src, blurPic }) => {
   const navigate = useNavigate();
+  const [isLoadingVideo, setIsLoadingVideo] = useState(false);
   return (
     <>
+      {isLoadingVideo ? (
+        <div className="absolute z-10 w-full h-full">
+          <BlurhashCanvas hash={blurPic} className="w-full h-full" />
+          <img
+            src={logoBelinsky}
+            className="w-96 animate-bounce absolute left-6 top-64"
+          />
+        </div>
+      ) : (
+        <></>
+      )}
       <video
         autoPlay
         loop
@@ -13,9 +27,13 @@ const SliderVideo = ({ src }) => {
         playsInline
         src={src}
         type="video/mp4"
+        onLoadStart={() => setIsLoadingVideo(true)}
+        onLoadedData={() => setIsLoadingVideo(false)}
         className="absolute top-0 left-0 object-cover w-full h-full"
-      ></video>
-      <div className="absolute flex flex-col justify-start h-full md:left-[3.5rem] gap-y-6 px-4 md:px-0 top-[60%]">
+      />
+
+      {/* /djasnjdsa? */}
+      <div className="absolute flex flex-col justify-start h-full md:left-[3.5rem] gap-y-6 px-4 md:px-0 top-[60%] z-20">
         <h1
           className="text-2xl text-white uppercase lg:text-4xl"
           // style={{ textShadow: "1px 1px red" }}

@@ -1,10 +1,17 @@
 import bg from "./assets/bg-contactus.png";
 import InputForm from "./components/InputForm";
 import Form from "./components/Form";
+import { motion } from "framer-motion";
 
 const ContactUs = () => {
   return (
-    <section className="pb-[30vh] h-full w-full">
+    <motion.div
+      className="pb-[30vh] h-full w-full"
+      initial={{ opacity: 0.2 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ delay: 0, duration: 1 }}
+    >
       <div className="relative h-[25rem] -z-10">
         <img
           alt="bgContact"
@@ -21,10 +28,9 @@ const ContactUs = () => {
           </p>
         </div>
       </div>
-
       {/* FORM */}
       <Form />
-    </section>
+    </motion.div>
   );
 };
 

@@ -14,7 +14,7 @@ const CardOverlay = ({ src, srcvideo, h3, p, navigate }) => {
         loop
         muted
         autoPlay
-        type="video/mp4"
+        type="video/webm"
         playsInline
         src={srcvideo}
         alt=""

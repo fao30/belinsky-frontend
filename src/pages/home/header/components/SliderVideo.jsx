@@ -12,7 +12,7 @@ const SliderVideo = ({ src }) => {
         muted
         playsInline
         src={src}
-        type="video/mp4"
+        type="video/webm"
         className="absolute top-0 left-0 object-cover w-full h-full"
       ></video>
       <div className="absolute flex flex-col justify-start h-full md:left-[3.5rem] gap-y-6 px-4 md:px-0 top-[60%]">

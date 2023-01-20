@@ -1,9 +1,9 @@
-import vid1 from "../../../../assets/production-house/Menantea_.webm";
-import vid2 from "../../../../assets/production-house/Traveloka_.webm";
-import vid3 from "../../../../assets/production-house/Indihome_.webm";
-import vid4 from "../../../../assets/production-house/WongTilar_.webm";
-import vid5 from "../../../../assets/production-house/Yubi_.webm";
-import vid6 from "../../../../assets/production-house/Penty_.webm";
+import vid1 from "../../../../assets/production-house/Menantea_.mp4";
+import vid2 from "../../../../assets/production-house/Traveloka_.mp4";
+import vid3 from "../../../../assets/production-house/Indihome_.mp4";
+import vid4 from "../../../../assets/production-house/WongTilar_.mp4";
+import vid5 from "../../../../assets/production-house/Yubi_.mp4";
+import vid6 from "../../../../assets/production-house/Penty_.mp4";
 
 export const dataCardPHouse = [
   {

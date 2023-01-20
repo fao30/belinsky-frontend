@@ -16,7 +16,7 @@ const CardSlider = ({ srcvideo, src, h3, p, isHomepage }) => {
           playsInline
           src={srcvideo}
           alt=""
-          type="video/webm"
+          type="video/mp4"
           className={`${
             srcvideo ? "absolute object-cover w-full h-full " : "hidden"
           }`}

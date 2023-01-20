@@ -1,10 +1,4 @@
-<<<<<<< HEAD
-import "./App.css";
-import Navbar from "./components/navbar/Navbar";
-import OurWork from "./components/navbar/OurWork";
-import Home from "./pages/home/Home";
-// import OurWork from "./pages/home/OurWork";
-=======
+
 import "./index.css";
 import { Route, Routes } from "react-router-dom";
 
@@ -21,15 +15,15 @@ import Menantea from "./pages/our-work/project-details/menantea/Menantea";
 // miscellanous components
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
->>>>>>> 641a2303b40dd70f6ef2364250e57ae7bc71b767
+
 
 function App() {
   return (
     <>
       <Navbar />
-<<<<<<< HEAD
-      <Home />
-      <OurWork />
+{/* <<<<<<< HEAD */}
+      // <Home />
+      // <OurWork />
 =======
       <Routes>
         <Route path="/" element={<Home />} />
@@ -40,7 +34,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
->>>>>>> 641a2303b40dd70f6ef2364250e57ae7bc71b767
+{/* >>>>>>> 641a2303b40dd70f6ef2364250e57ae7bc71b767 */}
     </>
   );
 }

@@ -3,10 +3,10 @@
 @tailwind utilities;
 
 :root {
-<<<<<<< HEAD
+
   /* background-color: #363534; */
   font-family: poppins;
-=======
+/* ======= */
   background-image: url("./assets/bg-paper.jpeg");
   font-family: "nanami-book";
 }
@@ -39,5 +39,5 @@
   h1 {
     @apply font-[700] leading-[4rem];
   }
->>>>>>> 641a2303b40dd70f6ef2364250e57ae7bc71b767
+/* >>>>>>> 641a2303b40dd70f6ef2364250e57ae7bc71b767 */
 }

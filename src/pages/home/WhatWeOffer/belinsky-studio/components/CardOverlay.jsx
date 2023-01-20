@@ -15,7 +15,7 @@ const CardOverlay = ({ src, h2, h3, p, blurPic }) => {
       />
 
       {isLoading ? (
-        <BlurhashCanvas hash={blurPic} className="w-full h-full" />
+        <BlurhashCanvas hash={blurPic} className="absolute w-full h-full" />
       ) : (
         <>
           <h2 className="absolute z-10 text-2xl md:text-xl lg:text-3xl font-bold text-white transition duration-500 ease-in-out top-5 left-5 group-hover:opacity-0 drop-shadow-[0_1px_1px_black]">

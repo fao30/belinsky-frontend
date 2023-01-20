@@ -20,7 +20,13 @@ const OurWork = () => {
   );
 
   return (
-    <div className="w-full">
+    <motion.div
+      initial={{ opacity: 0.2 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={{ delay: 0, duration: 1 }}
+      className="w-full"
+    >
       {/* THE IMAGE AND THE TITLE */}
       <div className="h-[20rem] w-full bg-slate-400 relative group">
         <img
@@ -98,11 +104,12 @@ const OurWork = () => {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
         >
-          {dataCardPHouse?.map(({ srcvideo, h3, p, nav }) => (
+          {dataCardPHouse?.map(({ srcvideo, h3, p, nav, blurPic }) => (
             <CardOverlayVid
               srcvideo={srcvideo}
               h3={h3}
               p={p}
+              blurPic={blurPic}
               navigate={() => {
                 navigate(`${nav}`);
               }}
@@ -112,7 +119,7 @@ const OurWork = () => {
       ) : (
         ""
       )}
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,5 +1,5 @@
 import CardSlider from "./components/CardSlider";
-import { dataCardPHouse } from "../../our-work/production-house/constants/DataCardPHouse";
+import { dataCardPHouse } from "../../our-work/constants/DataCardPHouse";
 
 const ProductionHouse = () => {
   return (

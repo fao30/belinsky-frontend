@@ -1,9 +1,9 @@
-import Abnon from "../../../../assets/belinsky-studio/Abnon_.png";
-import Graduation from "../../../../assets/belinsky-studio/Graduation_.png";
-import Kumaw from "../../../../assets/belinsky-studio/Kumaw_.png";
-import TomoTurah from "../../../../assets/belinsky-studio/TomoTurah_.png";
-import LukasKenniro from "../../../../assets/belinsky-studio/LukasKenniro_.png";
-import DuoPengacara from "../../../../assets/belinsky-studio/DuoPengacara_.png";
+import Abnon from "../../../assets/belinsky-studio/Abnon_.png";
+import Graduation from "../../../assets/belinsky-studio/Graduation_.png";
+import Kumaw from "../../../assets/belinsky-studio/Kumaw_.png";
+import TomoTurah from "../../../assets/belinsky-studio/TomoTurah_.png";
+import LukasKenniro from "../../../assets/belinsky-studio/LukasKenniro_.png";
+import DuoPengacara from "../../../assets/belinsky-studio/DuoPengacara_.png";
 
 export const dataCardBStudio = [
   {

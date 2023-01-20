@@ -1,10 +1,14 @@
 import { React } from "react";
-import { BelinskyStudio } from "./belinsky-studio/BelinskyStudio";
-import { ProductionHouse } from "./production-house/ProductionHouse";
 import header from "./assets/OurWorkHeader.png";
 import useLocalStrorage from "./components/LocalStorage";
+import { dataCardBStudio } from "./constants/DataCardBStudio";
+import CardOverlay from "./components/CardOverlay";
+import { dataCardPHouse } from "./constants/DataCardPHouse";
+import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const OurWork = () => {
+  const navigate = useNavigate();
   const [isProductionHouse, setIsProductionHouse] = useLocalStrorage(
     "prodution-house",
     false
@@ -64,12 +68,48 @@ const OurWork = () => {
         </button>
       </div>
       {/* THE CONTENTS */}
-      <div className={`${isBelinskyStudio ? "" : "hidden"}`}>
-        <BelinskyStudio />
-      </div>
-      <div className={`${isProductionHouse ? "" : "hidden"}`}>
-        <ProductionHouse />
-      </div>
+      {isBelinskyStudio ? (
+        <motion.div
+          className="flex flex-wrap w-full justify-center mb-[5vw] gap-[4vw] lg:gap-[3vw] lg:px-[3vw] px-[4vw]"
+          initial={{ opacity: 0.2 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+        >
+          {dataCardBStudio?.map(({ src, h3, p, nav }) => (
+            <CardOverlay
+              src={src}
+              h3={h3}
+              p={p}
+              navigate={() => {
+                navigate(`${nav}`);
+              }}
+            />
+          ))}
+        </motion.div>
+      ) : (
+        ""
+      )}
+      {isProductionHouse ? (
+        <motion.div
+          className="flex flex-wrap w-full justify-center mb-[5vw] gap-[4vw] lg:gap-[3vw] lg:px-[3vw] px-[4vw]"
+          initial={{ opacity: 0.2 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+        >
+          {dataCardPHouse?.map(({ srcvideo, h3, p, nav }) => (
+            <CardOverlay
+              srcvideo={srcvideo}
+              h3={h3}
+              p={p}
+              navigate={() => {
+                navigate(`${nav}`);
+              }}
+            />
+          ))}
+        </motion.div>
+      ) : (
+        ""
+      )}
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import CardSlider from "./components/CardSlider";
-import { dataCardBStudio } from "../../our-work/belinsky-studio/constants/DataCardBStudio";
+import { dataCardBStudio } from "../../our-work/constants/DataCardBStudio";
 
 const BelinskyStudio = () => {
   return (

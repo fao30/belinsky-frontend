@@ -5,6 +5,7 @@ import studio3 from "../assets/studio_3.png";
 export const dataCardBStudio = [
   {
     src: studio1,
+    blurPic: "ULJaZX~V00%1w]IotRWVxuW;smRk-oRjt6j[",
     h2: "Studio 1",
     h3: "Korean Background",
     p: (
@@ -18,6 +19,7 @@ export const dataCardBStudio = [
   },
   {
     src: studio2,
+    blurPic: "UJJHw3~q00R*k9Rjt6t700xu^+Ri~pj[WBxu",
     h2: "Studio 2",
     h3: "White limbo background",
     p: (
@@ -29,6 +31,7 @@ export const dataCardBStudio = [
   },
   {
     src: studio3,
+    blurPic: "UCA,,No{04-9l+OEIWsn4?oe?EWCq_bFcCWX",
     h2: "",
     h3: "Podcast Studio",
     p: <>Classic dark green living room with table lamp equipment provided</>,

@@ -12,6 +12,7 @@ export const dataCardBStudio = [
     p: "Top 30 Semi-finalist Abang None Jakarta Timur 2022 Photoshoot By Our Photographer",
     nav: "abnon",
     isHomepage: true,
+    blurPic: "L3I4X]^a3d7%T|^+01=.00s;Q8e7",
   },
   {
     src: Graduation,
@@ -19,6 +20,7 @@ export const dataCardBStudio = [
     p: "Photoshoot By Our Photographer",
     nav: "graduation",
     isHomepage: true,
+    blurPic: "LLGa,%D*4.-;-;aeIV%2~Bf,IoWB",
   },
   {
     src: Kumaw,
@@ -26,6 +28,7 @@ export const dataCardBStudio = [
     p: "Product’s Shoot By Our Photographer",
     nav: "kumaw",
     isHomepage: true,
+    blurPic: "LuNI?I~qlU?bEexZWFjFbIj[s.R*",
   },
   {
     src: DuoPengacara,
@@ -33,6 +36,7 @@ export const dataCardBStudio = [
     p: "Self Studio - We provide self photo studio and photoshoot services by Belinsky Team",
     nav: "duopengacara",
     isHomepage: false,
+    blurPic: "LbODkBt8t8M{~pofj[WB?bayayog",
   },
   {
     src: TomoTurah,
@@ -40,6 +44,7 @@ export const dataCardBStudio = [
     p: "Self Studio - We provide self photo studio and photoshoot services by Belinsky Team",
     nav: "tomoturah",
     isHomepage: false,
+    blurPic: "LOOWsfMd-oxa%2ofoes;_NNbELR*",
   },
   {
     src: LukasKenniro,
@@ -47,5 +52,6 @@ export const dataCardBStudio = [
     p: "Model Photoshoot by Our Photographer ",
     nav: "lukaskenniro",
     isHomepage: false,
+    blurPic: "LaKKW4V?0On#~OR*xVod-goeIqog",
   },
 ];

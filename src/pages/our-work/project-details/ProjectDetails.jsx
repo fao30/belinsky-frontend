@@ -36,6 +36,7 @@ const ProjectDetails = ({
           loop
           playsInline
           autoPlay
+          type="video/mp4"
           src={srcvideo}
           className={`${srcvideo ? "w-full h-full" : "hidden"}`}
         />

@@ -6,6 +6,7 @@ import CardOverlay from "./components/CardOverlay";
 import { dataCardPHouse } from "./constants/DataCardPHouse";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
+import CardOverlayVid from "./components/CardOverlayVid";
 
 const OurWork = () => {
   const navigate = useNavigate();
@@ -75,11 +76,12 @@ const OurWork = () => {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
         >
-          {dataCardBStudio?.map(({ src, h3, p, nav }) => (
+          {dataCardBStudio?.map(({ src, h3, p, nav, blurPic }) => (
             <CardOverlay
               src={src}
               h3={h3}
               p={p}
+              blurPic={blurPic}
               navigate={() => {
                 navigate(`${nav}`);
               }}
@@ -97,7 +99,7 @@ const OurWork = () => {
           exit={{ opacity: 0 }}
         >
           {dataCardPHouse?.map(({ srcvideo, h3, p, nav }) => (
-            <CardOverlay
+            <CardOverlayVid
               srcvideo={srcvideo}
               h3={h3}
               p={p}

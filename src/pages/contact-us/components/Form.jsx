@@ -43,11 +43,11 @@ const Form = () => {
     e.preventDefault();
 
     if (
-      initialState.name.length &&
-      initialState.companyName.length &&
-      initialState.email.length &&
-      initialState.phone.length &&
-      initialState.textarea.length
+      state.name.length &&
+      state.companyName.length &&
+      state.email.length &&
+      state.phone.length &&
+      state.textarea.length
     ) {
       dispatch({ type: "submit" });
       dispatch({ type: "reset" });
@@ -55,8 +55,6 @@ const Form = () => {
     } else {
       toast.error("Error");
     }
-
-    console.log(initialState.name.length, "DEBUG");
   };
 
   return (

@@ -21,11 +21,10 @@ const Header = () => {
         slidesPerView={1}
         // mousewheel={true}
         navigation={true}
-        lazy={true}
-        modules={[Mousewheel, Navigation, Lazy]}
+        modules={[Mousewheel, Navigation]}
         className="relative w-full h-screen"
       >
-        {sliderData.map(({ src, h1, nav }) =>
+        {sliderData.map(({ src, h1, nav, blurPic }) =>
           src === video ? (
             <SwiperSlide>
               <SliderVideo src={src} />
@@ -33,6 +32,7 @@ const Header = () => {
           ) : (
             <SwiperSlide>
               <SliderImg
+                blurPic={blurPic}
                 src={src}
                 h1={h1}
                 navigate={() => {

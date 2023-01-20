@@ -1,5 +1,5 @@
-import CardSlider from "./components/CardSlider";
-import { dataCardPHouse } from "../../our-work/production-house/constants/DataCardPHouse";
+import { dataCardPHouse } from "../../our-work/constants/DataCardPHouse";
+import CardSliderVid from "./components/CardSliderVid";
 
 const ProductionHouse = () => {
   return (
@@ -9,7 +9,7 @@ const ProductionHouse = () => {
       </h1>
       <div className="carousel carousel-center gap-[1.25rem] sm:gap-[3rem] bg-transparent">
         {dataCardPHouse?.map(({ srcvideo, h3, p, isHomepage }) => (
-          <CardSlider
+          <CardSliderVid
             srcvideo={srcvideo}
             h3={h3}
             p={p}

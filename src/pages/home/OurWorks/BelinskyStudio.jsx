@@ -1,5 +1,5 @@
-import CardSlider from "./components/CardSlider";
-import { dataCardBStudio } from "../../our-work/belinsky-studio/constants/DataCardBStudio";
+import CardSliderImg from "./components/CardSliderImg";
+import { dataCardBStudio } from "../../our-work/constants/DataCardBStudio";
 
 const BelinskyStudio = () => {
   return (
@@ -9,7 +9,7 @@ const BelinskyStudio = () => {
       </h1>
       <div className="carousel carousel-center gap-[1.25rem] sm:gap-[3rem] bg-transparent">
         {dataCardBStudio?.map(({ src, h3, p, isHomepage, blurPic }) => (
-          <CardSlider
+          <CardSliderImg
             src={src}
             h3={h3}
             p={p}

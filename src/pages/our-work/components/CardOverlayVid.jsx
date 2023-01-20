@@ -9,7 +9,7 @@ const CardOverlayVid = ({ srcvideo, h3, p, navigate }) => {
       {isLoadingVideo ? (
         <div className="absolute items-center z-10 top-16 left-16">
           <img src={logoBelinsky} className="w-24 animate-bounce" />
-          <p className="w-[60%]">
+          <p className="w-[60%] text-[#022581]">
             taking off to a sky, where creativity is limitless
           </p>
         </div>

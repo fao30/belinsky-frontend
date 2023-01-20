@@ -8,17 +8,13 @@ const CardOverlayImg = ({ src, h3, p, navigate, blurPic }) => {
   return (
     <>
       <div className="h-[20rem] w-full lg:w-[27rem] bg-slate-400 relative group rounded-[1rem]">
-        {src ? (
-          <LazyLoadImage
-            src={src}
-            alt=""
-            beforeLoad={() => setIsLoading(true)}
-            afterLoad={() => setIsLoading(false)}
-            className="absolute object-cover w-full h-full rounded-[1rem]"
-          />
-        ) : (
-          ""
-        )}
+        <LazyLoadImage
+          src={src}
+          alt=""
+          beforeLoad={() => setIsLoading(true)}
+          afterLoad={() => setIsLoading(false)}
+          className="absolute object-cover w-full h-full rounded-[1rem]"
+        />
         {isLoading ? (
           <BlurhashCanvas
             hash={blurPic}

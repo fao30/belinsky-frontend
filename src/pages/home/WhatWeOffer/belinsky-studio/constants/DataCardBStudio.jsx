@@ -10,9 +10,9 @@ export const dataCardBStudio = [
     p: (
       <>
         3 Thematic Korean background, inspired
-        <br className="hidden md:block lg:hidden" /> by the set up of Korean
+        <br className="hidden md:hidden lg:hidden" /> by the set up of Korean
         Series “Our
-        <br className="hidden md:block lg:hidden" /> Beloved Summer”
+        <br className="hidden md:hidden lg:hidden" /> Beloved Summer”
       </>
     ),
   },
@@ -31,13 +31,6 @@ export const dataCardBStudio = [
     src: studio3,
     h2: "",
     h3: "Podcast Studio",
-    p: (
-      <>
-        Classic dark green living
-        <br className="lg:hidden" /> room with table lamp
-        <br className="lg:hidden" />
-        Equipment provided
-      </>
-    ),
+    p: <>Classic dark green living room with table lamp equipment provided</>,
   },
 ];

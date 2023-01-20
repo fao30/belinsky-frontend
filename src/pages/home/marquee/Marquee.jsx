@@ -30,6 +30,7 @@ const MarqueeSection = () => {
         Partners & Clients
       </h1>
       <Marquee
+        direction="right"
         speed={50}
         gradientWidth={0}
         className="bg-gradient-to-t from-[#D9D9D9] via-[#D9D9D9] to-transparent"

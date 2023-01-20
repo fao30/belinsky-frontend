@@ -17,7 +17,7 @@ const BelinskyStudio = () => {
       </div>
 
       {/* Studio images */}
-      <div className="flex flex-col justify-between w-full h-full lg:flex-row gap-y-5">
+      <div className="flex flex-col justify-between w-full h-full md:flex-row gap-y-5">
         {dataCardBStudio.map(({ src, h2, h3, p }) => {
           return <CardOverlay src={src} h2={h2} h3={h3} p={p} />;
         })}

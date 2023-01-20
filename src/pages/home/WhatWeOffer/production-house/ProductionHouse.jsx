@@ -7,7 +7,7 @@ import { dataButton } from "./constants/DataButton";
 const ProductionHouse = () => {
   return (
     <>
-      <section className="w-full min-h-screen p-[4vw] my-[10vh]">
+      <section className=" w-full min-h-screen p-[4vw] my-[10vh]">
         {/* FOR XL screen size */}
         <div className="hidden w-full h-full gap-8 xl:flex md:justify-center">
           {/* The 3 images */}

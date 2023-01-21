@@ -12,11 +12,11 @@ export const CardReservation = () => {
             </p>
             <p class="mt-2 md:text-[20px] text-[#FEFEFF] font-bold">
               {" "}
-              Terms & Conditions{" "}
+              Terms & Conditions
             </p>
           </div>
         </div>
-        <button class=" mt-4 lg:mt-0 btn text-sm font-semibold rounded-xxl border-none bg-white text-[#022581] md:w-[257px] md:h-[70px]">
+        <button class=" mt-4 lg:mt-0 btn text-sm font-semibold rounded-xxl bg-white text-[#022581] md:w-[257px] md:h-[70px]">
           <span>
             <Icon
               icon="ic:round-whatsapp"

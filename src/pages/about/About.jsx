@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import Index from "./components/Index";
 import PhBs from "./phouse-bstudio/PhBs";
+import TermsAndCondition from "./termsAndConditions/TermsAndCondition";
 
 const About = () => {
   return (
@@ -11,8 +12,9 @@ const About = () => {
       exit={{ opacity: 0 }}
       className="pt-10 pb-20 md:pt-20"
     >
-      <Index />
-      <PhBs />
+      <TermsAndCondition />
+      {/* <Index />
+      <PhBs /> */}
     </motion.section>
   );
 };

@@ -27,10 +27,4 @@ export const sliderData = [
     blurPic: "L3H^;K^a3e7%LM^+01=:00w}Q8ia",
     nav: "/ourwork/abnon",
   },
-  {
-    src: bg4,
-    h1: "Yubi Short Movie",
-    blurPic: "LCCrAsTvw2sC}m-nNaxG7x;|J*ox",
-    nav: "/ourwork/yubi",
-  },
 ];

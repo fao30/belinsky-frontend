@@ -7,10 +7,9 @@ const ContactUs = () => {
   return (
     <motion.div
       className="pb-[30vh] h-full w-full"
-      initial={{ opacity: 0.2 }}
+      initial={{ opacity: 0.5 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      transition={{ delay: 0, duration: 1 }}
     >
       <div className="relative h-[25rem] -z-10">
         <img

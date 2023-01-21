@@ -1,7 +1,7 @@
 {
   "name": "belinsky",
   "version": "0.1.0",
-  "homepage": "https://fao30.github.io/belinsky-frontend",
+  "homepage": "https://belinskyproduction.com",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.5",

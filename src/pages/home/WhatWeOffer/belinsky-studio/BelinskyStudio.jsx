@@ -3,13 +3,13 @@ import { dataCardBStudio } from "./constants/DataCardBStudio";
 
 const BelinskyStudio = () => {
   return (
-    <section className="w-full min-h-screen my-[10vh]">
+    <section className="w-full min-h-screen mt-[5vh] mb-[10vh]">
       {/* Title */}
       <div className="flex flex-col md:flex-row justify-around items-center px-[4vw] mb-[4vh] gap-y-1">
-        <h1 className="mb-[1vh] md:mb-0 text-4xl lg:text-6xl text-center text-[#022581]">
+        <h1 className="mb-[1vh] md:mb-0 text-4xl lg:text-5xl text-center text-[#022581] tracking-wide">
           Belinsky Studio
         </h1>
-        <p className="text-justify w-[100%] md:w-[50%] lg:w-[40%] leading-5 text-xl lg:text-2xl text-[#022581]">
+        <p className="text-justify w-[100%] md:w-[50%] lg:w-[40%] leading-6 text-xl lg:text-2xl text-[#022581]">
           Our specialties include model photography, food photography,
           corporate, family, professional photos for LinkedIn, wedding
           photography, and graduation photography.

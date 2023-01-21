@@ -77,7 +77,7 @@ const PhBs = () => {
 
       {/* Checkout Company Profile */}
       <div className="h-full">
-        <h2 className="text-[#022581] text-center font-bold text-lg mt-10 md:text-xl lg:text-2xl">
+        <h2 className="text-[#022581] text-center font-extrabold text-lg mt-10 md:text-xl lg:text-2xl">
           CHECK OUT OUR COMPANY PROFILE
         </h2>
         <div className="mt-10 w-[90%] xl:w-[80%] h-full mx-auto bg-[#022581] rounded-lg drop-shadow-[0_2px_2px_transparent] shadow-lg shadow-slate-400">

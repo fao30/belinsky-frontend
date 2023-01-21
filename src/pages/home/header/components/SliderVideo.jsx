@@ -13,8 +13,9 @@ const SliderVideo = ({ src, blurPic }) => {
         <div className="absolute z-10 w-full h-full">
           <BlurhashCanvas hash={blurPic} className="w-full h-full" />
           <img
+            alt=""
             src={logoBelinsky}
-            className="w-64 md:w-96 animate-bounce absolute left-1 md:left-6 top-64"
+            className="absolute w-64 md:w-96 animate-bounce left-1 md:left-6 top-64"
           />
         </div>
       ) : (

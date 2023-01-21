@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Index from "./components/Index";
+import VisionMission from "./components/VisionMission";
 import PhBs from "./phouse-bstudio/PhBs";
 
 const About = () => {
@@ -11,7 +11,7 @@ const About = () => {
       exit={{ opacity: 0 }}
       className="pt-10 pb-20 md:pt-20"
     >
-      <Index />
+      <VisionMission />
       <PhBs />
     </motion.section>
   );

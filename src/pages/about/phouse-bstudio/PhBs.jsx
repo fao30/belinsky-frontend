@@ -44,7 +44,7 @@ const PhBs = () => {
       </div>
 
       {/* Belinsky Studio */}
-      {/* <div className="flex flex-col justify-around w-full h-full md:flex-row text-[#022581] mt-16">
+      <div className="flex flex-col justify-around w-full h-full md:flex-row text-[#022581] mt-16">
         <div className="p-5 md:p-10 w-[100%] md:w-[50%] my-auto">
           <h1 className="text-xl font-black uppercase md:text-2xl xl:text-3xl">
             Belinsky Studio
@@ -63,7 +63,7 @@ const PhBs = () => {
             <img alt="" src={bh2} className="" />
           </div>
         </div>
-      </div> */}
+      </div>
     </>
   );
 };

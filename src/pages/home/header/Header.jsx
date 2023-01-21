@@ -27,7 +27,7 @@ const Header = () => {
         {sliderData.map(({ src, h1, nav, blurPic }) =>
           src === video ? (
             <SwiperSlide>
-              <SliderVideo src={src} />
+              <SliderVideo src={src} blurPic={blurPic} />
             </SwiperSlide>
           ) : (
             <SwiperSlide>

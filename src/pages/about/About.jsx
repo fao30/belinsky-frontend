@@ -13,8 +13,8 @@ const About = () => {
       className="pt-10 pb-20 md:pt-20"
     >
       <TermsAndCondition />
-      {/* <VisionMission />
-      <PhBs /> */}
+      <VisionMission />
+      <PhBs />
     </motion.section>
   );
 };

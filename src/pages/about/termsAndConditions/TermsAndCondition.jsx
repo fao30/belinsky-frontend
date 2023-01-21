@@ -2,41 +2,69 @@ import React from "react";
 
 export const TermsAndCondition = () => {
   return (
-    <div className="w-full my-[10vh]">
-      <h1 className="md:text-[105.66px] text-[25px] font-extrabold text-[#022581] text-center">
+    <div className="w-full">
+      <h1 className="md:text-[110px] text-[25px] font-extrabold text-[#022581] text-center py-[3vw]">
         TERMS & CONDITIONS
       </h1>
-      <h2 className="md:text-[33.81px] text-[13px] font-extrabold text-[#022581] text-start px-[4vw] py-[2vw]">
+      <h2 className="md:text-[30px] text-[13px] font-extrabold text-[#022581] text-start px-[4vw] py-[2vw]">
         A. Sebelum Booking Studio
       </h2>
-      <ol className="list-decimal ">
-        <li className="md:text-[32px] text-[10px] text-[#022581] px-[6vw]">
+      <ol className="list-decimal">
+        <li
+          className="md:text-[23px] text-[8px] font-semibold leading-loose
+          text-[#022581] px-[5vw]"
+        >
           Booking hanya dapat dilakukan minimal 1-2 hari sebelum hari-H.
         </li>
-        <li className="md:text-[32px] text-[10px] text-[#022581] px-[6vw]">
+        <li
+          className="md:text-[23px] text-[8px] font-semibold leading-loose
+ text-[#022581] px-[5vw]"
+        >
           Client WAJIB UNTUK melakukan pembayaran uang muka atau Down Payment
-          sebesar 50%untuk menjaga slot booking.
+          sebesar 50% untuk menjaga slot booking.
         </li>
-        <li className="md:text-[32px] text-[10px] text-[#022581] px-[6vw]">
+        <li
+          className="md:text-[23px] text-[8px] font-semibold leading-loose
+ text-[#022581] px-[5vw]"
+        >
           Penyewaan atau Booking studio yang telah melewati waktu sewa akan
-          dikenakan biaya overtimesesuai dengan hitungan sewa studio perjam.{" "}
+          dikenakan biaya overtimesesuai dengan hitungan sewa studio perjam.
         </li>
-        <li className="md:text-[32px] text-[10px] text-[#022581] px-[6vw]">
+        <li
+          className="md:text-[23px] text-[8px] font-semibold  leading-loose
+text-[#022581] px-[5vw]"
+        >
           Waktu booking penyewaan terhitung berdasarkan sesi/waktu yang sudah
           dipesan (bukan waktu mulai start produksi) dan sudah termasuk waktu
-          untuk pemasangan set up properti, set-up dekorasi, lighting, dll.{" "}
+          untuk pemasangan set up properti, set-up dekorasi, lighting, dll.
         </li>
-        <li className="md:text-[32px] text-[10px] text-[#022581] px-[6vw]">
+        <li
+          className="md:text-[23px] text-[8px] font-semibold leading-loose
+text-[#022581] px-[5vw]"
+        >
           Pembatalan booking pemesanan dapat dilakukan maksimal kurang dari 2×24
           jam dari jam booking, jika melebihi batas waktu yang ditentukan, maka
           uang muka dianggap hangus dan tidak dapat dikembalikan kepada Client.
         </li>
-        <li className="md:text-[32px] text-[10px] text-[#022581] px-[6vw]">
+        <li
+          className="md:text-[23px] text-[8px] font-semibold leading-loose
+ text-[#022581] px-[5vw]"
+        >
           Harga hanya termasuk untuk booking mencakup rental studio dan
           properti, tidak termasuk untuk jasa fotografer dan/atau videografer.
+        </li>
+        <li
+          className="md:text-[23px] text-[8px] font-semibold leading-loose
+ text-[#022581] px-[5vw]"
+        >
           Client hanya bisa melakukan reschedule tanggal atau jam booking
-          maksimal 1(satu) kali. Studio tidak menerima reschedule di har booking
-          yang sama.
+          maksimal 1(satu) kali.
+        </li>
+        <li
+          className="md:text-[23px] text-[8px] font-semibold leading-loose
+ text-[#022581] px-[5vw]"
+        >
+          Studio tidak menerima reschedule di har booking yang sama.
         </li>
       </ol>
       {/* penggunaan studio ke 2 */}
@@ -45,40 +73,67 @@ export const TermsAndCondition = () => {
         B. Penggunaan Studio{" "}
       </h2>
       <ol className="list-decimal">
-        <li className="md:text-[32px] text-[10px] text-[#022581] text-start px-[6vw]">
+        <li
+          className="md:text-[23px] text-[8px] font-semibold leading-loose
+          text-[#022581] px-[5vw]"
+        >
           Listrik hanya disediakan untuk penggunaan AC dan peralatan dengan
           total daya di bawah 3,500 Watt.
         </li>
-        <li className="md:text-[32px] text-[10px] text-[#022581] text-start px-[6vw]">
+        <li
+          className="md:text-[23px] text-[8px] font-semibold leading-loose
+          text-[#022581] px-[5vw]"
+        >
           Pemakaian listrik diatas 3,500 Watt harus menggunakan genset yang
           telah dibawa Client sendiri.
         </li>
-        <li className="md:text-[32px] text-[10px] text-[#022581] text-start px-[6vw]">
+        <li
+          className="md:text-[23px] text-[8px] font-semibold leading-loose
+          text-[#022581] px-[5vw]"
+        >
           Setiap studio telah dilengkapi dengan 3(tiga) buah lighting untuk
           fotografi dan1 (satu) buah lighting untuk videografi.
         </li>
-        <li className="md:text-[32px] text-[10px] text-[#022581] text-start px-[6vw]">
+        <li
+          className="md:text-[23px] text-[8px] font-semibold leading-loose
+          text-[#022581] px-[5vw]"
+        >
           Untuk penggunaan studio 2 telah dilengkapi dengan 2 (dua) pilihan
           background kertas. Background tambahan akan dikenakan biaya Rp100.000
           /pcs, sesuai dengan warna yang tersedia.
         </li>
-        <li className="md:text-[32px] text-[10px] text-[#022581] text-start px-[6vw]">
+        <li
+          className="md:text-[23px] text-[8px] font-semibold leading-loose
+          text-[#022581] px-[5vw]"
+        >
           Studio akan dibuka 30 menit sebelum sesi dimulai.
         </li>
-        <li className="md:text-[32px] text-[10px] text-[#022581] text-start px-[6vw]">
+        <li
+          className="md:text-[23px] text-[8px] font-semibold leading-loose
+          text-[#022581] px-[5vw]"
+        >
           Jika kebutuhan RECCE di luar hari penyewaan studio akan dikenakan
           biaya 150rb/jam.
         </li>
-        <li className="md:text-[32px] text-[10px] text-[#022581] text-start px-[6vw]">
+        <li
+          className="md:text-[23px] text-[8px] font-semibold leading-loose
+          text-[#022581] px-[5vw]"
+        >
           Seluruh proses set-up properti dan peralatan studio WAJIB dilakukan
           oleh Staff Studio Belinsky. Apabila terjadi ada kerusakan atau
           kehilangan pada properti dan peralatan equipment studio, maka Client
           harus mengganti rugi sesuai harga yang ditetapkan Studio.
         </li>
-        <li className="md:text-[32px] text-[10px] text-[#022581] text-start px-[6vw]">
+        <li
+          className="md:text-[23px] text-[8px] font-semibold leading-loose
+          text-[#022581] px-[5vw]"
+        >
           Lampu foto tidak diperbolehkan dipakai untuk shooting video.
         </li>
-        <li className="md:text-[32px] text-[10px] text-[#022581] text-start px-[6vw]">
+        <li
+          className="md:text-[23px] text-[8px] font-semibold leading-loose
+          text-[#022581] px-[5vw]"
+        >
           Client diwajibkan untuk diharapkan selalu memperhatikan kebersihan
           studio.
         </li>
@@ -89,19 +144,25 @@ export const TermsAndCondition = () => {
         B. Penggunaan Studio{" "}
       </h2>
       <ol className="list-decimal">
-        <li className="md:text-[32px] text-[10px] text-[#022581] text-start px-[6vw]">
+        <li
+          className="md:text-[23px] text-[8px] font-semibold leading-loose
+          text-[#022581] px-[5vw]"
+        >
           Estimasi waktu untuk Loading out diberikan (dua puluh) menit setelah
           jam booking studio berakhir. Apabila melebihi waktu yang ditentukan,
           akan dihitung biaya overtime.
         </li>
-        <li className="md:text-[32px] text-[10px] text-[#022581] text-start px-[6vw]">
+        <li
+          className="md:text-[23px] text-[8px] font-semibold leading-loose
+          text-[#022581] px-[5vw]"
+        >
           Client DIWAJIBKAN mengembalikan dan merapikan properti atau peralatan
           yang telah dipakai ke posisi semula.
         </li>
       </ol>
 
       {/* covide protocol */}
-      <h1 className="md:text-[64px] text-[25px] font-extrabold text-[#022581] text-center px-[4vw] py-[8vw]">
+      <h1 className="md:text-[64px] text-[25px] font-extrabold text-[#022581] text-center px-[4vw] py-[10vw]">
         New Normal Protocol Related to COVID-19
       </h1>
       <ol className="list-decimal">

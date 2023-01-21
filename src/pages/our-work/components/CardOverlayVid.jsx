@@ -25,15 +25,15 @@ const CardOverlayVid = ({ srcvideo, h3, p, navigate, blurPic }) => {
         loop
         muted
         autoPlay
-        type="video/mp4"
         playsInline
         preload="metadata"
-        src={srcvideo}
         alt=""
         onLoadStart={() => setIsLoadingVideo(true)}
         onLoadedData={() => setIsLoadingVideo(false)}
         className="absolute object-cover w-full h-full rounded-[1rem]"
-      />
+      >
+        <source src={srcvideo} type="video/mp4" />
+      </video>
       {!isLoadingVideo ? (
         <div className="group-hover:opacity-0 transition-all duration-300 absolute h-full w-full bg-[#0225818C] text-white rounded-[1rem]">
           <div

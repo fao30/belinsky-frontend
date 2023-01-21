@@ -24,14 +24,14 @@ const CardSlider = ({ srcvideo, h3, p, isHomepage, blurPic }) => {
           loop
           muted
           autoPlay
-          type="video/mp4"
           playsInline
-          src={srcvideo}
           alt=""
           onLoadStart={() => setIsLoadingVideo(true)}
           onLoadedData={() => setIsLoadingVideo(false)}
           className="absolute object-cover w-full h-full"
-        />
+        >
+          <source src={srcvideo} type="video/mp4" />
+        </video>
         {!isLoadingVideo ? (
           <div className="group-hover:opacity-0 transition-all duration-300 absolute h-full w-full bg-[#0225818C] text-white ">
             <div className="flex flex-col items-center pt-[8rem] px-6 sm:pt-[8rem] sm:px-6 md:pt-[15rem] md:px-12 justify-start w-full h-full text-left text-white">

@@ -36,10 +36,10 @@ const ProjectDetails = ({
           loop
           playsInline
           autoPlay
-          type="video/mp4"
-          src={srcvideo}
           className={`${srcvideo ? "w-full h-full" : "hidden"}`}
-        />
+        >
+          <source type="video/mp4" src={srcvideo} />
+        </video>
       </div>
       {/* DESC */}
       <div className="py-[6vw] lg:pt-12 lg:pb-24 px-[6vw] lg:px-[10vw] flex justify-between w-full flex-wrap">

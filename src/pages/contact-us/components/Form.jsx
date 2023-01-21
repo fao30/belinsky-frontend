@@ -93,7 +93,7 @@ const Form = () => {
             onChange={handleChange}
           />
         </div>
-        <div className="flex flex-col p-5 md:flex-row xl:px-[7rem] xl:py-[3rem] justify-start w-full h-full text-[#022581] xl:text-2xl font-semibold gap-4">
+        <div className="flex flex-col p-5 md:flex-row xl:px-[7rem] justify-start w-full h-full text-[#022581] xl:text-2xl font-semibold gap-4">
           <div className="flex flex-col w-full h-full md:gap-y-2">
             <label htmlFor="textarea" className="ml-1 text-md lg:text-xl">
               Your Message
@@ -101,7 +101,7 @@ const Form = () => {
             <textarea
               name="textarea"
               id="textarea"
-              className="text-area bg-[#E0E0E0] px-3 py-5 caret-[#022581] rounded-lg"
+              className="bg-[#E0E0E0] px-3 py-2 caret-[#022581] rounded-lg text-md lg:text-lg"
               rows="7"
               value={state.textarea}
               onChange={handleChange}

@@ -50,16 +50,16 @@ const ProductionHouse = () => {
           </div>
 
           {/* Large Screen (lg breakpoint) */}
-          <div className="md:p-10 w-[100%] lg:w-[50%] my-auto">
+          <div className="md:p-10 w-[100%] lg:w-[50%]">
             <h1 className="text-4xl font-black tracking-wide text-center lg:text-4xl xl:text-5xl">
               Production House
             </h1>
-            <p className="text-xl font-bold leading-6 text-justify md:text-md lg:text-lg xl:text-xl">
+            <p className="mt-2 text-xl font-bold leading-6 text-justify md:text-md lg:text-lg xl:text-xl">
               Belinsky strives for great quality and exclusiveness in every
               video that exhibits a flawless result. We may help you in the
               production of TVC advertisement for your advertising needs.
             </p>
-            <div className="flex justify-between">
+            <div className="flex justify-between mt-3">
               {dataButton.map(({ icon, name }) => (
                 <ButtonCard icon={icon} name={name} />
               ))}

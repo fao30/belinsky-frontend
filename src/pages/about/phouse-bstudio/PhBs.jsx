@@ -72,7 +72,7 @@ const PhBs = () => {
           </div>
           <div className="w-[50%] sm:w-[30%] md:w-[50%] lg:w-[40%] xl:w-[30%] self-end">
             <img
-              src={bh1}
+              src={bh2}
               alt=""
               className="object-cover transition duration-700 ease-in-out -translate-x-24 -translate-y-28 rounded-2xl grayscale hover:grayscale-0 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:delay-200 group-hover:duration-700 group-hover:ease-in-out"
             />
@@ -81,7 +81,7 @@ const PhBs = () => {
       </div>
 
       {/* Checkout Company Profile */}
-      <div className="h-full">
+      <div className="w-full h-full">
         <h2 className="text-[#022581] text-center font-extrabold text-lg mt-10 md:text-xl lg:text-2xl">
           CHECK OUT OUR COMPANY PROFILE
         </h2>

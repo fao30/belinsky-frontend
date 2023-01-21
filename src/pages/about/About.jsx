@@ -1,14 +1,12 @@
 import React from "react";
-import Founder from "./components/Founder";
-import Misi from "./components/Misi";
-import Visi from "./components/Visi";
+import Index from "./components/Index";
+import PhBs from "./phouse-bstudio/PhBs";
 
 const About = () => {
   return (
     <>
-      <Visi />
-      <Misi />
-      <Founder />
+      <Index />
+      <PhBs />
     </>
   );
 };

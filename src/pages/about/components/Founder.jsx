@@ -10,7 +10,7 @@ export const Founder = () => {
         Founders of Belinsky
       </h1>
       {/* founder images */}
-      <div className=" flex justify-center gap-6 items-center">
+      <div className="flex items-center justify-center gap-6 ">
         <div className="flex flex-col justify-center gap-4 items-center w-[33%]">
           <img src={img1} alt="img1" className="rounded-full bg-slate-600" />
           <h1 className="lg:text-[40px] text-[20px] text-center font-bold text-[#022581]">
@@ -24,7 +24,7 @@ export const Founder = () => {
           </h1>
         </div>
         <div className="flex flex-col justify-center gap-4 items-center w-[33%]">
-          <img src={img3} alt="img3" className=" rounded-full" />
+          <img src={img3} alt="img3" className="rounded-full " />
           <h1 className="lg:text-[40px] text-[20px] text-center font-bold text-[#022581]">
             Turah Parthayana
           </h1>

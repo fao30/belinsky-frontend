@@ -1,52 +1,67 @@
-import img1 from "./assets/wwo-ph-1.png";
-import img2 from "./assets/wwo-ph-2.png";
-import img3 from "./assets/wwo-ph-3.png";
+import ph1 from "./assets/wwo-ph-1.png";
+import ph2 from "./assets/wwo-ph-2.png";
+import ph3 from "./assets/wwo-ph-3.png";
 import ButtonCard from "./components/ButtonCard";
 import { dataButton } from "./constants/DataButton";
 
 const ProductionHouse = () => {
   return (
     <>
-      <section className=" w-full min-h-screen p-[4vw] my-[10vh]">
-        {/* FOR XL screen size */}
-        <div className="hidden w-full h-full gap-8 xl:flex md:justify-center">
-          {/* The 3 images */}
-          <div className="flex flex-col gap-8 w-[30%] h-full">
-            <div className="w-[80%] self-end">
-              <img
-                src={img1}
-                alt="img1"
-                className="object-cover w-full duration-300 ease-in-out grayscale hover:grayscale-0"
-              />
-            </div>
-            <div className="self-end w-[55%]">
-              <img
-                src={img2}
-                alt="img2"
-                className="object-cover w-full duration-300 ease-in-out grayscale hover:grayscale-0"
-              />
-            </div>
-          </div>
-
-          <div className="self-center w-[20%]">
-            <img
-              src={img3}
-              alt="img3"
-              className="object-cover w-full duration-300 ease-in-out grayscale hover:grayscale-0"
-            />
-          </div>
-
-          {/* Title / description */}
-          <div className="flex flex-col self-center w-[33%] gap-3">
-            <h1 className="text-5xl text-[#022581]">Production House</h1>
-            <p className="text-justify text-lg md:text-xl text-[#022581]">
-              Belinsky strives for great quality and exclusiveness inevery video
-              that exhibits a flawless result. We may help you in the production
-              of TVC advertisement for your advertising needs.
+      <section className=" w-full min-h-screen p-[4vw] my-[vh]">
+        <div className="flex flex-col justify-around w-full h-full lg:flex-row text-[#022581]">
+          {/* Mobile */}
+          <div className="p-5 md:p-10 w-[100%] lg:w-[50%] my-auto lg:hidden">
+            <h1 className="text-xl font-black uppercase md:text-2xl xl:text-3xl">
+              Production House
+            </h1>
+            <p className="text-sm font-bold md:text-md lg:text-lg xl:text-xl">
+              Belinsky strives for great quality and exclusiveness in every
+              video that exhibits a flawless result. We may help you in the
+              production of TVC advertisement for your advertising needs.
             </p>
-            <div className="flex flex-row gap-3 mt-4">
-              {dataButton.map(({ name, icon }) => (
-                <ButtonCard name={name} icon={icon} />
+            <div className="flex justify-between">
+              {dataButton.map(({ icon, name }) => (
+                <ButtonCard icon={icon} name={name} />
+              ))}
+            </div>
+          </div>
+
+          {/* The 3 images */}
+          <div className="flex w-[100%] lg:w-[50%] h-full p-8 items-center gap-5 group">
+            <div className="flex flex-col w-[50%] xl:w-[40%] items-end gap-5">
+              <img
+                alt=""
+                src={ph1}
+                className="w-[100%] object-cover transition duration-700 ease-in-out translate-x-16 translate-y-20 rounded-2xl grayscale hover:grayscale-0 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:duration-700 group-hover:ease-in-out group-hover:delay-200"
+              />
+              <img
+                alt=""
+                src={ph2}
+                className="w-[90%] object-cover transition duration-700 ease-in-out rounded-2xl grayscale hover:grayscale-0 translate-x-16 -translate-y-20 z-20 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:duration-700 group-hover:ease-in-out group-hover:delay-75"
+              />
+            </div>
+            <div className="w-[50%] xl:w-[40%]">
+              <img
+                alt=""
+                src={ph3}
+                className="object-cover transition duration-700 ease-in-out -translate-x-16 rounded-2xl grayscale hover:grayscale-0 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:duration-700 group-hover:ease-in-out group-hover:delay-150 "
+              />
+            </div>
+          </div>
+
+          {/* Large Screen (lg breakpoint) */}
+          <div className="p-5 md:p-10 w-[100%] lg:w-[50%] my-auto hidden lg:block">
+            <h1 className="text-xl font-black uppercase md:text-2xl xl:text-3xl">
+              Production House
+            </h1>
+            <p className="text-sm font-bold md:text-md lg:text-lg xl:text-xl">
+              Belinsky strives for great quality and exclusiveness in every
+              video that exhibits a flawless result. We may help you in the
+              production of TVC advertisement for your advertising needs.
+            </p>
+            <div className="flex justify-between">
+              {dataButton.map(({ icon, name }) => (
+                <ButtonCard icon={icon} name={name} />
               ))}
             </div>
           </div>

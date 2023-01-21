@@ -15,7 +15,7 @@ import CardFounders from "./CardFounders";
 
 export const Index = () => {
   return (
-    <section className="text-[#022581] h-full w-full mt-10 md:mt-20">
+    <section className="text-[#022581] h-full w-full">
       <h1 className="font-[900] text-center text-3xl md:text-4xl xl:text-5xl my-[2vh]">
         Taking off to a sky, where creativity is limitless.
       </h1>

@@ -25,12 +25,12 @@ const SliderVideo = ({ src, blurPic }) => {
         loop
         muted
         playsInline
-        src={src}
-        type="video/mp4"
         onLoadStart={() => setIsLoadingVideo(true)}
         onLoadedData={() => setIsLoadingVideo(false)}
         className="absolute top-0 left-0 object-cover w-full h-full"
-      />
+      >
+        <source src={src} type="video/mp4" />
+      </video>
 
       {/* /djasnjdsa? */}
       <div className="absolute flex flex-col justify-start h-full md:left-[3.5rem] gap-y-6 px-4 md:px-0 top-[60%] z-20">

@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import ph1 from "../../../assets/production-house/wwo-ph1.png";
 import ph2 from "../../../assets/production-house/wwo-ph2.png";
 import ph3 from "../../../assets/production-house/wwo-ph3.png";
+import LoadToTop from "../../../helper/LoadToTop";
 
 import bh1 from "../assets/about-bh-1.png";
 import bh2 from "../assets/about-bh-2.png";
@@ -95,7 +96,10 @@ const PhBs = () => {
               Let’s Create Something Great Together
             </p>
             <button
-              onClick={() => navigate("/contact")}
+              onClick={() => {
+                navigate("/contact");
+                LoadToTop();
+              }}
               className="bg-[#F5F5F5] text-[#022581] font-extrabold text-sm py-1 px-2 sm:py-2 sm:px-3 rounded-md sm:text-md md:text-lg lg:text-xl"
             >
               Contact Us

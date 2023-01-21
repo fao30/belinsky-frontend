@@ -12,8 +12,9 @@ const CardSlider = ({ srcvideo, h3, p, isHomepage, blurPic }) => {
           <div className="absolute z-10 w-full h-full">
             <BlurhashCanvas hash={blurPic} className="w-full h-full" />
             <img
+              alt=""
               src={logoBelinsky}
-              className="w-24 animate-bounce absolute left-16 top-16"
+              className="absolute w-24 animate-bounce left-16 top-16"
             />
           </div>
         ) : (

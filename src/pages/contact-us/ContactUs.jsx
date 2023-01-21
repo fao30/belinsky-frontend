@@ -1,5 +1,4 @@
 import bg from "./assets/bg-contactus.png";
-import InputForm from "./components/InputForm";
 import Form from "./components/Form";
 import { motion } from "framer-motion";
 
@@ -19,11 +18,11 @@ const ContactUs = () => {
         />
         <div className="absolute top-0 left-0 w-full h-full bg-[#0225818C]" />
         <div className="absolute flex flex-col items-center justify-center w-full h-full gap-5">
-          <h1 className="text-3xl font-black text-center text-white md:text-5xl lg:text-7xl xl:tracking-wider">
+          <h1 className="text-3xl font-black text-center text-white md:text-5xl lg:text-6xl xl:tracking-wider">
             REQUEST A PROPOSAL
           </h1>
-          <p className="text-lg font-bold text-white  md:text-xl lg:text-3xl">
-            let's create something greate together
+          <p className="text-lg font-bold text-white md:text-xl lg:text-3xl xl:text-4xl">
+            let's create something great together
           </p>
         </div>
       </div>

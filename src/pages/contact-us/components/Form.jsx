@@ -60,8 +60,8 @@ const Form = () => {
   return (
     <>
       <Toaster />
-      <form className="h-fit w-[90%] p-[0.5rem] md:w-[85%] xl:w-[70rem] bg-white mx-auto -mt-16 drop-shadow-[0_1.5px_1.5px_black]">
-        <div className="flex flex-col md:flex-row p-[1.5rem] xl:px-[7rem] xl:py-[3rem] justify-center w-full h-full text-[#022581] xl:text-2xl font-semibold gap-7">
+      <form className="h-fit w-[90%] p-[0.5rem] md:w-[85%] xl:w-[70rem] bg-white mx-auto -mt-16 drop-shadow-[0_1.5px_1.5px_black] xl:p-10">
+        <div className="flex flex-col md:flex-row xl:px-[7rem] xl:py-[rem] justify-center w-full h-full text-[#022581] xl:text-2xl font-semibold gap-10 p-5">
           <InputForm
             label="Name"
             type="text"
@@ -77,7 +77,7 @@ const Form = () => {
             onChange={handleChange}
           />
         </div>
-        <div className="flex flex-col md:flex-row px-[1.5rem] xl:px-[7rem] xl:py-[3rem] justify-center w-full h-full text-[#022581] xl:text-2xl font-semibold gap-7">
+        <div className="flex flex-col md:flex-row px-[1.5rem] xl:px-[7rem] xl:py-[rem] justify-center w-full h-full text-[#022581] xl:text-2xl font-semibold gap-10 p-5">
           <InputForm
             label="Email"
             type="email"

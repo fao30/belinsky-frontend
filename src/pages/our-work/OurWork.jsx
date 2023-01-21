@@ -34,11 +34,11 @@ const OurWork = () => {
           className="absolute object-cover w-full h-full"
         />
         <div className="absolute h-full w-full bg-[#0225818C] text-white">
-          <div className="flex flex-col items-center justify-center w-full h-full text-center gap-6 text-white">
-            <h3 className="text-5xl lg:text-7xl xl:tracking-wider font-black text-white w-full">
+          <div className="flex flex-col items-center justify-center w-full h-full gap-6 text-center text-white">
+            <h3 className="w-full text-5xl font-black text-white lg:text-7xl xl:tracking-wider">
               Our Work
             </h3>
-            <p className="w-full drop-shadow-md text-lg md:text-xl font-bold text-white lg:text-3xl">
+            <p className="w-full text-lg font-bold text-white drop-shadow-md md:text-xl lg:text-3xl">
               “From CUE to CUT, along with Belinsky”
             </p>
           </div>

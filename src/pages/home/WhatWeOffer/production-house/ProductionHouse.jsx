@@ -3,6 +3,7 @@ import ph2 from "./assets/wwo-ph-2.png";
 import ph3 from "./assets/wwo-ph-3.png";
 import ButtonCard from "./components/ButtonCard";
 import { dataButton } from "./constants/DataButton";
+import { Icon } from "@iconify/react";
 
 // CardHeroPH component from about
 import CardHeroPH from "../../../about/components/CardHeroPH";
@@ -45,7 +46,7 @@ const ProductionHouse = () => {
               video that exhibits a flawless result. We may help you in the
               production of TVC advertisement for your advertising needs.
             </p>
-            <div className="flex mt-3 justify-evenly sm:justify-between">
+            <div className="flex justify-between mt-3 ">
               {dataButton.map(({ icon, name }) => (
                 <ButtonCard icon={icon} name={name} />
               ))}

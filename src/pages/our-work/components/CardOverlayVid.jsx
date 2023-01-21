@@ -27,6 +27,7 @@ const CardOverlayVid = ({ srcvideo, h3, p, navigate, blurPic }) => {
         autoPlay
         type="video/mp4"
         playsInline
+        preload="metadata"
         src={srcvideo}
         alt=""
         onLoadStart={() => setIsLoadingVideo(true)}

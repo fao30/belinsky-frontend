@@ -21,10 +21,9 @@ const OurWork = () => {
 
   return (
     <motion.div
-      initial={{ opacity: 0.2 }}
+      initial={{ opacity: 0.5 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      transition={{ delay: 0, duration: 1 }}
       className="w-full"
     >
       {/* THE IMAGE AND THE TITLE */}
@@ -78,7 +77,7 @@ const OurWork = () => {
       {isBelinskyStudio ? (
         <motion.div
           className="flex flex-wrap w-full justify-center mb-[5vw] gap-[4vw] lg:gap-[3vw] lg:px-[3vw] px-[4vw]"
-          initial={{ opacity: 0.2 }}
+          initial={{ opacity: 0.5 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
         >
@@ -100,7 +99,7 @@ const OurWork = () => {
       {isProductionHouse ? (
         <motion.div
           className="flex flex-wrap w-full justify-center mb-[5vw] gap-[4vw] lg:gap-[3vw] lg:px-[3vw] px-[4vw]"
-          initial={{ opacity: 0.2 }}
+          initial={{ opacity: 0.5 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
         >

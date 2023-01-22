@@ -31,10 +31,10 @@ function App() {
         <Route path="/ourwork" element={<OurWork />} />
         <Route path="/ourwork/menantea" element={<Menantea />} />
         <Route path="/ourwork/abnon" element={<Abnon />} />
-        <Route path="/termsconditions" element={<TnC />} />
         <Route path="/studio-1" element={<Studio1 />} />
         <Route path="/studio-2" element={<Studio2 />} />
         <Route path="/studio-podcast" element={<PodcastStudio />} />
+        <Route path="/termsconditions" element={<TnC />} />
         <Route path="/contact" element={<ContactUs />} />
       </Routes>
       <Footer />

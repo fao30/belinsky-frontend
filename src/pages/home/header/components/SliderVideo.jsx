@@ -54,7 +54,7 @@ const SliderVideo = ({ src, blurPic }) => {
             navigate("/contact");
             LoadToTop();
           }}
-          className="self-start px-7 py-3 bg-[#5484F2] text-white font-semibold hover:bg-[#4a6cb3] active:bg-[#5484F2]"
+          className="self-start px-7 py-3 bg-[#5484F2] text-white font-extrabold hover:bg-[#4a6cb3] active:bg-[#5484F2]"
         >
           Contact Us
         </button>

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { BiMenuAltRight } from "react-icons/bi";
+import { HiOutlineMenuAlt4 } from "react-icons/hi";
+import { AiOutlineClose } from "react-icons/ai";
 import { useNavigate, NavLink } from "react-router-dom";
 import logoBelinsky from "../../assets/logo-belinsky.png";
 import LoadToTop from "../../helper/LoadToTop";
@@ -13,15 +14,15 @@ const Navbar = () => {
     if (!nav) {
       document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = "scroll";
+      document.body.style.overflow = "";
     }
   };
 
   let navigate = useNavigate();
 
   return (
-    <nav className="sticky top-0 z-50 w-full flex justify-between px-[6vw] py-[3.5vh] md:py-[2vh] items-center bg-[#022581] shadow-lg shadow-black/30">
-      {/* burger menu icon */}
+    <nav className="sticky top-0 z-20 w-full flex justify-between px-[6vw] py-[3.5vh] md:py-[2vh] items-center bg-[#022581] shadow-lg shadow-black/30">
+      {/* Belinsky logo top-left */}
       <img
         src={logoBelinsky}
         alt="logoBelinsky"
@@ -31,11 +32,26 @@ const Navbar = () => {
           LoadToTop();
         }}
       />
-      <BiMenuAltRight
+
+      {/* burger menu icon */}
+      {nav ? (
+        <AiOutlineClose
+          size={30}
+          className="text-white cursor-pointer z-30 md:hidden absolute top-0 right-4 my-[2vh]"
+          onClick={handleNav}
+        />
+      ) : (
+        <HiOutlineMenuAlt4
+          size={30}
+          className="text-white cursor-pointer z-30 md:hidden absolute top-0 right-4 my-[2vh]"
+          onClick={handleNav}
+        />
+      )}
+      {/* <BiMenuAltRight
         size={30}
         className="text-white cursor-pointer z-30 md:hidden absolute top-0 right-4 my-[2vh]"
         onClick={handleNav}
-      />
+      /> */}
 
       {/* Desktop Menu */}
       <div className="w-[100%] h-full hidden md:flex z-20 mx-auto relative">

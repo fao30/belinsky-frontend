@@ -16,6 +16,7 @@ export const dataCardBStudio = [
         <br className="hidden md:hidden lg:hidden" /> Beloved Summer”
       </>
     ),
+    nav: "/studio-1",
   },
   {
     src: studio2,
@@ -28,6 +29,7 @@ export const dataCardBStudio = [
         <br /> photoshoot services by Belinsky Team
       </>
     ),
+    nav: "/studio-2",
   },
   {
     src: studio3,
@@ -35,5 +37,6 @@ export const dataCardBStudio = [
     h2: "",
     h3: "Podcast Studio",
     p: <>Classic dark green living room with table lamp equipment provided</>,
+    nav: "/studio-podcast",
   },
 ];

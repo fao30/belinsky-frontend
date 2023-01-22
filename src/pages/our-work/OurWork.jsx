@@ -1,5 +1,8 @@
-import { React } from "react";
-import header from "./assets/OurWorkHeader.png";
+import { useState } from "react";
+import { BlurhashCanvas } from "react-blurhash";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import bgPHouse from "./assets/bg-PHouse.png";
+import bgBStudio from "./assets/bg-BStudio.png";
 import useLocalStrorage from "./components/LocalStorage";
 import { dataCardBStudio } from "./constants/DataCardBStudio";
 import { dataCardPHouse } from "./constants/DataCardPHouse";
@@ -10,6 +13,8 @@ import CardOverlayImg from "./components/CardOverlayImg";
 
 const OurWork = () => {
   const navigate = useNavigate();
+  const [isLoading, setIsLoading] = useState(false);
+
   const [isProductionHouse, setIsProductionHouse] = useLocalStrorage(
     "prodution-house",
     false
@@ -28,22 +33,32 @@ const OurWork = () => {
     >
       {/* THE IMAGE AND THE TITLE */}
       <div className="h-[20rem] w-full bg-slate-400 relative group">
-        <img
-          src={header}
+        <LazyLoadImage
+          src={isProductionHouse ? bgPHouse : bgBStudio}
+          beforeLoad={() => setIsLoading(true)}
+          afterLoad={() => setIsLoading(false)}
           alt="ourwork-header"
           className="absolute object-cover w-full h-full"
         />
-        <div className="absolute h-full w-full bg-[#0225818C] text-white">
-          <div className="flex flex-col items-center justify-center w-full h-full gap-6 text-center text-white">
-            <h3 className="w-full text-5xl font-black text-white lg:text-7xl xl:tracking-wider">
-              Our Work
-            </h3>
-            <p className="w-full text-lg font-bold text-white drop-shadow-md md:text-xl lg:text-3xl">
-              “From CUE to CUT, along with Belinsky”
-            </p>
+        {isLoading ? (
+          <BlurhashCanvas
+            hash="LHGb3HDj5S0M~V%2E2NH%LofR*NG"
+            className="absolute object-cover w-full h-full"
+          />
+        ) : (
+          <div className="absolute h-full w-full bg-[#0225818C]/70 text-white">
+            <div className="z-10 flex flex-col items-center justify-center w-full h-full gap-6 text-center text-white">
+              <h3 className="w-full text-5xl font-black text-white lg:text-7xl xl:tracking-wider">
+                Our Work
+              </h3>
+              <p className="w-full text-lg font-bold text-white drop-shadow-md md:text-xl lg:text-3xl">
+                “From CUE to CUT, along with Belinsky”
+              </p>
+            </div>
           </div>
-        </div>
+        )}
       </div>
+
       {/* THE BUTTONS */}
       <div className="flex items-center justify-center w-full gap-6 my-[6vw] lg:my-[3vw] max-sm:gap-3 max-sm:px-6">
         <button

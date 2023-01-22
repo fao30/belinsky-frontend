@@ -47,11 +47,6 @@ const Navbar = () => {
           onClick={handleNav}
         />
       )}
-      {/* <BiMenuAltRight
-        size={30}
-        className="text-white cursor-pointer z-30 md:hidden absolute top-0 right-4 my-[2vh]"
-        onClick={handleNav}
-      /> */}
 
       {/* Desktop Menu */}
       <div className="w-[100%] h-full hidden md:flex z-20 mx-auto relative">

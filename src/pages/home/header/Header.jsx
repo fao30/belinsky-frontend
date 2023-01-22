@@ -19,7 +19,9 @@ const Header = () => {
       <Swiper
         spaceBetween={0}
         slidesPerView={1}
-        // mousewheel={true}
+        mousewheel={{
+          forceToAxis: true,
+        }}
         navigation={true}
         modules={[Mousewheel, Navigation]}
         className="relative w-full h-screen"

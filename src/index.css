@@ -59,3 +59,16 @@ html::-webkit-scrollbar {
   width: 0;
   height: 0;
 }
+
+/* Swiper */
+.swiper-button-next,
+.swiper-button-prev {
+  margin: 5%;
+}
+
+@media (max-width: 480px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    margin: 0;
+  }
+}

@@ -7,7 +7,7 @@ const StudioContactUs = () => {
   const navigate = useNavigate();
   return (
     <section className="flex justify-center">
-      <div className="rounded-xl my-20 w-full lg:w-[80%] px-12 lg:pl-24 lg:pr-12 py-12 bg-[#022581] text-white">
+      <div className="rounded-xl my-20 w-full md:w-[70%] lg:w-[90%] px-12 lg:pl-24 lg:pr-12 py-12 bg-[#022581] text-white">
         <div className="flex justify-between items-center gap-6">
           <div className="w-full lg:w-[70%] flex flex-col">
             <h1 className="text-2xl lg:text-3xl">

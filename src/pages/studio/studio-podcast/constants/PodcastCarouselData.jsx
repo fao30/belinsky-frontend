@@ -1,15 +1,15 @@
-import img1 from "../assets/Portrait1.png";
-import img2 from "../assets/photo2.jpeg";
-import img3 from "../assets/Portrait2.png";
+import img1 from "../assets/Portrait1.jpg";
+import img2 from "../assets/photo2.jpg";
+import img3 from "../assets/Portrait2.jpg";
 
 export const podcastCarouselData = [
   {
-    img: img1,
+    src: img1,
   },
   {
-    img: img2,
+    src: img2,
   },
   {
-    img: img3,
+    src: img3,
   },
 ];

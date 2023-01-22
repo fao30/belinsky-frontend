@@ -14,6 +14,7 @@ import Menantea from "./pages/our-work/project-details/production-house/menantea
 // miscellanous components
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
+import TnC from "./pages/termscondition/TnC";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/ourwork" element={<OurWork />} />
         <Route path="/ourwork/menantea" element={<Menantea />} />
         <Route path="/ourwork/abnon" element={<Abnon />} />
+        <Route path="/termsconditions" element={<TnC />} />
         <Route path="/contact" element={<ContactUs />} />
       </Routes>
       <Footer />

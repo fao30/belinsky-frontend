@@ -15,34 +15,6 @@ p {
   font-weight: 600;
 }
 
-@font-face {
-  font-family: "nanami";
-  src: url("../src/assets/fonts/nanami/Nanami-Book.otf");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "nanami";
-  src: url("../src/assets/fonts/nanami/Nanami-Bold.otf");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "nanami";
-  src: url("../src/assets/fonts/nanami/Nanami-BookOblique.otf");
-  font-weight: normal;
-  font-style: italic;
-}
-
-@font-face {
-  font-family: "nanami";
-  src: url("../src/assets/fonts/nanami/Nanami-Regular.otf");
-  font-weight: 500;
-  font-style: normal;
-}
-
 /* hides iOS video control */
 *::-webkit-media-controls-start-playback-button {
   display: none !important;

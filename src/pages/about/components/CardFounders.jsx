@@ -8,7 +8,7 @@ const CardFounders = ({ src, h3, blurPic }) => {
   return (
     <>
       <div className="flex flex-col w-[25%] md:w-[15%] lg:w-[10%] gap-y-2">
-        <div className="relative">
+        <div clawssName="relative">
           <LazyLoadImage
             alt=""
             src={src}

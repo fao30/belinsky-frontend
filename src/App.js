@@ -59,6 +59,7 @@ function App() {
         <Route path="/studio-1" element={<Studio1 />} />
         <Route path="/studio-2" element={<Studio2 />} />
         <Route path="/studio-podcast" element={<PodcastStudio />} />
+        <Route path="/termsconditions" element={<TnC />} />
         <Route path="/contact" element={<ContactUs />} />
       </Routes>
       <Footer />

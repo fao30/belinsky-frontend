@@ -115,7 +115,7 @@ const TnC = () => {
             </ol>
           </div>
           <div>
-            <h1 className="text-xl md:text-2xl">C. Penggunaan Studio</h1>
+            <h1 className="text-xl md:text-2xl">C. Setelah Pemakaian Studio</h1>
             <ol className="list-decimal pl-7 md:pl-14 mt-3">
               {CPenggunaanStudio?.map((e) => {
                 return (

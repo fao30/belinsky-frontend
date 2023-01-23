@@ -11,10 +11,10 @@ import CardHeroPH from "../../../about/components/CardHeroPH";
 const ProductionHouse = () => {
   return (
     <>
-      <section className="w-full min-h-screen px-[4vw] pt-[4vh]">
+      <section className="w-full px-[4vw]">
         <div className="flex flex-wrap-reverse justify-around w-full h-full lg:flex-row text-[#022581] group">
           {/* The 3 images */}
-          <div className="flex w-[100%] lg:w-[50%] h-full p-8 lg:pl-20 items-center gap-5">
+          <div className="flex w-[100%] lg:w-[45%] h-full items-center gap-5 max-lg:my-[5vw]">
             <div className="flex flex-col w-[50%] lg:w-[60%] items-end gap-5">
               <CardHeroPH
                 src={ph1}
@@ -37,16 +37,16 @@ const ProductionHouse = () => {
           </div>
 
           {/* Large Screen (lg breakpoint) */}
-          <div className="md:p-20 w-[100%] lg:w-[50%] self-center">
+          <div className="w-[100%] md:w-[90%] lg:w-[45%] self-center ">
             <h1 className="text-4xl font-black tracking-wide text-center lg:text-4xl xl:text-5xl">
               Production House
             </h1>
-            <p className="mt-3 text-xl font-bold leading-6 text-justify md:text-md lg:text-lg xl:text-xl">
+            <p className="mt-3 font-semibold leading-6 text-justify text-xl lg:text-2xl">
               Belinsky strives for great quality and exclusiveness in every
               video that exhibits a flawless result. We may help you in the
               production of TVC advertisement for your advertising needs.
             </p>
-            <div className="flex justify-between mt-3 ">
+            <div className="flex justify-between mt-3">
               {dataButton.map(({ icon, name }) => (
                 <ButtonCard icon={icon} name={name} />
               ))}

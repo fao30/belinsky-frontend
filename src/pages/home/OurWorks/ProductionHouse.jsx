@@ -3,8 +3,8 @@ import CardSliderVid from "./components/CardSliderVid";
 
 const ProductionHouse = () => {
   return (
-    <section className="w-full mb-[10vh] p-[4vw] mt-[3vh]">
-      <h1 className="text-[#022581] text-4xl lg:text-6xl text-center tracking-wide mb-[2vh]">
+    <section className="w-full mb-[10vh] px-[4vw]">
+      <h1 className="text-4xl font-black tracking-wide text-center lg:text-4xl xl:text-5xl mb-[3vh] text-[#022581] ">
         Production House
       </h1>
       <div className="carousel carousel-center gap-[1.25rem] sm:gap-[3rem] bg-transparent">

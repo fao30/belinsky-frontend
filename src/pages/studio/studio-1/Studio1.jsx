@@ -3,6 +3,12 @@ import { dataCarStudio1 } from "./constants/DataCarStudio1";
 import PriceList from "./components/PriceList";
 import { AspectRatio } from "@mui/joy";
 import video1 from "./assets/video_studio1.mp4";
+import CardContactUs from "../components/CardContactUs";
+
+// For Lazy Load
+import { useState } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import { BlurhashCanvas } from "react-blurhash";
 
 // Photoshoot Card
 import CardPhotoShootPrice from "./components/CardPhotoShootPrice";
@@ -15,6 +21,8 @@ import {
 } from "./constants/DataPhotoShoot";
 
 const Studio1 = () => {
+  const [isLoading, setIsLoading] = useState(false);
+
   return (
     <section className="w-full min-h-screen text-[#022581]">
       <div className="flex flex-col items-center w-full mt-10 md:mt-20">
@@ -64,13 +72,25 @@ const Studio1 = () => {
         <h1 className="text-lg text-center md:text-xl lg:text-2xl">
           Photoshoot by our photographer
         </h1>
-        <div className="flex justify-center w-full h-full gap-3 px-[5vw] md:px-[19vw] lg:px-[15vw] mt-5 md:mt-10">
-          {imagesPhotoshoot.map(({ img }) => (
-            <img
-              src={img}
-              alt=""
-              className="w-[7rem] md:w-[15rem] lg:w-[18rem]"
-            />
+        <div className="flex justify-center w-full h-full gap-3 px-[2vw] md:px-[4vw] lg:px-[8vw] mt-5 md:mt-10">
+          {imagesPhotoshoot.map(({ img, blurPic }) => (
+            <div className="relative">
+              <LazyLoadImage
+                beforeLoad={() => setIsLoading(true)}
+                afterLoad={() => setIsLoading(false)}
+                src={img}
+                alt=""
+                className="w-[7rem] md:w-[14rem] lg:w-[21rem]"
+              />
+              {isLoading ? (
+                <BlurhashCanvas
+                  hash={blurPic}
+                  className="absolute top-0 left-0 w-full h-full"
+                />
+              ) : (
+                ""
+              )}
+            </div>
           ))}
         </div>
 
@@ -81,7 +101,7 @@ const Studio1 = () => {
             h1="Couple/Studio Photo Session"
             li={couplePhotoSession.map(({ li }) => {
               return (
-                <li className="mx-auto ml-10 font-normal md:ml-20">- {li}</li>
+                <li className="mx-auto ml-12 font-normal md:ml-16">- {li}</li>
               );
             })}
           />
@@ -90,21 +110,24 @@ const Studio1 = () => {
             h1="Group Studio Photo Session"
             li={groupStudioSession.map(({ li }) => {
               return (
-                <li className="mx-auto ml-10 font-normal md:ml-20">- {li}</li>
+                <li className="mx-auto ml-12 font-normal md:ml-16">- {li}</li>
               );
             })}
           />
         </div>
-
-        {/* Additional Prices */}
-        <div className="flex flex-col text-sm text-center md:text-lg">
-          <p> Additional printed photo: Rp10.000</p>
-          <p>
-            Soft copy all photo: Rp25.000/person <br /> or tag @belinsky.studio
-            on IG story
-          </p>
-        </div>
       </div>
+
+      {/* Additional Prices */}
+      <div className="flex flex-col text-center text-md md:text-lg">
+        <p> Additional printed photo: Rp10.000</p>
+        <p>
+          Soft copy all photo: Rp25.000/person <br /> or tag @belinsky.studio on
+          IG story
+        </p>
+      </div>
+
+      {/* Card Contact Us */}
+      <CardContactUs />
     </section>
   );
 };

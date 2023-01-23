@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { Blurhash, BlurhashCanvas } from "react-blurhash";
+import { BlurhashCanvas } from "react-blurhash";
 
 const CarouselStudio = ({ src, blurPic }) => {
   const [isLoading, SetIsLoading] = useState(false);

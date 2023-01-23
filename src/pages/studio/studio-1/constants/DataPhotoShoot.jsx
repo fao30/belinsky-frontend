@@ -30,11 +30,14 @@ export const groupStudioSession = [
 export const imagesPhotoshoot = [
   {
     img: pshoot1,
+    blurPic: "LCJj6l%44.ER5P5r%h-;~U?HjctR",
   },
   {
     img: pshoot2,
+    blurPic: "LECrsAMx9tI:~pE2jFn%NaR*xas:",
   },
   {
     img: pshoot3,
+    blurPic: "LHIN~*00_NRP00adr?M|56%M-oRk",
   },
 ];

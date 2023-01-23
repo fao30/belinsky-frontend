@@ -1,5 +1,6 @@
 import React from "react";
 import StudioContactUs from "../components/StudioContactUs";
+import CardContactUs from "../components/CardContactUs";
 import PodcastCarousel from "./components/PodcastCarousel";
 import PodcastPriceList from "./components/PodcastPriceList";
 import { podcastCarouselData } from "./constants/PodcastCarouselData";
@@ -28,7 +29,7 @@ const PodcastStudio = () => {
       </h2>
       <div className="px-[6vw] ">
         <PodcastPriceList />
-        <StudioContactUs />
+        <CardContactUs />
       </div>
     </section>
   );

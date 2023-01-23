@@ -10,7 +10,7 @@ const PodcastStudio = () => {
       {/* THE TITLE */}
       <div className=" px-[6vw]  flex flex-col justify-center items-end text-end w-full text-[#022581] mb-12">
         <h1 className="text-4xl font-black md:text-6xl lg:text-7xl">
-          Studio Podcast
+          STUDIO PODCAST
         </h1>
         <p className="font-bold text-md md:text-lg lg:text-2xl">
           Classic Dark Green Living Room with tamble lamp
@@ -22,7 +22,7 @@ const PodcastStudio = () => {
           return <PodcastCarousel src={src} />;
         })}
       </div>
-      <h2 className="px-[6vw] text-center text-[#022581] font-semibold text-sm md:text-lg mb-16">
+      <h2 className="px-[6vw] text-center text-[#022581] font-[300] text-sm md:text-lg mb-16">
         Area 2.2 x 3.5m² with 70% soundproof | Montana Table: 240 x 120 x 75 cm
       </h2>
       <div className="px-[6vw] ">

@@ -11,7 +11,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import { BlurhashCanvas } from "react-blurhash";
 
 // Photoshoot Card
-import CardPhotoShootPrice from "./components/CardPhotoShootPrice";
+import CardPhotoShootPrice from "../components/CardPhotoShootPrice";
 
 // Data for CardPhotoShoot
 import {
@@ -27,18 +27,18 @@ const Studio1 = () => {
     <section className="py-24 w-full text-[#022581]">
       <div className="flex flex-col items-center w-full">
         <h1 className="text-center text-4xl font-black md:text-6xl lg:text-7xl">
-          Studio 1
+          STUDIO 1
         </h1>
         <p className="font-bold text-md md:text-lg lg:text-2xl">
           3 Thematic Korean background + Makeup Room
         </p>
       </div>
-      <div className="flex justify-center w-full mt-7 md:mt-15 gap-x-4 md:gap-x-6 lg:gap-x-10">
-        <p className="text-sm md:text-lg">Length: 8,2m</p>
+      <div className="flex justify-center w-full mt-7 md:mt-15 gap-x-4 md:gap-x-6 lg:gap-x-10 ">
+        <p className="text-sm md:text-lg font-[300]">Length: 8,2m</p>
         <span className="text-sm font-normal md:text-lg">|</span>
-        <p className="text-sm md:text-lg">Height: 3m</p>
+        <p className="text-sm md:text-lg font-[300]">Height: 3m</p>
         <span className="text-sm font-normal md:text-lg">|</span>
-        <p className="text-sm md:text-lg">Width: 9,4m</p>
+        <p className="text-sm md:text-lg font-[300]">Width: 9,4m</p>
       </div>
 
       {/* Carousel */}
@@ -53,7 +53,7 @@ const Studio1 = () => {
 
       {/* Video */}
       <div className="flex justify-center w-full h-full px-[5vw] md:px-[19vw] lg:px-[15vw] mt-16 md:mt-32">
-        <AspectRatio sx={{ width: 900 }}>
+        <AspectRatio sx={{ width: 1280 }}>
           <video
             autoPlay
             muted
@@ -69,7 +69,7 @@ const Studio1 = () => {
 
       {/* Photoshoot Erika */}
       <div className="w-full mt-16 md:mt-32">
-        <h1 className="text-lg text-center md:text-xl lg:text-2xl">
+        <h1 className="text-center text-2xl lg:text-3xl">
           Photoshoot by our photographer
         </h1>
         <div className="flex justify-center w-full h-full gap-3 px-[2vw] md:px-[4vw] lg:px-[8vw] mt-5 md:mt-10">
@@ -95,30 +95,26 @@ const Studio1 = () => {
         </div>
 
         {/* Photoshoot Card Prices */}
-        <div className="flex flex-col items-center justify-center gap-8 p-8 md:p-14 md:gap-20 md:flex-row">
+        <div className="flex items-center justify-center gap-[6vw] flex-wrap p-[6vw]">
           <CardPhotoShootPrice
             p="Rp550.000"
             h1="Couple/Studio Photo Session"
             li={couplePhotoSession.map(({ li }) => {
-              return (
-                <li className="mx-auto ml-12 font-semibold md:ml-16">- {li}</li>
-              );
+              return <li>- {li}</li>;
             })}
           />
           <CardPhotoShootPrice
             p="Rp750.000"
             h1="Group Studio Photo Session"
             li={groupStudioSession.map(({ li }) => {
-              return (
-                <li className="mx-auto ml-12 font-semibold md:ml-16">- {li}</li>
-              );
+              return <li>- {li}</li>;
             })}
           />
         </div>
       </div>
 
       {/* Additional Prices */}
-      <div className="flex flex-col text-center text-md md:text-lg">
+      <div className="flex flex-col text-center text-lg md:text-2xl">
         <p> Additional printed photo: Rp10.000</p>
         <p>
           Soft copy all photo: Rp25.000/person <br /> or tag @belinsky.studio on

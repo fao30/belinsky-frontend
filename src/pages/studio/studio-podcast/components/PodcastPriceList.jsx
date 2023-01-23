@@ -2,27 +2,24 @@ import React from "react";
 
 const StudioPodcastPrice = [
   {
-    hour: "3hrs:",
+    hour: "3hrs",
     priceNot: "Rp 1.350.000",
     price: "Rp 1.250.000",
   },
   {
-    hour: "5hrs:",
+    hour: "5hrs",
     priceNot: "Rp 2.250.000",
     price: "Rp 2.000.000",
   },
   {
-    hour: "7hrs:",
+    hour: "7hrs",
     priceNot: "Rp 3.150.000",
     price: "Rp 2.700.000",
   },
   {
-    hour: "9hrs:",
+    hour: "9hrs",
     priceNot: "Rp 4.100.000",
     price: "Rp 3.250.000",
-  },
-  {
-    priceHour: "Rp 450.000",
   },
 ];
 
@@ -44,21 +41,21 @@ const PodcastPriceList = () => {
               <div className="w-full lg:w-[48%] flex flex-col">
                 {StudioPodcastPrice?.map((e) => {
                   return (
-                    <p className="text-[#022581] text-xl lg:text-2xl">
-                      {e.hour}
-                      <span className="text-lg text-gray-500 line-through">
-                        {" "}
-                        {e.priceNot}{" "}
-                      </span>
-                      {e.price}
-                    </p>
+                    <div className="flex flex-row text-xl lg:text-2xl text-[#022581]">
+                      <p className="w-[18%]">{e.hour}</p>
+                      <p className="w-[2%]">:</p>
+                      <p className="text-lg text-gray-500 line-through w-[40%]">
+                        {e.priceNot}
+                      </p>
+                      <p className="w-[45%]"> {e.price}</p>
+                    </div>
                   );
                 })}
               </div>
               <div className="w-full lg:w-[48%] text-[#022581] text-xl lg:text-2xl max-lg:mt-6">
                 <div className="flex flex-col ">
-                  <h1>Hours in Studio</h1>
-                  <p>Rp.450.000/hour</p>
+                  <h1>Hours in studio</h1>
+                  <p>Rp 450.000/hour</p>
                 </div>
               </div>
             </div>

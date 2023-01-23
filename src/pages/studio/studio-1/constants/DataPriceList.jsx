@@ -1,17 +1,17 @@
 // Price List
 export const dataPriceList = [
   {
-    hour: "6hrs:",
-    priceNot: "Rp2.400.000",
-    price: "Rp2.200.000",
+    hour: "6hrs",
+    priceNot: "Rp 2.400.000",
+    price: "Rp 2.200.000",
   },
   {
-    hour: "8hrs:",
-    priceNot: "Rp3.200.000",
+    hour: "8hrs",
+    priceNot: "Rp 3.200.000",
     price: "Rp 2.800.000",
   },
   {
-    hour: "10hrs:",
+    hour: "10hrs",
     priceNot: "Rp 4.000.000",
     price: "Rp 3.400.000",
   },

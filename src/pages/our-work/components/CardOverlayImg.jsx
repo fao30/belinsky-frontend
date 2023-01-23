@@ -27,7 +27,7 @@ const CardOverlayImg = ({ src, h3, p, navigate, blurPic }) => {
                 navigate();
                 LoadToTop();
               }}
-              className="flex flex-col items-center pt-[11.5rem] sm:pt-48 pl-7 justify-start w-full h-full text-left text-white cursor-pointer"
+              className="flex flex-col items-center pt-[13rem] md:pt-[14rem] lg:pt-[13.5rem] pl-7 justify-start w-full h-full text-left text-white cursor-pointer"
             >
               <h3 className="text-[20px] font-bold text-white w-full">{h3}</h3>
               <p className="w-full pr-6 drop-shadow-md text-[14px]">{p}</p>

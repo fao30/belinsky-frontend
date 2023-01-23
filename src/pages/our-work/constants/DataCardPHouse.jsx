@@ -47,7 +47,7 @@ export const dataCardPHouse = [
   {
     srcvideo: vid6,
     h3: "Squery Penty",
-    p: "A group of young Russians, who gathered to celebrate the arrival of their friend from Indonesia. Masha accidentally found a Squery Penty Book and since then, her life changed",
+    p: "A group of young Russians, who gathered to celebrate the arrival of their friend from Indonesia. Masha accidentally found a Squery Penty Book",
     nav: "squerypenty",
     isHomepage: false,
     blurPic: "LrH2.-M}D%Rk~qM|NKWC?HRjRjV@",

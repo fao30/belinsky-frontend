@@ -54,15 +54,15 @@ const Studio1 = () => {
       {/* Video */}
       <div className="flex justify-center w-full h-full px-[5vw] md:px-[19vw] lg:px-[15vw] mt-16 md:mt-32">
         <AspectRatio sx={{ width: 900 }}>
-          <video className="rounded-sm shadow-lg">
-            <source
-              playsinline
-              autoPlay
-              muted
-              loop
-              src={video1}
-              type="video/mp4"
-            />
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            alt=""
+            className="rounded-sm shadow-lg"
+          >
+            <source src={video1} type="video/mp4" />
           </video>
         </AspectRatio>
       </div>
@@ -101,7 +101,7 @@ const Studio1 = () => {
             h1="Couple/Studio Photo Session"
             li={couplePhotoSession.map(({ li }) => {
               return (
-                <li className="mx-auto ml-12 font-normal md:ml-16">- {li}</li>
+                <li className="mx-auto ml-12 font-semibold md:ml-16">- {li}</li>
               );
             })}
           />
@@ -110,7 +110,7 @@ const Studio1 = () => {
             h1="Group Studio Photo Session"
             li={groupStudioSession.map(({ li }) => {
               return (
-                <li className="mx-auto ml-12 font-normal md:ml-16">- {li}</li>
+                <li className="mx-auto ml-12 font-semibold md:ml-16">- {li}</li>
               );
             })}
           />

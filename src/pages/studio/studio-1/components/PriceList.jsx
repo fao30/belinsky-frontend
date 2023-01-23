@@ -48,7 +48,7 @@ const PriceList = () => {
             <h1 className="text-xl md:text-2xl">Equipment List</h1>
           </div>
           <div className="h-[70%] flex justify-center">
-            <div className="flex flex-wrap justify-between w-full text-md lg:text-xl">
+            <div className="flex flex-wrap justify-between w-full font-semibold text-md lg:text-xl">
               {/* left content */}
               <div className="w-full lg:w-[48%]">
                 <ul>

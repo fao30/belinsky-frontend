@@ -8,10 +8,10 @@ const PodcastStudio = () => {
     <section className="pt-20 pb-32">
       {/* THE TITLE */}
       <div className=" px-[6vw]  flex flex-col justify-center items-end text-end w-full text-[#022581] mb-20">
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-black">
+        <h1 className="text-4xl font-black md:text-6xl lg:text-7xl">
           Studio Podcast
         </h1>
-        <h2 className="font-semibold text-xl lg:text-2xl">
+        <h2 className="text-xl font-semibold lg:text-2xl">
           Classic Dark Green Living Room with tamble lamp
         </h2>
       </div>

@@ -38,13 +38,13 @@ const CardOverlayVid = ({ srcvideo, h3, p, navigate, blurPic }) => {
         <div className="group-hover:opacity-0 transition-all duration-300 absolute h-full w-full bg-[#0225818C] text-white rounded-[1rem]">
           <div
             onClick={() => {
-              if (h3 !== "Wong Tilar" && h3 !== "Yubi") {
+              if (h3 !== "Squery Penty" && h3 !== "Yubi") {
                 navigate();
                 LoadToTop();
               }
             }}
             className={`flex flex-col items-center pt-[13rem] md:pt-[14rem] lg:pt-[13rem] pl-7 justify-start w-full h-full text-left text-white ${
-              h3 !== "Wong Tilar" && h3 !== "Yubi" ? "cursor-pointer" : ""
+              h3 !== "Squery Penty" && h3 !== "Yubi" ? "cursor-pointer" : ""
             }`}
           >
             <h3 className="text-[20px] font-bold text-white w-full">{h3}</h3>

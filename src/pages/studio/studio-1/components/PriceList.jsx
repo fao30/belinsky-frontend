@@ -4,7 +4,7 @@ import { equipmentList_Right } from "../constants/DataPriceList";
 
 const PriceList = () => {
   return (
-    <div className="flex justify-center mt-10 px-[6vw]">
+    <div className="flex justify-center mt-16 md:mt-32 px-[6vw]">
       <div className="h-fit w-full md:w-[70%] lg:w-[80%] xl:w-[60%] border-[2px] border-[#022581] rounded-xl">
         {/* PRICELIST */}
         <div className="h-[50%] border-b-[2px] border-[#022581]">

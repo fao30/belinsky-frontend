@@ -1,8 +1,14 @@
+import { Icon } from "@iconify/react";
+
 const ButtonCard = ({ icon, name }) => {
   return (
-    <div className="px-[1.2vw] py-[1vh] sm:w-[32%] sm:py-[1.3vh] bg-white shadow-lg rounded-lg text-[#022581] flex gap-2 justify-center duration-300 ease-in-out font-semibold text-md">
-      {icon}
-      {name}
+    <div className="flex items-center justify-center p-2 w-[31%] font-bold bg-white rounded-lg shadow-xl">
+      <div className="flex items-center gap-3">
+        <div className="sticky">
+          <Icon icon={icon} width="25" />
+        </div>
+        <div className="text-sm font-bold md:text-lg">{name}</div>
+      </div>
     </div>
   );
 };

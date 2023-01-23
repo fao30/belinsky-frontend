@@ -1,8 +1,9 @@
 import { BlurhashCanvas } from "react-blurhash";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { useState } from "react";
+import LoadToTop from "../../../../../helper/LoadToTop";
 
-const CardOverlay = ({ src, h2, h3, p, blurPic }) => {
+const CardOverlay = ({ src, h2, h3, p, blurPic, navigate }) => {
   const [isLoading, setIsLoading] = useState(false);
 
   return (
@@ -18,7 +19,13 @@ const CardOverlay = ({ src, h2, h3, p, blurPic }) => {
       {isLoading ? (
         <BlurhashCanvas hash={blurPic} className="absolute w-full h-full" />
       ) : (
-        <div className="group-hover:opacity-0 transition-all duration-300 absolute h-full w-full bg-[#0225818C] text-white pt-[50%] md:pt-[80%] lg:pt-[45%]">
+        <div
+          className="group-hover:opacity-0 transition-all duration-300 absolute h-full w-full bg-[#0225818C] text-white pt-[50%] md:pt-[80%] lg:pt-[45%] cursor-pointer"
+          onClick={() => {
+            navigate();
+            LoadToTop();
+          }}
+        >
           <h2 className="absolute z-10 text-2xl md:text-xl lg:text-3xl font-bold text-white transition duration-500 ease-in-out top-5 left-5 group-hover:opacity-0 drop-shadow-[0_1px_1px_black] ">
             {h2}
           </h2>

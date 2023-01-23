@@ -14,6 +14,12 @@ import Menantea from "./pages/our-work/project-details/production-house/menantea
 // miscellanous components
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
+import TnC from "./pages/termscondition/TnC";
+
+// Studio
+import Studio1 from "./pages/studio/studio-1/Studio1";
+import Studio2 from "./pages/studio/studio-2/Studio2";
+import PodcastStudio from "./pages/studio/studio-podcast/PodcastStudio";
 
 function App() {
   return (
@@ -25,6 +31,10 @@ function App() {
         <Route path="/ourwork" element={<OurWork />} />
         <Route path="/ourwork/menantea" element={<Menantea />} />
         <Route path="/ourwork/abnon" element={<Abnon />} />
+        <Route path="/termsconditions" element={<TnC />} />
+        <Route path="/studio-1" element={<Studio1 />} />
+        <Route path="/studio-2" element={<Studio2 />} />
+        <Route path="/studio-podcast" element={<PodcastStudio />} />
         <Route path="/contact" element={<ContactUs />} />
       </Routes>
       <Footer />

@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import LoadToTop from "../../../../helper/LoadToTop";
 import logoBelinsky from "../assets/logo-belinsky.png";
 import { BlurhashCanvas } from "react-blurhash";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const SliderVideo = ({ src, blurPic }) => {
   const navigate = useNavigate();
@@ -33,7 +34,7 @@ const SliderVideo = ({ src, blurPic }) => {
         <source src={src} type="video/mp4" />
       </video>
 
-      {/* /djasnjdsa? */}
+      {/* Text Content */}
       <div className="absolute flex flex-col justify-start h-full md:left-[3.5rem] gap-y-6 px-4 md:px-0 top-[60%] z-20">
         <h1
           className="text-2xl text-white uppercase lg:text-4xl"
@@ -54,10 +55,22 @@ const SliderVideo = ({ src, blurPic }) => {
             navigate("/contact");
             LoadToTop();
           }}
-          className="self-start px-7 py-3 bg-[#5484F2] text-white font-semibold hover:bg-[#4a6cb3] active:bg-[#5484F2]"
+          className="self-start px-7 py-3 bg-[#5484F2] text-white font-extrabold hover:bg-[#4a6cb3] active:bg-[#5484F2] drop-shadow-[0_1px_1px_#5484F2]"
         >
           Contact Us
         </button>
+
+        {/* Custom Arrow Swiper */}
+        {/* <div className="flex self-center">
+          <IoIosArrowBack
+            size={30}
+            className="text-white drop-shadow-[0_1px_1px_black]"
+          />
+          <IoIosArrowForward
+            size={30}
+            className="text-white drop-shadow-[0_1px_1px_black]"
+          />
+        </div> */}
       </div>
     </>
   );

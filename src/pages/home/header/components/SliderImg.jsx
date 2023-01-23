@@ -1,10 +1,14 @@
 import LoadToTop from "../../../../helper/LoadToTop";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { BlurhashCanvas } from "react-blurhash";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const SliderImg = ({ src, h1, p, navigate, blurPic }) => {
+  const swiperNavPrevRef = useRef(null);
+  const swiperNavNextRef = useRef(null);
+
   const [isLoading, setIsLoading] = useState(false);
 
   return (
@@ -40,6 +44,20 @@ const SliderImg = ({ src, h1, p, navigate, blurPic }) => {
               </p>
               <div className="border-b-2 border-white w-[4.5rem] self-center group-hover:border-opacity-0 transition duration-500 ease-in-out scale-x-100 md:w-[10rem]" />
             </div>
+
+            {/* Custom Arrow Swiper */}
+            {/* <div className="flex items-center mt-5 pl-52">
+              <IoIosArrowBack
+                size={30}
+                className="text-white drop-shadow-[0_1px_1px_black]"
+                ref={swiperNavPrevRef}
+              />
+              <IoIosArrowForward
+                size={30}
+                className="text-white drop-shadow-[0_1px_1px_black]"
+                ref={swiperNavNextRef}
+              />
+            </div> */}
           </div>
         </>
       )}

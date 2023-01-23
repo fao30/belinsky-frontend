@@ -1,9 +1,12 @@
+import { useNavigate } from "react-router-dom";
 import CardOverlay from "./components/CardOverlay";
 import { dataCardBStudio } from "./constants/DataCardBStudio";
 
 const BelinskyStudio = () => {
+  const navigate = useNavigate();
+
   return (
-    <section className="w-full min-h-screen mt-[5vh] mb-[10vh]">
+    <section className="w-full min-h-screen mb-[10vh]">
       {/* Title */}
       <div className="flex flex-col md:flex-row justify-around items-center px-[4vw] mb-[4vh] gap-y-1">
         <h1 className="md:mb-0 text-4xl lg:text-5xl text-center text-[#022581] tracking-wide">
@@ -18,9 +21,16 @@ const BelinskyStudio = () => {
 
       {/* Studio images */}
       <div className="flex flex-col justify-between w-full h-full md:flex-row gap-y-5">
-        {dataCardBStudio?.map(({ src, h2, h3, p, blurPic }) => {
+        {dataCardBStudio?.map(({ src, h2, h3, p, blurPic, nav }) => {
           return (
-            <CardOverlay src={src} h2={h2} h3={h3} p={p} blurPic={blurPic} />
+            <CardOverlay
+              src={src}
+              h2={h2}
+              h3={h3}
+              p={p}
+              blurPic={blurPic}
+              navigate={() => navigate(`${nav}`)}
+            />
           );
         })}
       </div>

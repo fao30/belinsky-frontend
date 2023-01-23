@@ -162,38 +162,59 @@ text-[#022581] px-[5vw]"
       </ol>
 
       {/* covide protocol */}
-      <h1 className="md:text-[64px] text-[25px] font-extrabold text-[#022581] text-center px-[4vw] py-[10vw]">
+      <h1 className="md:text-[64px] text-[23px] font-extrabold text-[#022581] text-center px-[4vw] py-[7vw]">
         New Normal Protocol Related to COVID-19
       </h1>
       <ol className="list-decimal">
-        <li className="md:text-[32px] text-[10px] text-[#022581] text-start px-[4vw] py-[2vw]">
+        <li
+          className="md:text-[28px] text-[8px] font-bold leading-loose
+          text-[#022581] px-[5vw] py-[2vw]"
+        >
           Peraturan Studio Belinsky selama masa New Normal Pandemi COVID-19:
         </li>
-        <li className="md:text-[32px] text-[10px] text-[#022581] text-start px-[6vw]">
+        <li
+          className="md:text-[23px] text-[8px] font-semibold leading-loose
+          text-[#022581] px-[7vw]"
+        >
           Maximum kapasitas adalah 20 orang/studio 1, 10 orang/studio 2, dan 6
           orang/studio 3. Jika melebihi kapasitas, Client dianggap menyewa
           studio tambahan dengan jangka waktu yang sama. (contoh: Client sewa
           studio 1, dan kapasitas melebihi 20 orang maka akan dikenakan biaya
           sewa tambahan studio 2).
         </li>
-        <li className="md:text-[32px] text-[10px] text-[#022581] text-start px-[6vw]">
+        <li
+          className="md:text-[23px] text-[8px] font-semibold leading-loose
+          text-[#022581] px-[7vw]"
+        >
           Semua Client, Crew dan Staff diwajibkan mematuhi prokes ketat. Jika
           tidak mematuhi prokes, Client harus membeli masker yang tersedia di
           Studio.
         </li>
-        <li className="md:text-[32px] text-[10px] text-[#022581] text-start px-[6vw]">
+        <li
+          className="md:text-[23px] text-[8px] font-semibold leading-loose
+          text-[#022581] px-[7vw]"
+        >
           Studio tutup pukul 22.00 WIB. Maximum Overtime hanya sampai pukul
           22.00 WIB saja.
         </li>
-        <li className="md:text-[32px] text-[10px] text-[#022581] text-start px-[4vw] py-[2vw]">
+        <li
+          className="md:text-[23px] text-[8px] font-semibold leading-loose
+          text-[#022581] px-[7vw]"
+        >
           Apabila ditemukan Client melanggar peraturan diatas, maka pihak
           Manajemen Belinsky berhak untuk mengenakan denda kepada Client.
         </li>
-        <li className="md:text-[32px] text-[10px] text-[#022581] text-start px-[4vw] py-[2vw]">
+        <li
+          className="md:text-[23px] text-[8px] font-semibold leading-loose
+          text-[#022581] px-[5vw]"
+        >
           Peraturan ini dibuat demi kebaikan dan kesehatan lingkungan bersama,
           baik Client dan team Belinsky. Terima kasih atas perhatian Anda.
         </li>
-        <li className="md:text-[32px] text-[10px] text-[#022581] text-start px-[4vw] py-[2vw]">
+        <li
+          className="md:text-[23px] text-[8px] font-semibold leading-loose
+          text-[#022581] px-[5vw] py-[2vw]"
+        >
           Salam hormat, <br />
           Management Studio Belinsky
         </li>

@@ -43,10 +43,8 @@ const CardOverlayVid = ({ srcvideo, h3, p, navigate, blurPic }) => {
                 LoadToTop();
               }
             }}
-            className={`${
-              h3 !== "Wong Tilar" && h3 !== "Yubi"
-                ? "flex flex-col items-center pt-[11.5rem] sm:pt-48 pl-7 justify-start w-full h-full text-left text-white cursor-pointer"
-                : "flex flex-col items-center pt-[11.5rem] sm:pt-48 pl-7 justify-start w-full h-full text-left text-white "
+            className={`flex flex-col items-center pt-[13rem] md:pt-[14rem] lg:pt-[13rem] pl-7 justify-start w-full h-full text-left text-white ${
+              h3 !== "Wong Tilar" && h3 !== "Yubi" ? "cursor-pointer" : ""
             }`}
           >
             <h3 className="text-[20px] font-bold text-white w-full">{h3}</h3>

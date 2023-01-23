@@ -25,8 +25,8 @@ const Studio2 = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   return (
-    <section className="w-full min-h-screen text-[#022581]">
-      <h1 className="mt-10 text-4xl font-black text-center md:text-5xl lg:text-6xl md:mt-20">
+    <section className="w-full py-24 text-[#022581]">
+      <h1 className="text-center text-4xl font-black md:text-6xl lg:text-7xl">
         Studio 2
       </h1>
       <p className="text-sm text-center md:text-lg mt-7 md:mt-15">
@@ -63,7 +63,7 @@ const Studio2 = () => {
                 afterLoad={() => setIsLoading(false)}
                 src={img}
                 alt=""
-                className="w-[10rem] h-[18rem] md:w-[20rem] md:h-[35rem] lg:w-[25rem] lg:h-[40rem]"
+                className="w-[10rem] h-[18rem] md:w-[20rem] md:h-[35rem] lg:w-[25rem] lg:h-[40rem] object-cover"
               />
               {isLoading ? (
                 <BlurhashCanvas

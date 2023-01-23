@@ -6,7 +6,7 @@ import LoadToTop from "../../../helper/LoadToTop";
 const CardContactUs = () => {
   const navigate = useNavigate();
   return (
-    <div className="flex justify-center px-[8vw]">
+    <div className="flex justify-center px-[6vw]">
       <div className="rounded-xl my-20 w-full md:w-[70%] lg:w-[90%] px-12 lg:pl-24 lg:pr-12 py-12 bg-[#022581] text-white">
         <div className="flex items-center justify-between gap-6">
           <div className="w-full lg:w-[70%] flex flex-col">

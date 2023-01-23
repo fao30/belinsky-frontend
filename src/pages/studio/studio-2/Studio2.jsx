@@ -34,7 +34,7 @@ const Studio2 = () => {
       </p>
 
       {/* Carousel 1 */}
-      <div className="carousel carousel-center gap-[1.25rem] md:gap-[3rem] bg-transparent h-full w-full mt-1 px-[1.25rem] md:px-[3rem]">
+      <div className="carousel carousel-center gap-[3vw]  bg-transparent h-full w-full mt-1">
         {dataCarStudio2First.map(({ img, blurPic }) => {
           return <CarouselStudio src={img} blurPic={blurPic} />;
         })}
@@ -44,7 +44,7 @@ const Studio2 = () => {
       <PriceList />
 
       {/* Carousel 2 */}
-      <div className="carousel carousel-center gap-[1.25rem] md:gap-[3rem] bg-transparent h-full w-full px-[1.25rem] md:px-[3rem] mt-12 md:mt-24">
+      <div className="carousel carousel-center gap-[3vw]  bg-transparent h-full w-full mt-12 md:mt-24">
         {dataCarStudio2Second.map(({ img, blurPic }) => {
           return <CarouselStudio src={img} blurPic={blurPic} />;
         })}
@@ -53,7 +53,7 @@ const Studio2 = () => {
       {/* Self Studio */}
       <div className="w-full mt-16 md:mt-32">
         <h1 className="text-center text-2xl lg:text-3xl">Self Studio</h1>
-        <div className="flex justify-center items-center w-full h-full gap-3 px-[2vw] md:px-[4vw] lg:px-[8vw] mt-5 md:mt-10">
+        <div className="flex justify-center items-center w-full h-full gap-[3vw] px-[6vw] mt-5 md:mt-10">
           {imagesPhotoshoot.map(({ img, blurPic }) => (
             <div className="relative">
               <LazyLoadImage

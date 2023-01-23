@@ -86,14 +86,14 @@ const TnC = () => {
       initial={{ opacity: 0.5 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="py-16 md:py-32 px-[6vw]"
+      className="py-16 md:py-32 px-[2vw]"
     >
       {/* TnC  */}
       <section className="text-[#022581] h-full w-full">
-        <h1 className="font-[900] text-center text-4xl md:text-5xl lg:text-6xl mb-16 md:mb-24">
+        <h1 className="font-[900] text-center text-3xl md:text-5xl lg:text-6xl mb-16 md:mb-24">
           TERMS & CONDITIONS
         </h1>
-        <div className="flex flex-col gap-12 lg:px-[12vw]">
+        <div className="flex flex-col gap-12 lg:px-[2vw]">
           <div>
             <h1 className="text-xl md:text-2xl">A. Sebelum Booking Studio</h1>
             <ol className="list-decimal pl-7 md:pl-14 mt-3">
@@ -116,7 +116,7 @@ const TnC = () => {
           </div>
           <div>
             <h1 className="text-xl md:text-2xl">C. Setelah Pemakaian Studio</h1>
-            <ol className="list-decimal pl-7 md:pl-14 mt-3">
+            <ol className="list-decimal pl-7 md:pl-14 mt-3 pb-12">
               {CPenggunaanStudio?.map((e) => {
                 return (
                   <li className="font-semibold text-lg md:text-xl">{e.li}</li>
@@ -126,11 +126,11 @@ const TnC = () => {
           </div>
         </div>
         {/* COVID 19 */}
-        <section className="font-semibold text-lg md:text-xl">
-          <h1 className="font-[900] text-center text-4xl md:text-5xl lg:text-6xl my-12 lg:my-24">
+        <section className="font-semibold text-lg md:text-xl md:pt-20 pt-8">
+          <h1 className="font-[900] text-center text-2xl md:text-5xl lg:text-6xl my-12 lg:my-24">
             New Normal Protocol Related to COVID-19
           </h1>
-          <div className="flex  flex-col gap-3 lg:px-[12vw]">
+          <div className="flex  flex-col gap-3 lg:px-[2vw]">
             <p>
               Peraturan Studio Belinsky selama masa New Normal Pandemi COVID-19:
             </p>
@@ -153,7 +153,7 @@ const TnC = () => {
               Terima kasih atas perhatian Anda.
             </p>
 
-            <p>
+            <p className="py-6">
               Salam hormat,
               <br />
               Management Studio Belinsky

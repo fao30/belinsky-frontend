@@ -17,7 +17,7 @@ const PodcastStudio = () => {
         </h2>
       </div>
       {/* CAROUSEL */}
-      <div class="carousel carousel-center w-full h-[12.5rem] md:h-[25rem] lg:h-[30rem] xl:h-[45rem] mb-4 space-x-2 lg:space-x-12">
+      <div class="carousel carousel-center w-full h-[12.5rem] sm:h-[22rem] md:h-[25rem] lg:h-[30rem] xl:h-[45rem] mb-4 space-x-2 lg:space-x-12">
         {podcastCarouselData.map(({ src }) => {
           return <PodcastCarousel src={src} />;
         })}

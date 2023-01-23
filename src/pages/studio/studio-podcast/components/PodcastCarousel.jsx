@@ -3,7 +3,7 @@ import React from "react";
 const PodcastCarousel = ({ src }) => {
   return (
     <div className="carousel-item">
-      <img src={src} className="object-cover" />
+      <img src={src} />
     </div>
   );
 };

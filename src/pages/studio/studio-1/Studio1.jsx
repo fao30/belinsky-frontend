@@ -24,12 +24,12 @@ const Studio1 = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   return (
-    <section className="w-full min-h-screen text-[#022581]">
-      <div className="flex flex-col items-center w-full mt-10 md:mt-20">
-        <h1 className="text-4xl font-black md:text-5xl lg:text-6xl">
-          Studio. 1
+    <section className="py-24 w-full text-[#022581]">
+      <div className="flex flex-col items-center w-full">
+        <h1 className="text-center text-4xl font-black md:text-6xl lg:text-7xl">
+          Studio 1
         </h1>
-        <p className="font-bold text-md md:text-lg lg:text-xl">
+        <p className="font-bold text-md md:text-lg lg:text-2xl">
           3 Thematic Korean background + Makeup Room
         </p>
       </div>

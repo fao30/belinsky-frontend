@@ -33,12 +33,12 @@ const Studio1 = () => {
           3 Thematic Korean background + Makeup Room
         </p>
       </div>
-      <div className="flex justify-center w-full mt-7 md:mt-15 gap-x-4 md:gap-x-6 lg:gap-x-10 ">
-        <p className="text-sm md:text-lg font-[300]">Length: 8,2m</p>
-        <span className="text-sm font-normal md:text-lg">|</span>
-        <p className="text-sm md:text-lg font-[300]">Height: 3m</p>
-        <span className="text-sm font-normal md:text-lg">|</span>
-        <p className="text-sm md:text-lg font-[300]">Width: 9,4m</p>
+      <div className="flex justify-center w-full mt-7 md:mt-15 gap-x-4 md:gap-x-6 lg:gap-x-10 text-lg text-center md:text-xl">
+        <p className="font-[400]">Length: 8,2m</p>
+        <span>|</span>
+        <p className="font-[400]">Height: 3m</p>
+        <span>|</span>
+        <p className="font-[400]">Width: 9,4m</p>
       </div>
 
       {/* Carousel */}
@@ -52,7 +52,7 @@ const Studio1 = () => {
       <PriceList />
 
       {/* Video */}
-      <div className="flex justify-center w-full h-full px-[5vw] md:px-[19vw] lg:px-[15vw] mt-16 md:mt-32">
+      <div className="flex justify-center w-full h-full px-[2vw] md:px-[19vw] lg:px-[15vw] mt-16 md:mt-32">
         <AspectRatio sx={{ width: 1280 }}>
           <video
             autoPlay
@@ -80,7 +80,7 @@ const Studio1 = () => {
                 afterLoad={() => setIsLoading(false)}
                 src={img}
                 alt=""
-                className="w-[7rem] md:w-[14rem] lg:w-[21rem]"
+                className="w-full"
               />
               {isLoading ? (
                 <BlurhashCanvas

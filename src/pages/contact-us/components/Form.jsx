@@ -1,6 +1,8 @@
+import React from "react";
 import InputForm from "./InputForm";
 import { useReducer } from "react";
 import toast, { Toaster } from "react-hot-toast";
+import emailjs from "emailjs-com";
 
 // initial values
 const initialState = {
@@ -17,9 +19,6 @@ const reducer = (state, action) => {
     case "update":
       return { ...state, [action.name]: [action.value] };
     case "submit":
-      console.log(state);
-      return;
-    case "reset":
       return initialState;
     default:
       throw new Error();
@@ -29,7 +28,7 @@ const reducer = (state, action) => {
 const Form = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
-  // const handleChange
+  // function handleChange
   const handleChange = (e) => {
     dispatch({
       type: "update",
@@ -50,8 +49,13 @@ const Form = () => {
       state.textarea.length
     ) {
       dispatch({ type: "submit" });
-      dispatch({ type: "reset" });
       toast.success("Request Sent");
+      // emailjs.sendForm(
+      //   "gmail",
+      //   "template_tdiq82q",
+      //   e.target,
+      //   "DRhkfav3kde6rcZ-n"
+      // );
     } else {
       toast.error("Error");
     }
@@ -60,7 +64,11 @@ const Form = () => {
   return (
     <>
       <Toaster />
-      <form className="p-[3vw] lg:px-[8vw] h-fit w-[90%] md:w-[85%] xl:w-[70rem] bg-white mx-auto -mt-16 drop-shadow-[0_1.5px_1.5px_black]">
+      <form
+        className="p-[3vw] lg:px-[8vw] h-fit w-[90%] md:w-[85%] xl:w-[70rem] bg-white mx-auto -mt-16 drop-shadow-[0_1.5px_1.5px_black]"
+        onSubmit={handleClick}
+        noValidate
+      >
         <div className="flex flex-col md:flex-row justify-center w-full h-full text-[#022581] xl:text-2xl font-semibold gap-10 p-5">
           <InputForm
             label="Name"
@@ -95,23 +103,28 @@ const Form = () => {
         </div>
         <div className="flex flex-col p-5 md:flex-row justify-start w-full h-full text-[#022581] xl:text-2xl font-semibold gap-4">
           <div className="flex flex-col w-full h-full md:gap-y-2">
-            <label htmlFor="textarea" className="ml-1 text-md lg:text-xl">
+            <label htmlFor="textarea" className="ml-1 text-base lg:text-xl">
               Your Message
             </label>
             <textarea
               name="textarea"
               id="textarea"
-              className="bg-[#E0E0E0] px-3 py-2 caret-[#022581] rounded-lg text-md lg:text-lg"
+              className="bg-[#E0E0E0] px-3 py-2 caret-[#022581] rounded-lg text-base lg:text-lg"
               rows="7"
               value={state.textarea}
               onChange={handleChange}
             ></textarea>
-            <button
-              className="py-[0.85rem] w-[5.5rem] md:py-4 md:w-[8rem] xl:py-[1.1rem] xl:w-[13rem] text-sm lg:text-md xl:text-lg text-center bg-[#022581] text-white mt-5 rounded-2xl uppercase font-bold"
+            <input
+              type="submit"
+              value="SEND"
+              className="py-[0.85rem] w-[5.5rem] md:py-4 md:w-[8rem] xl:py-[1.1rem] xl:w-[13rem] text-sm lg:text-base xl:text-lg text-center bg-[#022581] text-white mt-5 rounded-2xl uppercase font-bold cursor-pointer"
+            />
+            {/* <button
+              className="py-[0.85rem] w-[5.5rem] md:py-4 md:w-[8rem] xl:py-[1.1rem] xl:w-[13rem] text-sm lg:text-base xl:text-lg text-center bg-[#022581] text-white mt-5 rounded-2xl uppercase font-bold"
               onClick={handleClick}
             >
               Send
-            </button>
+            </button> */}
           </div>
         </div>
       </form>

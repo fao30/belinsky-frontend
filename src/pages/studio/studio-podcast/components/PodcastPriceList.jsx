@@ -29,24 +29,24 @@ const StudioPodcastPrice = [
 const PodcastPriceList = () => {
   return (
     <seection className="flex justify-center">
-      <div className="h-fit w-full md:w-[70%] lg:w-[85%] xl:w-[65%] border-[2px] border-[#022581] rounded-xl">
+      <div className="h-fit w-full md:w-[70%] lg:w-[85%] xl:w-[65%] border-[2px] border-[#022581] rounded-xl bg-white">
         {/* PRICELIST */}
         <div className="h-[50%] border-b-[2px] border-[#022581]">
           <div className="flex justify-center h-[3rem]">
             <div className="bg-[#022581] w-[10rem] lg:w-[20rem] rounded-b-xl flex justify-center items-center">
-              <p className="text-white text-xl lg:text-2xl text-center">
+              <p className="text-xl text-center text-white lg:text-2xl">
                 Pricelist
               </p>
             </div>
           </div>
           <div className="h-[85%] flex justify-center p-[4vw] md:p-[3vw] lg:py-[2vw] lg:px-[3vw]">
-            <div className="flex justify-center lg:justify-between items-center flex-wrap w-full">
+            <div className="flex flex-wrap items-center justify-center w-full lg:justify-between">
               <div className="w-full lg:w-[48%] flex flex-col">
                 {StudioPodcastPrice?.map((e) => {
                   return (
                     <p className="text-[#022581] text-xl lg:text-2xl">
                       {e.hour}
-                      <span className="text-gray-500 text-lg line-through">
+                      <span className="text-lg text-gray-500 line-through">
                         {" "}
                         {e.priceNot}{" "}
                       </span>
@@ -70,7 +70,7 @@ const PodcastPriceList = () => {
             <h1 className="text-2xl">Equipment List</h1>
           </div>
           <div className="h-[70%] flex justify-center">
-            <div className="flex justify-between w-full flex-wrap">
+            <div className="flex flex-wrap justify-between w-full">
               {/* left content */}
               <div className="w-full lg:w-[48%]">
                 <ul>

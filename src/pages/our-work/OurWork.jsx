@@ -66,7 +66,7 @@ const OurWork = () => {
             setIsProductionHouse(true);
             setIsBelinskyStudio(false);
           }}
-          className={` w-[13rem] p-1 text-[18px] sm:text-[24px] rounded-xl border-2 ${
+          className={`px-2 p-1 text-[18px] sm:text-[24px] rounded-xl border-2 font-bold ${
             isProductionHouse
               ? " text-[#022581] border-[#022581]"
               : " text-[#989898] border-[#989898]"
@@ -79,7 +79,7 @@ const OurWork = () => {
             setIsBelinskyStudio(true);
             setIsProductionHouse(false);
           }}
-          className={` w-[13rem] p-1 text-[18px] sm:text-[24px] rounded-xl border-2 ${
+          className={`px-2 p-1 text-[18px] sm:text-[24px] rounded-xl border-2 font-bold ${
             isBelinskyStudio
               ? " text-[#022581] border-[#022581]"
               : " text-[#989898] border-[#989898]"

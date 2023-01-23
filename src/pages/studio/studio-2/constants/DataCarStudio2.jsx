@@ -1,6 +1,6 @@
 // Images for First Carousel
 import img1 from "../assets/1.png";
-import img2 from "../assets/2.png";
+import img2 from "../assets/2.jpeg";
 import img3 from "../assets/3.png";
 
 // Images for Second Carousel

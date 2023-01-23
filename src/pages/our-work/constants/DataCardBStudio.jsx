@@ -1,9 +1,15 @@
 import Abnon from "../../../assets/belinsky-studio/Abnon_.png";
+import Royce from "../../../assets/belinsky-studio/Royce_.jpg";
+import Owen from "../../../assets/belinsky-studio/Owen_.jpg";
 import Graduation from "../../../assets/belinsky-studio/Graduation_.png";
 import Kumaw from "../../../assets/belinsky-studio/Kumaw_.png";
 import TomoTurah from "../../../assets/belinsky-studio/TomoTurah_.png";
 import LukasKenniro from "../../../assets/belinsky-studio/LukasKenniro_.png";
 import DuoPengacara from "../../../assets/belinsky-studio/DuoPengacara_.png";
+import Couple from "../../../assets/belinsky-studio/Couple_.jpg";
+import JeromeBatik from "../../../assets/belinsky-studio/JeromeBatik_.jpg";
+import Prince from "../../../assets/belinsky-studio/Prince_.jpg";
+import LinkedIn from "../../../assets/belinsky-studio/LinkedIn_.jpg";
 
 export const dataCardBStudio = [
   {
@@ -15,12 +21,44 @@ export const dataCardBStudio = [
     blurPic: "L3I4X]^a3d7%T|^+01=.00s;Q8e7",
   },
   {
-    src: Graduation,
-    h3: "Graduation",
-    p: "Photoshoot By Our Photographer",
-    nav: "graduation",
+    src: Royce,
+    h3: "Royce",
+    p: "Fine Art Photography: Hidden Garden",
+    nav: "royce",
     isHomepage: true,
-    blurPic: "LLGa,%D*4.-;-;aeIV%2~Bf,IoWB",
+    blurPic: "LMFOoHtQMzR*~nxtjZj[x=bb%0of",
+  },
+  {
+    src: Prince,
+    h3: "Prince",
+    p: "Gabriel Prince x YSL",
+    nav: "prince",
+    isHomepage: true,
+    blurPic: "L6DHdF0L1I]k0|}Zn4K401^P-ps.",
+  },
+  {
+    src: Owen,
+    h3: "Jerhemy Owen",
+    p: "Colored Low Light Photoshoot",
+    nav: "owen",
+    isHomepage: true,
+    blurPic: "LIAvw~t82;J~^nr=AsOC9XaJwJRk",
+  },
+  {
+    src: JeromeBatik,
+    h3: "Jerome Polin",
+    p: "Jerome x Batik Air",
+    nav: "jeromebatik",
+    isHomepage: true,
+    blurPic: "LGFYlii^_NozD%t89Faz9uaeaKj@",
+  },
+  {
+    src: Couple,
+    h3: "Couple",
+    p: "Couple Photoshoot",
+    nav: "couple",
+    isHomepage: true,
+    blurPic: "LTFP1,^+~q%M%2%Mofj]IUxuWBWV",
   },
   {
     src: Kumaw,
@@ -31,27 +69,19 @@ export const dataCardBStudio = [
     blurPic: "LuNI?I~qlU?bEexZWFjFbIj[s.R*",
   },
   {
-    src: DuoPengacara,
-    h3: "Duo Pengacara",
-    p: "Self Studio - We provide self photo studio and photoshoot services by Belinsky Team",
-    nav: "duopengacara",
-    isHomepage: false,
-    blurPic: "LbODkBt8t8M{~pofj[WB?bayayog",
+    src: Graduation,
+    h3: "Graduation",
+    p: "Photoshoot By Our Photographer",
+    nav: "graduation",
+    isHomepage: true,
+    blurPic: "LLGa,%D*4.-;-;aeIV%2~Bf,IoWB",
   },
   {
-    src: TomoTurah,
-    h3: "Tomo X Turah",
-    p: "Self Studio - We provide self photo studio and photoshoot services by Belinsky Team",
-    nav: "tomoturah",
-    isHomepage: false,
-    blurPic: "LOOWsfMd-oxa%2ofoes;_NNbELR*",
-  },
-  {
-    src: LukasKenniro,
-    h3: "Lukas X Kenniro",
-    p: "Model Photoshoot by Our Photographer ",
-    nav: "lukaskenniro",
-    isHomepage: false,
-    blurPic: "LaKKW4V?0On#~OR*xVod-goeIqog",
+    src: LinkedIn,
+    h3: "LinkedIn",
+    p: "LinkedIn Professional Profile Photoshoot",
+    nav: "linkedin",
+    isHomepage: true,
+    blurPic: "LSN,-.-;-qxu~qR*M{WC-=M{ozWV",
   },
 ];

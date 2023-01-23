@@ -29,12 +29,12 @@ const Studio2 = () => {
       <h1 className="text-center text-4xl font-black md:text-6xl lg:text-7xl">
         STUDIO 2
       </h1>
-      <p className="text-sm text-center md:text-lg mt-7 md:mt-15 font-[300]">
+      <p className="text-lg text-center md:text-xl mt-7 md:mt-15 font-[400]">
         Area 3.6 x 5.5m²
       </p>
 
       {/* Carousel 1 */}
-      <div className="carousel carousel-center gap-[1.25rem] md:gap-[3rem] bg-transparent h-full w-full mt-1 px-[1.25rem] md:px-[3rem]">
+      <div className="carousel carousel-center gap-[3vw]  bg-transparent h-full w-full mt-1">
         {dataCarStudio2First.map(({ img, blurPic }) => {
           return <CarouselStudio src={img} blurPic={blurPic} />;
         })}
@@ -44,7 +44,7 @@ const Studio2 = () => {
       <PriceList />
 
       {/* Carousel 2 */}
-      <div className="carousel carousel-center gap-[1.25rem] md:gap-[3rem] bg-transparent h-full w-full px-[1.25rem] md:px-[3rem] mt-12 md:mt-24">
+      <div className="carousel carousel-center gap-[3vw]  bg-transparent h-full w-full mt-12 md:mt-24">
         {dataCarStudio2Second.map(({ img, blurPic }) => {
           return <CarouselStudio src={img} blurPic={blurPic} />;
         })}
@@ -53,7 +53,7 @@ const Studio2 = () => {
       {/* Self Studio */}
       <div className="w-full mt-16 md:mt-32">
         <h1 className="text-center text-2xl lg:text-3xl">Self Studio</h1>
-        <div className="flex justify-center w-full h-full gap-3 md:gap-6 px-[2vw] md:px-[4vw] lg:px-[8vw] mt-5 md:mt-10">
+        <div className="flex justify-center items-center w-full h-full gap-[3vw] px-[6vw] mt-5 md:mt-10">
           {imagesPhotoshoot.map(({ img, blurPic }) => (
             <div className="relative">
               <LazyLoadImage
@@ -61,7 +61,7 @@ const Studio2 = () => {
                 afterLoad={() => setIsLoading(false)}
                 src={img}
                 alt=""
-                className="w-[10rem] h-[18rem] md:w-[20rem] md:h-[35rem] lg:w-[25rem] lg:h-[40rem] object-cover"
+                className="w-full"
               />
               {isLoading ? (
                 <BlurhashCanvas

@@ -22,7 +22,7 @@ const PodcastStudio = () => {
           return <PodcastCarousel src={src} />;
         })}
       </div>
-      <h2 className="px-[6vw] text-center text-[#022581] font-[300] text-sm md:text-lg mb-16">
+      <h2 className="px-[6vw] text-center text-[#022581] font-[400] text-sm md:text-lg mb-16">
         Area 2.2 x 3.5m² with 70% soundproof | Montana Table: 240 x 120 x 75 cm
       </h2>
       <div className="px-[6vw] ">

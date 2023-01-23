@@ -6,7 +6,7 @@ const BelinskyStudio = () => {
   const navigate = useNavigate();
 
   return (
-    <section className="w-full min-h-screen mb-[10vh]">
+    <section className="w-full mb-[10vh]">
       {/* Title */}
       <div className="flex flex-col md:flex-row justify-around items-center px-[4vw] mb-[4vh] gap-y-1">
         <h1 className="md:mb-0 text-4xl lg:text-5xl text-center text-[#022581] tracking-wide">

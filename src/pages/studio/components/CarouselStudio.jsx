@@ -13,7 +13,7 @@ const CarouselStudio = ({ src, blurPic }) => {
           beforeLoad={() => SetIsLoading(true)}
           afterLoad={() => SetIsLoading(false)}
           alt="Burger"
-          className="object-cover w-[15rem] h-[25rem] md:w-[30rem] md:h-[40rem]"
+          className="object-cover w-[15rem] h-[25rem] md:w-[30rem] md:h-[40rem] lg:w-[40rem] lg:h-[50rem]"
         />
         {isLoading ? (
           <BlurhashCanvas

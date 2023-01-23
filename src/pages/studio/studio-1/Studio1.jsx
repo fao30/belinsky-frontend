@@ -42,7 +42,7 @@ const Studio1 = () => {
       </div>
 
       {/* Carousel */}
-      <div className="carousel carousel-center gap-[1.25rem] md:gap-[3rem] bg-transparent h-full w-full mt-1 px-40">
+      <div className="carousel carousel-center gap-[1.25rem] md:gap-[3rem] bg-transparent h-full w-full mt-1 px-[1.25rem] md:px-[3rem]">
         {dataCarStudio1.map(({ img, blurPic }) => {
           return <CarouselStudio src={img} blurPic={blurPic} />;
         })}

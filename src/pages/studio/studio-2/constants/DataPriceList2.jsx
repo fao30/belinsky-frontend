@@ -1,34 +1,33 @@
 // Price List
 export const dataPriceList = [
   {
-    hour: "6hrs:",
-    priceNot: "Rp2.400.000",
-    price: "Rp2.200.000",
+    hour: "4hrs:",
+    priceNot: "Rp920.000",
+    price: "Rp850.000",
   },
   {
     hour: "8hrs:",
-    priceNot: "Rp3.200.000",
-    price: "Rp 2.800.000",
+    priceNot: "Rp1.850.000",
+    price: "Rp1.500.000",
   },
   {
     hour: "10hrs:",
-    priceNot: "Rp 4.000.000",
-    price: "Rp 3.400.000",
+    priceNot: "Rp 2.300.000",
+    price: "Rp 2.000.000",
   },
 ];
 
 // Data for Equpment List (Left)
 export const equipmentList_Left = [
-  "Lighting Godox DP 400III (2pcs)",
+  "Lighting Godox QT 400III (3pcs)",
   "Video Lighting  SL-150W II",
   "Trigger Wireless Flash",
-  "Softbox with Grid (2pcs)",
+  "Softbox Parabolic with P120G",
 ];
 
 // Data for Equipment List (Right)
 export const equipmentList_Right = [
-  "Translucent Umbrella 101cm",
-  "Soft Light Ball Softbox",
+  "Softbox with Grid",
+  "Light Boom Stand With Weight Bag",
   "Light Stand (2pcs)",
-  "Boom Stand With Weight Bag",
 ];

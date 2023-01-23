@@ -1,7 +1,11 @@
 import React from "react";
 
-const PodcastCarousel = () => {
-  return <div>PodcastCarousel</div>;
+const PodcastCarousel = ({ src }) => {
+  return (
+    <div className="carousel-item">
+      <img src={src} className="object-cover" />
+    </div>
+  );
 };
 
 export default PodcastCarousel;

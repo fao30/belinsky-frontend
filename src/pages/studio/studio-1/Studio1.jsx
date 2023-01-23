@@ -1,4 +1,4 @@
-import CarouselStudio from "./components/CarouselStudio";
+import CarouselStudio from "../components/CarouselStudio";
 import { dataCarStudio1 } from "./constants/DataCarStudio1";
 import PriceList from "./components/PriceList";
 import { AspectRatio } from "@mui/joy";

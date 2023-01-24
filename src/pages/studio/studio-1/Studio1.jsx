@@ -29,7 +29,7 @@ const Studio1 = () => {
         <h1 className="text-center text-4xl font-black md:text-6xl lg:text-7xl">
           STUDIO 1
         </h1>
-        <p className="font-bold text-md md:text-lg lg:text-2xl">
+        <p className="font-bold   md:text-lg lg:text-2xl">
           3 Thematic Korean background + Makeup Room
         </p>
       </div>

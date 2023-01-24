@@ -12,7 +12,7 @@ import CardFounders from "./CardFounders";
 export const VisionMission = () => {
   return (
     <section className="text-[#022581] h-full w-full ">
-      <h1 className="font-[900] text-center text-3xl md:text-4xl xl:text-5xl mt-[2vh]">
+      <h1 className=" font-[900] text-center text-3xl lg:text-4xl xl:text-5xl mt-[2vh]">
         Taking off to a sky, where creativity is limitless.
       </h1>
 

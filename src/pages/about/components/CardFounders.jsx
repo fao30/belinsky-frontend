@@ -9,6 +9,7 @@ const CardFounders = ({ src, h3, blurPic }) => {
     <>
       <div className="flex flex-col w-[25%] md:w-[15%] lg:w-[10%] gap-y-2">
         <LazyLoadImage
+          loading="lazy"
           alt=""
           src={src}
           className=" bg-[#626161] rounded-full"
@@ -18,7 +19,7 @@ const CardFounders = ({ src, h3, blurPic }) => {
         {isLoading ? (
           <BlurhashCanvas
             hash={blurPic}
-            height="205"
+            height="200"
             width="200"
             className="absolute rounded-full w-[25%] md:w-[15%] lg:w-[10%] gap-y-2"
           />

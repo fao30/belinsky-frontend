@@ -8,6 +8,7 @@ const CardHeroBS = ({ src, className, blurPic }) => {
   return (
     <div className="relative">
       <LazyLoadImage
+        loading="lazy"
         src={src}
         alt=""
         className={className}

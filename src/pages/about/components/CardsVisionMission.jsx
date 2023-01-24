@@ -10,6 +10,7 @@ const CardsVisionMission = ({ src, h1, p, blurPic }) => {
       <div className="md:w-[60%] md:h-[28rem] lg:h-[35rem] xl:h-[45rem] space-y-5">
         <div className="relative">
           <LazyLoadImage
+            loading="lazy"
             alt=""
             src={src}
             beforeLoad={() => setIsLoading(true)}

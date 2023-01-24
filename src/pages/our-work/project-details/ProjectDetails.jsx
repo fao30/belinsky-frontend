@@ -1,4 +1,5 @@
-import React from "react";
+import { Icon } from "@iconify/react";
+import { React, useState, useRef } from "react";
 
 const ProjectDetails = ({
   title,
@@ -13,6 +14,34 @@ const ProjectDetails = ({
   img2,
   img3,
 }) => {
+  const videoRef = useRef(null);
+  const [playing, setPlaying] = useState(false);
+
+  const videoHandler = (control) => {
+    if (control === "play") {
+      videoRef.current.play();
+      setPlaying(true);
+    } else if (control === "pause") {
+      videoRef.current.pause();
+      setPlaying(false);
+    } else if (control === "fullscreen") {
+      toggleFullScreen();
+    }
+  };
+
+  const toggleFullScreen = () => {
+    var el = document.getElementById("full-screenVideo");
+    if (el.requestFullscreen) {
+      el.requestFullscreen();
+    } else if (el.msRequestFullscreen) {
+      el.msRequestFullscreen();
+    } else if (el.mozRequestFullScreen) {
+      el.mozRequestFullScreen();
+    } else if (el.webkitRequestFullscreen) {
+      el.webkitRequestFullscreen();
+    }
+  };
+
   return (
     <section>
       {/* THE TITLE */}
@@ -29,18 +58,58 @@ const ProjectDetails = ({
         <img
           src={src}
           alt=""
-          className={`${src ? "w-full h-full" : "hidden"}`}
+          className={`${src ? "w-full h-full relative" : "hidden"}`}
         />
-        <video
-          muted
-          loop
-          playsInline
-          autoPlay
-          className={`${srcvideo ? "w-full h-full" : "hidden"}`}
-        >
-          <source type="video/mp4" src={srcvideo} />
-        </video>
       </div>
+
+      {srcvideo ? (
+        <div className="relative w-full h-full">
+          <video
+            id="full-screenVideo"
+            ref={videoRef}
+            className="w-full h-full object-cover"
+            playsInline
+            onClick={() => videoHandler("pause")}
+            onEnded={() => setPlaying(false)}
+          >
+            <source src={srcvideo} type="video/mp4" />
+          </video>
+          <div className="absolute top-[40%]  w-full">
+            <div className="flex justify-center">
+              {playing ? (
+                <></>
+              ) : (
+                <button
+                  onClick={() => {
+                    videoHandler("play");
+                  }}
+                >
+                  <Icon
+                    icon="material-symbols:play-circle"
+                    className="w-[4rem] h-[4rem] md:w-[8rem] md:h-[8rem] text-[#022581] hover:text-[#5484F2] transition-all ease-in-out duration-200"
+                  />
+                </button>
+              )}
+            </div>
+          </div>
+          <div className="absolute bottom-0 right-0">
+            <div className="flex justify-end p-3">
+              <button
+                onClick={() => {
+                  videoHandler("fullscreen");
+                }}
+              >
+                <Icon
+                  icon="icon-park-outline:full-screen-two"
+                  className="w-[1.5rem] h-[1.5rem] md:w-[2rem] md:h-[2rem] text-[#022581] hover:text-[#5484F2] transition-all ease-in-out duration-200"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      ) : (
+        ""
+      )}
       {/* DESC */}
       <div className="py-[6vw] lg:pt-12 lg:pb-24 px-[6vw] xl:px-[16vw] flex justify-between w-full flex-wrap">
         <h2 className="text-[1.5rem] md:text-[2rem] lg:text-[2.5rem] font-[800] text-[#022581] w-full lg:w-[50%]">

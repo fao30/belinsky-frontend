@@ -12,7 +12,7 @@ const BelinskyStudio = () => {
         <h1 className="w-[100%] md:w-[90%] lg:w-[45%] text-4xl font-black tracking-wide text-center lg:text-4xl xl:text-5xl text-[#022581] ">
           Belinsky Studio
         </h1>
-        <p className="w-[100%] md:w-[90%] lg:w-[45%] mt-3 mb-3 text-justify leading-6 text-xl font-semibold lg:text-2xl text-[#022581]">
+        <p className="w-[100%] md:w-[90%] lg:w-[45%] mt-3 mb-3 text-justify leading-6 text-lg md:text-xl font-semibold lg:text-2xl text-[#022581]">
           Our specialties include model photography, food photography,
           corporate, family, professional photos for LinkedIn, wedding
           photography, and graduation photography.

@@ -41,7 +41,7 @@ const ProductionHouse = () => {
             <h1 className="text-4xl font-black tracking-wide text-center lg:text-4xl xl:text-5xl">
               Production House
             </h1>
-            <p className="mt-3 font-semibold leading-6 text-justify text-xl lg:text-2xl">
+            <p className="mt-3 font-semibold leading-6 text-justify text-lg md:text-xl lg:text-2xl">
               Belinsky strives for great quality and exclusiveness in every
               video that exhibits a flawless result. We may help you in the
               production of TVC advertisement for your advertising needs.

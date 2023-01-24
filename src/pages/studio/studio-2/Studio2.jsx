@@ -78,14 +78,14 @@ const Studio2 = () => {
         {/* Photoshoot Card Prices */}
         <div className="flex items-center justify-center gap-[6vw] flex-wrap p-[6vw]">
           <CardPhotoShootPrice
-            p="Rp150.000"
+            p="Rp 150.000"
             h1="Couple/Studio Photo Session"
             li={couplePhotoSession.map(({ li }) => {
               return <li>- {li}</li>;
             })}
           />
           <CardPhotoShootPrice
-            p="Rp350.000"
+            p="Rp 350.000"
             h1="Group Studio Photo Session"
             li={groupStudioSession.map(({ li }) => {
               return <li>- {li}</li>;
@@ -96,10 +96,10 @@ const Studio2 = () => {
 
       {/* Additional Prices */}
       <div className="flex flex-col text-center text-lg md:text-2xl">
-        <p> Additional printed photo: Rp10.000</p>
+        <p> Additional printed photo: Rp 10.000</p>
         <p>
-          Soft copy all photo: Rp25.000/person <br /> or tag @belinsky.studio on
-          IG story
+          Soft copy all photo: Rp 25.000/person <br /> or tag @belinsky.studio
+          on IG story
         </p>
       </div>
 

@@ -76,31 +76,31 @@ const ProjectDetails = ({
           <div className="h-[45%]">
             <img
               src={img1}
-              alt=""
-              className="transition-all hover:scale-110 h-full w-full object-cover"
+              alt="project details"
+              className="h-full w-full object-cover"
             />
           </div>
           <div className="h-[45%]">
             <img
               src={img2}
-              alt=""
-              className="transition-all hover:scale-110 h-full w-full object-cover"
+              alt="project details"
+              className="h-full w-full object-cover"
             />
           </div>
         </div>
         <div className="w-[45%]">
           <img
             src={img3}
-            alt=""
-            className="transition-all hover:scale-110 h-full w-full object-cover"
+            alt="project details"
+            className="h-full w-full object-cover"
           />
         </div>
       </div>
       {/* IMAGES MOBILE */}
       <div className="px-[6vw] lg:px-[10vw] w-full hidden flex-wrap gap-7 pb-24 max-md:flex">
-        <img src={img1} alt="" className="transition-all hover:scale-110" />
-        <img src={img2} alt="" className="transition-all hover:scale-110" />
-        <img src={img3} alt="" className="transition-all hover:scale-110" />
+        <img src={img1} alt="project details" />
+        <img src={img2} alt="project details" />
+        <img src={img3} alt="project details" />
       </div>
     </section>
   );

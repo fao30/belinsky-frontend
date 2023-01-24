@@ -8,23 +8,23 @@ const CardFounders = ({ src, h3, blurPic }) => {
   return (
     <>
       <div className="flex flex-col w-[25%] md:w-[15%] lg:w-[10%] gap-y-2">
-        <div clawssName="relative">
-          <LazyLoadImage
-            alt=""
-            src={src}
-            className=" bg-[#626161] rounded-full"
-            beforeLoad={() => setIsLoading(true)}
-            afterLoad={() => setIsLoading(false)}
+        <LazyLoadImage
+          alt=""
+          src={src}
+          className=" bg-[#626161] rounded-full"
+          beforeLoad={() => setIsLoading(true)}
+          afterLoad={() => setIsLoading(false)}
+        />
+        {isLoading ? (
+          <BlurhashCanvas
+            hash={blurPic}
+            height="205"
+            width="200"
+            className="absolute rounded-full w-[25%] md:w-[15%] lg:w-[10%] gap-y-2"
           />
-          {isLoading ? (
-            <BlurhashCanvas
-              hash={blurPic}
-              className="absolute top-0 w-full h-full rounded-full"
-            />
-          ) : (
-            ""
-          )}
-        </div>
+        ) : (
+          ""
+        )}
         <h3 className="font-extrabold text-center mx-auto w-[80%] md:w-full text-md md:text-lg">
           {h3}
         </h3>

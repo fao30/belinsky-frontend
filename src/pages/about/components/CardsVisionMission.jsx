@@ -19,7 +19,7 @@ const CardsVisionMission = ({ src, h1, p, blurPic }) => {
           {isLoading ? (
             <BlurhashCanvas
               hash={blurPic}
-              className="absolute top-0 right-0 object-cover w-full h-full transition duration-300 ease-in-out grayscale hover:grayscale-0"
+              className="absolute top-0 object-cover w-full h-full transition duration-300 ease-in-out grayscale hover:grayscale-0"
             />
           ) : (
             ""

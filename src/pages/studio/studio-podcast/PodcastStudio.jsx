@@ -12,7 +12,7 @@ const PodcastStudio = () => {
         <h1 className="text-4xl font-black md:text-6xl lg:text-7xl">
           STUDIO PODCAST
         </h1>
-        <p className="font-bold text-md md:text-lg lg:text-2xl">
+        <p className="font-bold   md:text-lg lg:text-2xl">
           Classic Dark Green Living Room with tamble lamp
         </p>
       </div>

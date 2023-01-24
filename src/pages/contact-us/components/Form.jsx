@@ -95,19 +95,19 @@ const Form = () => {
         </div>
         <div className="flex flex-col p-5 md:flex-row justify-start w-full h-full text-[#022581] xl:text-2xl font-semibold">
           <div className="flex flex-col w-full h-full gap-y-2">
-            <label htmlFor="textarea" className="ml-1 text-md lg:text-xl">
+            <label htmlFor="textarea" className="ml-1   lg:text-xl">
               Your Message
             </label>
             <textarea
               name="textarea"
               id="textarea"
-              className="bg-[#E0E0E0] px-3 py-2 caret-[#022581] rounded-lg text-md lg:text-lg"
+              className="bg-[#E0E0E0] px-3 py-2 caret-[#022581] rounded-lg   lg:text-lg"
               rows="7"
               value={state.textarea}
               onChange={handleChange}
             ></textarea>
             <button
-              className="py-[0.85rem] w-[5.5rem] md:py-4 md:w-[8rem] xl:py-[1.1rem] xl:w-[13rem] text-sm lg:text-md xl:text-lg text-center bg-[#022581] text-white mt-5 rounded-2xl uppercase font-bold"
+              className="py-[0.85rem] w-[5.5rem] md:py-4 md:w-[8rem] xl:py-[1.1rem] xl:w-[13rem] text-sm lg:  xl:text-lg text-center bg-[#022581] text-white mt-5 rounded-2xl uppercase font-bold"
               onClick={handleClick}
             >
               Send

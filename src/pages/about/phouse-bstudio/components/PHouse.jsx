@@ -30,10 +30,10 @@ const PHouse = () => {
           </div>
         </div>
         <div className="p-5 lg:p-10 w-[100%] md:w-[55%] lg:w-[50%] my-auto">
-          <h1 className="text-xl font-black uppercase md:text-2xl xl:text-3xl">
+          <h1 className="font-black uppercase text-2xl lg:text-3xl">
             Production House
           </h1>
-          <p className="text-sm font-bold md:text-md lg:text-lg xl:text-xl">
+          <p className="text-base lg:text-xl font-bold">
             Belinsky strives for great quality and exclusiveness in every video
             that exhibits a flawless result. We may help you in the production
             of TVC advertisement for your advertising needs.

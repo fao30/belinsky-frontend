@@ -11,7 +11,7 @@ import CardHeroPH from "../../../about/components/CardHeroPH";
 const ProductionHouse = () => {
   return (
     <>
-      <section className="w-full px-[4vw]">
+      <section className="w-full px-[4vw] my-[8vh] md:my-[16vh]">
         <div className="flex flex-wrap-reverse justify-around w-full h-full lg:flex-row text-[#022581] group">
           {/* The 3 images */}
           <div className="flex w-[100%] lg:w-[45%] h-full items-center gap-5 max-lg:my-[5vw]">
@@ -37,11 +37,11 @@ const ProductionHouse = () => {
           </div>
 
           {/* Large Screen (lg breakpoint) */}
-          <div className="w-[100%] md:w-[90%] lg:w-[45%] self-center ">
-            <h1 className="text-4xl font-black tracking-wide text-center lg:text-4xl xl:text-5xl">
+          <div className="w-[100%] md:w-[90%] lg:w-[45%] self-center">
+            <h1 className="text-4xl font-black tracking-wide text-center md:text-5xl xl:text-6xl">
               Production House
             </h1>
-            <p className="mt-3 font-semibold leading-6 text-justify text-lg md:text-xl lg:text-2xl">
+            <p className="mt-3 text-lg font-semibold leading-6 text-justify md:text-xl lg:text-2xl">
               Belinsky strives for great quality and exclusiveness in every
               video that exhibits a flawless result. We may help you in the
               production of TVC advertisement for your advertising needs.

@@ -24,11 +24,11 @@ const PhBs = () => {
       <BStudio />
 
       {/* Checkout Company Profile */}
-      <div className="w-full h-full mt-20">
-        <h2 className="text-[#022581] text-center font-extrabold text-lg mt-10 md:text-xl lg:text-2xl">
+      <div className="w-full h-full mt-[8vh] md:mt-[16vh]">
+        <h2 className="text-[#022581] text-center font-extrabold text-lg md:text-xl lg:text-2xl my-[5vh] md:my-[10vh]">
           CHECK OUT OUR COMPANY PROFILE
         </h2>
-        <div className="mt-10 w-[90%] xl:w-[80%] h-full mx-auto bg-[#022581] rounded-lg drop-shadow-[0_2px_2px_transparent] shadow-lg shadow-slate-400">
+        <div className="w-[90%] xl:w-[80%] h-full mx-auto bg-[#022581] rounded-lg drop-shadow-[0_2px_2px_transparent] shadow-lg shadow-slate-400 ">
           <div className="relative">
             <LazyLoadImage
               beforeLoad={() => setIsLoading(true)}

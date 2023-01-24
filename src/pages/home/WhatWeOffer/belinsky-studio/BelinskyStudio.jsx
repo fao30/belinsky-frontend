@@ -6,10 +6,10 @@ const BelinskyStudio = () => {
   const navigate = useNavigate();
 
   return (
-    <section className="w-full">
+    <section className="w-full my-[8vh] md:my-[16vh]">
       {/* Title */}
       <div className="flex flex-row justify-around flex-wrap items-center px-[4vw] gap-y-1 w-full">
-        <h1 className="w-[100%] md:w-[90%] lg:w-[45%] text-4xl font-black tracking-wide text-center lg:text-4xl xl:text-5xl text-[#022581] ">
+        <h1 className="w-[100%] md:w-[90%] lg:w-[45%] text-4xl font-black tracking-wide text-center md:text-5xl xl:text-6xl text-[#022581] ">
           Belinsky Studio
         </h1>
         <p className="w-[100%] md:w-[90%] lg:w-[45%] mt-3 mb-3 text-justify leading-6 text-lg md:text-xl font-semibold lg:text-2xl text-[#022581]">

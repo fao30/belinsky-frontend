@@ -5,7 +5,7 @@ import bh2 from "../../assets/about-bh-2.png";
 const BStudio = () => {
   return (
     <>
-      <section className="flex flex-col justify-around w-full h-full md:flex-row text-[#022581] mt-10 group">
+      <section className="flex flex-col justify-around w-full h-full md:flex-row text-[#022581] group my-[8vh] md:my-[16vh]">
         <div className="p-5 md:p-10 w-[100%] h-full md:w-[50%] my-auto">
           <h1 className="text-xl font-black uppercase md:text-2xl xl:text-3xl">
             Belinsky Studio

@@ -7,7 +7,7 @@ import CardHeroPH from "../../components/CardHeroPH";
 const PHouse = () => {
   return (
     <>
-      <div className="flex flex-wrap-reverse justify-around w-full h-full md:flex-row text-[#022581] group mt-10">
+      <div className="flex flex-wrap-reverse justify-around w-full h-full md:flex-row text-[#022581] group my-[8vh] md:my-[16vh]">
         <div className="flex w-[100%] md:w-[45%] lg:w-[50%] h-full p-8 items-center gap-5">
           <div className="flex flex-col w-[50%] lg:ml-32 items-end gap-5">
             <CardHeroPH

@@ -18,8 +18,8 @@ const PodcastStudio = () => {
       </div>
       {/* CAROUSEL */}
       <div class="carousel carousel-center w-full mb-4 space-x-2 lg:space-x-12">
-        {podcastCarouselData.map(({ src }) => {
-          return <PodcastCarousel src={src} />;
+        {podcastCarouselData?.map((e) => {
+          return <PodcastCarousel src={e.src} blurPic={e.blurPic} />;
         })}
       </div>
       <h2 className="px-[6vw] text-center text-[#022581] font-[400] text-sm md:text-lg mb-16">

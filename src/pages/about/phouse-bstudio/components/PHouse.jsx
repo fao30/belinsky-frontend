@@ -9,7 +9,7 @@ const PHouse = () => {
     <>
       <div className="flex flex-wrap-reverse justify-around w-full h-full md:flex-row text-[#022581] group mt-10">
         <div className="flex w-[100%] md:w-[45%] lg:w-[50%] h-full p-8 items-center gap-5">
-          <div className="flex flex-col w-[50%] md:w-[60%] lg:w-[60%] lg:ml-32 items-end gap-5">
+          <div className="flex flex-col w-[50%] lg:ml-32 items-end gap-5">
             <CardHeroPH
               src={ph1}
               className="w-[100%] object-cover transition duration-700 ease-in-out translate-x-16 translate-y-20 rounded-2xl grayscale hover:grayscale-0 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:duration-700 group-hover:ease-in-out group-hover:delay-200"
@@ -21,7 +21,7 @@ const PHouse = () => {
               blurPic="LBI56w4n01E3019Fx]?b~pWC-;IU"
             />
           </div>
-          <div className="w-[50%] md:w-[60%] lg:w-[60%]">
+          <div className="w-[50%] md:w-[60%]">
             <CardHeroPH
               src={ph3}
               className="object-cover transition duration-700 ease-in-out -translate-x-16 rounded-2xl grayscale hover:grayscale-0 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:duration-700 group-hover:ease-in-out group-hover:delay-150"

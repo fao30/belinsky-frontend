@@ -1,7 +1,5 @@
 import { Icon } from "@iconify/react";
 import { React, useState, useRef } from "react";
-import PauseButton from "../components/PauseButton";
-import PlayButton from "../components/PlayButton";
 
 const ProjectDetails = ({
   title,

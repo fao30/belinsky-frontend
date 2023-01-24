@@ -13,12 +13,12 @@ export const ContactItems = [
     href: "mailto:partnership@belinsky.studio",
   },
   {
-    p: "Belinsky.studio",
+    p: "belinsky.studio",
     icon: <AiOutlineInstagram size={20} />,
     href: "https://www.instagram.com/belinsky.studio/",
   },
   {
-    p: "Belinsky.id",
+    p: "belinsky.id",
     icon: <TbBrandTiktok size={20} />,
     href: "https://www.tiktok.com/@belinsky.id",
   },

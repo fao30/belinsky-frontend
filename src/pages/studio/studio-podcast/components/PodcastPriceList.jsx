@@ -37,7 +37,7 @@ const PodcastPriceList = () => {
             </div>
           </div>
           <div className="h-[85%] flex justify-center p-[4vw] md:p-[3vw] lg:py-[2vw] lg:px-[3vw]">
-            <div className="flex flex-wrap items-center justify-center w-full lg:justify-between">
+            <div className="xl:ml-12 flex flex-wrap items-center justify-center w-full lg:justify-between">
               <div className="w-full lg:w-[48%] flex flex-col">
                 {StudioPodcastPrice?.map((e) => {
                   return (
@@ -63,10 +63,10 @@ const PodcastPriceList = () => {
         </div>
         {/* EQUIPMENT LIST */}
         <div className="h-[50%] text-[#022581] p-[4vw] md:p-[3vw] lg:py-[2vw] lg:px-[3vw] text-xl lg:text-2xl font-semibold">
-          <div className="h-[30%] flex items-center  max-lg:mb-6">
+          <div className="xl:ml-12 h-[30%] flex items-center  max-lg:mb-6">
             <h1 className="text-2xl">Equipment List</h1>
           </div>
-          <div className="h-[70%] flex justify-center">
+          <div className=" xl:ml-12 h-[70%] flex justify-center">
             <div className="flex flex-wrap justify-between w-full">
               {/* left content */}
               <div className="w-full lg:w-[48%]">

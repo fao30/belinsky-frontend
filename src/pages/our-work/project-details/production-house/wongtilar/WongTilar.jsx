@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectDetails from "../../ProjectDetails";
-import WongTilarVid from "../../../../../assets/production-house/WongTilar_.mp4";
+import WongTilarVid from "./assets/WongTilar.mp4";
 import img1 from "./assets/img1.jpeg";
 import img2 from "./assets/img2.jpeg";
 import img3 from "./assets/img3.jpeg";

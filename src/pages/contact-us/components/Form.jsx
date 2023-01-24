@@ -60,7 +60,7 @@ const Form = () => {
   return (
     <>
       <Toaster />
-      <form className="p-[3vw] lg:px-[8vw] h-fit w-[90%] md:w-[85%] xl:w-[70rem] bg-white mx-auto -mt-16 drop-shadow-[0_1.5px_1.5px_black]">
+      <form className="p-[3vw] lg:px-[8vw] h-fit w-[90%] md:w-[85%] xl:w-[70%] bg-white mx-auto -mt-16 drop-shadow-[0_1.5px_1.5px_black]">
         <div className="flex flex-col md:flex-row justify-center w-full h-full text-[#022581] xl:text-2xl font-semibold gap-10 p-5">
           <InputForm
             label="Name"
@@ -93,8 +93,8 @@ const Form = () => {
             onChange={handleChange}
           />
         </div>
-        <div className="flex flex-col p-5 md:flex-row justify-start w-full h-full text-[#022581] xl:text-2xl font-semibold gap-4">
-          <div className="flex flex-col w-full h-full md:gap-y-2">
+        <div className="flex flex-col p-5 md:flex-row justify-start w-full h-full text-[#022581] xl:text-2xl font-semibold">
+          <div className="flex flex-col w-full h-full gap-y-2">
             <label htmlFor="textarea" className="ml-1 text-md lg:text-xl">
               Your Message
             </label>

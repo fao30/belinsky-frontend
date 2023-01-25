@@ -1,6 +1,6 @@
 {
   "homepage": "https://belinskyproduction.com/",
-  "name": "belinsky",
+  "name": "belinsky-frontend",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

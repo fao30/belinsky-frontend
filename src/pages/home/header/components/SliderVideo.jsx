@@ -28,7 +28,7 @@ const SliderVideo = ({ src, blurPic }) => {
         muted
         playsInline
         onLoadStart={() => setIsLoadingVideo(true)}
-        onLoadedData={() => setIsLoadingVideo(true)}
+        onLoadedData={() => setIsLoadingVideo(false)}
         className="absolute top-0 left-0 object-cover w-full h-full"
       >
         <source src={src} type="video/mp4" />

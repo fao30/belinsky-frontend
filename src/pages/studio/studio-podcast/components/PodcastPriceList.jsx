@@ -42,12 +42,12 @@ const PodcastPriceList = () => {
                 {StudioPodcastPrice?.map((e) => {
                   return (
                     <div className="flex flex-row text-xl lg:text-2xl text-[#022581]">
-                      <p className="w-[18%]">{e.hour}</p>
+                      <p className="w-[18%]">{e?.hour}</p>
                       <p className="w-[2%]">:</p>
                       <p className="text-lg text-gray-500 line-through w-[40%]">
-                        {e.priceNot}
+                        {e?.priceNot}
                       </p>
-                      <p className="w-[45%]"> {e.price}</p>
+                      <p className="w-[45%]"> {e?.price}</p>
                     </div>
                   );
                 })}

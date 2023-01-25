@@ -24,7 +24,7 @@ const PhBs = () => {
       <BStudio />
 
       {/* Checkout Company Profile */}
-      <div className="w-full h-full mt-[8vh] md:mt-[16vh]">
+      <div className="w-full h-full mt-[16vh]">
         <h2 className="text-[#022581] text-center font-extrabold text-2xl lg:text-3xl my-[5vh] md:my-[10vh]">
           CHECK OUT OUR COMPANY PROFILE
         </h2>

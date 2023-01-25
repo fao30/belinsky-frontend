@@ -6,8 +6,9 @@ import { routesData } from "./store/Routes";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 
-const Index = () => {
-  return (
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
+  <React.StrictMode>
     <HashRouter>
       <Navbar />
       <Routes>
@@ -17,12 +18,5 @@ const Index = () => {
       </Routes>
       <Footer />
     </HashRouter>
-  );
-};
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  <React.StrictMode>
-    <Index />
   </React.StrictMode>
 );

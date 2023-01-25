@@ -20,14 +20,14 @@ const BStudio = () => {
           <div className="flex flex-col w-[50%] items-end gap-5">
             <CardHeroBS
               src={bh1}
-              className="translate-x-12  group-hover:translate-x-0 group-hover:rotate-0 object-cover transition duration-700 ease-in-out rounded-2xl grayscale hover:grayscale-0  group-hover:delay-300 group-hover:duration-700 group-hover:ease-in-out"
+              className="self-start object-cover transition duration-700 ease-in-out translate-x-16 translate-y-24 rounded-2xl grayscale hover:grayscale-0 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:delay-300 group-hover:duration-700 group-hover:ease-in-out"
               blurPic="LAGuK_-;9^00D4xY4:IU00$~-;_N"
             />
           </div>
           <div className="w-[50%] lg:w-[40%]">
             <CardHeroBS
               src={bh2}
-              className="translate-y-10 md:translate-y-32  object-cover group-hover:translate-y-0 group-hover:rotate-0 transition duration-700 ease-in-out  rounded-2xl grayscale hover:grayscale-0  group-hover:delay-200 group-hover:duration-700 group-hover:ease-in-out"
+              className="object-cover transition duration-700 ease-in-out -translate-x-24 -translate-y-28 rounded-2xl grayscale hover:grayscale-0 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:delay-200 group-hover:duration-700 group-hover:ease-in-out"
               blurPic="LBIEqi8^9ut5_NxU%Mt64;WUjEIV"
             />
           </div>

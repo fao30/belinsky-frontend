@@ -35,7 +35,7 @@ const SliderVideo = ({ src, blurPic }) => {
       </video>
 
       {/* Text Content */}
-      <div className="absolute flex flex-col justify-start h-full md:left-[3.5rem] gap-y-6 px-4 md:px-0 top-[60%] z-20">
+      <div className="absolute flex flex-col justify-start h-full md:left-[3.5rem] gap-y-6 px-4 md:px-0 top-[60%] z-20  sm:w-[70%] md:w-[50%] lg:w-[60%] xl:w-[40%] w-full">
         <h1
           className="text-2xl text-white uppercase lg:text-4xl"
           // style={{ textShadow: "1px 1px red" }}
@@ -44,11 +44,10 @@ const SliderVideo = ({ src, blurPic }) => {
           <br className="hidden md:inline-block" /> where creativity is
           limitless
         </h1>
-        <p className="text-lg leading-4 text-white lg:text-xl lg:leading-5">
-          Given that Belinsky is both a production house and a creative
-          <br className="hidden md:inline-block" />
-          studio, our areas of expertise include producing both
-          <br className="hidden md:inline-block" /> photography and filmmaking
+        <p className="text-lg leading-4 text-white lg:text-xl lg:leading-5 w-full sm:w-[90%]">
+          Given that Belinsky is both a production house and a creative studio,
+          our areas of expertise include producing both photography and
+          filmmaking
         </p>
         <button
           onClick={() => {

@@ -16,7 +16,7 @@ const SliderVideo = ({ src, blurPic }) => {
           <img
             alt=""
             src={logoBelinsky}
-            className="absolute w-64 md:w-96 animate-bounce left-1 md:left-6 top-64"
+            className="absolute w-64 md:w-96 animate-bounce left-1 md:left-6 top-44"
           />
         </div>
       ) : (
@@ -28,7 +28,7 @@ const SliderVideo = ({ src, blurPic }) => {
         muted
         playsInline
         onLoadStart={() => setIsLoadingVideo(true)}
-        onLoadedData={() => setIsLoadingVideo(false)}
+        onLoadedData={() => setIsLoadingVideo(true)}
         className="absolute top-0 left-0 object-cover w-full h-full"
       >
         <source src={src} type="video/mp4" />

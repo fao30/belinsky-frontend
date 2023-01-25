@@ -15,7 +15,7 @@ import { useNavigate } from "react-router-dom";
 const Header = () => {
   const navigate = useNavigate();
   return (
-    <section className="min-h-screen w-full relative">
+    <section className="relative w-full min-h-screen">
       <Swiper
         spaceBetween={0}
         slidesPerView={1}

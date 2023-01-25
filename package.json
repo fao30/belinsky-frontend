@@ -16,6 +16,7 @@
     "daisyui": "^2.47.0",
     "emailjs-com": "^3.2.0",
     "fast-blurhash": "^1.1.2",
+    "formik": "^2.2.9",
     "framer-motion": "^8.4.3",
     "google-map-react": "^2.2.0",
     "hamburger-react": "^2.5.0",
@@ -31,7 +32,8 @@
     "sass": "^1.57.1",
     "swiper": "^8.4.5",
     "tailwind-scrollbar-hide": "^1.1.7",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "yup": "^0.32.11"
   },
   "scripts": {
     "start": "react-scripts start",

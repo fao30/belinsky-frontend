@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectDetails from "../../ProjectDetails";
-import TravelokaVid from "../../../../../assets/production-house/Traveloka_.mp4";
+import TravelokaVid from "./assets/Traveloka.mp4";
 import img1 from "./assets/img1.jpeg";
 import img2 from "./assets/img2.jpeg";
 import img3 from "./assets/img3.jpeg";

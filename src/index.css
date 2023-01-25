@@ -16,10 +16,10 @@ p {
 }
 
 /* hides iOS video control */
-*::-webkit-media-controls-start-playback-button {
+/* *::-webkit-media-controls-start-playback-button {
   display: none !important;
   -webkit-appearance: none;
-}
+} */
 
 /* Hides scroll bar */
 html {

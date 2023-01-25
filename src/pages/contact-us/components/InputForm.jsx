@@ -2,7 +2,7 @@ const InputForm = ({ label, type, name, onChange, value }) => {
   return (
     <>
       <div className="flex flex-col w-full h-full md:gap-y-2">
-        <label htmlFor={name} className="ml-1 text-md lg:text-xl">
+        <label htmlFor={name} className="ml-1   lg:text-xl">
           {label}
         </label>
         <input

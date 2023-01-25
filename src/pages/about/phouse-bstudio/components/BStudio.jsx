@@ -7,10 +7,10 @@ const BStudio = () => {
     <>
       <section className="flex flex-col justify-around w-full h-full md:flex-row text-[#022581] group my-[8vh] md:my-[16vh]">
         <div className="p-5 md:p-10 w-[100%] h-full md:w-[50%] my-auto">
-          <h1 className="text-xl font-black uppercase md:text-2xl xl:text-3xl">
+          <h1 className="font-black uppercase text-2xl lg:text-3xl">
             Belinsky Studio
           </h1>
-          <p className="text-sm font-bold md:text-md lg:text-lg xl:text-xl">
+          <p className="text-base lg:text-xl font-bold">
             Our specialties include model photography, food photography,
             corporate, family, professional photos for LinkedIn, wedding
             photography, and graduation photography.

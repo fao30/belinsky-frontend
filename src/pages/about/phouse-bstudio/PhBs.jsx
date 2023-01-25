@@ -25,7 +25,7 @@ const PhBs = () => {
 
       {/* Checkout Company Profile */}
       <div className="w-full h-full mt-[8vh] md:mt-[16vh]">
-        <h2 className="text-[#022581] text-center font-extrabold text-lg md:text-xl lg:text-2xl my-[5vh] md:my-[10vh]">
+        <h2 className="text-[#022581] text-center font-extrabold text-2xl lg:text-3xl my-[5vh] md:my-[10vh]">
           CHECK OUT OUR COMPANY PROFILE
         </h2>
         <div className="w-[90%] xl:w-[80%] h-full mx-auto bg-[#022581] rounded-lg drop-shadow-[0_2px_2px_transparent] shadow-lg shadow-slate-400 ">
@@ -46,8 +46,8 @@ const PhBs = () => {
               ""
             )}
           </div>
-          <div className="flex flex-col items-center justify-between p-3 gap-y-3 md:flex-row sm:p-6 lg:p-8 lg:justify-around lg:gap-52">
-            <p className="text-[#F5F5F5] text-sm sm:text-lg lg:text-xl">
+          <div className="flex flex-col items-center justify-between p-4 gap-y-3 md:flex-row sm:p-6 lg:p-8 lg:justify-around lg:gap-52">
+            <p className="text-[#F5F5F5] text-lg md:text-2xl">
               Let’s Create Something Great Together
             </p>
             <button
@@ -55,7 +55,7 @@ const PhBs = () => {
                 navigate("/contact");
                 LoadToTop();
               }}
-              className="bg-[#F5F5F5] text-[#022581] font-extrabold text-sm py-1 px-2 sm:py-2 sm:px-3 rounded-md sm:text-md md:text-lg lg:text-xl"
+              className="bg-[#F5F5F5] text-[#022581] font-extrabold  py-1 px-2 sm:py-2 sm:px-3 rounded-md text-base md:text-xl"
             >
               Contact Us
             </button>

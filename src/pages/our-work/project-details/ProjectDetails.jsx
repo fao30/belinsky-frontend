@@ -32,30 +32,28 @@ const ProjectDetails = ({
           className={`${src ? "w-full h-full" : "hidden"}`}
         />
         <video
-          muted
-          loop
-          playsInline
-          autoPlay
           className={`${srcvideo ? "w-full h-full" : "hidden"}`}
+          playsInline
+          controls
+          preload="metadata"
         >
-          <source type="video/mp4" src={srcvideo} />
+          <source src={srcvideo} type="video/mp4" />
         </video>
       </div>
+
       {/* DESC */}
-      <div className="py-[6vw] lg:pt-12 lg:pb-24 px-[6vw] lg:px-[10vw] flex justify-between w-full flex-wrap">
+      <div className="py-[6vw] lg:pt-12 lg:pb-24 px-[6vw] xl:px-[16vw] flex justify-between w-full flex-wrap">
         <h2 className="text-[1.5rem] md:text-[2rem] lg:text-[2.5rem] font-[800] text-[#022581] w-full lg:w-[50%]">
           {byWho2}
         </h2>
         <div className="w-full lg:w-[45%]">
-          <h2 className="text-[1rem] lg:text-[1.5rem] text-[#022581]">
-            {desc}
-          </h2>
+          <p className="text-[1rem] lg:text-[1.2rem] text-[#022581]">{desc}</p>
           <div className="flex flex-wrap justify-between max-lg:mt-8 lg:pt-24">
             <div className="flex flex-col w-full md:w-[55%]">
               <h2 className="text-[1.5rem] md:text-[2rem] lg:text-[2.5rem] font-[800] text-[#022581]">
                 Date
               </h2>
-              <p className="text-[1rem] lg:text-[1.5rem] text-[#022581]">
+              <p className="text-[1rem] lg:text-[1.2rem] text-[#022581]">
                 {date}
               </p>
             </div>
@@ -63,7 +61,7 @@ const ProjectDetails = ({
               <h2 className="text-[1.5rem] md:text-[2rem] lg:text-[2.5rem] font-[800] text-[#022581]">
                 Category
               </h2>
-              <p className="text-[1rem] lg:text-[1.5rem] text-[#022581]">
+              <p className="text-[1rem] lg:text-[1.2rem] text-[#022581]">
                 {category}
               </p>
             </div>
@@ -71,7 +69,7 @@ const ProjectDetails = ({
         </div>
       </div>
       {/* IMAGES */}
-      <div className="px-[6vw] lg:px-[10vw] w-full h-[35rem] lg:h-[50rem] flex justify-between pb-24 max-md:hidden">
+      <div className="px-[6vw] xl:px-[16vw] w-full h-[35rem] lg:h-[50rem] flex justify-between pb-24 max-md:hidden">
         <div className="flex flex-col justify-between w-[50%]">
           <div className="h-[45%]">
             <img

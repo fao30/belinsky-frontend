@@ -40,12 +40,21 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="*" element={<Home />} />
         <Route path="/about" element={<About />} />
+        <Route path="/termsconditions" element={<TnC />} />
+        <Route path="/studio-1" element={<Studio1 />} />
+        <Route path="/studio-2" element={<Studio2 />} />
+        <Route path="/studio-podcast" element={<PodcastStudio />} />
+        <Route path="/termsconditions" element={<TnC />} />
+        <Route path="/contact" element={<ContactUs />} />
         <Route path="/ourwork" element={<OurWork />} />
+        {/* OUR WORK PRODUCTION HOUSE */}
         <Route path="/ourwork/menantea" element={<Menantea />} />
         <Route path="/ourwork/tvindihome" element={<Indihome />} />
         <Route path="/ourwork/traveloka" element={<Traveloka />} />
         <Route path="/ourwork/wongtilar" element={<WongTilar />} />
+        {/* OUR WORK BELINSKY STUDIO */}
         <Route path="/ourwork/abnon" element={<Abnon />} />
         <Route path="/ourwork/royce" element={<Royce />} />
         <Route path="/ourwork/owen" element={<Owen />} />
@@ -55,12 +64,6 @@ function App() {
         <Route path="/ourwork/prince" element={<Prince />} />
         <Route path="/ourwork/linkedin" element={<LinkedIn />} />
         <Route path="/ourwork/kumaw" element={<Kumaw />} />
-        <Route path="/termsconditions" element={<TnC />} />
-        <Route path="/studio-1" element={<Studio1 />} />
-        <Route path="/studio-2" element={<Studio2 />} />
-        <Route path="/studio-podcast" element={<PodcastStudio />} />
-        <Route path="/termsconditions" element={<TnC />} />
-        <Route path="/contact" element={<ContactUs />} />
       </Routes>
       <Footer />
     </>

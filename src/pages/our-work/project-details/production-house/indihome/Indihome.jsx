@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectDetails from "../../ProjectDetails";
-import IndihomeVid from "../../../../../assets/production-house/Indihome_.mp4";
+import IndihomeVid from "./assets/Indihome.mp4";
 import img1 from "./assets/img1.jpg";
 import img2 from "./assets/img2.jpg";
 import img3 from "./assets/img3.jpg";

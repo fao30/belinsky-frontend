@@ -16,7 +16,7 @@ const SliderVideo = ({ src, blurPic }) => {
           <img
             alt=""
             src={logoBelinsky}
-            className="absolute w-64 md:w-96 animate-bounce left-1 md:left-6 top-64"
+            className="absolute w-64 md:w-96 animate-bounce left-1 md:left-6 top-44"
           />
         </div>
       ) : (

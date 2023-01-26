@@ -7,9 +7,10 @@ const CardsVisionMission = ({ src, h1, p, blurPic }) => {
 
   return (
     <>
-      <div className="md:w-[60%] md:h-[28rem] lg:h-[35rem] xl:h-[45rem] space-y-5">
+      <div className="md:w-[80%] lg:w-[60%] h-full">
         <div className="relative">
           <LazyLoadImage
+            loading="lazy"
             alt=""
             src={src}
             beforeLoad={() => setIsLoading(true)}
@@ -19,19 +20,17 @@ const CardsVisionMission = ({ src, h1, p, blurPic }) => {
           {isLoading ? (
             <BlurhashCanvas
               hash={blurPic}
-              className="absolute top-0 right-0 object-cover w-full h-full transition duration-300 ease-in-out grayscale hover:grayscale-0"
+              className="absolute top-0 object-cover w-full h-full transition duration-300 ease-in-out grayscale hover:grayscale-0"
             />
           ) : (
             ""
           )}
         </div>
-        <div className="flex flex-col m-5 md:m-10">
-          <h1 className="text-xl font-black uppercase md:text-2xl xl:text-3xl">
-            {h1}
-          </h1>
-          <p className="text-sm font-bold md:text-md xl:text-xl lg:text-lg">
-            {p}
-          </p>
+        <div className="flex justify-center max-md:px-[4vw] px-8 pt-4">
+          <div className="flex flex-col">
+            <h1 className="font-black uppercase text-2xl lg:text-3xl">{h1}</h1>
+            <p className="mt-1 font-bold text-base md:text-xl">{p}</p>
+          </div>
         </div>
       </div>
     </>

@@ -6,13 +6,13 @@ const BelinskyStudio = () => {
   const navigate = useNavigate();
 
   return (
-    <section className="w-full min-h-screen mb-[10vh]">
+    <section className="w-full my-[5vh] lg:my-[10vh] xl:my-[15vh]">
       {/* Title */}
-      <div className="flex flex-col md:flex-row justify-around items-center px-[4vw] mb-[4vh] gap-y-1">
-        <h1 className="md:mb-0 text-4xl lg:text-5xl text-center text-[#022581] tracking-wide">
+      <div className="flex flex-row justify-around flex-wrap items-center px-[4vw] gap-y-1 w-full">
+        <h1 className="w-[100%] md:w-[90%] lg:w-[45%] text-4xl font-black tracking-wide text-center md:text-5xl xl:text-6xl text-[#022581] ">
           Belinsky Studio
         </h1>
-        <p className="mt-3 mb-3 text-justify w-[100%] md:w-[50%] lg:w-[40%] leading-6 text-xl lg:text-2xl text-[#022581]">
+        <p className="w-[100%] md:w-[90%] lg:w-[45%] mt-3 mb-3 text-justify leading-6 text-lg md:text-xl font-semibold lg:text-2xl text-[#022581]">
           Our specialties include model photography, food photography,
           corporate, family, professional photos for LinkedIn, wedding
           photography, and graduation photography.
@@ -20,7 +20,7 @@ const BelinskyStudio = () => {
       </div>
 
       {/* Studio images */}
-      <div className="flex flex-col justify-between w-full h-full md:flex-row gap-y-5">
+      <div className="flex flex-cols-3 justify-between w-full md:h-[20%] md:flex-row gap-y-5 max-lg:mt-[3vw] mt-[2vw]">
         {dataCardBStudio?.map(({ src, h2, h3, p, blurPic, nav }) => {
           return (
             <CardOverlay
@@ -29,6 +29,7 @@ const BelinskyStudio = () => {
               h3={h3}
               p={p}
               blurPic={blurPic}
+              className=""
               navigate={() => navigate(`${nav}`)}
             />
           );

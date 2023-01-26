@@ -15,13 +15,15 @@ const Footer = () => {
             <h3 className="mt-2 text-[#424242] text-2xl font-[600]">
               Belinsky Studio
             </h3>
-            {ContactItems.map(({ icon, p, href }) => (
-              <div className="flex gap-x-1">
-                <a href={href} target="break">
-                  {icon}
-                </a>
-                <p>{p}</p>
-              </div>
+            {ContactItems?.map(({ icon, p, href }) => (
+              <a
+                href={href}
+                target="break"
+                className="hover:underline font-semibold flex flex-row"
+              >
+                {icon}
+                <span className="ml-1">{p}</span>
+              </a>
             ))}
           </div>
         </div>
@@ -37,11 +39,15 @@ const Footer = () => {
             marginwidth="0"
             className="w-full h-full shadow-xl rounded-xl sm:w-[50%]"
           ></iframe>
-          <p className="text-[#8B8585] flex gap-x-3 sm:w-[50%] h-full w-full items-center">
+          <a
+            href="https://goo.gl/maps/6ZZWsiX15tRcFf599"
+            target="break"
+            className="text-[#8B8585] flex gap-x-3 sm:w-[50%] h-full w-full items-center font-semibold"
+          >
             <GoLocation size={30} className="" />
             Jl. Kemang Utara No. 15A, Bangka, Kec. Mampang Prpt., Jakarta
             Selatan, Daerah Khusus Ibukota Jakarta 12730
-          </p>
+          </a>
         </div>
       </div>
     </footer>

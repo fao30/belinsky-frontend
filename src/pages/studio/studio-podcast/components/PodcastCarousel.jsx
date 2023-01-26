@@ -1,13 +1,26 @@
-import React from "react";
+import { useState } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import { BlurhashCanvas } from "react-blurhash";
 
-const PodcastCarousel = ({ src }) => {
+const PodcastCarousel = ({ src, blurPic }) => {
+  const [isLoading, SetIsLoading] = useState(false);
   return (
-    <div className="carousel-item">
-      <img
+    <div className="relative carousel-item">
+      <LazyLoadImage
         src={src}
-        className="h-[12.5rem] sm:h-[22rem] md:h-[25rem] lg:h-[30rem] xl:h-[45rem]"
+        beforeLoad={() => SetIsLoading(true)}
+        afterLoad={() => SetIsLoading(false)}
+        className="h-[22rem] md:h-[25rem] lg:h-[30rem] xl:h-[45rem]"
         alt="podcast studio"
       />
+      {isLoading ? (
+        <BlurhashCanvas
+          hash={blurPic}
+          className="absolute object-cover w-full h-full"
+        />
+      ) : (
+        ""
+      )}
     </div>
   );
 };

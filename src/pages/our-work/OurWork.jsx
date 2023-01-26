@@ -96,12 +96,13 @@ const OurWork = () => {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
         >
-          {dataCardBStudio?.map(({ src, h3, p, nav, blurPic }) => (
+          {dataCardBStudio?.map(({ src, h3, p, nav, blurPic, isDetails }) => (
             <CardOverlayImg
               src={src}
               h3={h3}
               p={p}
               blurPic={blurPic}
+              isDetails={isDetails}
               navigate={() => {
                 navigate(`${nav}`);
               }}
@@ -115,17 +116,20 @@ const OurWork = () => {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
         >
-          {dataCardPHouse?.map(({ srcvideo, h3, p, nav, blurPic }) => (
-            <CardOverlayVid
-              srcvideo={srcvideo}
-              h3={h3}
-              p={p}
-              blurPic={blurPic}
-              navigate={() => {
-                navigate(`${nav}`);
-              }}
-            />
-          ))}
+          {dataCardPHouse?.map(
+            ({ srcvideo, h3, p, nav, blurPic, isDetails }) => (
+              <CardOverlayVid
+                srcvideo={srcvideo}
+                h3={h3}
+                p={p}
+                blurPic={blurPic}
+                isDetails={isDetails}
+                navigate={() => {
+                  navigate(`${nav}`);
+                }}
+              />
+            )
+          )}
         </motion.div>
       )}
     </motion.div>

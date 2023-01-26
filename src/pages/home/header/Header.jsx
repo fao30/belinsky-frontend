@@ -15,7 +15,7 @@ import { useNavigate } from "react-router-dom";
 const Header = () => {
   const navigate = useNavigate();
   return (
-    <section className="min-h-screen w-full mb-[10vh] relative">
+    <section className="relative w-full min-h-screen">
       <Swiper
         spaceBetween={0}
         slidesPerView={1}
@@ -26,7 +26,7 @@ const Header = () => {
         modules={[Mousewheel, Navigation]}
         className="relative w-full h-screen"
       >
-        {sliderData.map(({ src, h1, nav, blurPic }) =>
+        {sliderData?.map(({ src, h1, nav, blurPic }) =>
           src === video ? (
             <SwiperSlide>
               <SliderVideo src={src} blurPic={blurPic} />

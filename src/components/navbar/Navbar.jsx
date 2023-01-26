@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
-import { useNavigate, NavLink } from "react-router-dom";
+import { useNavigate, NavLink, useLocation } from "react-router-dom";
 import logoBelinsky from "../../assets/logo-belinsky.png";
 import LoadToTop from "../../helper/LoadToTop";
 import { NavFooterItems } from "../constants/NavFooterItems";
 
 const Navbar = () => {
   // Toggle mobile menu
+
   const [nav, setNav] = useState(false);
   const handleNav = () => {
     setNav(!nav);
@@ -19,6 +20,7 @@ const Navbar = () => {
   };
 
   let navigate = useNavigate();
+  const location = useLocation();
 
   return (
     <nav className="sticky top-0 z-20 w-full flex justify-between px-[6vw] py-[3.5vh] md:py-[2vh] items-center bg-[#022581] shadow-lg shadow-black/30">
@@ -67,7 +69,7 @@ const Navbar = () => {
                 key={label}
                 to={path}
                 className={({ isActive }) =>
-                  isActive
+                  isActive && location.pathname !== "/"
                     ? "text-[#5484F2] drop-shadow-[0_1px_1px_black] w-[15%]"
                     : "text-white drop-shadow-[0_1px_1px_black] w-[15%]"
                 }
@@ -99,7 +101,9 @@ const Navbar = () => {
                 to={path}
                 key={label}
                 className={({ isActive }) =>
-                  isActive ? "text-[#5484F2]" : "text-white"
+                  isActive && location.pathname !== "/"
+                    ? "text-[#5484F2]"
+                    : "text-white"
                 }
                 onClick={() => {
                   handleNav();

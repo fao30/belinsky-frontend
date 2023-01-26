@@ -11,13 +11,15 @@ import CardFounders from "./CardFounders";
 
 export const VisionMission = () => {
   return (
-    <section className="text-[#022581] h-full w-full">
-      <h1 className="font-[900] text-center text-3xl md:text-4xl xl:text-5xl my-[2vh]">
-        Taking off to a sky, where creativity is limitless.
-      </h1>
+    <section className="text-[#022581] h-full w-full ">
+      <div className="max-md:px-[4vw] px-8">
+        <h1 className=" font-[900] text-center text-3xl lg:text-4xl xl:text-5xl mt-[2vh]">
+          Taking off to a sky, where creativity is limitless.
+        </h1>
+      </div>
 
       {/* Vision / Mission Cards */}
-      <div className="flex flex-col py-10">
+      <div className="flex flex-col mt-[6vh]">
         <CardsVisionMission
           src={img1}
           h1="Our Vision"
@@ -25,7 +27,7 @@ export const VisionMission = () => {
           blurPic="LCF~aN00~W-r~p00t7wa-mIVIV?a"
         />
       </div>
-      <div className="flex flex-col items-end py-10 text-end">
+      <div className="flex flex-col items-end text-end my-[8vh] md:my-[16vh]">
         <CardsVisionMission
           src={img2}
           h1="Our Mission"
@@ -35,13 +37,15 @@ export const VisionMission = () => {
       </div>
 
       {/* Founders Cards */}
-      <h1 className="font-[900] text-center text-3xl md:text-4xl xl:text-5xl my-[2vh] mb-[4vh]">
-        Founders Of Belinsky
-      </h1>
-      <div className="flex w-full h-full justify-evenly lg:justify-center lg:gap-20">
-        {dataFounders.map(({ src, h3, blurPic }) => (
-          <CardFounders src={src} h3={h3} blurPic={blurPic} />
-        ))}
+      <div className="my-[8vh] md:my-[16vh]">
+        <h1 className="font-[900] text-center text-3xl md:text-4xl xl:text-5xl">
+          Founders of Belinsky
+        </h1>
+        <div className="flex w-full h-full justify-evenly lg:justify-center lg:gap-20 mt-[4vh] md:mt-[8vh]">
+          {dataFounders.map(({ src, h3, blurPic }) => (
+            <CardFounders src={src} h3={h3} blurPic={blurPic} />
+          ))}
+        </div>
       </div>
     </section>
   );

@@ -99,7 +99,7 @@ const TnC = () => {
             <ol className="list-decimal pl-7 md:pl-14 mt-3">
               {ASebelumBook?.map((e) => {
                 return (
-                  <li className="font-semibold text-lg md:text-xl">{e.li}</li>
+                  <li className="font-semibold text-lg md:text-xl">{e?.li}</li>
                 );
               })}
             </ol>
@@ -109,7 +109,7 @@ const TnC = () => {
             <ol className="list-decimal pl-7 md:pl-14 mt-3">
               {BPenggunaanStudio?.map((e) => {
                 return (
-                  <li className="font-semibold text-lg md:text-xl">{e.li}</li>
+                  <li className="font-semibold text-lg md:text-xl">{e?.li}</li>
                 );
               })}
             </ol>
@@ -119,7 +119,7 @@ const TnC = () => {
             <ol className="list-decimal pl-7 md:pl-14 mt-3 pb-12">
               {CPenggunaanStudio?.map((e) => {
                 return (
-                  <li className="font-semibold text-lg md:text-xl">{e.li}</li>
+                  <li className="font-semibold text-lg md:text-xl">{e?.li}</li>
                 );
               })}
             </ol>
@@ -137,7 +137,7 @@ const TnC = () => {
             <ol className="list-decimal pl-7 md:pl-14">
               {NewNormalProtocol?.map((e) => {
                 return (
-                  <li className="font-semibold text-lg md:text-xl">{e.li}</li>
+                  <li className="font-semibold text-lg md:text-xl">{e?.li}</li>
                 );
               })}
             </ol>

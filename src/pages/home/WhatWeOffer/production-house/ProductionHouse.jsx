@@ -38,7 +38,7 @@ const ProductionHouse = () => {
 
           {/* Large Screen (lg breakpoint) */}
           <div className="w-[100%] md:w-[90%] lg:w-[45%] self-center">
-            <h1 className="text-4xl font-black tracking-wide text-center md:text-5xl xl:text-6xl">
+            <h1 className="text-4xl font-black tracking-wide text-left md:text-5xl xl:text-6xl">
               Production House
             </h1>
             <p className="mt-3 text-lg font-semibold leading-6 text-justify md:text-xl lg:text-2xl">

@@ -7,6 +7,15 @@
   font-family: "Gothic A1", sans-serif;
 }
 
+@layer components {
+  .aboutSize {
+    @apply text-base md:text-xl lg:text-2xl;
+  }
+  .aboutTitleSize {
+    @apply text-3xl md:text-4xl xl:text-5xl;
+  }
+}
+
 h1 {
   font-weight: 900;
 }

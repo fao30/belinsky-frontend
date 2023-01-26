@@ -69,7 +69,7 @@ const Studio1 = () => {
 
       {/* Photoshoot Erika */}
       <div className="w-full mt-16 md:mt-32">
-        <h1 className="text-center text-2xl lg:text-3xl">
+        <h1 className="text-center text-2xl md:text-3xl lg:text-4xl">
           Photoshoot by our photographer
         </h1>
         <div className="flex justify-center w-full h-full gap-[3vw] px-[6vw] mt-5 md:mt-10">

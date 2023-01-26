@@ -52,7 +52,9 @@ const Studio2 = () => {
 
       {/* Self Studio */}
       <div className="w-full mt-16 md:mt-32">
-        <h1 className="text-center text-2xl lg:text-3xl">Self Studio</h1>
+        <h1 className="text-center  text-2xl md:text-3xl lg:text-4xl">
+          Self Studio
+        </h1>
         <div className="flex justify-center items-center w-full h-full gap-[3vw] px-[6vw] mt-5 md:mt-10">
           {imagesPhotoshoot?.map(({ img, blurPic }) => (
             <div className="relative">

@@ -24,7 +24,7 @@ const CardFounders = ({ src, h3, blurPic }) => {
             className="absolute rounded-full w-[25%] md:w-[15%] lg:w-[10%] gap-y-2"
           />
         ) : (
-          <h3 className="font-extrabold text-center mx-auto w-[80%] md:w-full text-base sm:text-lg lg:text-xl">
+          <h3 className="font-extrabold text-center mx-auto w-[80%] md:w-full aboutSize">
             {h3}
           </h3>
         )}

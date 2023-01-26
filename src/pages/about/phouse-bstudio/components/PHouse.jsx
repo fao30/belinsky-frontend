@@ -17,14 +17,14 @@ const PHouse = () => {
             />
             <CardHeroPH
               src={ph2}
-              className="w-[90%] object-cover transition duration-700 ease-in-out rounded-2xl grayscale hover:grayscale-0 translate-x-14 -translate-y-20 md:translate-x-14 md:-translate-y-40 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:duration-700 group-hover:ease-in-out group-hover:delay-75 ml-auto"
+              className="w-[90%] object-cover transition duration-700 ease-in-out rounded-2xl grayscale hover:grayscale-0 translate-x-10 -translate-y-20 md:translate-x-14 md:-translate-y-44 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:duration-700 group-hover:ease-in-out group-hover:delay-75 ml-auto"
               blurPic="LBI56w4n01E3019Fx]?b~pWC-;IU"
             />
           </div>
           <div className="w-[80%] md:w-[60%]">
             <CardHeroPH
               src={ph3}
-              className="object-cover transition duration-700 ease-in-out -translate-x-8 -translate-y-5 md:-translate-x-28 md:-translate-y-20 rounded-2xl grayscale hover:grayscale-0 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:duration-700 group-hover:ease-in-out group-hover:delay-150"
+              className="object-cover transition duration-700 ease-in-out -translate-x-8 -translate-y-5 md:-translate-x-28 md:-translate-y-28 rounded-2xl grayscale hover:grayscale-0 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:duration-700 group-hover:ease-in-out group-hover:delay-150"
               blurPic="LGGl6W00yDD%IA4T-;9F4.~q?HRj"
             />
           </div>

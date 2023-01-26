@@ -18,7 +18,7 @@ const ProductionHouse = () => {
             <div className="flex flex-col w-[50%] items-end gap-5">
               <CardHeroPH
                 src={ph1}
-                className="w-[100%] object-cover transition duration-700 ease-in-out translate-x-16 translate-y-20 rounded-2xl grayscale hover:grayscale-0 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:duration-700 group-hover:ease-in-out group-hover:delay-200"
+                className="w-[100%] object-cover transition duration-700 ease-in-out translate-x-20 translate-y-20 md:translate-x-32 md:translate-y-48 rounded-2xl grayscale hover:grayscale-0 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:duration-700 group-hover:ease-in-out group-hover:delay-200"
                 blurPic="LPHeL6~qXSbv?GS5fkWE4UMxV@WB"
               />
               <CardHeroPH

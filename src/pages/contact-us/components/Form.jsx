@@ -28,14 +28,14 @@ const Form = () => {
         .required("Required"),
       textarea: Yup.string().required("Required"),
     }),
-    onSubmit: (values, { resetForm, setSubmitting }) => {
-      // emailjs send
-      emailjs.send(
-        "service_ix53hjc",
-        "template_tdiq82q",
-        values,
-        "DRhkfav3kde6rcZ-n"
-      );
+    onSubmit: (values, { resetForm }) => {
+      // // emailjs send
+      // emailjs.send(
+      //   process.env.REACT_APP_SERVICE_ID,
+      //   process.env.REACT_APP_TEMPLATE_ID,
+      //   values,
+      //   process.env.REACT_APP_PUBLIC_KEY
+      // );
       resetForm();
       toast.success("Proposal Request Sent");
     },

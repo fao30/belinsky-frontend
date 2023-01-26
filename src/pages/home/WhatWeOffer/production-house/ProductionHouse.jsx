@@ -11,10 +11,10 @@ import CardHeroPH from "../../../about/components/CardHeroPH";
 const ProductionHouse = () => {
   return (
     <>
-      <section className="w-full px-[4vw] my-[8vh] md:my-[10vh]">
+      <section className="w-full px-[4vw] my-[5vh] lg:my-[10vh] xl:my-[15vh]">
         <div className="flex flex-wrap-reverse justify-around w-full h-full lg:flex-row text-[#022581] group">
           {/* The 3 images */}
-          <div className="flex w-[100%] lg:w-[45%] h-full items-center gap-5 max-lg:my-[4vh]">
+          <div className="flex w-[100%] lg:w-[45%] h-full items-center gap-5 max-lg:mt-[4vh]">
             <div className="flex flex-col w-[50%] items-end gap-5">
               <CardHeroPH
                 src={ph1}

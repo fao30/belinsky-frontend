@@ -3,7 +3,7 @@ import { dataCardBStudio } from "../../our-work/constants/DataCardBStudio";
 
 const BelinskyStudio = () => {
   return (
-    <section className="w-full mb-[16vh] px-[4vw] ">
+    <section className="w-full mt-[10vh] lg:mt-[20vh] xl:mt-[30vh] px-[4vw] ">
       <h1 className="text-4xl font-black tracking-wide text-center md:text-5xl xl:text-6xl mb-[3vh] text-[#022581] ">
         Belinsky Studio
       </h1>

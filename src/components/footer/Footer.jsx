@@ -19,7 +19,7 @@ const Footer = () => {
               <a
                 href={href}
                 target="break"
-                className="hover:underline font-semibold flex flex-row"
+                className="flex flex-row font-semibold hover:underline"
               >
                 {icon}
                 <span className="ml-1">{p}</span>
@@ -39,15 +39,11 @@ const Footer = () => {
             marginwidth="0"
             className="w-full h-full shadow-xl rounded-xl sm:w-[50%]"
           ></iframe>
-          <a
-            href="https://goo.gl/maps/6ZZWsiX15tRcFf599"
-            target="break"
-            className="text-[#8B8585] flex gap-x-3 sm:w-[50%] h-full w-full items-center font-semibold"
-          >
-            <GoLocation size={30} className="" />
+          <div className="flex gap-1 mt-3 md:mt-0">
+            <GoLocation size={30} className="-mt-1" />
             Jl. Kemang Utara No. 15A, Bangka, Kec. Mampang Prpt., Jakarta
             Selatan, Daerah Khusus Ibukota Jakarta 12730
-          </a>
+          </div>
         </div>
       </div>
     </footer>

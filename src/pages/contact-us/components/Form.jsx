@@ -1,9 +1,9 @@
 import InputForm from "./InputForm";
-import { useReducer } from "react";
 import toast, { Toaster } from "react-hot-toast";
 
 import { useFormik } from "formik";
 import * as Yup from "yup";
+import * as emailjs from "emailjs-com";
 
 // Regex for validations
 const phoneRegExp =
@@ -29,11 +29,20 @@ const Form = () => {
       textarea: Yup.string().required("Required"),
     }),
     onSubmit: (values, { resetForm }) => {
-      toast.success("Request Sent");
+      forSubmit(values);
       resetForm();
-      console.log(values);
+      toast.success("Request Sent");
     },
   });
+
+  const forSubmit = (object) => {
+    emailjs.send(
+      "service_j9dxkg5",
+      "template_v0qlsi5",
+      object,
+      "mxhQ26j07wg6yo61H"
+    );
+  };
 
   return (
     <>

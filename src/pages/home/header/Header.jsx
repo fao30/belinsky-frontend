@@ -26,7 +26,7 @@ const Header = () => {
         modules={[Mousewheel, Navigation]}
         className="relative w-full h-screen"
       >
-        {sliderData.map(({ src, h1, nav, blurPic }) =>
+        {sliderData?.map(({ src, h1, nav, blurPic }) =>
           src === video ? (
             <SwiperSlide>
               <SliderVideo src={src} blurPic={blurPic} />

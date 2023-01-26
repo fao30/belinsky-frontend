@@ -12,7 +12,7 @@ const MarqueeSection = () => {
 
   return (
     <>
-      <section className="mt-[8vh] md:mt-[16vh]">
+      <section className="mt-[8vh] md:mt-[10vh]">
         <h1 className="text-[#022581] text-center text-lg md:text-3xl">
           WHAT OUR CLIENTS SAYS ABOUT US
         </h1>

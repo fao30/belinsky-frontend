@@ -3,7 +3,7 @@ import CardSliderVid from "./components/CardSliderVid";
 
 const ProductionHouse = () => {
   return (
-    <section className="w-full px-[4vw] my-[8vh] md:my-[16vh]">
+    <section className="w-full px-[4vw] my-[8vh] md:my-[10vh]">
       <h1 className="text-4xl font-black tracking-wide text-center md:text-5xl xl:text-6xl mb-[3vh] text-[#022581] ">
         Production House
       </h1>

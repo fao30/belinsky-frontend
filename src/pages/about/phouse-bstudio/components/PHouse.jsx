@@ -8,7 +8,7 @@ const PHouse = () => {
   return (
     <>
       <div className="flex flex-wrap-reverse justify-around w-full h-full text-[#022581] group my-[8vh] md:my-[16vh]">
-        <div className="max-md:px-[4vw] px-8 flex  w-[100%] md:w-[80%] lg:-[70%] xl:w-[50%] h-full items-center gap-5">
+        <div className="max-md:px-[4vw] px-8 flex  w-[100%] md:w-[90%] lg:-[70%] xl:w-[50%] h-full items-center gap-5">
           <div className="flex flex-col w-[50%] items-start gap-5">
             <CardHeroPH
               src={ph1}
@@ -29,7 +29,7 @@ const PHouse = () => {
             />
           </div>
         </div>
-        <div className="max-md:px-[4vw] px-8 max-sm:text-left pb-8 w-[100%] md:w-[80%] lg:-[70%] xl:w-[50%] my-auto">
+        <div className="max-md:px-[4vw] px-8 pb-8 w-[100%] md:w-[90%] lg:-[70%] xl:w-[50%] my-auto">
           <h1 className="font-black uppercase text-2xl md:text-3xl">
             Production House
           </h1>

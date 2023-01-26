@@ -16,7 +16,7 @@ const BStudio = () => {
             photography, and graduation photography.
           </p>
         </div>
-        <div className="max-md:px-[4vw] px-8 flex w-[100%] md:w-[90%] lg:-[70%] xl:w-[50%] h-full items-center gap-5">
+        <div className="px-8 flex w-[100%] md:w-[90%] lg:-[70%] xl:w-[50%] h-full items-center gap-5">
           <div className="flex flex-col w-[50%] items-end gap-5">
             <CardHeroBS
               src={bh1}

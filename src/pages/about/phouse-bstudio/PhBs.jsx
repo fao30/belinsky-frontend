@@ -24,10 +24,12 @@ const PhBs = () => {
       <BStudio />
 
       {/* Checkout Company Profile */}
-      <div className="w-full h-full mt-[20vh]">
-        <h2 className="text-[#022581] text-center font-extrabold text-2xl lg:text-3xl  my-[5vh] md:my-[10vh]">
-          CHECK OUT OUR COMPANY PROFILE
-        </h2>
+      <div className="w-full h-full">
+        <div className="pt-[40vw] pb-[12vw] sm:pt-[20vw] sm:pb-[6vw] md:pt-[10vw] md:pb-[6vw] lg:py-[4vw] w-[90%] mx-auto">
+          <h2 className="text-[#022581] py-8 text-center font-extrabold text-2xl lg:text-3xl">
+            CHECK OUT OUR COMPANY PROFILE
+          </h2>
+        </div>
         <div className="w-[90%] xl:w-[80%] h-full mx-auto bg-[#022581] rounded-lg drop-shadow-[0_2px_2px_transparent] shadow-lg shadow-slate-400 ">
           <div className="relative">
             <LazyLoadImage

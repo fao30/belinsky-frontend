@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.44fd8f89.css",
-    "main.js": "/static/js/main.fddda910.js",
+    "main.css": "/static/css/main.aa9f1976.css",
+    "main.js": "/static/js/main.df958a0b.js",
     "static/media/WongTilar.mp4": "/static/media/WongTilar.a0a4d974df74def6771f.mp4",
     "static/media/Traveloka.mp4": "/static/media/Traveloka.eff8b8600db768268b8e.mp4",
     "static/media/Menantea.mp4": "/static/media/Menantea.c7704ea86181e9983ef8.mp4",
@@ -86,7 +86,7 @@
     "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/css/main.44fd8f89.css",
-    "static/js/main.fddda910.js"
+    "static/css/main.aa9f1976.css",
+    "static/js/main.df958a0b.js"
   ]
 }

@@ -25,8 +25,8 @@ const PhBs = () => {
 
       {/* Checkout Company Profile */}
       <div className="w-full h-full">
-        <div className="pt-[40vw] pb-[12vw] sm:pt-[20vw] sm:pb-[6vw] md:pt-[10vw] md:pb-[6vw] lg:py-[4vw] w-[90%] mx-auto">
-          <h2 className="text-[#022581] py-8 text-center font-extrabold text-2xl lg:text-3xl">
+        <div className="w-[90%] mx-auto">
+          <h2 className="text-[#022581] py-[4vh] text-center font-extrabold text-2xl lg:text-3xl">
             CHECK OUT OUR COMPANY PROFILE
           </h2>
         </div>

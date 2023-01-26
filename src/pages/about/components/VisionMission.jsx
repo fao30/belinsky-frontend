@@ -12,9 +12,11 @@ import CardFounders from "./CardFounders";
 export const VisionMission = () => {
   return (
     <section className="text-[#022581] h-full w-full ">
-      <h1 className=" font-[900] text-center text-3xl lg:text-4xl xl:text-5xl mt-[2vh]">
-        Taking off to a sky, where creativity is limitless.
-      </h1>
+      <div className="max-md:px-[4vw] px-8">
+        <h1 className=" font-[900] text-center text-3xl lg:text-4xl xl:text-5xl mt-[2vh]">
+          Taking off to a sky, where creativity is limitless.
+        </h1>
+      </div>
 
       {/* Vision / Mission Cards */}
       <div className="flex flex-col mt-[6vh]">
@@ -37,7 +39,7 @@ export const VisionMission = () => {
       {/* Founders Cards */}
       <div className="my-[8vh] md:my-[16vh]">
         <h1 className="font-[900] text-center text-3xl md:text-4xl xl:text-5xl">
-          Founders Of Belinsky
+          Founders of Belinsky
         </h1>
         <div className="flex w-full h-full justify-evenly lg:justify-center lg:gap-20 mt-[4vh] md:mt-[8vh]">
           {dataFounders.map(({ src, h3, blurPic }) => (

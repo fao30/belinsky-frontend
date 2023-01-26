@@ -43,11 +43,11 @@ const Form = () => {
 
   return (
     <>
-      <Toaster position="bottom-center" reverseOrder={false} />
       <form
         className="p-[3vw] lg:px-[8vw] h-fit w-[90%] md:w-[85%] xl:w-[70%] bg-white mx-auto -mt-16 drop-shadow-[0_1.5px_1.5px_black]"
         onSubmit={formik.handleSubmit}
       >
+        <Toaster />
         <div className="flex flex-col md:flex-row justify-center w-full h-full text-[#022581] xl:text-2xl font-semibold gap-10 p-5">
           <InputForm
             label="Name"

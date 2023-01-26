@@ -3,11 +3,11 @@ import { dataCardBStudio } from "../../our-work/constants/DataCardBStudio";
 
 const BelinskyStudio = () => {
   return (
-    <section className="w-full my-[8vh] md:my-[10vh] px-[4vw] ">
+    <section className="w-full mb-[16vh] px-[4vw] ">
       <h1 className="text-4xl font-black tracking-wide text-center md:text-5xl xl:text-6xl mb-[3vh] text-[#022581] ">
         Belinsky Studio
       </h1>
-      <div className="carousel carousel-center gap-[1.25rem] sm:gap-[3rem] bg-transparent">
+      <div className="carousel carousel-center gap-[1.25rem] sm:gap-[2rem] bg-transparent">
         {dataCardBStudio?.map(({ src, h3, p, isHomepage, blurPic }) => (
           <CardSliderImg
             src={src}

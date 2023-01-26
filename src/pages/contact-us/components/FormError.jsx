@@ -29,15 +29,17 @@ const Form = () => {
       textarea: Yup.string().required("Required"),
     }),
     onSubmit: (values, { resetForm, setSubmitting }) => {
+      setSubmitting(true);
       // emailjs send
       emailjs.send(
-        "service_ix53hjc",
-        "template_tdiq82q",
+        "service_j9dxkg5",
+        "template_v0qlsi5",
         values,
-        "DRhkfav3kde6rcZ-n"
+        "mxhQ26j07wg6yo61H"
       );
+      setSubmitting(false);
       resetForm();
-      toast.success("Proposal Request Sent");
+      toast.success("Request Sent");
     },
   });
 

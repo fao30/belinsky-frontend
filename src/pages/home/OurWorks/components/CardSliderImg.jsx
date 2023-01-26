@@ -1,8 +1,17 @@
 import { useState } from "react";
 import { BlurhashCanvas } from "react-blurhash";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import LoadToTop from "../../../../helper/LoadToTop";
 
-const CardSliderImg = ({ src, h3, p, isHomepage, blurPic }) => {
+const CardSliderImg = ({
+  src,
+  h3,
+  p,
+  isHomepage,
+  blurPic,
+  isDetails,
+  navigate,
+}) => {
   const [isLoading, setIsLoading] = useState(false);
   return (
     <div className={`${isHomepage ? "carousel-item" : "hidden"}`}>
@@ -18,7 +27,17 @@ const CardSliderImg = ({ src, h3, p, isHomepage, blurPic }) => {
           <BlurhashCanvas hash={blurPic} className="w-full h-full" />
         ) : (
           <div className="group-hover:opacity-0 transition-all duration-300 absolute h-full w-full bg-[#0225818C] text-white ">
-            <div className="flex flex-col items-center pt-[8.5rem] xl:pt-72 px-6 sm:pt-[8rem] sm:px-6 md:pt-[15rem] md:px-12 justify-start w-full h-full text-left text-white">
+            <div
+              onClick={() => {
+                if (isDetails) {
+                  navigate();
+                  LoadToTop();
+                }
+              }}
+              className={`flex flex-col items-center pt-[8.5rem] xl:pt-72 px-6 sm:pt-[8rem] sm:px-6 md:pt-[15rem] md:px-12 justify-start w-full h-full text-left text-white ${
+                isDetails ? "cursor-pointer" : ""
+              }`}
+            >
               <h3 className="w-full text-xl font-extrabold text-white md:text-4xl ">
                 {h3}
               </h3>

@@ -7,7 +7,7 @@ const CardOverlay = ({ src, h2, h3, p, blurPic, navigate }) => {
   const [isLoading, setIsLoading] = useState(false);
 
   return (
-    <div className="relative w-[100%] lg:w-[32%] h-[35rem] group">
+    <div className="relative w-[100%] lg:w-[32%] h-[40rem] md:h-[30rem] lg:h-[35rem] xl:h-[42rem] group">
       <LazyLoadImage
         src={src}
         alt="belinsky-studio"

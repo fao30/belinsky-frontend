@@ -1,8 +1,17 @@
 import { useState } from "react";
 import logoBelinsky from "../../../../assets/logo-belinsky.png";
 import { BlurhashCanvas } from "react-blurhash";
+import LoadToTop from "../../../../helper/LoadToTop";
 
-const CardSlider = ({ srcvideo, h3, p, isHomepage, blurPic }) => {
+const CardSlider = ({
+  srcvideo,
+  h3,
+  p,
+  isHomepage,
+  blurPic,
+  isDetails,
+  navigate,
+}) => {
   const [isLoadingVideo, setIsLoadingVideo] = useState(false);
 
   return (
@@ -34,7 +43,17 @@ const CardSlider = ({ srcvideo, h3, p, isHomepage, blurPic }) => {
         </video>
         {!isLoadingVideo ? (
           <div className="group-hover:opacity-0 transition-all duration-300 absolute h-full w-full bg-[#0225818C] text-white ">
-            <div className="flex flex-col items-center pt-[8.5rem] xl:pt-72 px-6 sm:pt-[8rem] sm:px-6 md:pt-[15rem] md:px-12 justify-start w-full h-full text-left text-white">
+            <div
+              onClick={() => {
+                if (isDetails) {
+                  navigate();
+                  LoadToTop();
+                }
+              }}
+              className={`flex flex-col items-center pt-[8.5rem] xl:pt-72 px-6 sm:pt-[8rem] sm:px-6 md:pt-[15rem] md:px-12 justify-start w-full h-full text-left text-white ${
+                isDetails ? "cursor-pointer" : ""
+              }`}
+            >
               <h3 className="w-full text-xl font-extrabold text-white md:text-4xl ">
                 {h3}
               </h3>

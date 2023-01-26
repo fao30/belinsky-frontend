@@ -96,12 +96,13 @@ const OurWork = () => {
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
         >
-          {dataCardBStudio?.map(({ src, h3, p, nav, blurPic }) => (
+          {dataCardBStudio?.map(({ src, h3, p, nav, blurPic, isDetails }) => (
             <CardOverlayImg
               src={src}
               h3={h3}
               p={p}
               blurPic={blurPic}
+              isDetails={isDetails}
               navigate={() => {
                 navigate(`${nav}`);
               }}

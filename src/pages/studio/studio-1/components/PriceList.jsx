@@ -15,23 +15,23 @@ const PriceList = () => {
               </p>
             </div>
           </div>
-          <div className="h-[85%] flex justify-center p-[4vw] md:p-[3vw] lg:py-[2vw] lg:px-[3vw]">
-            <div className="xl:ml-12 flex flex-wrap items-center justify-center w-full lg:justify-between">
-              <div className="w-full lg:w-[48%] flex flex-col">
+          <div className="h-[85%] flex justify-center p-[2vw] md:p-[3vw] lg:py-[2vw] lg:px-[3vw]">
+            <div className="xl:ml-4 flex flex-wrap items-center justify-center w-full lg:justify-between">
+              <div className="w-full lg:w-[55%] xl:w-[48%] flex flex-col">
                 {dataPriceList?.map(({ hour, priceNot, price }) => {
                   return (
                     <div className="flex flex-row text-xl lg:text-2xl text-[#022581]">
-                      <p className="w-[18%]">{hour}</p>
+                      <p className="w-[17%]">{hour}</p>
                       <p className="w-[2%]">:</p>
                       <p className="text-lg text-gray-500 line-through w-[40%]">
                         {priceNot}
                       </p>
-                      <p className="w-[40%]"> {price}</p>
+                      <p className="w-[41%]">{price}</p>
                     </div>
                   );
                 })}
               </div>
-              <div className="w-full lg:w-[48%] text-[#022581] text-xl lg:text-2xl max-lg:mt-6">
+              <div className="w-full lg:w-[40%] text-[#022581] text-xl lg:text-2xl max-lg:mt-6">
                 <div className="flex flex-col ">
                   <h1>Hours in studio</h1>
                   <p>Rp 400.000/hour</p>
@@ -43,11 +43,11 @@ const PriceList = () => {
 
         {/* EQUIPMENT LIST */}
 
-        <div className="h-[50%] w-full text-[#022581] p-[4vw] md:p-[3vw] lg:py-[2vw] lg:px-[3vw] text-xl lg:text-2xl">
-          <div className="xl:ml-12 h-[20%] flex items-center mt-3 lg:mt-6">
+        <div className="h-[50%] w-full text-[#022581] p-[2vw] md:p-[3vw] lg:py-[2vw] lg:px-[3vw] text-xl lg:text-2xl">
+          <div className="xl:ml-4 h-[20%] flex items-center">
             <h1>Equipment List</h1>
           </div>
-          <div className="xl:ml-12 h-[70%] flex justify-center">
+          <div className="xl:ml-4 h-[70%] flex justify-center">
             <div className="flex flex-wrap justify-between w-full font-semibold">
               {/* left content */}
               <div className="w-full lg:w-[48%]">

@@ -47,12 +47,12 @@ const OurWork = () => {
           />
         ) : (
           <div className="absolute h-full w-full bg-[#0225818C]/70 text-white">
-            <div className="z-10 flex flex-col items-center justify-center w-full h-full gap-6 text-center text-white">
-              <h3 className="w-full text-5xl font-black text-white lg:text-7xl xl:tracking-wider">
+            <div className="z-10 flex flex-col items-center justify-center w-full h-full text-center text-white leading-[4rem] lg:leading-[5.5rem]">
+              <h3 className="w-full text-[5rem] font-black text-white lg:text-[6.5rem] xl:tracking-wider">
                 Our Work
               </h3>
-              <p className="w-full text-lg font-bold text-white drop-shadow-md md:text-xl lg:text-3xl">
-                “From CUE to CUT, along with Belinsky”
+              <p className="w-full text-lg font-bold text-white drop-shadow-md md:text-xl lg:text-[1.75rem]">
+                “from CUE to CUT, along with Belinsky”
               </p>
             </div>
           </div>

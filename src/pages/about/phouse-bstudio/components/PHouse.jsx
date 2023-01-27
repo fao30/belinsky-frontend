@@ -29,7 +29,7 @@ const PHouse = () => {
             />
           </div>
         </div>
-        <div className="max-md:px-[4vw] px-8 pb-8 w-[100%] md:w-[90%] lg:-[70%] xl:w-[50%] my-auto">
+        <div className="flex flex-col gap-8 max-md:px-[4vw] px-8 pb-8 w-[100%] md:w-[90%] lg:-[70%] xl:w-[50%] my-auto">
           <h1 className=" font-black uppercase aboutTitleSize">
             Production House
           </h1>

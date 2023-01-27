@@ -60,7 +60,7 @@ export const dataCardBStudio = [
   {
     src: Couple,
     h3: "Couple",
-    p: "Couple Photoshoot",
+    p: "Couple Photoshoot Faris x Issa",
     nav: "/ourwork/couple",
     isHomepage: true,
     isDetails: true,
@@ -87,7 +87,7 @@ export const dataCardBStudio = [
   {
     src: LinkedIn,
     h3: "LinkedIn",
-    p: "LinkedIn Professional Profile Photoshoot",
+    p: "Professional Profile Photoshoot for LinkedIn",
     nav: "/ourwork/linkedin",
     isHomepage: true,
     isDetails: true,

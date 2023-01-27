@@ -7,7 +7,7 @@ const CardsVisionMission = ({ src, h1, p, blurPic }) => {
 
   return (
     <>
-      <div className="w-full md:w-[90%] lg:w-[80%] xl:w-[55%] h-full">
+      <div className="w-full md:w-[90%] lg:w-[80%] xl:w-[65%] h-full lg:mx-[8vw]">
         <div className="relative">
           <LazyLoadImage
             loading="lazy"
@@ -15,7 +15,7 @@ const CardsVisionMission = ({ src, h1, p, blurPic }) => {
             src={src}
             beforeLoad={() => setIsLoading(true)}
             afterLoad={() => setIsLoading(false)}
-            className="object-cover transition duration-300 ease-in-out grayscale hover:grayscale-0"
+            className="w-full h-full object-cover transition duration-300 ease-in-out grayscale hover:grayscale-0"
           />
           {isLoading ? (
             <BlurhashCanvas

@@ -1,7 +1,7 @@
 // Photoshoot images (Erika)
-import pshoot1 from "../assets/photoshoot1.png";
-import pshoot2 from "../assets/photoshoot2.png";
-import pshoot3 from "../assets/photoshoot3.png";
+import pshoot1 from "../assets/photoshoot1.jpg";
+import pshoot2 from "../assets/photoshoot2.jpg";
+import pshoot3 from "../assets/photoshoot3.jpg";
 
 export const couplePhotoSession = [
   {

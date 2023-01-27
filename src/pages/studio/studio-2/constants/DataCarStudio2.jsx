@@ -1,14 +1,14 @@
 // Images for First Carousel
-import img1 from "../assets/2.jpeg";
-import img2 from "../assets/1.png";
-import img3 from "../assets/3.png";
+import img1 from "../assets/2.jpg";
+import img2 from "../assets/1.jpg";
+import img3 from "../assets/3.jpg";
 
 // Images for Second Carousel
-import img6 from "../assets/6.png";
-import img7 from "../assets/7.png";
-import img8 from "../assets/8.png";
-import img9 from "../assets/9.png";
-import img10 from "../assets/10.png";
+import img6 from "../assets/6.jpg";
+import img7 from "../assets/7.jpg";
+import img8 from "../assets/8.jpg";
+import img9 from "../assets/9.jpg";
+import img10 from "../assets/10.jpg";
 
 // Images for Second Carousel
 

@@ -22,13 +22,13 @@ const PriceList = () => {
               <div className="w-full xl:w-[55%] lg:w-[60%] flex flex-col">
                 {dataPriceList?.map(({ hour, priceNot, price }) => {
                   return (
-                    <div className="flex flex-row text-xl lg:text-2xl text-[#022581]">
+                    <div className="flex flex-row text-xl lg:text-2xl text-[#022581] items-center">
                       <p className="w-[18%]">{hour}</p>
                       <p className="w-[2%]">:</p>
-                      <p className="text-lg text-gray-500 line-through w-[40%]">
+                      <p className="md:text-lg text-gray-500 line-through text-base w-[35%]">
                         {priceNot}
                       </p>
-                      <p className="w-[45%]"> {price}</p>
+                      <p className="w-[45%]">{price}</p>
                     </div>
                   );
                 })}

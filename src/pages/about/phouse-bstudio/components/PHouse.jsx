@@ -8,7 +8,7 @@ const PHouse = () => {
   return (
     <>
       <div className="flex flex-wrap-reverse justify-around w-full h-full text-[#022581] group my-[8vh] md:my-[16vh]">
-        <div className="max-md:px-[4vw] px-8 flex  w-[100%] md:w-[90%] lg:-[70%] xl:w-[50%] h-full items-center gap-5">
+        <div className="max-md:px-[4vw] px-8 flex  w-[100%] md:w-[90%] lg:-[70%] xl:w-[50%] h-full items-center gap-4">
           <div className="flex flex-col w-[50%] gap-5 z-10">
             <CardHeroPH
               src={ph1}

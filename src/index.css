@@ -12,7 +12,7 @@
     @apply text-base md:text-xl lg:text-2xl;
   }
   .aboutTitleSize {
-    @apply text-3xl md:text-4xl xl:text-6xl;
+    @apply text-4xl xl:text-6xl;
   }
 }
 

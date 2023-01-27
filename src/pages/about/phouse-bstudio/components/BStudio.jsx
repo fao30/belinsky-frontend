@@ -6,7 +6,7 @@ const BStudio = () => {
   return (
     <>
       <section className="flex flex-wrap justify-around w-full h-full text-[#022581] group my-[8vh] md:my-[16vh]">
-        <div className="flex flex-col gap-10 max-xl:text-right max-md:px-[4vw] px-8 pb-8 w-[100%] md:w-[90%] lg:-[70%] xl:w-[50%] my-auto">
+        <div className="flex flex-col gap-4 max-xl:text-right max-md:px-[4vw] px-8 pb-8 w-[100%] md:w-[90%] lg:-[70%] xl:w-[50%] my-auto">
           <h1 className=" font-black uppercase aboutTitleSize">
             Belinsky Studio
           </h1>

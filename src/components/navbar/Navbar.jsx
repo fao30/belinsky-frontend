@@ -103,7 +103,7 @@ const Navbar = () => {
             }}
           />
         </div>
-        <ul className="w-[50%] flex md:justify-between lg:justify-evenly text-[#022581] drop-shadow-[#022581] text-base font-semibold items-center cursor-pointer md:text-lg lg:text-lg">
+        <ul className="w-[50%] flex md:justify-between lg:justify-evenly text-[#022581] drop-shadow-[#022581] text-base font-semibold items-center md:text-lg lg:text-lg">
           {NavFooterItems.map(({ path, label }) => (
             <NavLink
               key={path}

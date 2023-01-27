@@ -30,10 +30,10 @@ const CardOverlay = ({ src, h2, h3, p, blurPic, navigate }) => {
             {h2}
           </h2>
           <div className="flex justify-center items-center text-center w-full h-full flex-col px-[1vw]">
-            <h3 className="text-4xl md:text-3xl lg:text-4xl font-black text-center w-full">
+            <h3 className="text-4xl md:text-3xl lg:text-3xl font-black text-center w-full xl:text-4xl">
               {h3}
             </h3>
-            <p className="mt-[1vh] w-full text-lg md:text-sm  lg:font-[600] tracking-wider text-center lg:text-lg">
+            <p className="mt-[1vh] w-full text-lg md:text-sm  lg:font-[600] tracking-wider text-center lg:text-base xl:text-xl">
               {p}
             </p>
           </div>

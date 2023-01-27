@@ -25,7 +25,7 @@ const Navbar = () => {
 
   return (
     <nav className="sticky top-0 z-20 w-full flex justify-between px-[3vw] md:px-[4vw] xl:px-[6vw] md:py-[1vh] items-center bg-opacity-80 backdrop-blur bg-white text-[#022581] shadow-lg shadow-black/30">
-      <div className="flex justify-between items-center w-full md:hidden">
+      <div className="flex items-center justify-between w-full md:hidden">
         {/* Belinsky logo top-left */}
         <div className="w-[50%] ">
           <img

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ea7df594.css",
-    "main.js": "/static/js/main.9cdef1bf.js",
+    "main.js": "/static/js/main.1722cd23.js",
     "static/media/WongTilar.mp4": "/static/media/WongTilar.a0a4d974df74def6771f.mp4",
     "static/media/Traveloka.mp4": "/static/media/Traveloka.eff8b8600db768268b8e.mp4",
     "static/media/Menantea.mp4": "/static/media/Menantea.c7704ea86181e9983ef8.mp4",
@@ -38,7 +38,7 @@
     "static/media/bg-BStudio.png": "/static/media/bg-BStudio.483db442f8a2aa2eacf2.png",
     "static/media/7.jpg": "/static/media/7.fe0a83b37c6478375b1c.jpg",
     "static/media/4.jpg": "/static/media/4.bb1bdecc90e20bedbf34.jpg",
-    "static/media/photoshoot1.jpg": "/static/media/photoshoot1.fdebda778301a45b3bba.jpg",
+    "static/media/photoshoot1.jpg": "/static/media/photoshoot1.93fdcfd0cb3c5e852e55.jpg",
     "static/media/studio_2.png": "/static/media/studio_2.08aecf3dda69840e9b54.png",
     "static/media/Portrait2.jpg": "/static/media/Portrait2.b575059bf1f2c3c9f7db.jpg",
     "static/media/Background_2.png": "/static/media/Background_2.bdaf6d0dad2792956efd.png",
@@ -84,6 +84,6 @@
   },
   "entrypoints": [
     "static/css/main.ea7df594.css",
-    "static/js/main.9cdef1bf.js"
+    "static/js/main.1722cd23.js"
   ]
 }

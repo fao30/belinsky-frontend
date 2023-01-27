@@ -7,10 +7,10 @@ const CardContactUs = () => {
   const navigate = useNavigate();
   return (
     <div className="flex justify-center px-[6vw]">
-      <div className="rounded-xl my-20 w-full md:w-[70%] lg:w-[90%] px-8 lg:px-20 lg:py-16 py-8 md:p-12 bg-[#022581] text-white">
+      <div className="rounded-xl my-20 w-full md:w-[80%] lg:w-full xl:w-[90%] px-8 lg:px-20 lg:py-16 py-8 md:p-12 bg-[#022581] text-white">
         <div className="flex items-center justify-between gap-6">
           <div className="w-full lg:w-[60%] xl:w-[80%] flex flex-col">
-            <h1 className="text-xl font-bold md:text-3xl lg:text-4xl">
+            <h1 className="text-2xl font-bold md:text-3xl lg:text-4xl">
               For Reservation Contact Us Through Whatsapp
             </h1>
             <p

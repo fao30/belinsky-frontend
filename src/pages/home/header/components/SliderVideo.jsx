@@ -40,14 +40,10 @@ const SliderVideo = ({ src, blurPic }) => {
           className="text-2xl text-white uppercase lg:text-4xl"
           // style={{ textShadow: "1px 1px red" }}
         >
-          Taking off to a sky,
-          <br className="hidden md:inline-block" /> where creativity is
-          limitless
+          BELINSKY STUDIO
         </h1>
         <p className="text-lg leading-4 text-white lg:text-xl lg:leading-5 w-full sm:w-[90%]">
-          Given that Belinsky is both a production house and a creative studio,
-          our areas of expertise include producing both photography and
-          filmmaking
+          Taking off to a sky where creativity is limitless
         </p>
         <button
           onClick={() => {

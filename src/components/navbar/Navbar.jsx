@@ -93,11 +93,19 @@ const Navbar = () => {
       {/* New Desktop Menu */}
       <div className="hidden w-full lg:w-[80%] lg:mx-auto h-full md:flex">
         <div className="w-[50%]">
-          <img src={logo} alt="" className="w-[5rem]" />
+          <img
+            src={logo}
+            alt=""
+            className="w-[5rem] cursor-pointer"
+            onClick={() => {
+              navigate("/");
+              LoadToTop();
+            }}
+          />
         </div>
-        <ul className="w-[50%] flex justify-around text-[#022581] drop-shadow-[#022581] text-base font-semibold items-center cursor-pointer md:text-lg lg:text-lg">
+        <ul className="w-[50%] flex md:justify-between lg:justify-evenly text-[#022581] drop-shadow-[#022581] text-base font-semibold items-center cursor-pointer md:text-lg lg:text-lg">
           {NavFooterItems.map(({ path, label }) => (
-            <NavLink to={path} className="text-[#022581]">
+            <NavLink key={path} to={path} className="text-[#022581]">
               {label}
             </NavLink>
           ))}

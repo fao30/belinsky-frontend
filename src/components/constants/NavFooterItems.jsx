@@ -24,11 +24,11 @@ export const NavFooterItems = [
     label: "About",
     type: "text",
   },
-  {
-    path: "/",
-    label: logoBelinskyElement(),
-    type: "img",
-  },
+  // {
+  //   path: "/",
+  //   label: logoBelinskyElement(),
+  //   type: "img",
+  // },
   {
     path: "/ourwork",
     label: "Our Work",

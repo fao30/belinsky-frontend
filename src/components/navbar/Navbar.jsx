@@ -5,6 +5,7 @@ import { useNavigate, NavLink, useLocation } from "react-router-dom";
 import logoBelinsky from "../../assets/logo-belinsky.png";
 import LoadToTop from "../../helper/LoadToTop";
 import { NavFooterItems } from "../constants/NavFooterItems";
+import logo from "../../assets/logo-belinsky.png";
 
 const Navbar = () => {
   // Toggle mobile menu
@@ -23,35 +24,40 @@ const Navbar = () => {
   const location = useLocation();
 
   return (
-    <nav className="sticky top-0 z-20 w-full flex justify-between px-[6vw] py-[3.5vh] md:py-[2vh] items-center bg-[#022581] shadow-lg shadow-black/30">
-      {/* Belinsky logo top-left */}
-      <img
-        src={logoBelinsky}
-        alt="logoBelinsky"
-        className="absolute left-0 top-0 w-[6.5rem] bg-white rounded-br-xl md:hidden shadow-lg z-10 cursor-pointer"
-        onClick={() => {
-          navigate("/");
-          LoadToTop();
-        }}
-      />
+    <nav className="sticky top-0 z-20 w-full flex justify-between px-[6vw] py-[3.5vh] md:py-[2vh] items-center bg-white/90 text-[#022581] shadow-lg shadow-black/30">
+      <div className="flex justify-between w-full md:hidden">
+        {/* Belinsky logo top-left */}
+        <div className="w-[50%]">
+          <img
+            src={logo}
+            alt="logoBelinsky"
+            className="w-[5rem] md:hidden shadow-lg z-10 cursor-pointer"
+            onClick={() => {
+              navigate("/");
+              LoadToTop();
+            }}
+          />
+        </div>
+        {/* burger menu icon */}
+        {nav ? (
+          <AiOutlineClose
+            size={30}
+            color="white"
+            className="text-white cursor-pointer z-30 md:hidden my-[2vh]"
+            onClick={handleNav}
+          />
+        ) : (
+          <HiOutlineMenuAlt4
+            size={30}
+            color="#022581"
+            className="text-white cursor-pointer z-30 md:hidden my-[2vh]"
+            onClick={handleNav}
+          />
+        )}
+      </div>
 
-      {/* burger menu icon */}
-      {nav ? (
-        <AiOutlineClose
-          size={30}
-          className="text-white cursor-pointer z-30 md:hidden absolute top-0 right-4 my-[2vh]"
-          onClick={handleNav}
-        />
-      ) : (
-        <HiOutlineMenuAlt4
-          size={30}
-          className="text-white cursor-pointer z-30 md:hidden absolute top-0 right-4 my-[2vh]"
-          onClick={handleNav}
-        />
-      )}
-
-      {/* Desktop Menu */}
-      <div className="w-[100%] h-full hidden md:flex z-20 mx-auto relative">
+      {/* Desktop Menu OLD */}
+      {/* <div className="w-[100%] h-full hidden md:flex z-20 mx-auto relative">
         <ul className="flex w-full text-lg font-bold text-[#F5F5F5] justify-between lg:justify-center items-center lg:gap-10 text-center">
           {NavFooterItems?.map(({ label, type, path }) => {
             return type === "img" ? (
@@ -82,6 +88,20 @@ const Navbar = () => {
             );
           })}
         </ul>
+      </div> */}
+
+      {/* New Desktop Menu */}
+      <div className="hidden w-full lg:w-[80%] lg:mx-auto h-full md:flex">
+        <div className="w-[50%]">
+          <img src={logo} alt="" className="w-[5rem]" />
+        </div>
+        <ul className="w-[50%] flex justify-around text-[#022581] drop-shadow-[#022581] text-base font-semibold items-center cursor-pointer md:text-lg lg:text-lg">
+          {NavFooterItems.map(({ path, label }) => (
+            <NavLink to={path} className="text-[#022581]">
+              {label}
+            </NavLink>
+          ))}
+        </ul>
       </div>
 
       {/* Mobile Menu */}
@@ -102,7 +122,7 @@ const Navbar = () => {
                 key={label}
                 className={({ isActive }) =>
                   isActive && location.pathname !== "/"
-                    ? "text-[#5484F2]"
+                    ? "text-[#022581]"
                     : "text-white"
                 }
                 onClick={() => {

@@ -13,9 +13,11 @@ const MarqueeSection = () => {
   return (
     <>
       <section className="mt-[5vh] lg:mt-[10vh] xl:mt-[15vh]">
-        <h1 className="text-[#022581] text-center text-2xl md:text-3xl mb-10">
-          WHAT OUR CLIENTS SAYS ABOUT US
-        </h1>
+        <div className="px-[4vw]">
+          <h1 className="text-[#022581] text-center text-2xl md:text-3xl mb-10">
+            WHAT OUR CLIENTS SAYS ABOUT US
+          </h1>
+        </div>
         <div className="relative w-full h-64 mb-[3vh]">
           <LazyLoadImage
             alt=""

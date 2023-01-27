@@ -37,7 +37,7 @@ const SliderVideo = ({ src, blurPic }) => {
       {/* Text Content */}
       <div className="absolute flex flex-col justify-start h-full md:left-[3.5rem] gap-y-6 px-4 md:px-0 top-[60%] z-20  sm:w-[70%] md:w-[50%] lg:w-[60%] xl:w-[40%] w-full">
         <h1
-          className="text-2xl text-white uppercase lg:text-4xl"
+          className="text-5xl text-white uppercase lg:text-8xl"
           // style={{ textShadow: "1px 1px red" }}
         >
           BELINSKY STUDIO

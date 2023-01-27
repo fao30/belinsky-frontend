@@ -42,14 +42,18 @@ const ProjectDetails = ({
       </div>
 
       {/* DESC */}
-      <div className="py-[6vw] lg:pt-12 lg:pb-24 px-[6vw] xl:px-[16vw] flex justify-between w-full flex-wrap">
-        <h2 className="text-[1.5rem] md:text-[2rem] lg:text-[2.5rem] font-[800] text-[#022581] w-full lg:w-[50%]">
-          {byWho2}
-        </h2>
-        <div className="w-full lg:w-[45%]">
-          <p className="text-[1rem] lg:text-[1.2rem] text-[#022581]">{desc}</p>
-          <div className="flex flex-wrap justify-between max-lg:mt-8 lg:pt-24">
-            <div className="flex flex-col w-full md:w-[55%]">
+      <div className="py-[6vw] lg:pt-12 lg:pb-16 px-[6vw] xl:px-[16vw] flex justify-between w-full flex-wrap">
+        <div className="flex flex-col w-full">
+          <h2 className="text-[1.5rem] md:text-[2rem] lg:text-[2.5rem] font-[800] text-[#022581] w-full">
+            {byWho2}
+          </h2>
+          <div className="w-full lg:w-[50%]">
+            <p className="text-[1rem] lg:text-[1.2rem] text-[#022581]">
+              {desc}
+            </p>
+          </div>
+          <div className="mt-6 w-full lg:w-[50%] flex justify-between flex-wrap">
+            <div className="w-[50%]">
               <h2 className="text-[1.5rem] md:text-[2rem] lg:text-[2.5rem] font-[800] text-[#022581]">
                 Date
               </h2>
@@ -57,7 +61,7 @@ const ProjectDetails = ({
                 {date}
               </p>
             </div>
-            <div className="flex flex-col max-md:mt-4 w-full md:w-[45%]">
+            <div className="w-[50%] md:w-[45%]">
               <h2 className="text-[1.5rem] md:text-[2rem] lg:text-[2.5rem] font-[800] text-[#022581]">
                 Category
               </h2>

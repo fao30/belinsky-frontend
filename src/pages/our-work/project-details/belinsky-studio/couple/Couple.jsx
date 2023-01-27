@@ -11,7 +11,7 @@ const Couple = () => {
       title: "Couple",
       byWho: "Belinsky Studio",
       src: CoupleImg,
-      byWho2: "Couple Photoshoot",
+      byWho2: "Couple Photoshoot Faris x Issa",
       desc: "Other than solo and group photoshoot, couple photoshoot is another category that we offered at our Studio, giving a personal and memorable session between you and your beloved one",
       date: "2022",
       category: "Couple Photoshoot",

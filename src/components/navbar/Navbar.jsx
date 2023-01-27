@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { HiOutlineMenuAlt4 } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
 import { useNavigate, NavLink, useLocation } from "react-router-dom";
@@ -24,14 +24,14 @@ const Navbar = () => {
   const location = useLocation();
 
   return (
-    <nav className="sticky top-0 z-20 w-full flex justify-between px-[6vw] py-[3.5vh] md:py-[2vh] items-center bg-white/90 text-[#022581] shadow-lg shadow-black/30">
-      <div className="flex justify-between w-full md:hidden">
+    <nav className="sticky top-0 z-20 w-full flex justify-between px-[3vw] md:px-[4vw] xl:px-[6vw] md:py-[1vh] items-center bg-opacity-80 backdrop-blur bg-white text-[#022581] shadow-lg shadow-black/30">
+      <div className="flex justify-between items-center w-full md:hidden">
         {/* Belinsky logo top-left */}
-        <div className="w-[50%]">
+        <div className="w-[50%] ">
           <img
             src={logo}
             alt="logoBelinsky"
-            className="w-[5rem] md:hidden shadow-lg z-10 cursor-pointer"
+            className="w-[5rem] md:hidden z-10 cursor-pointer"
             onClick={() => {
               navigate("/");
               LoadToTop();
@@ -96,7 +96,7 @@ const Navbar = () => {
           <img
             src={logo}
             alt=""
-            className="w-[5rem] cursor-pointer"
+            className="w-[6rem] cursor-pointer"
             onClick={() => {
               navigate("/");
               LoadToTop();
@@ -105,7 +105,14 @@ const Navbar = () => {
         </div>
         <ul className="w-[50%] flex md:justify-between lg:justify-evenly text-[#022581] drop-shadow-[#022581] text-base font-semibold items-center cursor-pointer md:text-lg lg:text-lg">
           {NavFooterItems.map(({ path, label }) => (
-            <NavLink key={path} to={path} className="text-[#022581]">
+            <NavLink
+              key={path}
+              to={path}
+              className="text-[#022581] h-full flex items-center"
+              onClick={() => {
+                LoadToTop();
+              }}
+            >
               {label}
             </NavLink>
           ))}
@@ -117,7 +124,7 @@ const Navbar = () => {
         className={
           nav
             ? `transition ease-in-out duration-300 absolute text-white left-0 top-0 w-full h-screen bg-black/90 px-4 py-7`
-            : `transition ease-in-out duration-500 fixed top-0 h-screen right-[-100%]`
+            : `transition ease-in-out duration-500 fixed top-0 h-screen left-[-100%]`
         }
       >
         <ul className="flex flex-col items-center justify-center w-full h-full gap-10 text-4xl font-extrabold">
@@ -130,7 +137,7 @@ const Navbar = () => {
                 key={label}
                 className={({ isActive }) =>
                   isActive && location.pathname !== "/"
-                    ? "text-[#022581]"
+                    ? "text-[#5484F2]"
                     : "text-white"
                 }
                 onClick={() => {

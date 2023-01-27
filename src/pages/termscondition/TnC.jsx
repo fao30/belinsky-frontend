@@ -127,7 +127,7 @@ const TnC = () => {
         </div>
         {/* COVID 19 */}
         <section className="font-semibold text-lg md:text-xl">
-          <h1 className="font-[900] text-center text-4xl md:text-5xl lg:text-6xl my-12 lg:my-24">
+          <h1 className="font-[900] text-center text-4xl md:text-5xl lg:text-6xl mt-24 mb-12 lg:mb-24 lg:mt-48">
             New Normal Protocol Related to COVID-19
           </h1>
           <div className="flex  flex-col gap-3 lg:px-[12vw]">

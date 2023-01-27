@@ -35,25 +35,29 @@ const SliderVideo = ({ src, blurPic }) => {
       </video>
 
       {/* Text Content */}
-      <div className="absolute flex flex-col justify-start h-full md:left-[3.5rem] gap-y-6 px-4 md:px-0 top-[60%] z-20  sm:w-[70%] md:w-[50%] lg:w-[60%] xl:w-[40%] w-full">
+      <div className="absolute flex flex-col justify-start h-full md:left-[3.5rem] px-4 md:px-0 top-[60%] lg:top-[57.5%] xl:top-[55%] z-20  sm:w-[70%] md:w-full lg:w-[90%] xl:w-[80%] w-full">
         <h1
-          className="text-5xl text-white uppercase lg:text-8xl"
+          className="text-[2rem] leading-[2rem] md:text-[4rem] md:leading-[4rem] lg:text-[5rem] lg:leading-[5rem] xl:text-[6rem] xl:leading-[6rem] text-white mb-2"
           // style={{ textShadow: "1px 1px red" }}
         >
           BELINSKY STUDIO
         </h1>
-        <p className="text-lg leading-4 text-white lg:text-xl lg:leading-5 w-full sm:w-[90%]">
-          Taking off to a sky where creativity is limitless
-        </p>
-        <button
-          onClick={() => {
-            navigate("/contact");
-            LoadToTop();
-          }}
-          className="self-start px-7 py-3 bg-[#5484F2] text-white font-extrabold hover:bg-[#4a6cb3] active:bg-[#5484F2] drop-shadow-[0_1px_1px_#5484F2]"
-        >
-          Contact Us
-        </button>
+        <div className="flex flex-col gap-y-6 sm:ml-1">
+          <p className="text-base sm:text-lg text-white lg:text-xl w-full sm:w-[90%] md:w-[60%] lg:w-[70%] xl:w-[50%]">
+            Given that Belinsky is both a production house and a creative
+            studio, our areas of expertise include producing both photography
+            and filmmaking
+          </p>
+          <button
+            onClick={() => {
+              navigate("/contact");
+              LoadToTop();
+            }}
+            className="self-start px-7 py-3 bg-[#5484F2] text-white font-extrabold hover:bg-[#4a6cb3] active:bg-[#5484F2] drop-shadow-[0_1px_1px_#5484F2]"
+          >
+            Contact Us
+          </button>
+        </div>
 
         {/* Custom Arrow Swiper */}
         {/* <div className="flex self-center">

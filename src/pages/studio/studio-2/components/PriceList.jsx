@@ -18,17 +18,17 @@ const PriceList = () => {
             </div>
           </div>
           <div className="h-[85%] flex justify-center p-[4vw] md:p-[3vw] lg:py-[2vw] lg:px-[3vw]">
-            <div className="xl:ml-12 flex flex-wrap items-center justify-center w-full lg:justify-between">
+            <div className="xl:ml-4 flex flex-wrap items-center justify-center w-full lg:justify-between">
               <div className="w-full xl:w-[55%] lg:w-[60%] flex flex-col">
                 {dataPriceList?.map(({ hour, priceNot, price }) => {
                   return (
-                    <div className="flex flex-row text-xl lg:text-2xl text-[#022581]">
+                    <div className="flex flex-row text-xl lg:text-2xl text-[#022581] items-center">
                       <p className="w-[18%]">{hour}</p>
                       <p className="w-[2%]">:</p>
-                      <p className="text-lg text-gray-500 line-through w-[40%]">
+                      <p className="md:text-lg text-gray-500 line-through text-base w-[35%]">
                         {priceNot}
                       </p>
-                      <p className="w-[45%]"> {price}</p>
+                      <p className="w-[45%]">{price}</p>
                     </div>
                   );
                 })}
@@ -46,7 +46,7 @@ const PriceList = () => {
 
         {/* EQUIPMENT LIST */}
         <div className="h-[50%] text-[#022581] p-[4vw] md:p-[3vw] lg:py-[2vw] lg:px-[3vw] text-xl lg:text-2xl">
-          <div className="xl:ml-12">
+          <div className="xl:ml-4">
             <div className="flex gap-2 flex-wrap items-start justify-center w-full lg:justify-between">
               <div className=" w-full lg:w-[60%] flex flex-col gap-2">
                 <p className="font-black">- White limbo background</p>
@@ -60,10 +60,10 @@ const PriceList = () => {
             </div>
           </div>
 
-          <div className="xl:ml-12 h-[30%] flex items-center mt-3 lg:mt-6">
+          <div className="xl:ml-4 h-[30%] flex items-center mt-3 lg:mt-6">
             <h1 className="text-xl md:text-2xl">Equipment List</h1>
           </div>
-          <div className="xl:ml-12 h-[70%] flex justify-center">
+          <div className="xl:ml-4 h-[70%] flex justify-center">
             <div className="flex flex-wrap justify-between w-full font-semibold">
               {/* left content */}
               <div className="w-full lg:w-[48%]">

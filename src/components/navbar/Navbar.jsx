@@ -105,7 +105,14 @@ const Navbar = () => {
         </div>
         <ul className="w-[50%] flex md:justify-between lg:justify-evenly text-[#022581] drop-shadow-[#022581] text-base font-semibold items-center cursor-pointer md:text-lg lg:text-lg">
           {NavFooterItems.map(({ path, label }) => (
-            <NavLink key={path} to={path} className="text-[#022581]">
+            <NavLink
+              key={path}
+              to={path}
+              className="text-[#022581] h-full flex items-center"
+              onClick={() => {
+                LoadToTop();
+              }}
+            >
               {label}
             </NavLink>
           ))}

@@ -5,14 +5,16 @@ import logo from "./assets/logo-belinsky.png";
 const Footer = () => {
   return (
     <footer className="px-[6vw] py-[5vh] lg:px-[6vw] w-full bg-[#F5F5F5] drop-shadow-[0_5px_5px_black]">
-      <div className="flex flex-wrap items-center w-full h-full justify-evenly gap-y-7">
-        <div className="flex flex-col w-[100%] lg:w-[40%]">
-          <img src={logo} alt="Belinsky Logo" className="w-[9rem]" />
-          <p className="text-[#022581]">
-            Taking off to a sky, where creativity is limitless
-          </p>
+      <div className="flex flex-col">
+        <img src={logo} alt="Belinsky Logo" className="w-[9rem]" />
+        <p className="text-[#022581]">
+          Taking off to a sky, where creativity is limitless
+        </p>
+      </div>
+      <div className="flex flex-wrap items-center w-full h-full justify-between gap-y-7">
+        <div className="flex flex-col w-[100%] lg:w-[35%]">
           <div className="flex flex-col mt-6 gap-y-3 md:gap-y-5 text-[#8B8585]">
-            <h3 className="mt-2 text-[#424242] text-2xl font-[600]">
+            <h3 className=" text-[#424242] text-2xl font-[600]">
               Belinsky Studio
             </h3>
             {ContactItems?.map(({ icon, p, href }) => (
@@ -29,7 +31,7 @@ const Footer = () => {
         </div>
 
         {/* Feature */}
-        <div className="lg:w-[50%] flex-wrap flex h-full gap-x-5  items-center ">
+        <div className="lg:w-[60%] flex-wrap flex h-full gap-x-5  items-center ">
           <iframe
             title="map"
             id="gmap_canvas"
@@ -37,9 +39,9 @@ const Footer = () => {
             frameborder="0"
             marginheight="0"
             marginwidth="0"
-            className="w-full h-[20rem] shadow-[0px_1px_4px_gray] rounded-xl lg:w-[50%]"
+            className="w-full h-[18rem] shadow-[0px_1px_4px_gray] rounded-xl lg:w-[50%]"
           ></iframe>
-          <div className="text-[#8B8585] flex gap-x-3 h-full w-full items-center font-semibold max-lg:mt-6 md:w-[50%]  lg:w-[40%]">
+          <div className="text-[#8B8585] flex gap-x-3 h-full w-full items-center font-semibold max-lg:mt-6 md:w-[50%] lg:w-[40%] xl:w-[30%]">
             <span>
               <GoLocation size={25} className="" />
             </span>

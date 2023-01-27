@@ -24,7 +24,7 @@ const Navbar = () => {
   const location = useLocation();
 
   return (
-    <nav className="sticky top-0 z-20 w-full flex justify-between px-[6vw] md:py-[1vh] items-center bg-opacity-80 backdrop-blur bg-white text-[#022581] shadow-lg shadow-black/30">
+    <nav className="sticky top-0 z-20 w-full flex justify-between px-[3vw] md:px-[4vw] xl:px-[6vw] md:py-[1vh] items-center bg-opacity-80 backdrop-blur bg-white text-[#022581] shadow-lg shadow-black/30">
       <div className="flex justify-between items-center w-full md:hidden">
         {/* Belinsky logo top-left */}
         <div className="w-[50%] ">
@@ -124,7 +124,7 @@ const Navbar = () => {
         className={
           nav
             ? `transition ease-in-out duration-300 absolute text-white left-0 top-0 w-full h-screen bg-black/90 px-4 py-7`
-            : `transition ease-in-out duration-500 fixed top-0 h-screen right-[-100%]`
+            : `transition ease-in-out duration-500 fixed top-0 h-screen left-[-100%]`
         }
       >
         <ul className="flex flex-col items-center justify-center w-full h-full gap-10 text-4xl font-extrabold">
@@ -137,7 +137,7 @@ const Navbar = () => {
                 key={label}
                 className={({ isActive }) =>
                   isActive && location.pathname !== "/"
-                    ? "text-[#022581]"
+                    ? "text-[#5484F2]"
                     : "text-white"
                 }
                 onClick={() => {

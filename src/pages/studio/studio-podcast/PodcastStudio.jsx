@@ -1,5 +1,5 @@
 import React from "react";
-import CardContactUsPodcast from "./components/CardContactUsPodcast";
+import CardContactUs from "../components/CardContactUs";
 import PodcastCarousel from "./components/PodcastCarousel";
 import PodcastPriceList from "./components/PodcastPriceList";
 import { podcastCarouselData } from "./constants/PodcastCarouselData";
@@ -27,8 +27,8 @@ const PodcastStudio = () => {
       </h2>
       <div className="px-[6vw] ">
         <PodcastPriceList />
-        <CardContactUsPodcast />
       </div>
+      <CardContactUs />
     </section>
   );
 };

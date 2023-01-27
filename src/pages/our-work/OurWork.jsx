@@ -48,7 +48,7 @@ const OurWork = () => {
         ) : (
           <div className="absolute h-full w-full bg-[#0225818C]/70 text-white">
             <div className="z-10 flex flex-col items-center justify-center w-full h-full text-center text-white leading-[4rem] lg:leading-[5.5rem]">
-              <h3 className="w-full text-[5rem] font-black text-white lg:text-[6.5rem] xl:tracking-wider">
+              <h3 className="w-full text-[4.25rem] md:text-[5rem] font-black text-white lg:text-[6.5rem] xl:tracking-wider">
                 Our Work
               </h3>
               <p className="w-full text-lg font-bold text-white drop-shadow-md md:text-xl lg:text-[1.75rem]">
@@ -60,13 +60,13 @@ const OurWork = () => {
       </div>
 
       {/* THE BUTTONS */}
-      <div className="flex items-center justify-center w-full gap-6 my-[6vw] lg:my-[3vw] max-sm:gap-3 max-sm:px-6">
+      <div className="flex items-center justify-center w-full gap-6 my-[6vw] lg:my-[3vw] max-sm:gap-3">
         <button
           onClick={() => {
             setIsProductionHouse(true);
             setIsBelinskyStudio(false);
           }}
-          className={`lg:w-[15rem] px-2 p-1 text-[18px] sm:text-[24px] rounded-xl border-2 font-bold ${
+          className={`lg:w-[15rem] py-[0.25rem] px-[0.5rem] md:px-2 md:py-1 text-[18px] sm:text-[24px] rounded-xl border-2 font-bold ${
             isProductionHouse
               ? " text-[#022581] border-[#022581]"
               : " text-[#989898] border-[#989898]"
@@ -79,7 +79,7 @@ const OurWork = () => {
             setIsBelinskyStudio(true);
             setIsProductionHouse(false);
           }}
-          className={`lg:w-[15rem] px-2 p-1 text-[18px] sm:text-[24px] rounded-xl border-2 font-bold ${
+          className={`lg:w-[15rem] py-[0.25rem] px-[0.5rem] md:px-2 md:py-1 text-[18px] sm:text-[24px] rounded-xl border-2 font-bold ${
             isBelinskyStudio
               ? " text-[#022581] border-[#022581]"
               : " text-[#989898] border-[#989898]"

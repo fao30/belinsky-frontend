@@ -7,7 +7,7 @@ const CardFounders = ({ src, h3, blurPic }) => {
 
   return (
     <>
-      <div className="flex flex-col w-[30%] md:w-[20%] lg:w-[13%] gap-y-2">
+      <div className="flex flex-col w-[30%] md:w-[25%] lg:w-[20%] xl:w-[15%] gap-y-2">
         <LazyLoadImage
           loading="lazy"
           alt=""
@@ -24,11 +24,11 @@ const CardFounders = ({ src, h3, blurPic }) => {
             className="absolute rounded-full w-[25%] md:w-[15%] lg:w-[10%] gap-y-2"
           />
         ) : (
-          <h3 className="font-extrabold text-center mx-auto w-[80%] md:w-full aboutSize">
+          <h3 className="    text-center mx-auto w-[80%] md:w-full aboutSize">
             {h3}
           </h3>
         )}
-        {/* <h3 className="font-extrabold text-center mx-auto w-[80%] md:w-full   md:text-lg">
+        {/* <h3 className="    text-center mx-auto w-[80%] md:w-full   md:text-lg">
           {h3}
         </h3> */}
       </div>

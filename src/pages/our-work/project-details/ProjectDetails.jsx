@@ -17,7 +17,7 @@ const ProjectDetails = ({
     <section>
       {/* THE TITLE */}
       <div className="pt-24 lg:pt-36 px-[6vw] lg:px-[3vw] pb-10 flex flex-col">
-        <h1 className="text-[#022581] text-[2.5rem] md:text-[4rem] lg:text-[5rem] font-[800]  underline decoration-[3.5px] leading-[3rem] md:leading-[4rem] lg:leading-[5rem] underline-offset-[8px]">
+        <h1 className="text-[#022581] text-[2.5rem] md:text-[4rem] lg:text-[5rem]     underline decoration-[3.5px] leading-[3rem] md:leading-[4rem] lg:leading-[5rem] underline-offset-[8px]">
           {title}
         </h1>
         <h2 className="text-[1.5rem] md:text-[2rem] lg:text-[2.5rem] text-[#022581]">
@@ -44,7 +44,7 @@ const ProjectDetails = ({
       {/* DESC */}
       <div className="py-[6vw] lg:pt-12 lg:pb-16 px-[6vw] xl:px-[16vw] flex justify-between w-full flex-wrap">
         <div className="flex flex-col w-full">
-          <h2 className="text-[1.5rem] md:text-[2rem] lg:text-[2.5rem] font-[800] text-[#022581] w-full">
+          <h2 className="text-[1.5rem] md:text-[2rem] lg:text-[2.5rem]    text-[#022581] w-full">
             {byWho2}
           </h2>
           <div className="w-full lg:w-[50%]">
@@ -54,7 +54,7 @@ const ProjectDetails = ({
           </div>
           <div className="mt-6 w-full lg:w-[50%] flex justify-between flex-wrap">
             <div className="w-[50%]">
-              <h2 className="text-[1.5rem] md:text-[2rem] lg:text-[2.5rem] font-[800] text-[#022581]">
+              <h2 className="text-[1.5rem] md:text-[2rem] lg:text-[2.5rem]    text-[#022581]">
                 Date
               </h2>
               <p className="text-[1rem] lg:text-[1.2rem] text-[#022581]">
@@ -62,7 +62,7 @@ const ProjectDetails = ({
               </p>
             </div>
             <div className="w-[50%] md:w-[45%]">
-              <h2 className="text-[1.5rem] md:text-[2rem] lg:text-[2.5rem] font-[800] text-[#022581]">
+              <h2 className="text-[1.5rem] md:text-[2rem] lg:text-[2.5rem]    text-[#022581]">
                 Category
               </h2>
               <p className="text-[1rem] lg:text-[1.2rem] text-[#022581]">

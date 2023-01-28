@@ -58,7 +58,7 @@ const Navbar = () => {
 
       {/* Desktop Menu OLD */}
       {/* <div className="w-[100%] h-full hidden md:flex z-20 mx-auto relative">
-        <ul className="flex w-full text-lg font-bold text-[#F5F5F5] justify-between lg:justify-center items-center lg:gap-10 text-center">
+        <ul className="flex w-full text-lg   text-[#F5F5F5] justify-between lg:justify-center items-center lg:gap-10 text-center">
           {NavFooterItems?.map(({ label, type, path }) => {
             return type === "img" ? (
               <NavLink
@@ -103,7 +103,7 @@ const Navbar = () => {
             }}
           />
         </div>
-        <ul className="w-[50%] flex md:justify-between lg:justify-evenly text-[#022581] drop-shadow-[#022581] text-base font-semibold items-center cursor-pointer md:text-lg lg:text-lg">
+        <ul className="w-[50%] flex md:justify-between lg:justify-evenly text-[#022581] drop-shadow-[#022581]    items-center md:text-[1.2rem] lg:text-[1.3rem]">
           {NavFooterItems.map(({ path, label }) => (
             <NavLink
               key={path}
@@ -127,7 +127,7 @@ const Navbar = () => {
             : `transition ease-in-out duration-500 fixed top-0 h-screen left-[-100%]`
         }
       >
-        <ul className="flex flex-col items-center justify-center w-full h-full gap-10 text-4xl font-extrabold">
+        <ul className="flex flex-col items-center justify-center w-full h-full gap-10 text-4xl    ">
           {NavFooterItems.map(({ label, type, path }) =>
             type === "img" ? (
               ""

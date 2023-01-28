@@ -34,10 +34,10 @@ const ContactUs = () => {
             <div className="absolute top-0 left-0 w-full h-full bg-[#0225818C]/40" />
             <div className="absolute z-10 flex flex-col items-center justify-center w-full h-full gap-5">
               <div className="z-10 flex flex-col items-center justify-center w-full h-full text-center text-white leading-[4rem] lg:leading-[5.5rem]">
-                <h3 className="w-full text-[3.5rem] font-black text-white lg:text-[5rem] xl:tracking-wider">
+                <h3 className="w-full text-[3rem] leading-[3rem]   text-white lg:text-[5rem] lg:leading-[5rem] xl:tracking-wider">
                   REQUEST A PROPOSAL
                 </h3>
-                <p className="w-full text-lg font-semibold text-white drop-shadow-md md:text-xl lg:text-[1.75rem]">
+                <p className="mt-2 w-full text-lg   text-white drop-shadow-md md:text-xl lg:text-[1.75rem]">
                   let's create something great together
                 </p>
               </div>

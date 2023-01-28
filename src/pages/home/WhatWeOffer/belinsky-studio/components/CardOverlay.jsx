@@ -26,14 +26,14 @@ const CardOverlay = ({ src, h2, h3, p, blurPic, navigate }) => {
             LoadToTop();
           }}
         >
-          <h2 className="absolute z-10 text-2xl md:text-xl lg:text-3xl font-bold text-white transition duration-500 ease-in-out top-5 left-5 group-hover:opacity-0 drop-shadow-[0_1px_1px_black] ">
+          <h2 className="absolute z-10 text-2xl md:text-xl lg:text-3xl   text-white transition duration-500 ease-in-out top-5 left-5 group-hover:opacity-0 drop-shadow-[0_1px_1px_black] ">
             {h2}
           </h2>
           <div className="flex justify-center items-center text-center w-full h-full flex-col px-[1vw]">
-            <h3 className="text-4xl md:text-3xl lg:text-3xl font-black text-center w-full xl:text-4xl">
+            <h3 className="text-4xl md:text-3xl lg:text-3xl   text-center w-full xl:text-4xl">
               {h3}
             </h3>
-            <p className="mt-[1vh] w-full text-lg md:text-sm  lg:font-[600] tracking-wider text-center lg:text-base xl:text-xl">
+            <p className="mt-[1vh] w-full text-lg md:text-sm  lg:   tracking-wider text-center lg:text-base xl:text-xl">
               {p}
             </p>
           </div>

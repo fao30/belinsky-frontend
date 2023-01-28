@@ -14,7 +14,7 @@ const MarqueeSection = () => {
     <>
       <section className="mt-[5vh] lg:mt-[10vh] xl:mt-[15vh]">
         <div className="px-[4vw]">
-          <h1 className="text-[#022581] text-center text-2xl md:text-3xl mb-10">
+          <h1 className="text-[#022581] text-center text-2xl lg:text-4xl mb-10">
             WHAT OUR CLIENTS SAYS ABOUT US
           </h1>
         </div>
@@ -43,7 +43,7 @@ const MarqueeSection = () => {
                   definetely one of the best video production house we’ve worked
                   with so far. Thank you!”
                 </p>
-                <h3 className="text-lg font-bold text-white md:text-xl">
+                <h3 className="text-lg   text-white md:text-xl">
                   Michael, Traveloka
                 </h3>
               </div>
@@ -51,7 +51,7 @@ const MarqueeSection = () => {
           )}
           <div className="absolute top-0 left-0 w-full h-full bg-[#0225818C]/50" />
         </div>
-        <h1 className="text-[#022581] text-center uppercase text-2xl md:text-3xl mt-10 sm:mt-20 mb-10">
+        <h1 className="text-[#022581] text-center uppercase text-2xl md:text-4xl mt-10 sm:mt-20 mb-10">
           Partners & Clients
         </h1>
         <Marquee

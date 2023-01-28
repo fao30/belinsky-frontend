@@ -13,7 +13,7 @@ export const VisionMission = () => {
   return (
     <section className="text-[#022581] h-full w-full ">
       <div className="max-md:px-[4vw] px-8">
-        <h1 className=" font-[900] text-center aboutTitleSize mt-[2vh]">
+        <h1 className="    text-center aboutTitleSize mt-[2vh]">
           Taking off to a sky, where creativity is limitless.
         </h1>
       </div>
@@ -38,9 +38,7 @@ export const VisionMission = () => {
 
       {/* Founders Cards */}
       <div className="my-[8vh] md:my-[16vh]">
-        <h1 className="font-[900] text-center aboutTitleSize">
-          Founders of Belinsky
-        </h1>
+        <h1 className="   text-center aboutTitleSize">Founders of Belinsky</h1>
         <div className="flex w-full h-full justify-evenly lg:justify-center lg:gap-20 mt-[4vh] md:mt-[8vh]">
           {dataFounders.map(({ src, h3, blurPic }) => (
             <CardFounders src={src} h3={h3} blurPic={blurPic} />

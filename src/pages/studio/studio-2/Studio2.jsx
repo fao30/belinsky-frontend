@@ -26,7 +26,7 @@ const Studio2 = () => {
 
   return (
     <section className="w-full py-24 text-[#022581]">
-      <h1 className="text-center text-4xl font-black md:text-6xl lg:text-7xl">
+      <h1 className="text-center text-4xl   md:text-6xl lg:text-7xl">
         STUDIO 2
       </h1>
       <p className="text-lg text-center md:text-xl mt-7 md:mt-15 font-[400]">

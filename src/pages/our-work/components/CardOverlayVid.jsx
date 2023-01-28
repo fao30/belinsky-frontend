@@ -47,7 +47,7 @@ const CardOverlayVid = ({ srcvideo, h3, p, navigate, blurPic, isDetails }) => {
               isDetails ? "cursor-pointer" : ""
             }`}
           >
-            <h3 className="text-[20px] font-bold text-white w-full">{h3}</h3>
+            <h3 className="text-[22px]   text-white w-full">{h3}</h3>
             <p className="w-full pr-6 drop-shadow-md text-[14px]">{p}</p>
           </div>
         </div>

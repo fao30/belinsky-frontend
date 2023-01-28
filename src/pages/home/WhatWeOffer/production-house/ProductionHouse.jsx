@@ -38,10 +38,10 @@ const ProductionHouse = () => {
 
           {/* Large Screen (lg breakpoint) */}
           <div className="w-[100%] md:w-[90%] lg:w-[45%] self-center">
-            <h1 className="text-4xl font-black tracking-wide text-left md:text-5xl xl:text-6xl">
+            <h1 className="text-4xl   tracking-wide text-left md:text-5xl xl:text-6xl">
               Production House
             </h1>
-            <p className="mt-3 text-lg font-semibold leading-6  md:text-xl lg:text-2xl">
+            <p className="mt-3 text-lg    leading-6  md:text-xl lg:text-2xl">
               Belinsky strives for great quality and exclusiveness in every
               video that exhibits a flawless result. We may help you in the
               production of TVC advertisement for your advertising needs.

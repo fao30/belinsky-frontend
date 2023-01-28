@@ -37,7 +37,7 @@ const ContactUs = () => {
                 <h3 className="w-full text-[3.5rem] font-black text-white lg:text-[5rem] xl:tracking-wider">
                   REQUEST A PROPOSAL
                 </h3>
-                <p className="w-full text-lg font-bold text-white drop-shadow-md md:text-xl lg:text-[1.75rem]">
+                <p className="w-full text-lg font-semibold text-white drop-shadow-md md:text-xl lg:text-[1.75rem]">
                   let's create something great together
                 </p>
               </div>

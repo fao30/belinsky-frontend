@@ -43,7 +43,7 @@ const SliderVideo = ({ src, blurPic }) => {
           BELINSKY STUDIO
         </h1>
         <div className="flex flex-col gap-y-6 sm:ml-0.5">
-          <p className="text-base sm:text-lg text-white w-full sm:w-[90%] md:w-[50%] lg:w-[50%] xl:w-[45%]">
+          <p className="text-base sm:text-lg text-white w-full sm:w-[90%] md:w-[55%] lg:w-[45%] xl:w-[45%]">
             Given that Belinsky is both a production house and a creative
             studio, our areas of expertise include producing both photography
             and filmmaking

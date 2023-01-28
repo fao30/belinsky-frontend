@@ -136,9 +136,7 @@ const Navbar = () => {
                 to={path}
                 key={label}
                 className={({ isActive }) =>
-                  isActive && location.pathname !== "/"
-                    ? "text-[#5484F2]"
-                    : "text-white"
+                  isActive ? "text-[#5484F2]" : "text-white"
                 }
                 onClick={() => {
                   handleNav();

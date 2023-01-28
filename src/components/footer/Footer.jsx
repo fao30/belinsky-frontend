@@ -14,17 +14,15 @@ const Footer = () => {
       <div className="flex flex-wrap items-center justify-between w-full h-full gap-y-7">
         <div className="flex flex-col w-[100%] lg:w-[35%]">
           <div className="flex flex-col mt-6 gap-y-3 md:gap-y-5 text-[#8B8585]">
-            <h3 className=" text-[#424242] text-2xl font-[600]">
-              Belinsky Studio
-            </h3>
+            <h3 className=" text-[#424242] text-2xl   ">Belinsky Studio</h3>
             {ContactItems?.map(({ icon, p, href }) => (
               <a
                 href={href}
                 target="break"
-                className="flex flex-row font-semibold hover:underline"
+                className="flex flex-row    hover:underline"
               >
                 <span>{icon}</span>
-                <span className="ml-1">{p}</span>
+                <span className="ml-1 font-[500]">{p}</span>
               </a>
             ))}
           </div>
@@ -41,7 +39,7 @@ const Footer = () => {
             marginwidth="0"
             className="w-full h-[18rem] shadow-[0px_1px_4px_gray] rounded-xl lg:w-[50%]"
           ></iframe>
-          <div className="text-[#8B8585] flex gap-x-3 h-full w-full items-center font-semibold max-lg:mt-6 md:w-[50%] lg:w-[40%] xl:w-[30%]">
+          <div className="font-[500] text-[#8B8585] flex gap-x-3 h-full w-full items-center    max-lg:mt-6 md:w-[50%] lg:w-[40%] xl:w-[30%]">
             <span className="self-start">
               <GoLocation size={25} className="" />
             </span>

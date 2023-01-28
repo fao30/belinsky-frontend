@@ -28,8 +28,8 @@ const CardsVisionMission = ({ src, h1, p, blurPic }) => {
         </div>
         <div className="flex justify-center max-md:px-[4vw] max-md:py-[4vw] px-8 pt-8">
           <div className="flex flex-col">
-            <h1 className="font-black uppercase aboutTitleSize">{h1}</h1>
-            <p className="mt-1 font-bold aboutSize ">{p}</p>
+            <h1 className="  uppercase aboutTitleSize">{h1}</h1>
+            <p className="mt-1 aboutSize ">{p}</p>
           </div>
         </div>
       </div>

@@ -49,13 +49,11 @@ const PriceList = () => {
           <div className="xl:ml-4">
             <div className="flex gap-2 flex-wrap items-start justify-center w-full lg:justify-between">
               <div className=" w-full lg:w-[60%] flex flex-col gap-2">
-                <p className="font-black">- White limbo background</p>
-                <p className="font-black">
-                  - Expander background (Max 2 Colours)
-                </p>
+                <p className=" ">- White limbo background</p>
+                <p className=" ">- Expander background (Max 2 Colours)</p>
               </div>
               <div className="w-full lg:w-[30%]">
-                <p className="font-black">- Makeup room</p>
+                <p className=" ">- Makeup room</p>
               </div>
             </div>
           </div>
@@ -64,7 +62,7 @@ const PriceList = () => {
             <h1 className="text-xl md:text-2xl">Equipment List</h1>
           </div>
           <div className="xl:ml-4 h-[70%] flex justify-center">
-            <div className="flex flex-wrap justify-between w-full font-semibold">
+            <div className="flex flex-wrap justify-between w-full   ">
               {/* left content */}
               <div className="w-full lg:w-[48%]">
                 <ul>

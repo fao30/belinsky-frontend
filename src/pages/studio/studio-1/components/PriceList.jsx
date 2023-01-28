@@ -48,7 +48,7 @@ const PriceList = () => {
             <h1>Equipment List</h1>
           </div>
           <div className="xl:ml-4 h-[70%] flex justify-center">
-            <div className="flex flex-wrap justify-between w-full font-semibold">
+            <div className="flex flex-wrap justify-between w-full   ">
               {/* left content */}
               <div className="w-full lg:w-[48%]">
                 <ul>

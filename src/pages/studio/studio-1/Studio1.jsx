@@ -26,10 +26,10 @@ const Studio1 = () => {
   return (
     <section className="py-24 w-full text-[#022581]">
       <div className="flex flex-col items-center w-full">
-        <h1 className="text-center text-4xl font-black md:text-6xl lg:text-7xl">
+        <h1 className="text-center text-4xl   md:text-6xl lg:text-7xl">
           STUDIO 1
         </h1>
-        <p className="font-bold   md:text-lg lg:text-2xl">
+        <p className="    md:text-lg lg:text-2xl">
           3 Thematic Korean background + Makeup Room
         </p>
       </div>

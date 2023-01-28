@@ -26,7 +26,7 @@ const PhBs = () => {
       {/* Checkout Company Profile */}
       <div className="w-full h-full">
         <div className="w-[90%] mx-auto">
-          <h2 className="text-[#022581] py-[4vh] text-center font-extrabold text-2xl lg:text-3xl">
+          <h2 className="text-[#022581] py-[4vh] text-center     text-2xl lg:text-3xl">
             CHECK OUT OUR COMPANY PROFILE
           </h2>
         </div>
@@ -60,7 +60,7 @@ const PhBs = () => {
                   navigate("/contact");
                   LoadToTop();
                 }}
-                className=" bg-[#F5F5F5] text-[#022581] font-extrabold px-8 py-2 lg:px-12 lg:py-3 rounded-2xl text-base md:text-xl"
+                className=" bg-[#F5F5F5] text-[#022581]     px-8 py-2 lg:px-12 lg:py-3 rounded-2xl text-base md:text-xl"
               >
                 Contact Us
               </button>

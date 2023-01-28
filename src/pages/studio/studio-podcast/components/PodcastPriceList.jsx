@@ -62,7 +62,7 @@ const PodcastPriceList = () => {
           </div>
         </div>
         {/* EQUIPMENT LIST */}
-        <div className="h-[50%] text-[#022581] p-[4vw] md:p-[3vw] lg:py-[2vw] lg:px-[3vw] text-xl lg:text-2xl font-semibold">
+        <div className="h-[50%] text-[#022581] p-[4vw] md:p-[3vw] lg:py-[2vw] lg:px-[3vw] text-xl lg:text-2xl   ">
           <div className="xl:ml-12 h-[30%] flex items-center  max-lg:mb-6">
             <h1 className="text-2xl">Equipment List</h1>
           </div>

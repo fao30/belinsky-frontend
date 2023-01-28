@@ -37,9 +37,7 @@ const SCardSliderImg = ({
               isDetails ? "cursor-pointer" : ""
             }`}
           >
-            <h3 className="w-full text-xl font-extrabold text-white md:text-4xl ">
-              {h3}
-            </h3>
+            <h3 className="w-full text-xl     text-white md:text-4xl ">{h3}</h3>
             <p className="w-full mt-2 text-xs md:text-lg drop-shadow-md">{p}</p>
           </div>
         </div>

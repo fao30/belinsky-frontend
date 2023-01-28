@@ -37,13 +37,13 @@ const SliderVideo = ({ src, blurPic }) => {
       {/* Text Content */}
       <div className="absolute flex flex-col justify-start h-full md:left-[3.5rem] px-4 md:px-0 top-[60%] lg:top-[57.5%] xl:top-[55%] z-20  sm:w-[70%] md:w-full lg:w-[90%] xl:w-[80%] w-full">
         <h1
-          className="text-[2rem] leading-[2rem] md:text-[4rem] md:leading-[4rem] lg:text-[5rem] lg:leading-[5rem] xl:text-[6rem] xl:leading-[6rem] text-white mb-2"
+          className="text-[2rem] leading-[2rem] md:text-[3rem] md:leading-[3rem] lg:text-[4rem] lg:leading-[4rem] xl:text-[4.5rem] xl:leading-[4.5rem] text-white mb-2"
           // style={{ textShadow: "1px 1px red" }}
         >
           BELINSKY STUDIO
         </h1>
         <div className="flex flex-col gap-y-6 sm:ml-1">
-          <p className="text-base sm:text-lg text-white lg:text-xl w-full sm:w-[90%] md:w-[60%] lg:w-[70%] xl:w-[50%]">
+          <p className="text-base sm:text-lg text-white w-full sm:w-[90%] md:w-[50%] lg:w-[50%] xl:w-[45%]">
             Given that Belinsky is both a production house and a creative
             studio, our areas of expertise include producing both photography
             and filmmaking

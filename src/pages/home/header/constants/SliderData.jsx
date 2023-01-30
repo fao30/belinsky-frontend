@@ -1,12 +1,19 @@
-import video from "../assets/Hero_Video.mp4";
+import video1 from "../assets/Hero_Video.mp4";
+import video2 from "../assets/Traveloka_.mp4";
 import bg1 from "../assets/Background_1.png";
 import bg2 from "../assets/Background_2.png";
 import bg3 from "../../../../assets/belinsky-studio/Abnon_.jpg";
 
 export const sliderData = [
   {
-    src: video,
+    src: video1,
     blurPic: "L2A^*4ER?v_30KR8IBaK00V?9FE1",
+    type: "video/mp4",
+  },
+  {
+    src: video2,
+    blurPic: "LkG]Bat8R*RP_Nt7ogWB.8oft7f6",
+    type: "video/mp4",
   },
   {
     src: bg1,

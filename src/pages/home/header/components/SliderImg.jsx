@@ -27,7 +27,7 @@ const SliderImg = ({ src, h1, p, navigate, blurPic }) => {
         <>
           <div className="absolute top-0 left-0 object-cover w-full h-full bg-gradient-to-t from-[#0225818C] to-transparent" />
           <div className="absolute left-[5%] sm:left-[10%] top-[60%] lg:top-[65%] flex flex-col justify-start h-full">
-            <h1 className="text-6xl md:text-8xl text-white   ">{h1}</h1>
+            <h1 className="text-6xl text-white md:text-8xl ">{h1}</h1>
             <div className="flex justify-start w-full group">
               <div className="border-b-2 border-white w-[4.5rem] self-center group-hover:border-opacity-0 transition duration-500 ease-in-out scale-x-100 md:w-[10rem]" />
               <p
@@ -44,20 +44,6 @@ const SliderImg = ({ src, h1, p, navigate, blurPic }) => {
               </p>
               <div className="border-b-2 border-white w-[4.5rem] self-center group-hover:border-opacity-0 transition duration-500 ease-in-out scale-x-100 md:w-[10rem]" />
             </div>
-
-            {/* Custom Arrow Swiper */}
-            {/* <div className="flex items-center mt-5 pl-52">
-              <IoIosArrowBack
-                size={30}
-                className="text-white drop-shadow-[0_1px_1px_black]"
-                ref={swiperNavPrevRef}
-              />
-              <IoIosArrowForward
-                size={30}
-                className="text-white drop-shadow-[0_1px_1px_black]"
-                ref={swiperNavNextRef}
-              />
-            </div> */}
           </div>
         </>
       )}

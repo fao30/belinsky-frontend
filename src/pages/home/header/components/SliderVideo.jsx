@@ -3,9 +3,8 @@ import { useNavigate } from "react-router-dom";
 import LoadToTop from "../../../../helper/LoadToTop";
 import logoBelinsky from "../assets/logo-belinsky.png";
 import { BlurhashCanvas } from "react-blurhash";
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
-const SliderVideo = ({ src, blurPic }) => {
+const SliderVideo = ({ src, blurPic, type }) => {
   const navigate = useNavigate();
   const [isLoadingVideo, setIsLoadingVideo] = useState(false);
   return (
@@ -31,7 +30,7 @@ const SliderVideo = ({ src, blurPic }) => {
         onLoadedData={() => setIsLoadingVideo(false)}
         className="absolute top-0 left-0 object-cover w-full h-full"
       >
-        <source src={src} type="video/mp4" />
+        <source src={src} type={type} />
       </video>
 
       {/* Text Content */}
@@ -58,18 +57,6 @@ const SliderVideo = ({ src, blurPic }) => {
             Contact Us
           </button>
         </div>
-
-        {/* Custom Arrow Swiper */}
-        {/* <div className="flex self-center">
-          <IoIosArrowBack
-            size={30}
-            className="text-white drop-shadow-[0_1px_1px_black]"
-          />
-          <IoIosArrowForward
-            size={30}
-            className="text-white drop-shadow-[0_1px_1px_black]"
-          />
-        </div> */}
       </div>
     </>
   );

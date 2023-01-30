@@ -127,7 +127,7 @@ const Navbar = () => {
             : `transition ease-in-out duration-500 fixed top-0 h-screen left-[-100%]`
         }
       >
-        <ul className="flex flex-col items-center justify-center w-full h-full gap-10 text-4xl    ">
+        <ul className="flex flex-col items-center justify-center w-full h-full gap-10 text-4xl ">
           {NavFooterItems.map(({ label, type, path }) =>
             type === "img" ? (
               ""
@@ -136,7 +136,7 @@ const Navbar = () => {
                 to={path}
                 key={label}
                 className={({ isActive }) =>
-                  isActive ? "text-[#5484F2]" : "text-white"
+                  isActive ? "text-[#5484f1]" : "text-white"
                 }
                 onClick={() => {
                   handleNav();

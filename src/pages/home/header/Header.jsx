@@ -1,6 +1,12 @@
 import video from "./assets/Hero_Video.mp4";
+
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+
+// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Mousewheel, Navigation, Lazy } from "swiper";
+
+// import Swiper core and required modules
+import { Mousewheel, Navigation, Keyboard, Autoplay } from "swiper";
 
 // Import Swiper styles
 import "swiper/css";
@@ -16,20 +22,44 @@ const Header = () => {
   const navigate = useNavigate();
   return (
     <section className="relative w-full min-h-screen">
+      {/* Custom Swiper Arrows */}
+      <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] flex z-10 w-full justify-between px-2 md:px-4">
+        <IoIosArrowBack
+          size={40}
+          id="nav-left"
+          className="text-white transition cursor-pointer hover:text-[#5484f1]"
+        />
+        <IoIosArrowForward
+          size={40}
+          id="nav-right"
+          className="text-white transition cursor-pointer hover:text-[#5484f1]"
+        />
+      </div>
       <Swiper
+        speed={600}
+        autoplay={{
+          delay: 5000,
+          pauseOnMouseEnter: true,
+        }}
         spaceBetween={0}
         slidesPerView={1}
         mousewheel={{
           forceToAxis: true,
         }}
-        navigation={true}
-        modules={[Mousewheel, Navigation]}
+        keyboard={{
+          enabled: true,
+        }}
+        navigation={{
+          nextEl: "#nav-right",
+          prevEl: "#nav-left",
+        }}
+        modules={[Mousewheel, Navigation, Keyboard, Autoplay]}
         className="relative w-full h-screen"
       >
-        {sliderData?.map(({ src, h1, nav, blurPic }) =>
-          src === video ? (
+        {sliderData?.map(({ src, h1, nav, blurPic, type }) =>
+          type === "video/mp4" ? (
             <SwiperSlide>
-              <SliderVideo src={src} blurPic={blurPic} />
+              <SliderVideo src={src} blurPic={blurPic} type="video/mp4" />
             </SwiperSlide>
           ) : (
             <SwiperSlide>

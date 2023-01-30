@@ -103,12 +103,20 @@ const ProjectDetails = ({
           <h2 className="text-[1.5rem] md:text-[2rem] lg:text-[2rem]    text-[#022581]">
             The Project is directed by
           </h2>
-          <div className="mt-4 justify-center w-full max-md:flex hidden">
-            <img src={imgDirector} className="w-36 rounded-full" />
+          {/* img director for mobile */}
+          <div className="mt-4 justify-center flex-col items-center w-full max-md:flex hidden">
+            <img
+              src={imgDirector}
+              alt="director"
+              className="max-sm:w-56 w-36 rounded-full"
+            />
+            <p className="text-center uppercase text-2xl  text-[#022581] mt-4">
+              {nameDirector}
+            </p>
           </div>
           <div className=" text-[#022581] flex justify-between items-center gap-6 mt-4">
             <div className="max-md:hidden w-[27.5%] flex flex-col gap-2">
-              <img src={imgDirector} className="rounded-full" />
+              <img src={imgDirector} alt="director" className="rounded-full" />
               <p className="text-center uppercase text-xl">{nameDirector}</p>
             </div>
             <p className="font-[500] text-sm  w-full lg:w-[70%]">

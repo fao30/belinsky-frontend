@@ -12,6 +12,10 @@ const ProjectDetails = ({
   img1,
   img2,
   img3,
+  descDirector,
+  imgDirector,
+  nameDirector,
+  director,
 }) => {
   return (
     <section>
@@ -42,17 +46,34 @@ const ProjectDetails = ({
       </div>
 
       {/* DESC */}
-      <div className="py-[6vw] lg:pt-12 lg:pb-16 px-[6vw] xl:px-[16vw] flex justify-between w-full flex-wrap">
-        <div className="flex flex-col w-full">
-          <h2 className="text-[1.5rem] md:text-[2rem] lg:text-[2.5rem]    text-[#022581] w-full">
+      <div
+        className={`py-[6vw] lg:pt-12 lg:pb-16 px-[6vw]  flex justify-between w-full flex-wrap ${
+          director ? "lg:px-[4vw]" : "xl:px-[14vw]"
+        }`}
+      >
+        {!director ? (
+          <h2 className="text-[1.5rem] md:text-[2rem] lg:text-[2.5rem]    text-[#022581]">
             {byWho2}
           </h2>
-          <div className="w-full lg:w-[50%]">
+        ) : (
+          ""
+        )}
+        <div className="flex flex-col w-full lg:w-[50%]">
+          <h2
+            className={`${
+              director
+                ? "text-[1.5rem] md:text-[2rem] lg:text-[2.5rem]    text-[#022581]"
+                : "hidden"
+            } `}
+          >
+            {byWho2}
+          </h2>
+          <div className="w-full">
             <p className="text-[1rem] lg:text-[1.2rem] text-[#022581]">
               {desc}
             </p>
           </div>
-          <div className="mt-6 w-full lg:w-[50%] flex justify-between flex-wrap">
+          <div className="mt-6 w-full flex justify-between flex-wrap">
             <div className="w-[50%]">
               <h2 className="text-[1.5rem] md:text-[2rem] lg:text-[2.5rem]    text-[#022581]">
                 Date
@@ -71,9 +92,41 @@ const ProjectDetails = ({
             </div>
           </div>
         </div>
+        {/* DIRECTOR */}
+        <div
+          className={`${
+            director
+              ? "w-full lg:w-[45%] flex flex-col max-md:gap-2 max-lg:mt-6"
+              : "hidden"
+          }`}
+        >
+          <h2 className="text-[1.5rem] md:text-[2rem] lg:text-[2rem]    text-[#022581]">
+            The Project is directed by
+          </h2>
+          {/* img director for mobile */}
+          <div className="mt-4 justify-center flex-col items-center w-full max-md:flex hidden">
+            <img
+              src={imgDirector}
+              alt="director"
+              className="max-sm:w-56 w-36 rounded-full"
+            />
+            <p className="text-center uppercase text-2xl  text-[#022581] mt-4">
+              {nameDirector}
+            </p>
+          </div>
+          <div className=" text-[#022581] flex justify-between items-center gap-6 mt-4">
+            <div className="max-md:hidden w-[27.5%] flex flex-col gap-2">
+              <img src={imgDirector} alt="director" className="rounded-full" />
+              <p className="text-center uppercase text-xl">{nameDirector}</p>
+            </div>
+            <p className="font-[500] text-sm  w-full lg:w-[70%]">
+              {descDirector}
+            </p>
+          </div>
+        </div>
       </div>
       {/* IMAGES */}
-      <div className="px-[6vw] xl:px-[16vw] w-full h-[35rem] lg:h-[50rem] flex justify-between pb-24 max-md:hidden">
+      <div className="px-[6vw] xl:px-[14vw] w-full h-[35rem] lg:h-[50rem] flex justify-between pb-24 max-md:hidden">
         <div className="flex flex-col justify-between w-[50%]">
           <div className="h-[45%]">
             <img

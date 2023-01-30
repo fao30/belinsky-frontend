@@ -47,12 +47,25 @@ const ProjectDetails = ({
 
       {/* DESC */}
       <div
-        className={`py-[6vw] lg:pt-12 lg:pb-16 px-[6vw]  flex justify-between w-full flex-wrap gap-6 ${
+        className={`py-[6vw] lg:pt-12 lg:pb-16 px-[6vw]  flex justify-between w-full flex-wrap ${
           director ? "lg:px-[4vw]" : "xl:px-[14vw]"
         }`}
       >
-        <div className="flex flex-col w-full lg:w-[50%]">
+        {!director ? (
           <h2 className="text-[1.5rem] md:text-[2rem] lg:text-[2.5rem]    text-[#022581]">
+            {byWho2}
+          </h2>
+        ) : (
+          ""
+        )}
+        <div className="flex flex-col w-full lg:w-[50%]">
+          <h2
+            className={`${
+              director
+                ? "text-[1.5rem] md:text-[2rem] lg:text-[2.5rem]    text-[#022581]"
+                : "hidden"
+            } `}
+          >
             {byWho2}
           </h2>
           <div className="w-full">
@@ -82,7 +95,9 @@ const ProjectDetails = ({
         {/* DIRECTOR */}
         <div
           className={`${
-            director ? "w-full lg:w-[45%] flex flex-col max-md:gap-2" : "hidden"
+            director
+              ? "w-full lg:w-[45%] flex flex-col max-md:gap-2 max-lg:mt-6"
+              : "hidden"
           }`}
         >
           <h2 className="text-[1.5rem] md:text-[2rem] lg:text-[2rem]    text-[#022581]">

@@ -20,7 +20,7 @@ const ProjectDetails = ({
   return (
     <section>
       {/* THE TITLE */}
-      <div className="pt-24 lg:pt-36 px-[6vw] lg:px-[3vw] pb-10 flex flex-col">
+      <div className="pt-16 lg:pt-36 px-[6vw] lg:px-[3vw] pb-10 flex flex-col">
         <h1 className="text-[#022581] text-[2.5rem] md:text-[4rem] lg:text-[5rem]     underline decoration-[3.5px] leading-[3rem] md:leading-[4rem] lg:leading-[5rem] underline-offset-[8px]">
           {title}
         </h1>
@@ -52,7 +52,7 @@ const ProjectDetails = ({
         }`}
       >
         {!director ? (
-          <h2 className="text-[1.5rem] md:text-[2rem] lg:text-[2.5rem]    text-[#022581]">
+          <h2 className="text-[1.5rem] md:text-[2rem] lg:text-[2.5rem] w-full  text-[#022581]">
             {byWho2}
           </h2>
         ) : (

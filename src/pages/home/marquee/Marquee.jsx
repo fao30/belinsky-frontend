@@ -59,8 +59,8 @@ const MarqueeSection = () => {
           className="bg-gradient-to-t from-[#D9D9D9] via-[#D9D9D9] to-transparent"
         >
           {dataMarquee.map(({ img }) => (
-            <div className="mx-10 lg:mx-14">
-              <img alt="" src={img} className="w-[5rem] lg:w-[7rem]" />
+            <div className="mx-10 lg:mx-14 w-auto">
+              <img alt="" src={img} className="w-[8rem] lg:w-[15rem]" />
             </div>
           ))}
         </Marquee>

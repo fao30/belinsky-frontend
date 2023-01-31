@@ -18,11 +18,11 @@ const MarqueeSection = () => {
             WHAT OUR CLIENTS SAYS ABOUT US
           </h1>
         </div>
-        <div className="relative w-full h-96 xl:h-72 mb-[3vh]">
+        <div className="relative w-full h-72 mb-[3vh]">
           <LazyLoadImage
             alt=""
             src={bg}
-            className="absolute top-0 left-0 w-full h-full"
+            className="absolute top-0 left-0 w-full h-full object-cover"
             beforeLoad={() => setIsLoading(true)}
             afterLoad={() => setIsLoading(false)}
           />
@@ -35,7 +35,7 @@ const MarqueeSection = () => {
             <>
               <div className="absolute top-0 left-0 w-full h-full bg-[#0225818C]/50" />
               <div className="absolute z-10 flex flex-col items-center justify-center gap-6 w-full h-full px-[4vw]">
-                <p className="text-center text-white text-sm md:text-lg lg:w-[80%] xl:w-[75%] tracking-tight">
+                <p className="text-center text-white text-sm sm:text-base md:text-lg lg:w-[80%] xl:w-[75%] tracking-tight">
                   "I think Belinsky Studio has a really cool artistic of the
                   Korean mood set. The location is also very strategic,
                   considering that it is in Kemang, South Jakarta. The access is
@@ -43,7 +43,7 @@ const MarqueeSection = () => {
                   Overall, Belinsky studio is really stunning, this studio can
                   be used for shooting or photoshoots for various things too."
                 </p>
-                <h3 className="text-lg text-white md:text-xl">Wahyu, Zenius</h3>
+                <h3 className="text-xl text-white">Wahyu, Zenius</h3>
               </div>
             </>
           )}

@@ -22,8 +22,25 @@ const Indihome = () => {
       director: true,
       nameDirector: "RIfki Rifaldi",
       imgDirector: img,
-      descDirector:
-        "Rifki Rifaldi is a director who has produced various forms of audio visual works. Not few of his works are involved in various short film festivals and have been winning many province, national to international levels. Then his works get the opportunity to be used as discussion/screening materials in various communities, schools, campus in Jabodetabek and Banten. His love for audio visual world has also encouraged him to transmit his experience and science to many people including students. In 2021, Rifki Rifaldi begin working on a film series that is the first film series to bring esport themes in Southest Asia, show at one ott household and get the highest rating on ott vision+.",
+      descDirector: (
+        <div className="flex flex-col gap-5">
+          <p className="text-sm text-[#022581]">
+            Rifki Rifaldi is a director who has produced various forms of audio
+            visual works. Not few of his works are involved in various short
+            film festivals and have been winning many province, national to
+            international levels. Then his works get the opportunity to be used
+            as discussion/screening materials in various communities, schools,
+            campus in Jabodetabek and Banten.
+          </p>
+          <p>
+            His love for audio visual world has also encouraged him to transmit
+            his experience and science to many people including students. In
+            2021, Rifki Rifaldi begin working on a film series that is the first
+            film series to bring esport themes in Southest Asia, show at one ott
+            household and get the highest rating on ott vision+.
+          </p>
+        </div>
+      ),
     },
   ];
   return (

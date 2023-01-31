@@ -49,10 +49,10 @@ const PhBs = () => {
             )}
           </div>
           <div className="flex items-center flex-wrap justify-between p-[4vw]">
-            <div className="w-full lg:w-[70%] xl:w-[60%]">
-              <p className="text-[#F5F5F5] text-xl lg:text-3xl text-center">
+            <div className="w-full lg:w-[70%] xl:w-[70%]">
+              <h3 className="text-[#F5F5F5] text-xl lg:text-4xl text-center">
                 Let’s Create Something Great Together
-              </p>
+              </h3>
             </div>
             <div className="w-full lg:w-[30%] xl-[40%] flex justify-center max-sm:mt-2 max-lg:mt-6">
               <button

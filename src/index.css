@@ -29,7 +29,7 @@ h3 {
 }
 
 p {
-  font-weight: 600;
+  font-weight: 400;
 }
 
 ul {
@@ -37,7 +37,7 @@ ul {
 }
 
 li {
-  font-weight: 600;
+  font-weight: 400;
 }
 
 button {
@@ -60,7 +60,7 @@ html::-webkit-scrollbar {
   height: 0;
 }
 
-/* custom aspect-ratio for marquee */
+/* custom aspect-ratio for marquee. */
 .custom-marq {
   aspect-ratio: 4 / 3;
   object-fit: contain;

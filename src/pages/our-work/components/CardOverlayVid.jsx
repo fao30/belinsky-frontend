@@ -35,21 +35,21 @@ const CardOverlayVid = ({ srcvideo, h3, p, navigate, blurPic, isDetails }) => {
         <source src={srcvideo} type="video/mp4" />
       </video>
       {!isLoadingVideo ? (
-        <div className="group-hover:opacity-0 transition-all duration-300 absolute h-full w-full bg-[#0225818C] text-white rounded-[1rem]">
-          <div
-            onClick={() => {
-              if (isDetails) {
-                navigate();
-                LoadToTop();
-              }
-            }}
-            className={`flex flex-col items-center pt-[13rem] md:pt-[14rem] lg:pt-[13rem] pl-7 justify-start w-full h-full text-left text-white ${
-              isDetails ? "cursor-pointer" : ""
-            }`}
-          >
-            <h3 className="text-[22px]   text-white w-full">{h3}</h3>
-            <p className="w-full pr-6 drop-shadow-md text-[14px]">{p}</p>
-          </div>
+        <div
+          className={`absolute flex flex-col  rounded-[1rem] justify-end z-10 w-full h-full bg-[#02258191]/50 text-[#FFFFFF] px-6 py-6 sm:px-8 sm:py-8 text-sm  group-hover:opacity-0 transition-all duration-300 ${
+            isDetails ? "cursor-pointer" : ""
+          }`}
+          onClick={() => {
+            if (isDetails) {
+              navigate();
+              LoadToTop();
+            }
+          }}
+        >
+          <h3 className="text-[22px] text-white w-full">{h3}</h3>
+          <p className="mt-2 w-full md:w-[60%] lg:w-full pr-6 drop-shadow-md text-[14px]">
+            {p}
+          </p>
         </div>
       ) : (
         <></>

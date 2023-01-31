@@ -2,9 +2,6 @@ import { useState } from "react";
 import logoBelinsky from "../../../../assets/logo-belinsky.png";
 import { BlurhashCanvas } from "react-blurhash";
 import LoadToTop from "../../../../helper/LoadToTop";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
 import AspectRatio from "@mui/joy/AspectRatio";
 
 const CardSliderVid = ({

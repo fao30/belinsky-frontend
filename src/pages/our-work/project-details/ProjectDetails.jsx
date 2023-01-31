@@ -96,7 +96,7 @@ const ProjectDetails = ({
         <div
           className={`${
             director
-              ? "w-full lg:w-[45%] flex flex-col max-md:gap-2 max-lg:mt-6"
+              ? "w-full lg:w-[46%] flex flex-col max-md:gap-2 max-lg:mt-6"
               : "hidden"
           }`}
         >

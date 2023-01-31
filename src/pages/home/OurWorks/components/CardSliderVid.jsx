@@ -48,7 +48,7 @@ const CardSliderVid = ({
         </video>
         {!isLoadingVideo ? (
           <div
-            className={`absolute flex flex-col justify-end z-10 w-full h-full bg-[#02258191]/50 text-[#FFFFFF] px-6 py-6 text-sm md:p-10 group-hover:opacity-0 transition-all duration-300 ${
+            className={`absolute flex flex-col justify-end z-10 w-full h-full bg-[#02258191]/50 text-[#FFFFFF] px-5 pb-5 text-sm md:p-10 group-hover:opacity-0 transition-all duration-300 ${
               isDetails ? "cursor-pointer" : ""
             }`}
             onClick={() => {
@@ -59,7 +59,7 @@ const CardSliderVid = ({
             }}
           >
             <h3 className="w-full text-2xl text-white md:text-4xl ">{h3}</h3>
-            <p className="mt-2 lg:w-[50%] w-full text-sm md:text-lg drop-shadow-md">
+            <p className="lg:w-[50%] w-full text-sm md:text-lg drop-shadow-md">
               {p}
             </p>
           </div>

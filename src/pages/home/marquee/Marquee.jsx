@@ -22,7 +22,7 @@ const MarqueeSection = () => {
           <LazyLoadImage
             alt=""
             src={bg}
-            className="absolute top-0 left-0 w-full h-full"
+            className="absolute top-0 left-0 w-full h-full object-cover"
             beforeLoad={() => setIsLoading(true)}
             afterLoad={() => setIsLoading(false)}
           />

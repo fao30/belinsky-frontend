@@ -59,7 +59,7 @@ const CardSliderVid = ({
             }}
           >
             <h3 className="w-full text-2xl text-white md:text-4xl ">{h3}</h3>
-            <p className="lg:w-[50%] w-full text-sm md:text-lg drop-shadow-md">
+            <p className="sm:mt-2 lg:w-[50%] w-full text-sm md:text-lg drop-shadow-md">
               {p}
             </p>
           </div>

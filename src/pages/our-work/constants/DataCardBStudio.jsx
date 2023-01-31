@@ -60,11 +60,11 @@ export const dataCardBStudio = [
   {
     src: Couple,
     h3: "Couple",
-    p: "Couple Photoshoot Faris x Issa",
+    p: "Couple Photoshoot",
     nav: "/ourwork/couple",
     isHomepage: true,
     isDetails: true,
-    blurPic: "LTFP1,^+~q%M%2%Mofj]IUxuWBWV",
+    blurPic: "LSJuDkRjWAIU~pofj[RjNHoLM{oz",
   },
   {
     src: Kumaw,

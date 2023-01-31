@@ -64,7 +64,11 @@ const MarqueeSection = () => {
         >
           {dataMarquee.map(({ img }) => (
             <div className="mx-7 lg:mx-14">
-              <img alt="" src={img} className="w-[8rem] lg:w-[12rem] p-2" />
+              <img
+                alt=""
+                src={img}
+                className="w-[8rem] lg:w-[12rem] p-2 custom-marq"
+              />
             </div>
           ))}
         </Marquee>

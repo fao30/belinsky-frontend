@@ -18,7 +18,7 @@ const MarqueeSection = () => {
             WHAT OUR CLIENTS SAYS ABOUT US
           </h1>
         </div>
-        <div className="relative w-full h-64 mb-[3vh]">
+        <div className="relative w-full h-96 xl:h-72 mb-[3vh]">
           <LazyLoadImage
             alt=""
             src={bg}
@@ -34,18 +34,20 @@ const MarqueeSection = () => {
           ) : (
             <>
               <div className="absolute top-0 left-0 w-full h-full bg-[#0225818C]/50" />
-              <div className="absolute z-10 flex flex-col items-center justify-center w-full h-full gap-5">
-                <p className="text-center text-white px-[2vw] text-sm md:px-[15vw] md:text-lg">
-                  “Our goal was to create a digital ad video to promote our
-                  latest product. From our initial call with Belinsky Studio to
-                  the video handover, they are knowledgeable, professional, and
-                  friendly throughout the whole process. Belinsky Studio is
-                  definetely one of the best video production house we’ve worked
-                  with so far. Thank you!”
+              <div className="absolute z-10 flex flex-col items-center justify-center gap-6 w-full h-full px-[4vw]">
+                <p className="text-center text-white text-sm md:text-lg lg:w-[80%] xl:w-[75%]">
+                  "I think Belinsky Studio has a really cool artistic of the
+                  Korean mood set that can be used for making digital ads, so we
+                  don’t need to prepare too many art properties because overall
+                  it's covered from Belinsky's Korean mood design set, just a
+                  little touch up to adjust the mood of the video. The location
+                  is also very, very strategic, considering that it is in
+                  Kemang, South Jakarta. The access is very easy, and in terms
+                  of service, it is also very good. Overall, Belinsky studio is
+                  really stunning, this studio can be used for shooting or
+                  photoshoots for various things too."
                 </p>
-                <h3 className="text-lg text-white md:text-xl">
-                  Michael, Traveloka
-                </h3>
+                <h3 className="text-lg text-white md:text-xl">Wahyu, Zenius</h3>
               </div>
             </>
           )}

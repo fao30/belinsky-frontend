@@ -36,7 +36,7 @@ const PriceList = () => {
 
               <div className="w-full lg:w-[30%] text-[#022581] text-xl lg:text-2xl max-lg:mt-6">
                 <div className="flex flex-col ">
-                  <h1>Hours in studio</h1>
+                  <h3>Hours in studio</h3>
                   <p>Rp 230.000/hour</p>
                 </div>
               </div>
@@ -59,7 +59,7 @@ const PriceList = () => {
           </div>
 
           <div className="xl:ml-4 h-[30%] flex items-center mt-3 lg:mt-6">
-            <h1 className="text-xl md:text-2xl">Equipment List</h1>
+            <h3 className="text-xl md:text-2xl my-4">Equipment List</h3>
           </div>
           <div className="xl:ml-4 h-[70%] flex justify-center">
             <div className="flex flex-wrap justify-between w-full   ">

@@ -110,14 +110,14 @@ const ProjectDetails = ({
               alt="director"
               className="max-sm:w-56 w-36 rounded-full"
             />
-            <p className="text-center uppercase text-2xl  text-[#022581] mt-4">
+            <h3 className="text-center uppercase text-2xl  text-[#022581] mt-4">
               {nameDirector}
-            </p>
+            </h3>
           </div>
           <div className=" text-[#022581] flex justify-between items-center gap-6 mt-4">
             <div className="max-md:hidden w-[27.5%] flex flex-col gap-2">
               <img src={imgDirector} alt="director" className="rounded-full" />
-              <p className="text-center uppercase text-xl">{nameDirector}</p>
+              <h3 className="text-center uppercase text-xl">{nameDirector}</h3>
             </div>
             <p className="font-[500] text-sm  w-full lg:w-[70%]">
               {descDirector}

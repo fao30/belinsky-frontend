@@ -22,7 +22,7 @@ export const dataCardBStudio = [
     src: studio2,
     blurPic: "UJJHw3~q00R*k9Rjt6t700xu^+Ri~pj[WBxu",
     h2: "Studio 2",
-    h3: "White limbo background",
+    h3: "White Limbo Background",
     p: (
       <>
         We provide self photo studio and

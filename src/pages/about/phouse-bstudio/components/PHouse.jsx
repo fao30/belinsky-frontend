@@ -29,9 +29,9 @@ const PHouse = () => {
             />
           </div>
         </div>
-        <div className="flex flex-col gap-8 max-md:px-[4vw] px-8 pb-8 w-[100%] md:w-[90%] lg:-[70%] xl:w-[50%] my-auto">
+        <div className="flex flex-col max-md:px-[4vw] px-8 pb-8 w-[100%] md:w-[90%] lg:-[70%] xl:w-[50%] my-auto">
           <h1 className="uppercase aboutTitleSize">Production House</h1>
-          <p className=" aboutSize">
+          <p className=" aboutSize max-sm:mt-3 mt-6">
             Belinsky strives for great quality and exclusiveness in every video
             that exhibits a flawless result. We may help you in the production
             of TVC advertisement for your advertising needs.

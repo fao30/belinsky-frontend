@@ -63,7 +63,7 @@ const MarqueeSection = () => {
               <img
                 alt=""
                 src={img}
-                className="w-[8rem] lg:w-[12rem] p-2 custom-marq"
+                className="w-[8rem] lg:w-[10rem] custom-marq"
               />
             </div>
           ))}

@@ -1,14 +1,10 @@
 import LoadToTop from "../../../../helper/LoadToTop";
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
-import { useState, useRef } from "react";
+import { useState } from "react";
 import { BlurhashCanvas } from "react-blurhash";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const SliderImg = ({ src, h1, p, navigate, blurPic }) => {
-  const swiperNavPrevRef = useRef(null);
-  const swiperNavNextRef = useRef(null);
-
   const [isLoading, setIsLoading] = useState(false);
 
   return (

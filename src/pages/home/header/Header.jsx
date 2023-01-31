@@ -1,5 +1,4 @@
-import video from "./assets/Hero_Video.mp4";
-
+// react-icons
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 // Import Swiper React components
@@ -36,7 +35,7 @@ const Header = () => {
         />
       </div>
       <Swiper
-        speed={600}
+        speed={1000}
         autoplay={{
           delay: 5000,
           pauseOnMouseEnter: true,
@@ -56,10 +55,19 @@ const Header = () => {
         modules={[Mousewheel, Navigation, Keyboard, Autoplay]}
         className="relative w-full h-screen"
       >
-        {sliderData?.map(({ src, h1, nav, blurPic, type }) =>
+        {sliderData?.map(({ src, h1, nav, blurPic, type, vidOrder }) =>
           type === "video/mp4" ? (
             <SwiperSlide>
-              <SliderVideo src={src} blurPic={blurPic} type="video/mp4" />
+              <SliderVideo
+                src={src}
+                blurPic={blurPic}
+                vidOrder={vidOrder}
+                h1={h1}
+                navigate={() => {
+                  navigate(`${nav}`);
+                }}
+                p="Explore Work"
+              />
             </SwiperSlide>
           ) : (
             <SwiperSlide>

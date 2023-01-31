@@ -16,7 +16,7 @@ const CardSlider = ({
 
   return (
     <div className={`${isHomepage ? "carousel-item" : "hidden"}`}>
-      <div className="xl:h-[28rem] h-[15rem] sm:h-[15rem] md:h-[25rem]  bg-slate-400 relative group w-full">
+      <div className="xl:h-[28rem] xl:w-[45rem] h-[15rem] w-[22rem] sm:h-[15rem] sm:w-[30rem] md:h-[25rem] md:w-[40rem] bg-slate-400 relative group mx-auto">
         {isLoadingVideo ? (
           <div className="absolute z-10 w-full h-full">
             <BlurhashCanvas hash={blurPic} className="w-full h-full" />
@@ -70,7 +70,7 @@ const CardSlider = ({
 
 export default CardSlider;
 
-// CODE RYAN WITH BLURRED
+// RYAN's CODE WITH BLURRED
 /*   
 
 <div className={`${isHomepage ? "carousel-item" : "hidden"}`}>

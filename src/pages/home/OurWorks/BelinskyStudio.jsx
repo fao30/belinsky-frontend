@@ -13,8 +13,6 @@ import { Navigation, Mousewheel, Keyboard } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 
-import AspectRatio from "@mui/joy/AspectRatio";
-
 const BelinskyStudio = () => {
   const navigate = useNavigate();
   return (
@@ -56,12 +54,12 @@ const BelinskyStudio = () => {
         <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] flex justify-between w-full md:px-4 z-10">
           <IoIosArrowBack
             size={40}
-            id="nav-left"
+            id="nav-left-bs"
             className="text-white transition cursor-pointer hover:text-[#5484f1]"
           />
           <IoIosArrowForward
             size={40}
-            id="nav-right"
+            id="nav-right-bs"
             className="text-white transition cursor-pointer hover:text-[#5484f1]"
           />
         </div>

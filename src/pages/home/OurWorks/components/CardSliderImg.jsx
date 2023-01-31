@@ -3,6 +3,8 @@ import { BlurhashCanvas } from "react-blurhash";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import LoadToTop from "../../../../helper/LoadToTop";
 
+import AspectRatio from "@mui/joy/AspectRatio";
+
 const CardSliderImg = ({
   src,
   h3,
@@ -14,7 +16,11 @@ const CardSliderImg = ({
 }) => {
   const [isLoading, setIsLoading] = useState(false);
   return (
-    <div className={`${isHomepage ? "carousel-item" : "hidden"}`}>
+    <AspectRatio
+      className={`${
+        isHomepage ? "p-2 drop-shadow-[2px_2px_4px_gray]" : "hidden"
+      }`}
+    >
       <div className="xl:h-[28rem] xl:w-[45rem] h-[15rem] w-[22rem] sm:h-[15rem] sm:w-[30rem] md:h-[25rem] md:w-[40rem] bg-slate-400 relative group">
         <LazyLoadImage
           src={src}
@@ -38,9 +44,7 @@ const CardSliderImg = ({
                 isDetails ? "cursor-pointer" : ""
               }`}
             >
-              <h3 className="w-full text-xl     text-white md:text-4xl ">
-                {h3}
-              </h3>
+              <h3 className="w-full text-xl text-white md:text-4xl ">{h3}</h3>
               <p className="w-full mt-2 text-xs md:text-lg drop-shadow-md">
                 {p}
               </p>
@@ -48,7 +52,7 @@ const CardSliderImg = ({
           </div>
         )}
       </div>
-    </div>
+    </AspectRatio>
   );
 };
 

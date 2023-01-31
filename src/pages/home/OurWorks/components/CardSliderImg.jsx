@@ -32,7 +32,7 @@ const CardSliderImg = ({
           <BlurhashCanvas hash={blurPic} className="w-full h-full" />
         ) : (
           <div
-            className={`absolute flex flex-col justify-end z-10 w-full h-full bg-[#02258191]/50 text-[#FFFFFF] px-6 py-6 sm:px-4 sm:py-4 text-sm md:p-10 group-hover:opacity-0 transition-all duration-300 ${
+            className={`absolute flex flex-col justify-end z-10 w-full h-full bg-[#02258191]/50 text-[#FFFFFF] px-6 py-6 text-sm md:p-10 group-hover:opacity-0 transition-all duration-300 ${
               isDetails ? "cursor-pointer" : ""
             }`}
             onClick={() => {
@@ -43,7 +43,7 @@ const CardSliderImg = ({
             }}
           >
             <h3 className="w-full text-2xl text-white md:text-4xl ">{h3}</h3>
-            <p className="lg:w-[50%] w-full mt-1 text-sm md:text-lg drop-shadow-md">
+            <p className="mt-2 lg:w-[50%] w-full text-sm md:text-lg drop-shadow-md">
               {p}
             </p>
           </div>

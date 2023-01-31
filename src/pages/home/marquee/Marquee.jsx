@@ -43,7 +43,7 @@ const MarqueeSection = () => {
                   definetely one of the best video production house we’ve worked
                   with so far. Thank you!”
                 </p>
-                <h3 className="text-lg   text-white md:text-xl">
+                <h3 className="text-lg text-white md:text-xl">
                   Michael, Traveloka
                 </h3>
               </div>
@@ -62,7 +62,7 @@ const MarqueeSection = () => {
         >
           {dataMarquee.map(({ img }) => (
             <div className="mx-10 lg:mx-14">
-              <img alt="" src={img} className="w-[5rem] lg:w-[7rem]" />
+              <img alt="" src={img} className="w-[8rem] lg:w-[12rem] p-2" />
             </div>
           ))}
         </Marquee>

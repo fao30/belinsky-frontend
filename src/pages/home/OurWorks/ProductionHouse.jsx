@@ -14,8 +14,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-import AspectRatio from "@mui/joy/AspectRatio";
-
 const ProductionHouse = () => {
   const navigate = useNavigate();
   return (
@@ -68,27 +66,18 @@ const ProductionHouse = () => {
         </div>
         {dataCardPHouse?.map(
           ({ srcvideo, h3, p, isHomepage, blurPic, nav, isDetails }) => (
-            <SwiperSlide className="relative">
-              <AspectRatio className="relative p-2 drop-shadow-[2px_2px_4px_gray]">
-                <div className="w-full h-full">
-                  <video
-                    loop
-                    muted
-                    autoPlay
-                    playsInline
-                    alt=""
-                    // onLoadStart={() => setIsLoadingVideo(true)}
-                    // onLoadedData={() => setIsLoadingVideo(false)}
-                    className="object-cover w-full h-full"
-                  >
-                    <source src={srcvideo} type="video/mp4" />
-                  </video>
-                  <div className="absolute flex flex-col justify-end z-10 w-full h-full bg-[#02258191]/50 text-[#FFFFFF] px-4 py-4 text-sm md:p-10">
-                    <h3>{h3}</h3>
-                    <p>{p}</p>
-                  </div>
-                </div>
-              </AspectRatio>
+            <SwiperSlide className="relative group">
+              <CardSliderVid
+                srcvideo={srcvideo}
+                h3={h3}
+                p={p}
+                blurPic={blurPic}
+                isHomepage={isHomepage}
+                isDetails={isDetails}
+                navigate={() => {
+                  navigate(`${nav}`);
+                }}
+              />
             </SwiperSlide>
           )
         )}
@@ -98,67 +87,3 @@ const ProductionHouse = () => {
 };
 
 export default ProductionHouse;
-
-/* 
-<CardSliderVid
-                srcvideo={srcvideo}
-                h3={h3}
-                p={p}
-                isHomepage={isHomepage}
-                blurPic={blurPic}
-                isDetails={isDetails}
-                navigate={() => {
-                  navigate(`${nav}`);
-                }}
-              /> 
-*/
-
-/*
-object-cover w-full h-[35vh] md:h-[45vh] lg:h-[55vh] xl:h-[70vh] xl:w-[95%] drop-shadow-[10px_10px_5px_gray] mx-auto
-*/
-
-// <AspectRatio className="object-cover w-full h-full drop-shadow-[10px_10px_5px_gray]">
-// <div className="relative w-full h-full">
-//   <video
-//     loop
-//     muted
-//     autoPlay
-//     playsInline
-//     alt=""
-//     // onLoadStart={() => setIsLoadingVideo(true)}
-//     // onLoadedData={() => setIsLoadingVideo(false)}
-//     className="object-cover w-full h-full"
-//   >
-//     <source src={srcvideo} type="video/mp4" />
-//   </video>
-//   {/* <div className="absolute w-full h-[35vh] md:h-[45vh] lg:h-[55vh] xl:h-[70vh] xl:w-[95%] drop-shadow-[10px_10px_5px_gray] bg-blue-500/50"></div> */}
-//   <div className="absolute top-0 w-full h-full transition duration-500 bg-blue-400/50 hover:opacity-0">
-//     {h3}
-//   </div>
-// </div>
-// </AspectRatio>
-
-// CORRECT
-
-// {dataCardPHouse?.map(
-//   ({ srcvideo, h3, p, isHomepage, blurPic, nav, isDetails }) => (
-//     <SwiperSlide className="relative">
-//       <AspectRatio className="">
-//         <div className="w-full h-full rounded-2xl">
-//           <video
-//             loop
-//             muted
-//             autoPlay
-//             playsInline
-//             alt=""
-//             // onLoadStart={() => setIsLoadingVideo(true)}
-//             // onLoadedData={() => setIsLoadingVideo(false)}
-//             className="object-cover w-full h-full rounded-2xl"
-//           >
-//             <source src={srcvideo} type="video/mp4" />
-//           </video>
-//         </div>
-//       </AspectRatio>
-//     </SwiperSlide>
-//   )
-// )}

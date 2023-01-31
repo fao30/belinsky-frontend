@@ -46,20 +46,23 @@ const ProductionHouse = () => {
           },
         }}
         navigation={{
-          nextEl: "#nav-right",
-          prevEl: "#nav-left",
+          nextEl: "#nav-right-ph",
+          prevEl: "#nav-left-ph",
         }}
         className="relative"
       >
-        <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] flex justify-between w-full md:px-4 z-10">
+        {/* Custom Swiper Arrows */}
+        <div className="absolute left-0 top-[50%] translate-y-[-50%] z-10 md:px-2">
           <IoIosArrowBack
-            size={40}
-            id="nav-left"
+            size={35}
+            id="nav-left-ph"
             className="text-white transition cursor-pointer hover:text-[#5484f1]"
           />
+        </div>
+        <div className="absolute top-[50%] translate-y-[-50%] right-0 z-10 md:px-2">
           <IoIosArrowForward
-            size={40}
-            id="nav-right"
+            size={35}
+            id="nav-right-ph"
             className="text-white transition cursor-pointer hover:text-[#5484f1]"
           />
         </div>

@@ -35,17 +35,13 @@ const MarqueeSection = () => {
             <>
               <div className="absolute top-0 left-0 w-full h-full bg-[#0225818C]/50" />
               <div className="absolute z-10 flex flex-col items-center justify-center gap-6 w-full h-full px-[4vw]">
-                <p className="text-center text-white text-sm md:text-lg lg:w-[80%] xl:w-[75%]">
+                <p className="text-center text-white text-sm md:text-lg lg:w-[80%] xl:w-[75%] tracking-tight">
                   "I think Belinsky Studio has a really cool artistic of the
-                  Korean mood set that can be used for making digital ads, so we
-                  don’t need to prepare too many art properties because overall
-                  it's covered from Belinsky's Korean mood design set, just a
-                  little touch up to adjust the mood of the video. The location
-                  is also very, very strategic, considering that it is in
-                  Kemang, South Jakarta. The access is very easy, and in terms
-                  of service, it is also very good. Overall, Belinsky studio is
-                  really stunning, this studio can be used for shooting or
-                  photoshoots for various things too."
+                  Korean mood set. The location is also very strategic,
+                  considering that it is in Kemang, South Jakarta. The access is
+                  very easy, and in terms of service, it is also very good.
+                  Overall, Belinsky studio is really stunning, this studio can
+                  be used for shooting or photoshoots for various things too."
                 </p>
                 <h3 className="text-lg text-white md:text-xl">Wahyu, Zenius</h3>
               </div>

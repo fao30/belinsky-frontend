@@ -52,7 +52,7 @@ const ProjectDetails = ({
         }`}
       >
         {!director ? (
-          <h2 className="text-[1.5rem] md:text-[2rem] lg:text-[2.5rem]    text-[#022581]">
+          <h2 className="text-[1.5rem] md:text-[2rem] lg:text-[2.5rem] w-full  text-[#022581]">
             {byWho2}
           </h2>
         ) : (

@@ -14,7 +14,7 @@ const MarqueeSection = () => {
     <>
       <section className="mt-[5vh] lg:mt-[10vh] xl:mt-[15vh]">
         <div className="px-[4vw]">
-          <h1 className="text-[#022581] text-center text-2xl lg:text-4xl mb-10">
+          <h1 className="text-[#022581] text-center uppercase text-2xl md:text-4xl mt-10 sm:mt-20 mb-10">
             WHAT OUR CLIENTS SAYS ABOUT US
           </h1>
         </div>

@@ -96,7 +96,7 @@ const ProjectDetails = ({
         <div
           className={`${
             director
-              ? "w-full lg:w-[46%] flex flex-col max-md:gap-2 max-lg:mt-6"
+              ? "w-full lg:w-[48%] xl:w-[48.5%] flex flex-col max-md:gap-2 max-lg:mt-6"
               : "hidden"
           }`}
         >
@@ -126,7 +126,7 @@ const ProjectDetails = ({
         </div>
       </div>
       {/* IMAGES */}
-      <div className="px-[6vw] xl:px-[18vw] w-full h-[35rem] lg:h-[50rem] flex justify-between pb-24 max-md:hidden">
+      <div className="px-[6vw] lg:px-[4vw] xl:px-[18vw] w-full h-[35rem] lg:h-[50rem] flex justify-between pb-24 max-md:hidden">
         <div className="flex flex-col justify-between w-[50%]">
           <div className="h-[48%]">
             <img
@@ -152,7 +152,7 @@ const ProjectDetails = ({
         </div>
       </div>
       {/* IMAGES MOBILE */}
-      <div className="px-[6vw] lg:px-[10vw] w-full hidden flex-wrap gap-7 pb-24 max-md:flex">
+      <div className="px-[6vw] lg:px-[10vw] w-full hidden flex-wrap gap-6 pb-24 max-md:flex">
         <img src={img1} alt="project details" />
         <img src={img2} alt="project details" />
         <img src={img3} alt="project details" />

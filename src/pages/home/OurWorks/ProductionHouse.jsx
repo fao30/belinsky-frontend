@@ -52,14 +52,14 @@ const ProductionHouse = () => {
         className="relative"
       >
         {/* Custom Swiper Arrows */}
-        <div className="absolute left-0 top-[50%] translate-y-[-50%] z-10 px-2">
+        <div className="absolute left-0 top-[50%] translate-y-[-50%] z-10 px-2 lg:px-4">
           <IoIosArrowBack
             size={35}
             id="nav-left-ph"
             className="text-white transition cursor-pointer hover:text-[#5484f1] w-[1.5rem] sm:w-[3rem] lg:h-[2.5rem]"
           />
         </div>
-        <div className="absolute top-[50%] translate-y-[-50%] right-0 z-10 px-2">
+        <div className="absolute top-[50%] translate-y-[-50%] right-0 z-10 px-2 lg:px-4">
           <IoIosArrowForward
             size={35}
             id="nav-right-ph"

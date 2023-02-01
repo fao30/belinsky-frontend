@@ -10,10 +10,8 @@ export const dataCardBStudio = [
     h3: "Korean Background",
     p: (
       <>
-        3 Thematic Korean background, inspired
-        <br className="hidden md:hidden lg:hidden" /> by the set up of Korean
-        Series “Our
-        <br className="hidden md:hidden lg:hidden" /> Beloved Summer”
+        3 Thematic Korean background, inspired by the set up of Korean Series
+        “Our Beloved Summer”
       </>
     ),
     nav: "/studio-1",

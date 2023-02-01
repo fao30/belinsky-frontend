@@ -125,7 +125,7 @@ const TnC = () => {
             New Normal Protocol Related to COVID-19
           </h1>
           <div className="flex  flex-col gap-3 lg:px-[2vw]">
-            <p className="font-bold text-xl md:text-2xl">
+            <p className="font-semibold text-xl md:text-2xl">
               Peraturan Studio Belinsky selama masa New Normal Pandemi COVID-19:
             </p>
             <ol className="list-decimal pl-7 md:pl-14">

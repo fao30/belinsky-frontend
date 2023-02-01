@@ -86,18 +86,16 @@ const TnC = () => {
       initial={{ opacity: 0.5 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="py-16 md:py-32 px-[6vw]"
+      className="py-16 md:py-32 px-[2vw]"
     >
       {/* TnC  */}
       <section className="text-[#022581] h-full w-full">
-        <h1 className="mb-16 text-4xl text-center md:text-5xl lg:text-6xl md:mb-24">
+        <h1 className="font-[900] text-center text-4xl md:text-5xl lg:text-6xl mb-16 md:mb-24">
           TERMS & CONDITIONS
         </h1>
-        <div className="flex flex-col gap-12 lg:px-[12vw]">
+        <div className="flex flex-col gap-12 lg:px-[2vw]">
           <div>
-            <h1 className="text-xl font-bold md:text-2xl">
-              A. Sebelum Booking Studio
-            </h1>
+            <h1 className="text-xl font-bold">A. Sebelum Booking Studio</h1>
             <ol className="mt-3 list-decimal pl-7 md:pl-14">
               {ASebelumBook?.map((e) => {
                 return <li className="text-lg md:text-xl">{e?.li}</li>;
@@ -105,9 +103,7 @@ const TnC = () => {
             </ol>
           </div>
           <div>
-            <h1 className="text-xl font-bold md:text-2xl">
-              B. Penggunaan Studio
-            </h1>
+            <h1 className="text-xl font-bold">B. Penggunaan Studio</h1>
             <ol className="mt-3 list-decimal pl-7 md:pl-14">
               {BPenggunaanStudio?.map((e) => {
                 return <li className="text-lg md:text-xl">{e?.li}</li>;
@@ -115,10 +111,8 @@ const TnC = () => {
             </ol>
           </div>
           <div>
-            <h1 className="text-xl font-bold md:text-2xl">
-              C. Setelah Pemakaian Studio
-            </h1>
-            <ol className="mt-3 list-decimal pl-7 md:pl-14">
+            <h1 className="text-xl font-bold">C. Setelah Pemakaian Studio</h1>
+            <ol className="pb-12 mt-3 list-decimal pl-7 md:pl-14">
               {CPenggunaanStudio?.map((e) => {
                 return <li className="text-lg md:text-xl">{e?.li}</li>;
               })}
@@ -126,12 +120,12 @@ const TnC = () => {
           </div>
         </div>
         {/* COVID 19 */}
-        <section className="text-lg md:text-xl">
-          <h1 className="mt-24 mb-12 text-4xl text-center md:text-5xl lg:text-6xl lg:mb-24 lg:mt-48">
+        <section className="text-lg font-semibold md:text-xl">
+          <h1 className="font-[900] text-center text-4xl md:text-5xl lg:text-6xl my-12 lg:my-24">
             New Normal Protocol Related to COVID-19
           </h1>
-          <div className="flex  flex-col gap-3 lg:px-[12vw]">
-            <p>
+          <div className="flex  flex-col gap-3 lg:px-[2vw]">
+            <p className="text-xl font-semibold md:text-2xl">
               Peraturan Studio Belinsky selama masa New Normal Pandemi COVID-19:
             </p>
             <ol className="list-decimal pl-7 md:pl-14">
@@ -151,7 +145,7 @@ const TnC = () => {
               Terima kasih atas perhatian Anda.
             </p>
 
-            <p>
+            <p className="py-6">
               Salam hormat,
               <br />
               Management Studio Belinsky

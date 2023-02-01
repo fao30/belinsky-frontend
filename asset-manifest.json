@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.675828c9.css",
-    "main.js": "/static/js/main.a7d3b040.js",
+    "main.css": "/static/css/main.53e4cc5e.css",
+    "main.js": "/static/js/main.b9a86caa.js",
     "static/media/WongTilar.mp4": "/static/media/WongTilar.a0a4d974df74def6771f.mp4",
     "static/media/Traveloka.mp4": "/static/media/Traveloka.eff8b8600db768268b8e.mp4",
     "static/media/Menantea.mp4": "/static/media/Menantea.c7704ea86181e9983ef8.mp4",
@@ -27,7 +27,6 @@
     "static/media/8.jpg": "/static/media/8.0e3b5bf7954bc15e5a84.jpg",
     "static/media/9.jpg": "/static/media/9.d5f56ce850849e27c917.jpg",
     "static/media/photoshoot3.jpg": "/static/media/photoshoot3.20524b8fbb220a151a78.jpg",
-    "static/media/Couple_.jpg": "/static/media/Couple_.8da9e04376fd08874648.jpg",
     "static/media/3.jpg": "/static/media/3.579e4215ebcce43736c6.jpg",
     "static/media/10.jpg": "/static/media/10.c1733996669519ae797f.jpg",
     "static/media/photo2.jpg": "/static/media/photo2.4296535d0ed2cd1f5fef.jpg",
@@ -57,11 +56,13 @@
     "static/media/Kumaw_.jpg": "/static/media/Kumaw_.5d462a382ae059278b5f.jpg",
     "static/media/Royce_.jpg": "/static/media/Royce_.8da43ec9017256ba205d.jpg",
     "static/media/Prince_.jpg": "/static/media/Prince_.d3416862d7f009f4e3e7.jpg",
+    "static/media/Couple_.jpg": "/static/media/Couple_.3e6e8bfc45328124d05c.jpg",
     "static/media/wwo-ph-3.png": "/static/media/wwo-ph-3.42b3fb2ce785cf513eb4.png",
     "static/media/wwo-ph3.png": "/static/media/wwo-ph3.42b3fb2ce785cf513eb4.png",
     "static/media/wwo-ph-1.png": "/static/media/wwo-ph-1.d584df299b116b5db164.png",
     "static/media/wwo-ph1.png": "/static/media/wwo-ph1.d584df299b116b5db164.png",
     "static/media/Owen_.jpg": "/static/media/Owen_.7cdeb0c31880c6b3b2ae.jpg",
+    "static/media/Couple_2.jpg": "/static/media/Couple_2.3afa086d7f44d5638345.jpg",
     "static/media/wwo-ph-2.png": "/static/media/wwo-ph-2.8e48b81dd5c59b6c5482.png",
     "static/media/wwo-ph2.png": "/static/media/wwo-ph2.8e48b81dd5c59b6c5482.png",
     "static/media/img2_2.png": "/static/media/img2_2.533ce669d032004763d9.png",
@@ -69,21 +70,22 @@
     "static/media/logo-belinsky.png": "/static/media/logo-belinsky.6b623154cc52ed09e592.png",
     "static/media/about-bh-2.png": "/static/media/about-bh-2.3b79ed6c5569ca0f4c42.png",
     "static/media/img1_1.png": "/static/media/img1_1.2926b23e0466b2f9af27.png",
-    "static/media/Lazada.png": "/static/media/Lazada.ef1de1212bd9d3f57421.png",
     "static/media/Jehian-new.png": "/static/media/Jehian-new.cc74641b5b93ae08491d.png",
-    "static/media/Menantea.png": "/static/media/Menantea.dbe6a95ad6895bceea45.png",
-    "static/media/Toyota.png": "/static/media/Toyota.167d707459538f875da3.png",
+    "static/media/kumaw2.png": "/static/media/kumaw2.a75ca1fd42b6b08cbc0c.png",
     "static/media/Traveloka.png": "/static/media/Traveloka.0096757f1e896599bef3.png",
     "static/media/Jerome-new.png": "/static/media/Jerome-new.6427355f7c78316ffcbd.png",
+    "static/media/Menantea_upd.png": "/static/media/Menantea_upd.4a48207c8d7703077f36.png",
     "static/media/about-bh-1.png": "/static/media/about-bh-1.c687d700adf942d3b101.png",
     "static/media/Turah-new.png": "/static/media/Turah-new.85525d4f8dfd5b0a5694.png",
     "static/media/bg-paper.jpeg": "/static/media/bg-paper.b4e18828a3a0fb1408b8.jpeg",
-    "static/media/Baran.png": "/static/media/Baran.b7ae4b1a00d01e2c670d.png",
-    "static/media/Taco.png": "/static/media/Taco.5a5071d045015f6fc6b8.png",
+    "static/media/zenius.png": "/static/media/zenius.1543e0ec3ba64fa089cc.png",
+    "static/media/rifki.png": "/static/media/rifki.02f1e2bcf68aeb8f7820.png",
+    "static/media/pluang.png": "/static/media/pluang.878ac3961cb0cd8b23d2.png",
+    "static/media/indihome.png": "/static/media/indihome.e8865870e8b10d858138.png",
     "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/css/main.675828c9.css",
-    "static/js/main.a7d3b040.js"
+    "static/css/main.53e4cc5e.css",
+    "static/js/main.b9a86caa.js"
   ]
 }

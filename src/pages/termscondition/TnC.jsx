@@ -95,26 +95,26 @@ const TnC = () => {
         </h1>
         <div className="flex flex-col gap-12 lg:px-[2vw]">
           <div>
-            <h1 className="text-xl md:text-2xl">A. Sebelum Booking Studio</h1>
+            <h1 className="text-xl md:text-xl">A. Sebelum Booking Studio</h1>
             <ol className="list-decimal pl-7 md:pl-14 mt-3">
               {ASebelumBook?.map((e) => {
-                return <li className="   text-lg md:text-xl">{e?.li}</li>;
+                return <li className="text-lg md:text-xl">{e?.li}</li>;
               })}
             </ol>
           </div>
           <div>
-            <h1 className="text-xl md:text-2xl">B. Penggunaan Studio</h1>
+            <h1 className="text-xl md:text-xl">B. Penggunaan Studio</h1>
             <ol className="list-decimal pl-7 md:pl-14 mt-3">
               {BPenggunaanStudio?.map((e) => {
-                return <li className="   text-lg md:text-xl">{e?.li}</li>;
+                return <li className="text-lg md:text-xl">{e?.li}</li>;
               })}
             </ol>
           </div>
           <div>
-            <h1 className="text-xl md:text-2xl">C. Setelah Pemakaian Studio</h1>
+            <h1 className="text-xl md:text-xl">C. Setelah Pemakaian Studio</h1>
             <ol className="list-decimal pl-7 md:pl-14 mt-3 pb-12">
               {CPenggunaanStudio?.map((e) => {
-                return <li className="   text-lg md:text-xl">{e?.li}</li>;
+                return <li className="text-lg md:text-xl">{e?.li}</li>;
               })}
             </ol>
           </div>
@@ -125,7 +125,7 @@ const TnC = () => {
             New Normal Protocol Related to COVID-19
           </h1>
           <div className="flex  flex-col gap-3 lg:px-[2vw]">
-            <p>
+            <p className="font-bold text-xl md:text-2xl">
               Peraturan Studio Belinsky selama masa New Normal Pandemi COVID-19:
             </p>
             <ol className="list-decimal pl-7 md:pl-14">

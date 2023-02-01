@@ -56,14 +56,14 @@ const ProductionHouse = () => {
           <IoIosArrowBack
             size={35}
             id="nav-left-ph"
-            className="text-white transition cursor-pointer hover:text-[#5484f1] w-[1.5rem] sm:w-[3rem]"
+            className="text-white transition cursor-pointer hover:text-[#5484f1] w-[1.5rem] sm:w-[3rem] lg:h-[2.5rem]"
           />
         </div>
         <div className="absolute top-[50%] translate-y-[-50%] right-0 z-10 px-2">
           <IoIosArrowForward
             size={35}
             id="nav-right-ph"
-            className="text-white transition cursor-pointer hover:text-[#5484f1] w-[1.5rem] sm:w-[3rem]"
+            className="text-white transition cursor-pointer hover:text-[#5484f1] w-[1.5rem] sm:w-[3rem] lg:h-[2.5rem]"
           />
         </div>
         {dataCardPHouse?.map(

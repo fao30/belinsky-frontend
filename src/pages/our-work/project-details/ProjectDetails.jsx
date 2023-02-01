@@ -48,7 +48,7 @@ const ProjectDetails = ({
       {/* DESC */}
       <div
         className={`py-[6vw] lg:pt-12 lg:pb-16 px-[6vw]  flex justify-between w-full flex-wrap ${
-          director ? "lg:px-[4vw]" : "xl:px-[14vw]"
+          director ? "lg:px-[4vw]" : "xl:px-[18vw]"
         }`}
       >
         {!director ? (
@@ -126,16 +126,16 @@ const ProjectDetails = ({
         </div>
       </div>
       {/* IMAGES */}
-      <div className="px-[6vw] xl:px-[14vw] w-full h-[35rem] lg:h-[50rem] flex justify-between pb-24 max-md:hidden">
+      <div className="px-[6vw] xl:px-[18vw] w-full h-[35rem] lg:h-[50rem] flex justify-between pb-24 max-md:hidden">
         <div className="flex flex-col justify-between w-[50%]">
-          <div className="h-[45%]">
+          <div className="h-[48%]">
             <img
               src={img1}
               alt="project details"
               className="h-full w-full object-cover"
             />
           </div>
-          <div className="h-[45%]">
+          <div className="h-[48%]">
             <img
               src={img2}
               alt="project details"
@@ -143,7 +143,7 @@ const ProjectDetails = ({
             />
           </div>
         </div>
-        <div className="w-[45%]">
+        <div className="w-[48%]">
           <img
             src={img3}
             alt="project details"

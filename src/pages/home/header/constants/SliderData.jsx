@@ -1,6 +1,5 @@
 import video1 from "../assets/Hero_Video.mp4";
-import video2 from "../assets/Traveloka.mp4"; //did not take from assets/prod-house because better queality for header
-// import video2 from "../../../../assets/production-house/Traveloka_.mp4";
+import video2 from "../../../../assets/production-house/Traveloka_.mp4";
 import bg1 from "../assets/Background_1.png";
 import bg3 from "../../../../assets/belinsky-studio/Abnon_.jpg";
 

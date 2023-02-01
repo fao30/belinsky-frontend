@@ -11,7 +11,7 @@ const LinkedIn = () => {
       title: "LinkedIn",
       byWho: "Belinsky Studio",
       src: LinkedInImg,
-      byWho2: "LinkedIn Professional Profile Photoshoot",
+      byWho2: "Professional Profile Photoshoot for LinkedIn",
       desc: "A much needed photoshoot for LinkedIn profile to enchance your professionalism and level up your LinkedIn profile. This session is available for either personal needs or company needs",
       date: "2022",
       category: "Model Photography",

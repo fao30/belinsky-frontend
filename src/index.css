@@ -4,17 +4,45 @@
 
 :root {
   background-image: url("./assets/bg-paper.jpeg");
-  font-family: "Gothic A1", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+@layer components {
+  .aboutSize {
+    @apply text-base md:text-xl lg:text-2xl;
+  }
+  .aboutTitleSize {
+    @apply text-4xl xl:text-6xl;
+  }
 }
 
 h1 {
   font-weight: 900;
 }
 
+h2 {
+  font-weight: 800;
+}
+
+h3 {
+  font-weight: 700;
+}
+
 p {
+  font-weight: 400;
+}
+
+ul {
   font-weight: 600;
 }
 
+li {
+  font-weight: 400;
+}
+
+button {
+  font-weight: 600;
+}
 /* hides iOS video control */
 /* *::-webkit-media-controls-start-playback-button {
   display: none !important;
@@ -32,28 +60,8 @@ html::-webkit-scrollbar {
   height: 0;
 }
 
-/* Swiper */
-.swiper-button-next,
-.swiper-button-prev {
-  margin: 5%;
-}
-
-@media (max-width: 480px) {
-  .swiper-button-next,
-  .swiper-button-prev {
-    margin: 0;
-  }
-}
-
-.swiper-button-prev {
-  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%234c71ae'%2F%3E%3C%2Fsvg%3E") !important;
-}
-
-.swiper-button-next {
-  background-image: url("./assets/right-arrow.png") !important;
-}
-
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  /* display: none; */
+/* custom aspect-ratio for marquee. */
+.custom-marq {
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
 }

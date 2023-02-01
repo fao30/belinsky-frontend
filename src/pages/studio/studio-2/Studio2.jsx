@@ -26,7 +26,7 @@ const Studio2 = () => {
 
   return (
     <section className="w-full py-24 text-[#022581]">
-      <h1 className="text-center text-4xl font-black md:text-6xl lg:text-7xl">
+      <h1 className="text-center text-4xl   md:text-6xl lg:text-7xl">
         STUDIO 2
       </h1>
       <p className="text-lg text-center md:text-xl mt-7 md:mt-15 font-[400]">
@@ -52,7 +52,9 @@ const Studio2 = () => {
 
       {/* Self Studio */}
       <div className="w-full mt-16 md:mt-32">
-        <h1 className="text-center text-2xl lg:text-3xl">Self Studio</h1>
+        <h1 className="text-center  text-2xl md:text-3xl lg:text-4xl">
+          Self Studio
+        </h1>
         <div className="flex justify-center items-center w-full h-full gap-[3vw] px-[6vw] mt-5 md:mt-10">
           {imagesPhotoshoot?.map(({ img, blurPic }) => (
             <div className="relative">

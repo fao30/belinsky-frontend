@@ -41,20 +41,20 @@ const PodcastPriceList = () => {
               <div className="w-full lg:w-[48%] flex flex-col">
                 {StudioPodcastPrice?.map((e) => {
                   return (
-                    <div className="flex flex-row text-xl lg:text-2xl text-[#022581]">
-                      <p className="w-[18%]">{e?.hour}</p>
+                    <div className="flex flex-row text-xl lg:text-2xl text-[#022581] items-center">
+                      <p className="w-[18%]">{e.hour}</p>
                       <p className="w-[2%]">:</p>
-                      <p className="text-lg text-gray-500 line-through w-[40%]">
-                        {e?.priceNot}
+                      <p className="md:text-lg text-gray-500 line-through text-base w-[35%]">
+                        {e.priceNot}
                       </p>
-                      <p className="w-[45%]"> {e?.price}</p>
+                      <p className="w-[45%]">{e.price}</p>
                     </div>
                   );
                 })}
               </div>
               <div className="w-full lg:w-[48%] text-[#022581] text-xl lg:text-2xl max-lg:mt-6">
                 <div className="flex flex-col ">
-                  <h1>Hours in studio</h1>
+                  <h3>Hours in studio</h3>
                   <p>Rp 450.000/hour</p>
                 </div>
               </div>
@@ -62,9 +62,9 @@ const PodcastPriceList = () => {
           </div>
         </div>
         {/* EQUIPMENT LIST */}
-        <div className="h-[50%] text-[#022581] p-[4vw] md:p-[3vw] lg:py-[2vw] lg:px-[3vw] text-xl lg:text-2xl font-semibold">
-          <div className="xl:ml-12 h-[30%] flex items-center  max-lg:mb-6">
-            <h1 className="text-2xl">Equipment List</h1>
+        <div className="h-[50%] text-[#022581] p-[4vw] md:p-[3vw] lg:py-[2vw] lg:px-[3vw] text-xl lg:text-2xl   ">
+          <div className="xl:ml-12 h-[30%] flex items-center max-lg:mb-4">
+            <h3 className="text-xl lg:text-2xl">Equipment List</h3>
           </div>
           <div className=" xl:ml-12 h-[70%] flex justify-center">
             <div className="flex flex-wrap justify-between w-full">
@@ -84,7 +84,7 @@ const PodcastPriceList = () => {
                   <li>- Softbox</li>
                   <li>- Sound Operator</li>
                 </ul>
-                <h1 className="max-lg:mt-2">Editing + Rp 350.000</h1>
+                <h3 className="mt-4">Editing + Rp 350.000</h3>
               </div>
             </div>
           </div>

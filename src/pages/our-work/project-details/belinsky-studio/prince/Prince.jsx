@@ -18,6 +18,7 @@ const Prince = () => {
       img1: img1,
       img2: img2,
       img3: img3,
+      director: false,
     },
   ];
   return (
@@ -34,11 +35,13 @@ const Prince = () => {
           img1,
           img2,
           img3,
+          director,
         }) => (
           <ProjectDetails
             title={title}
             byWho={byWho}
             src={src}
+            director={director}
             byWho2={byWho2}
             desc={desc}
             date={date}

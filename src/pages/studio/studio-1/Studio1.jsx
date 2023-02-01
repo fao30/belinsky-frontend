@@ -26,10 +26,10 @@ const Studio1 = () => {
   return (
     <section className="py-24 w-full text-[#022581]">
       <div className="flex flex-col items-center w-full">
-        <h1 className="text-center text-4xl font-black md:text-6xl lg:text-7xl">
+        <h1 className="text-center text-4xl   md:text-6xl lg:text-7xl">
           STUDIO 1
         </h1>
-        <p className="font-bold   md:text-lg lg:text-2xl">
+        <p className="    md:text-lg lg:text-2xl">
           3 Thematic Korean background + Makeup Room
         </p>
       </div>
@@ -69,7 +69,7 @@ const Studio1 = () => {
 
       {/* Photoshoot Erika */}
       <div className="w-full mt-16 md:mt-32">
-        <h1 className="text-center text-2xl lg:text-3xl">
+        <h1 className="text-center text-2xl md:text-3xl lg:text-4xl">
           Photoshoot by our photographer
         </h1>
         <div className="flex justify-center w-full h-full gap-[3vw] px-[6vw] mt-5 md:mt-10">

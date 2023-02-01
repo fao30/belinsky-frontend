@@ -25,8 +25,8 @@ const PhBs = () => {
 
       {/* Checkout Company Profile */}
       <div className="w-full h-full">
-        <div className="pt-[40vw] pb-[12vw] sm:pt-[20vw] sm:pb-[6vw] md:pt-[10vw] md:pb-[6vw] lg:py-[4vw] w-[90%] mx-auto">
-          <h2 className="text-[#022581] py-8 text-center font-extrabold text-2xl lg:text-3xl">
+        <div className="w-[90%] mx-auto">
+          <h2 className="text-[#022581] py-[4vh] text-center     text-2xl lg:text-3xl">
             CHECK OUT OUR COMPANY PROFILE
           </h2>
         </div>
@@ -48,19 +48,23 @@ const PhBs = () => {
               ""
             )}
           </div>
-          <div className="flex flex-col items-center justify-between p-4 gap-y-3 md:flex-row sm:p-6 lg:p-8 lg:justify-around lg:gap-52">
-            <p className="text-[#F5F5F5] text-base md:text-2xl">
-              Let’s Create Something Great Together
-            </p>
-            <button
-              onClick={() => {
-                navigate("/contact");
-                LoadToTop();
-              }}
-              className="bg-[#F5F5F5] text-[#022581] font-extrabold  py-1 px-2 sm:py-2 sm:px-3 rounded-md text-base md:text-xl"
-            >
-              Contact Us
-            </button>
+          <div className="flex items-center flex-wrap justify-between p-[4vw]">
+            <div className="w-full lg:w-[70%] xl:w-[70%]">
+              <h3 className="text-[#F5F5F5] text-xl lg:text-4xl text-center">
+                Let’s Create Something Great Together
+              </h3>
+            </div>
+            <div className="w-full lg:w-[30%] xl-[40%] flex justify-center max-sm:mt-2 max-lg:mt-6">
+              <button
+                onClick={() => {
+                  navigate("/contact");
+                  LoadToTop();
+                }}
+                className=" bg-[#F5F5F5] text-[#022581]     px-8 py-2 lg:px-12 lg:py-3 rounded-2xl text-base md:text-xl"
+              >
+                Contact Us
+              </button>
+            </div>
           </div>
         </div>
       </div>

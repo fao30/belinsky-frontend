@@ -19,7 +19,7 @@ const CardHeroPH = ({ src, className, blurPic }) => {
         {isLoading ? (
           <BlurhashCanvas
             hash={blurPic}
-            className={`absolute top-0 w-full h-full ${className}`}
+            className={`absolute top-0 right-0 w-full h-full ${className}`}
           />
         ) : (
           ""

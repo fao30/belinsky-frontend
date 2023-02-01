@@ -1,12 +1,9 @@
 import { React, useState } from "react";
-import { useNavigate } from "react-router-dom";
 import LoadToTop from "../../../../helper/LoadToTop";
 import logoBelinsky from "../assets/logo-belinsky.png";
 import { BlurhashCanvas } from "react-blurhash";
-import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
-const SliderVideo = ({ src, blurPic }) => {
-  const navigate = useNavigate();
+const SliderVideo = ({ src, blurPic, type, vidOrder, h1, p, navigate }) => {
   const [isLoadingVideo, setIsLoadingVideo] = useState(false);
   return (
     <>
@@ -16,7 +13,7 @@ const SliderVideo = ({ src, blurPic }) => {
           <img
             alt=""
             src={logoBelinsky}
-            className="absolute w-64 md:w-96 animate-bounce left-1 md:left-6 top-44"
+            className="absolute w-64 md:w-96 animate-bounce left-5 md:left-12 top-44"
           />
         </div>
       ) : (
@@ -31,46 +28,56 @@ const SliderVideo = ({ src, blurPic }) => {
         onLoadedData={() => setIsLoadingVideo(false)}
         className="absolute top-0 left-0 object-cover w-full h-full"
       >
-        <source src={src} type="video/mp4" />
+        <source src={src} type={type} />
       </video>
 
       {/* Text Content */}
-      <div className="absolute flex flex-col justify-start h-full md:left-[3.5rem] gap-y-6 px-4 md:px-0 top-[60%] z-20  sm:w-[70%] md:w-[50%] lg:w-[60%] xl:w-[40%] w-full">
-        <h1
-          className="text-2xl text-white uppercase lg:text-4xl"
-          // style={{ textShadow: "1px 1px red" }}
-        >
-          Taking off to a sky,
-          <br className="hidden md:inline-block" /> where creativity is
-          limitless
-        </h1>
-        <p className="text-lg leading-4 text-white lg:text-xl lg:leading-5 w-full sm:w-[90%]">
-          Given that Belinsky is both a production house and a creative studio,
-          our areas of expertise include producing both photography and
-          filmmaking
-        </p>
-        <button
-          onClick={() => {
-            navigate("/contact");
-            LoadToTop();
-          }}
-          className="self-start px-7 py-3 bg-[#5484F2] text-white font-extrabold hover:bg-[#4a6cb3] active:bg-[#5484F2] drop-shadow-[0_1px_1px_#5484F2]"
-        >
-          Contact Us
-        </button>
-
-        {/* Custom Arrow Swiper */}
-        {/* <div className="flex self-center">
-          <IoIosArrowBack
-            size={30}
-            className="text-white drop-shadow-[0_1px_1px_black]"
-          />
-          <IoIosArrowForward
-            size={30}
-            className="text-white drop-shadow-[0_1px_1px_black]"
-          />
-        </div> */}
-      </div>
+      {vidOrder === "video1" ? (
+        <div className="absolute flex flex-col justify-end mx-10 md:mx-20 pb-28 md:pb-44 lg:pb-36 h-full z-10">
+          <h1 className="text-[2rem] leading-[2rem] md:text-[3rem] md:leading-[3rem] lg:text-[4rem] lg:leading-[4rem] xl:text-[4.5rem] xl:leading-[4.5rem] text-white mb-2">
+            BELINSKY STUDIO
+          </h1>
+          <div className="flex flex-col gap-y-6 sm:ml-0.5">
+            <p className="text-base sm:text-lg text-white w-full sm:w-[90%] md:w-[60%] lg:w-[45%] xl:w-[45%]">
+              Given that Belinsky is both a production house and a creative
+              studio, our areas of expertise include producing both photography
+              and filmmaking
+            </p>
+            <button
+              onClick={() => {
+                navigate();
+                LoadToTop();
+              }}
+              className="self-start px-7 py-3 bg-[#5484F2] text-white     hover:bg-[#4a6cb3] active:bg-[#5484F2] drop-shadow-[0_1px_1px_#5484F2]"
+            >
+              Contact Us
+            </button>
+          </div>
+        </div>
+      ) : (
+        <>
+          <div className="absolute top-0 left-0 object-cover w-full h-full bg-gradient-to-t from-[#0225818C] to-transparent" />
+          <div className="absolute flex flex-col justify-end mx-10 md:mx-20 pb-48 h-full">
+            <h1 className="text-6xl text-white md:text-8xl ">{h1}</h1>
+            <div className="flex justify-start w-full group">
+              <div className="border-b-2 border-white w-[4.5rem] self-center group-hover:border-opacity-0 transition duration-500 ease-in-out scale-x-100 md:w-[10rem]" />
+              <p
+                onClick={() => {
+                  navigate();
+                  LoadToTop();
+                }}
+                className="flex flex-col text-lg tracking-wide text-white w-[8rem] text-center cursor-pointer"
+              >
+                {p}
+                <span className="transition duration-500 ease-in-out scale-0 group-hover:scale-125 lg:group-hover:scale-150">
+                  <div className="border-b-2" />
+                </span>
+              </p>
+              <div className="border-b-2 border-white w-[4.5rem] self-center group-hover:border-opacity-0 transition duration-500 ease-in-out scale-x-100 md:w-[10rem]" />
+            </div>
+          </div>
+        </>
+      )}
     </>
   );
 };

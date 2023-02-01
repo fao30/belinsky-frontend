@@ -7,7 +7,7 @@ const logoBelinskyElement = () => {
       <img
         src={logoBelinsky}
         alt="logo Belinsky"
-        className="z-10 absolute w-[140px] h-[85px] p-3 rounded-b-xl -top-5 bg-white shadow-xl border-none"
+        className="z-10 absolute w-[140px] h-[85px] p-3 rounded-b-xl -top-6 bg-white shadow-xl border-none"
       />
     </div>
   );
@@ -24,11 +24,11 @@ export const NavFooterItems = [
     label: "About",
     type: "text",
   },
-  {
-    path: "/",
-    label: logoBelinskyElement(),
-    type: "img",
-  },
+  // {
+  //   path: "/",
+  //   label: logoBelinskyElement(),
+  //   type: "img",
+  // },
   {
     path: "/ourwork",
     label: "Our Work",

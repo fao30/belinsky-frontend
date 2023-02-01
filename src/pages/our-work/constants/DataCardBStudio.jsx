@@ -13,15 +13,6 @@ import LinkedIn from "../../../assets/belinsky-studio/LinkedIn_.jpg";
 
 export const dataCardBStudio = [
   {
-    src: Abnon,
-    h3: "Abang None Jakarta Timur",
-    p: "Top 30 Semi-finalist Abang None Jakarta Timur 2022 Photoshoot By Our Photographer",
-    nav: "/ourwork/abnon",
-    isHomepage: true,
-    isDetails: true,
-    blurPic: "L3I4X]^a3d7%T|^+01=.00s;Q8e7",
-  },
-  {
     src: Royce,
     h3: "Royce",
     p: "Fine Art Photography: Hidden Garden",
@@ -29,6 +20,15 @@ export const dataCardBStudio = [
     isHomepage: true,
     isDetails: true,
     blurPic: "LMFOoHtQMzR*~nxtjZj[x=bb%0of",
+  },
+  {
+    src: Abnon,
+    h3: "Abang None Jakarta Timur",
+    p: "Top 30 Semi-finalist Abang None Jakarta Timur 2022 Photoshoot By Our Photographer",
+    nav: "/ourwork/abnon",
+    isHomepage: true,
+    isDetails: true,
+    blurPic: "L3I4X]^a3d7%T|^+01=.00s;Q8e7",
   },
   {
     src: Prince,
@@ -64,7 +64,7 @@ export const dataCardBStudio = [
     nav: "/ourwork/couple",
     isHomepage: true,
     isDetails: true,
-    blurPic: "LTFP1,^+~q%M%2%Mofj]IUxuWBWV",
+    blurPic: "LSJuDkRjWAIU~pofj[RjNHoLM{oz",
   },
   {
     src: Kumaw,
@@ -87,7 +87,7 @@ export const dataCardBStudio = [
   {
     src: LinkedIn,
     h3: "LinkedIn",
-    p: "LinkedIn Professional Profile Photoshoot",
+    p: "Professional Profile Photoshoot for LinkedIn",
     nav: "/ourwork/linkedin",
     isHomepage: true,
     isDetails: true,

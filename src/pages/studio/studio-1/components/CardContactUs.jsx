@@ -31,7 +31,7 @@ const CardContactUs = () => {
               target="break"
               className="ml-2"
             >
-              <button className="text-[#022581] bg-white rounded-xl font-bold flex justify-center items-center px-4 py-2">
+              <button className="text-[#022581] bg-white rounded-xl   flex justify-center items-center px-4 py-2">
                 <span>
                   <Icon icon="ic:baseline-whatsapp" width="30" height="30" />
                 </span>
@@ -44,7 +44,7 @@ const CardContactUs = () => {
         {/* Button Contact Us Mobile Version */}
         <div className="flex items-center justify-end w-full mt-6 lg:hidden">
           <a href="https://wa.me/6285810559415" target="break" className="ml-2">
-            <button className="text-[#022581] bg-white rounded-xl font-bold flex justify-center items-center px-4 py-2">
+            <button className="text-[#022581] bg-white rounded-xl   flex justify-center items-center px-4 py-2">
               <span>
                 {" "}
                 <Icon icon="ic:baseline-whatsapp" width="30" height="30" />

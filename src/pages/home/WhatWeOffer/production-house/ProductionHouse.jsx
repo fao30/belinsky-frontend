@@ -15,7 +15,7 @@ const ProductionHouse = () => {
         <div className="flex flex-wrap-reverse justify-around w-full h-full lg:flex-row text-[#022581] group">
           {/* The 3 images */}
           <div className="flex w-[100%] lg:w-[45%] h-full items-center gap-5 max-lg:mt-[4vh]">
-            <div className="flex flex-col w-[50%] items-end gap-5 z-10">
+            <div className="flex flex-col w-[50%] gap-5 z-10">
               <CardHeroPH
                 src={ph1}
                 className="w-[100%] object-cover transition duration-700 ease-in-out translate-x-20 translate-y-20 md:translate-x-32 md:translate-y-48 rounded-2xl grayscale hover:grayscale-0 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:duration-700 group-hover:ease-in-out group-hover:delay-200"
@@ -23,14 +23,14 @@ const ProductionHouse = () => {
               />
               <CardHeroPH
                 src={ph2}
-                className="w-[90%] object-cover transition duration-700 ease-in-out rounded-2xl grayscale hover:grayscale-0 translate-x-16 -translate-y-28 md:translate-x-16 md:-translate-y-36 z-20 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:duration-700 group-hover:ease-in-out group-hover:delay-75"
+                className="w-[90%] object-cover transition duration-700 ease-in-out rounded-2xl grayscale hover:grayscale-0 translate-x-8 -translate-y-28 md:translate-x-16 md:-translate-y-36 z-20 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:duration-700 group-hover:ease-in-out group-hover:delay-75 ml-auto"
                 blurPic="LBI56w4n01E3019Fx]?b~pWC-;IU"
               />
             </div>
             <div className="w-[50%] md:w-[60%]">
               <CardHeroPH
                 src={ph3}
-                className="object-cover transition duration-700 ease-in-out -translate-x-16 -translate-y-16 md:-translate-x-16 md:-translate-y-20 rounded-2xl grayscale hover:grayscale-0 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:duration-700 group-hover:ease-in-out group-hover:delay-150"
+                className="object-cover transition duration-700 ease-in-out -translate-x-16 -translate-y-16 md:-translate-x-28 md:-translate-y-24 rounded-2xl grayscale hover:grayscale-0 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:duration-700 group-hover:ease-in-out group-hover:delay-150"
                 blurPic="LGGl6W00yDD%IA4T-;9F4.~q?HRj"
               />
             </div>
@@ -38,10 +38,10 @@ const ProductionHouse = () => {
 
           {/* Large Screen (lg breakpoint) */}
           <div className="w-[100%] md:w-[90%] lg:w-[45%] self-center">
-            <h1 className="text-4xl font-black tracking-wide text-center md:text-5xl xl:text-6xl">
+            <h1 className="text-4xl tracking-wide text-left md:text-5xl xl:text-6xl">
               Production House
             </h1>
-            <p className="mt-3 text-lg font-semibold leading-6 text-justify md:text-xl lg:text-2xl">
+            <p className="max-sm:mt-3 mt-6 text-lg  leading-6  md:text-xl lg:text-2xl">
               Belinsky strives for great quality and exclusiveness in every
               video that exhibits a flawless result. We may help you in the
               production of TVC advertisement for your advertising needs.

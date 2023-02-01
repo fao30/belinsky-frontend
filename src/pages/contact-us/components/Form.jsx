@@ -30,12 +30,12 @@ const Form = () => {
     }),
     onSubmit: (values, { resetForm }) => {
       // // emailjs send
-      // emailjs.send(
-      //   process.env.REACT_APP_SERVICE_ID,
-      //   process.env.REACT_APP_TEMPLATE_ID,
-      //   values,
-      //   process.env.REACT_APP_PUBLIC_KEY
-      // );
+      emailjs.send(
+        process.env.REACT_APP_SERVICE_ID,
+        process.env.REACT_APP_TEMPLATE_ID,
+        values,
+        process.env.REACT_APP_PUBLIC_KEY
+      );
       resetForm();
       toast.success("Proposal Request Sent");
     },
@@ -48,7 +48,7 @@ const Form = () => {
         onSubmit={formik.handleSubmit}
       >
         <Toaster />
-        <div className="flex flex-col md:flex-row justify-center w-full h-full text-[#022581] xl:text-2xl font-semibold gap-10 p-5">
+        <div className="font-[600] flex flex-col md:flex-row justify-center w-full h-full text-[#022581] xl:text-2xl    gap-10 p-5">
           <InputForm
             label="Name"
             type="text"
@@ -76,7 +76,7 @@ const Form = () => {
             }
           />
         </div>
-        <div className="flex flex-col md:flex-row justify-center w-full h-full text-[#022581] xl:text-2xl font-semibold gap-10 p-5">
+        <div className="font-[600] flex flex-col md:flex-row justify-center w-full h-full text-[#022581] xl:text-2xl    gap-10 p-5">
           <InputForm
             label="Email"
             type="text"
@@ -104,7 +104,7 @@ const Form = () => {
             }
           />
         </div>
-        <div className="flex flex-col p-5 md:flex-row justify-start w-full h-full text-[#022581] xl:text-2xl font-semibold">
+        <div className="font-[600] flex flex-col p-5 md:flex-row justify-start w-full h-full text-[#022581] xl:text-2xl   ">
           <div className="flex flex-col w-full h-full gap-y-2">
             <label htmlFor="textarea" className="ml-1 lg:text-xl">
               Your Message
@@ -125,7 +125,7 @@ const Form = () => {
             ) : null}
             <button
               type="submit"
-              className="py-[0.85rem] w-[5.5rem] md:py-4 md:w-[8rem] xl:py-[1.1rem] xl:w-[13rem] text-sm lg:  xl:text-lg text-center bg-[#022581] text-white mt-5 rounded-2xl uppercase font-bold"
+              className="font-[600] py-[0.85rem] w-[5.5rem] md:py-4 md:w-[8rem] xl:py-[1.1rem] xl:w-[13rem] text-sm lg:  xl:text-lg text-center bg-[#022581] text-white mt-5 rounded-2xl uppercase  "
             >
               Send
             </button>

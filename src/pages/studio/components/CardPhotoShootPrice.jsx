@@ -6,8 +6,8 @@ const CardPhotoShootPrice = ({ p, h1, li }) => {
           {p}
         </p>
         <div className="max-sm:p-6 px-[2vw] py-[4vw]">
-          <h1>{h1}:</h1>
-          <ul className="text-left w-full mt-2 font-semibold">{li}</ul>
+          <h3>{h1}:</h3>
+          <ul className="text-left w-full mt-2   ">{li}</ul>
         </div>
       </div>
     </>

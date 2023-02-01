@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectDetails from "../../ProjectDetails";
-import CoupleImg from "../../../../../assets/belinsky-studio/Couple_.jpg";
+import CoupleImg from "../../../../../assets/belinsky-studio/Couple_2.jpg";
 import img1 from "./assets/img1.jpg";
 import img2 from "./assets/img2.jpg";
 import img3 from "./assets/img3.jpeg";

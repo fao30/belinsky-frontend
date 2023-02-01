@@ -10,10 +10,8 @@ export const dataCardBStudio = [
     h3: "Korean Background",
     p: (
       <>
-        3 Thematic Korean background, inspired
-        <br className="hidden md:hidden lg:hidden" /> by the set up of Korean
-        Series “Our
-        <br className="hidden md:hidden lg:hidden" /> Beloved Summer”
+        3 Thematic Korean background, inspired by the set up of Korean Series
+        “Our Beloved Summer”
       </>
     ),
     nav: "/studio-1",
@@ -22,7 +20,7 @@ export const dataCardBStudio = [
     src: studio2,
     blurPic: "UJJHw3~q00R*k9Rjt6t700xu^+Ri~pj[WBxu",
     h2: "Studio 2",
-    h3: "White limbo background",
+    h3: "White Limbo Background",
     p: (
       <>
         We provide self photo studio and

@@ -22,7 +22,7 @@ const MarqueeSection = () => {
           <LazyLoadImage
             alt=""
             src={bg}
-            className="absolute top-0 left-0 w-full h-full object-cover"
+            className="absolute top-0 left-0 object-cover w-full h-full"
             beforeLoad={() => setIsLoading(true)}
             afterLoad={() => setIsLoading(false)}
           />
@@ -35,7 +35,7 @@ const MarqueeSection = () => {
             <>
               <div className="absolute top-0 left-0 w-full h-full bg-[#0225818C]/50" />
               <div className="absolute z-10 flex flex-col items-center justify-center gap-6 w-full h-full px-[4vw]">
-                <p className="text-center text-white text-sm sm:text-base md:text-lg lg:w-[80%] xl:w-[75%] tracking-tight">
+                <p className="text-center text-white text-base md:text-lg lg:w-[80%] xl:w-[75%] tracking-tight">
                   "I think Belinsky Studio has a really cool artistic of the
                   Korean mood set. The location is also very strategic,
                   considering that it is in Kemang, South Jakarta. The access is

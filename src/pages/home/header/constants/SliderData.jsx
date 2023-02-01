@@ -1,7 +1,7 @@
 import video1 from "../assets/Hero_Video.mp4";
-import video2 from "../assets/Traveloka_.mp4";
+import video2 from "../assets/Traveloka.mp4"; //did not take from assets/prod-house because better queality for header
+// import video2 from "../../../../assets/production-house/Traveloka_.mp4";
 import bg1 from "../assets/Background_1.png";
-import bg2 from "../assets/Background_2.png";
 import bg3 from "../../../../assets/belinsky-studio/Abnon_.jpg";
 
 export const sliderData = [
@@ -26,12 +26,6 @@ export const sliderData = [
     blurPic: "LWK^Z=Djt6%g_4IUW=%Lt7Ip%Lxa",
     nav: "/ourwork/menantea",
   },
-  // {
-  //   src: bg2,
-  //   h1: "Traveloka x Waseda",
-  //   blurPic: "L8Du_N?d00D~00xB?vt900D$xbs:",
-  //   nav: "/ourwork/traveloka",
-  // },
   {
     src: bg3,
     h1: "Abnon Timur",

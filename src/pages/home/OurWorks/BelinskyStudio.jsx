@@ -54,14 +54,16 @@ const BelinskyStudio = () => {
         {/* Custom Swiper Arrows */}
         <div className="absolute left-0 mx-2 lg:mx-4 xl:mx-16 top-[50%] translate-y-[-50%] z-10">
           <IoIosArrowBack
+            size={35}
             id="nav-left-bs"
-            className="text-white transition cursor-pointer hover:text-[#5484f1] w-fit h-[2rem] md:h-[2.5rem] lg:h-[3rem]"
+            className="text-white transition cursor-pointer hover:text-[#5484f1] md:w-fit md:h-[2.5rem] lg:h-[3rem]"
           />
         </div>
         <div className="absolute top-[50%] translate-y-[-50%] right-0 mx-2 lg:mx-4 xl:mx-16 z-10">
           <IoIosArrowForward
+            size={35}
             id="nav-right-bs"
-            className="text-white transition cursor-pointer hover:text-[#5484f1] w-fit h-[2rem] md:h-[2.5rem] lg:h-[3rem]"
+            className="text-white transition cursor-pointer hover:text-[#5484f1] md:w-fit md:h-[2.5rem] lg:h-[3rem]"
           />
         </div>
         {dataCardBStudio?.map(

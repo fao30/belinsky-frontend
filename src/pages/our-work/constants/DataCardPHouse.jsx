@@ -17,8 +17,8 @@ export const dataCardPHouse = [
   },
   {
     srcvideo: vid2,
-    h3: "Traveloka X Waseda Boy’s",
-    p: "Jerome Polin and Waseda Boy’s go for adventure in Indonesia, visit many places like Papua",
+    h3: "Traveloka X Waseda Boys",
+    p: "Jerome Polin and Waseda Boys go for adventure in Indonesia, visit many places like Papua",
     nav: "/ourwork/traveloka",
     isHomepage: true,
     isDetails: true,
@@ -45,7 +45,7 @@ export const dataCardPHouse = [
   {
     srcvideo: vid5,
     h3: "Yubi",
-    p: "Yubi hates humans who harm others. But when, he has to teach a lesson to Youtubers who like to make prank content",
+    p: "Yubi hates humans who harm others. But then, he has to teach a lesson to Youtubers who like to make prank content",
     isHomepage: true,
     isDetails: false,
     blurPic: "L27^;:~mD$Ios}tP-:ae8~9bIWog",

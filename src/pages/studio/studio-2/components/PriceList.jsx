@@ -7,7 +7,7 @@ import {
 const PriceList = () => {
   return (
     <div className="flex justify-center mt-16 md:mt-32 px-[6vw]">
-      <div className="h-fit w-full md:w-[70%] lg:w-[85%] xl:w-[65%] border-[2px] border-[#022581] rounded-xl bg-white drop-shadow-[0_1px_1px_black]">
+      <div className="h-fit w-full md:w-[70%] lg:w-[95%] xl:w-[80%] border-[2px] border-[#022581] rounded-xl bg-white drop-shadow-[0_1px_1px_black]">
         {/* PRICELIST */}
         <div className="h-[50%] border-b-[2px] border-[#022581]">
           <div className="flex justify-center h-[3rem]">

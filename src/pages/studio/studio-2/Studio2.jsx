@@ -63,7 +63,7 @@ const Studio2 = () => {
                 afterLoad={() => setIsLoading(false)}
                 src={img}
                 alt=""
-                className="w-full"
+                className="w-full lg:w-[30rem] lg:h-[40rem] object-cover"
               />
               {isLoading ? (
                 <BlurhashCanvas

@@ -5,7 +5,7 @@ import img4 from "../assets/4.jpg";
 import img5 from "../assets/5.jpg";
 import img6 from "../assets/6.jpg";
 
-export const dataCarStudio1 = [
+export const dataCardStudio1 = [
   {
     img: img1,
     blurPic: "LKH^^h%N58={~V?Ht7IV0fM{xDWX",

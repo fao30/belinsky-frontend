@@ -17,7 +17,7 @@ const PriceList = () => {
               </p>
             </div>
           </div>
-          <div className="h-[85%] flex justify-center p-[4vw] md:p-[3vw] lg:py-[2vw] lg:px-[3vw]">
+          <div className="h-[85%] flex justify-center p-[4vw] md:p-[3vw] lg:py-[2vw] lg:px-[4vw]">
             <div className="xl:ml-4 flex flex-wrap items-center justify-center w-full lg:justify-between">
               <div className="w-full xl:w-[55%] lg:w-[60%] flex flex-col">
                 {dataPriceList?.map(({ hour, priceNot, price }) => {
@@ -25,7 +25,7 @@ const PriceList = () => {
                     <div className="flex flex-row text-xl lg:text-2xl text-[#022581] items-center">
                       <p className="w-[18%]">{hour}</p>
                       <p className="w-[2%]">:</p>
-                      <p className="md:text-lg text-gray-500 line-through text-base w-[35%]">
+                      <p className="md:text-lg text-gray-500 line-through text-base lg:text-xl w-[35%] lg:w-[30%]">
                         {priceNot}
                       </p>
                       <p className="w-[45%]">{price}</p>
@@ -45,7 +45,7 @@ const PriceList = () => {
         </div>
 
         {/* EQUIPMENT LIST */}
-        <div className="h-[50%] text-[#022581] p-[4vw] md:p-[3vw] lg:py-[2vw] lg:px-[3vw] text-xl lg:text-2xl">
+        <div className="h-[50%] text-[#022581] p-[4vw] md:p-[3vw] lg:py-[2vw] lg:px-[4vw] text-xl lg:text-2xl">
           <div className="xl:ml-4">
             <div className="flex gap-2 flex-wrap items-start justify-center w-full lg:justify-between">
               <div className=" w-full lg:w-[60%] flex flex-col gap-2">

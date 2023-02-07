@@ -1,6 +1,6 @@
 import React from "react";
 import CardContactUs from "../components/CardContactUs";
-import PodcastCarousel from "./components/PodcastCarousel";
+import CarouselStudio from "../components/CarouselStudio";
 import PodcastPriceList from "./components/PodcastPriceList";
 import { podcastCarouselData } from "./constants/PodcastCarouselData";
 
@@ -17,7 +17,7 @@ const PodcastStudio = () => {
       {/* CAROUSEL */}
       <div class="carousel carousel-center w-full mb-4 space-x-2 lg:space-x-12">
         {podcastCarouselData?.map((e) => {
-          return <PodcastCarousel src={e?.src} blurPic={e?.blurPic} />;
+          return <CarouselStudio src={e?.src} blurPic={e?.blurPic} />;
         })}
       </div>
       <h2 className="px-[6vw] text-center text-[#022581]  font-[400] text-lg md:text-xl mb-16">

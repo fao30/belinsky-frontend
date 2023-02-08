@@ -13,13 +13,14 @@ import {
 // Components
 import CarouselStudio from "../components/CarouselStudio";
 import PriceList from "./components/PriceList";
-import CardPhotoShootPrice from "../components/CardPhotoShootPrice";
+import CardPhotoShootPrice2 from "../components/CardPhotoShootPrice2";
 import CardContactUs from "../components/CardContactUs";
 
 // For Lazy Load Image
 import { useState } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import { BlurhashCanvas } from "react-blurhash";
+import EquipmentStudio2 from "./components/EquipmentStudio2";
 
 const Studio2 = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -79,16 +80,16 @@ const Studio2 = () => {
 
         {/* Photoshoot Card Prices */}
         <div className="flex items-center justify-center gap-[6vw] flex-wrap p-[6vw]">
-          <CardPhotoShootPrice
+          <CardPhotoShootPrice2
             p="Rp 150.000"
-            h1="Couple/Studio Photo Session"
+            h1="COUPLE SELF PHOTO (2 persons)"
             li={couplePhotoSession.map(({ li }) => {
               return <li>- {li}</li>;
             })}
           />
-          <CardPhotoShootPrice
-            p="Rp 350.000"
-            h1="Group Studio Photo Session"
+          <CardPhotoShootPrice2
+            p="Rp 250.000"
+            h1="GROUP SELF PHOTO (4 persons)"
             li={groupStudioSession.map(({ li }) => {
               return <li>- {li}</li>;
             })}
@@ -97,13 +98,7 @@ const Studio2 = () => {
       </div>
 
       {/* Additional Prices */}
-      <div className="flex flex-col text-center text-lg md:text-2xl">
-        <p> Additional printed photo: Rp 10.000</p>
-        <p>
-          Soft copy all photo: Rp 25.000/person <br /> or tag @belinsky.studio
-          on IG story
-        </p>
-      </div>
+      <EquipmentStudio2 />
 
       {/* Card Contact Us */}
       <CardContactUs />

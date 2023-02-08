@@ -4,25 +4,19 @@ import pshoot2 from "../assets/photoshoot2.jpg";
 
 export const couplePhotoSession = [
   {
-    li: "2 Person",
+    li: "2 Printed Photos (4R)",
   },
   {
-    li: "20 minutes photoshoot",
-  },
-  {
-    li: "2 printed photos",
+    li: "15 minutes photoshoot",
   },
 ];
 
 export const groupStudioSession = [
   {
-    li: "5-6 Person",
+    li: "4 Printed Photos (4R)",
   },
   {
-    li: "30 minutes photoshoot",
-  },
-  {
-    li: "4 printed photos",
+    li: "20 minutes photoshoot",
   },
 ];
 

@@ -22,7 +22,7 @@ import { useNavigate } from "react-router-dom";
 const Header = () => {
   const navigate = useNavigate();
   return (
-    // h-[80vh] for mobile, min-h-screen for desktop
+    // h-[85vh] for mobile, min-h-screen for desktop
     <section className="relative w-full h-[85vh] sm:min-h-screen overflow-hidden">
       {/* Custom Swiper Arrows */}
       <div className="absolute left-0 top-[23%] sm:top-[50%] translate-y-[-50%] z-10 sm:px-2 md:px-4">

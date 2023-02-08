@@ -18,7 +18,10 @@ const SliderImg = ({ src, h1, p, navigate, blurPic }) => {
       />
 
       {isLoading ? (
-        <BlurhashCanvas hash={blurPic} className="w-full h-[40vh] sm:h-full" />
+        <BlurhashCanvas
+          hash={blurPic}
+          className="absolute top-0 left-0 object-cover w-full h-full"
+        />
       ) : (
         <>
           {/* First Part (Image) */}

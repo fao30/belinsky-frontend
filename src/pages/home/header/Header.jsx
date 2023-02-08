@@ -1,3 +1,5 @@
+import LoadToTop from "../../../helper/LoadToTop";
+
 // react-icons
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
@@ -20,29 +22,29 @@ import { useNavigate } from "react-router-dom";
 const Header = () => {
   const navigate = useNavigate();
   return (
-    // h-[90vh] for mobile, min-h-screen for desktop
-    <section className="relative w-full h-[90vh] sm:min-h-screen">
+    // h-[80vh] for mobile, min-h-screen for desktop
+    <section className="relative w-full h-[85vh] sm:min-h-screen overflow-hidden">
       {/* Custom Swiper Arrows */}
-      <div className="hidden sm:absolute left-0 top-[50%] translate-y-[-50%] z-10 px-2 md:px-4">
+      <div className="absolute left-0 top-[23%] sm:top-[50%] translate-y-[-50%] z-10 sm:px-2 md:px-4">
         <IoIosArrowBack
-          size={40}
+          size={35}
           id="nav-left-header"
           className="text-white transition cursor-pointer hover:text-[#5484f1]"
         />
       </div>
-      <div className="hidden sm:absolute top-[50%] translate-y-[-50%] right-0 z-10 px-2 md:px-4">
+      <div className="absolute top-[23%] sm:top-[50%] translate-y-[-50%] right-0 z-10 sm:px-2 md:px-4">
         <IoIosArrowForward
-          size={40}
+          size={35}
           id="nav-right-header"
           className="text-white transition cursor-pointer hover:text-[#5484f1]"
         />
       </div>
       <Swiper
         speed={1000}
-        // autoplay={{
-        //   delay: 5000,
-        //   pauseOnMouseEnter: true,
-        // }}
+        autoplay={{
+          delay: 5000,
+          pauseOnMouseEnter: true,
+        }}
         spaceBetween={0}
         slidesPerView={1}
         mousewheel={{
@@ -56,7 +58,7 @@ const Header = () => {
           prevEl: "#nav-left-header",
         }}
         modules={[Mousewheel, Navigation, Keyboard, Autoplay]}
-        className="relative w-full h-screen"
+        className="relative w-full h-[40vh] sm:h-full"
       >
         {sliderData?.map(({ src, h1, nav, blurPic, type, vidOrder }) =>
           type === "video/mp4" ? (
@@ -87,6 +89,29 @@ const Header = () => {
           )
         )}
       </Swiper>
+
+      {/* MOBILE VERSION: Second Part Text & CTA Button */}
+      <div className="block w-full h-full sm:hidden">
+        <div className="flex flex-col text-[#022581] h-full gap-3 px-[4vw] py-[5vh]">
+          <h1 className="text-4xl font-bold uppercase drop-shadow-[0px_2px_1.5px_#a9a9a9]">
+            Belinsky Studio
+          </h1>
+          <p className="drop-shadow-[0px_2px_1.5px_#a9a9a9]">
+            Given that Belinsky is both a production house and a creative
+            studio, our areas of expertise include producing both photography
+            and filmmaking
+          </p>
+          <button
+            onClick={() => {
+              navigate();
+              LoadToTop();
+            }}
+            className="self-start px-7 py-3 bg-[#5484F2] text-white hover:bg-[#4a6cb3] active:bg-[#5484F2] drop-shadow-[0_1px_1px_#5484F2]"
+          >
+            Contact Us
+          </button>
+        </div>
+      </div>
     </section>
   );
 };

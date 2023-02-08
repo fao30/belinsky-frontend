@@ -26,7 +26,7 @@ const SliderVideo = ({ src, blurPic, type, vidOrder, h1, p, navigate }) => {
         playsInline
         onLoadStart={() => setIsLoadingVideo(true)}
         onLoadedData={() => setIsLoadingVideo(false)}
-        className="absolute top-0 left-0 object-cover w-full h-1/2 sm:h-full"
+        className="absolute top-0 left-0 object-cover w-full h-full"
       >
         <source src={src} type={type} />
       </video>
@@ -59,8 +59,8 @@ const SliderVideo = ({ src, blurPic, type, vidOrder, h1, p, navigate }) => {
         </>
       ) : (
         <>
-          <div className="absolute top-0 left-0 w-full h-1/2 sm:h-full bg-gradient-to-t from-[#0225818C] to-transparent" />
-          <div className="absolute flex flex-col items-center justify-end w-full pb-5 sm:mx-10 h-1/2 sm:h-full sm:w-auto sm:pb-48 sm:justify-end md:mx-20">
+          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-t from-[#0225818C] to-transparent" />
+          <div className="absolute flex flex-col items-center justify-end w-full h-full pb-5 sm:mx-10 sm:w-auto sm:pb-48 sm:justify-end md:mx-20">
             <h1 className="text-3xl tracking-wide text-white sm:tracking-normal sm:text-5xl md:text-5xl lg:text-7xl">
               {h1}
             </h1>

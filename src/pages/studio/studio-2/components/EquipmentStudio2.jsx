@@ -3,7 +3,7 @@ import React from "react";
 const EquipmentStudio2 = () => {
   return (
     <div className="px-[6vw] flex justify-center">
-      <div className="max-sm:p-6 px-12 py-8 w-full md:w-[90%] xl:w-[50%] border-[2px] border-[#022581] rounded-xl bg-white drop-shadow-[0_1px_1px_black]">
+      <div className="max-sm:p-6 px-12 py-8 w-full md:w-[60%] lg:w-[50%] xl:w-[30%] border-[2px] border-[#022581] rounded-xl bg-white drop-shadow-[0_1px_1px_black]">
         <div className="flex flex-col">
           <div className="w-full text-[#022581] text-xl lg:text-2xl">
             <div className="flex flex-col">

@@ -35,7 +35,7 @@ const Studio2 = () => {
       </p>
 
       {/* Carousel 1 */}
-      <div className="carousel carousel-center gap-[3vw]  bg-transparent h-full w-full mt-1">
+      <div className="carousel carousel-center gap-4  bg-transparent h-full w-full mt-1">
         {dataCarStudio2First.map(({ img, blurPic }) => {
           return <CarouselStudio src={img} blurPic={blurPic} />;
         })}
@@ -45,7 +45,7 @@ const Studio2 = () => {
       <PriceList />
 
       {/* Carousel 2 */}
-      <div className="carousel carousel-center gap-[3vw]  bg-transparent h-full w-full mt-12 md:mt-24">
+      <div className="carousel carousel-center gap-4  bg-transparent h-full w-full mt-12 md:mt-24">
         {dataCarStudio2Second.map(({ img, blurPic }) => {
           return <CarouselStudio src={img} blurPic={blurPic} />;
         })}

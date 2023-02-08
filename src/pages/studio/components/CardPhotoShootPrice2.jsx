@@ -10,9 +10,9 @@ const CardPhotoShootPrice2 = ({ p, h1, li }) => {
           <ul className="text-left w-full mt-2">{li}</ul>
           <div className="flex justify-between items-center">
             <p>- All soft copy</p>
-            <p className="">
+            <p>
               <span className="text-gray-500 line-through mr-2">25K</span>
-              FREE
+              <span className="font-semibold">FREE</span>
             </p>
           </div>
         </div>

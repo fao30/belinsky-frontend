@@ -27,7 +27,7 @@ export const sliderData = [
   },
   {
     src: bg3,
-    h1: "Abnon Timur",
+    h1: "Abnon Jakarta Timur",
     blurPic: "L3H^;K^a3e7%LM^+01=:00w}Q8ia",
     nav: "/ourwork/abnon",
   },

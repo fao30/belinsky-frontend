@@ -20,16 +20,17 @@ import { useNavigate } from "react-router-dom";
 const Header = () => {
   const navigate = useNavigate();
   return (
-    <section className="relative w-full min-h-screen">
+    // h-[90vh] for mobile, min-h-screen for desktop
+    <section className="relative w-full h-[90vh] sm:min-h-screen">
       {/* Custom Swiper Arrows */}
-      <div className="absolute left-0 top-[50%] translate-y-[-50%] z-10 px-2 md:px-4">
+      <div className="hidden sm:absolute left-0 top-[50%] translate-y-[-50%] z-10 px-2 md:px-4">
         <IoIosArrowBack
           size={40}
           id="nav-left-header"
           className="text-white transition cursor-pointer hover:text-[#5484f1]"
         />
       </div>
-      <div className="absolute top-[50%] translate-y-[-50%] right-0 z-10 px-2 md:px-4">
+      <div className="hidden sm:absolute top-[50%] translate-y-[-50%] right-0 z-10 px-2 md:px-4">
         <IoIosArrowForward
           size={40}
           id="nav-right-header"
@@ -38,10 +39,10 @@ const Header = () => {
       </div>
       <Swiper
         speed={1000}
-        autoplay={{
-          delay: 5000,
-          pauseOnMouseEnter: true,
-        }}
+        // autoplay={{
+        //   delay: 5000,
+        //   pauseOnMouseEnter: true,
+        // }}
         spaceBetween={0}
         slidesPerView={1}
         mousewheel={{

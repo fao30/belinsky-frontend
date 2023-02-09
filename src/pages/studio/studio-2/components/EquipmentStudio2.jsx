@@ -1,5 +1,8 @@
 import React from "react";
 
+// constants
+import { dataAdditionalCat } from "../constants/DataAdditional";
+
 const EquipmentStudio2 = () => {
   return (
     <div className="px-[6vw] flex justify-center">
@@ -22,12 +25,14 @@ const EquipmentStudio2 = () => {
               </div>
               <h3 className="mt-6 mb-2">Additional</h3>
               <ul>
-                <li>- Printed Photo</li>
-                <li>- Persons/Pets</li>
-                <li>- Our Photographer</li>
-                <li>- Edited Photo</li>
+                {dataAdditionalCat.map(({ category, price }) => (
+                  <div className="flex justify-between">
+                    <li>- {category}</li>
+                    <p>{price}</p>
+                  </div>
+                ))}
               </ul>
-              <p className="font-semibold mt-4">
+              <p className="mt-4 font-semibold">
                 Various properties are also available on the spot!
               </p>
             </div>

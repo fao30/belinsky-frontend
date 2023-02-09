@@ -7,7 +7,7 @@ import {
 const PriceList = () => {
   return (
     <div className="flex justify-center mt-16 md:mt-32 px-[6vw]">
-      <div className="h-fit w-full md:w-[70%] lg:w-[95%] xl:w-[80%] border-[2px] border-[#022581] rounded-xl bg-white drop-shadow-[0_1px_1px_black]">
+      <div className="h-fit w-full md:w-[70%] lg:w-[90%] xl:w-[70%] border-[2px] border-[#022581] rounded-xl bg-white drop-shadow-[0_1px_1px_black]">
         {/* PRICELIST */}
         <div className="h-[50%] border-b-[2px] border-[#022581]">
           <div className="flex justify-center h-[3rem]">
@@ -17,8 +17,8 @@ const PriceList = () => {
               </p>
             </div>
           </div>
-          <div className="h-[85%] flex justify-center p-[4vw] md:p-[3vw] lg:py-[2vw] lg:px-[4vw]">
-            <div className="xl:ml-4 flex flex-wrap items-center justify-center w-full lg:justify-between">
+          <div className="h-[85%] flex justify-center p-[4vw] md:p-[3vw] lg:p-[2vw]">
+            <div className="xl:ml-6 flex flex-wrap items-center justify-center w-full lg:justify-between">
               <div className="w-full xl:w-[55%] lg:w-[60%] flex flex-col">
                 {dataPriceList?.map(({ hour, priceNot, price }) => {
                   return (
@@ -28,13 +28,13 @@ const PriceList = () => {
                       <p className="md:text-lg text-gray-500 line-through text-base lg:text-xl w-[35%] lg:w-[30%]">
                         {priceNot}
                       </p>
-                      <p className="w-[45%]">{price}</p>
+                      <p className="w-[50%]">{price}</p>
                     </div>
                   );
                 })}
               </div>
 
-              <div className="w-full lg:w-[30%] text-[#022581] text-xl lg:text-2xl max-lg:mt-6">
+              <div className="w-full lg:w-[35%] text-[#022581] text-xl lg:text-2xl max-lg:mt-6">
                 <div className="flex flex-col ">
                   <h3>Hours in studio</h3>
                   <p>Rp 230.000/hour</p>
@@ -45,23 +45,23 @@ const PriceList = () => {
         </div>
 
         {/* EQUIPMENT LIST */}
-        <div className="h-[50%] text-[#022581] p-[4vw] md:p-[3vw] lg:py-[2vw] lg:px-[4vw] text-xl lg:text-2xl">
-          <div className="xl:ml-4">
+        <div className="h-[50%] text-[#022581] p-[4vw] md:p-[3vw] lg:p-[2vw] text-xl lg:text-2xl">
+          <div className="xl:ml-6">
             <div className="flex gap-2 flex-wrap items-start justify-center w-full lg:justify-between">
               <div className=" w-full lg:w-[60%] flex flex-col gap-2">
                 <p className=" ">- White limbo background</p>
                 <p className=" ">- Expander background (Max 2 Colours)</p>
               </div>
-              <div className="w-full lg:w-[30%]">
+              <div className="w-full lg:w-[35%]">
                 <p className=" ">- Makeup room</p>
               </div>
             </div>
           </div>
 
-          <div className="xl:ml-4 h-[30%] flex items-center mt-3 lg:mt-6">
+          <div className="xl:ml-6 h-[30%] flex items-center mt-3 lg:mt-6">
             <h3 className="text-xl md:text-2xl my-4">Equipment List</h3>
           </div>
-          <div className="xl:ml-4 h-[70%] flex justify-center">
+          <div className="xl:ml-6 h-[70%] flex justify-center">
             <div className="flex flex-wrap justify-between w-full   ">
               {/* left content */}
               <div className="w-full lg:w-[48%]">

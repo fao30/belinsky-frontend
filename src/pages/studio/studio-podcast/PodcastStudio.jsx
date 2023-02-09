@@ -15,7 +15,7 @@ const PodcastStudio = () => {
         </p>
       </div>
       {/* CAROUSEL */}
-      <div class="carousel carousel-center w-full mb-4 space-x-2 lg:space-x-12">
+      <div class="carousel carousel-center w-full mb-4 gap-3">
         {podcastCarouselData?.map((e) => {
           return <CarouselStudio src={e?.src} blurPic={e?.blurPic} />;
         })}

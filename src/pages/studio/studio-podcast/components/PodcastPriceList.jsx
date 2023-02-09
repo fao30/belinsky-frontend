@@ -26,7 +26,7 @@ const StudioPodcastPrice = [
 const PodcastPriceList = () => {
   return (
     <seection className="flex justify-center">
-      <div className="drop-shadow-[0_1px_1px_black] h-fit w-full md:w-[70%] lg:w-[95%] xl:w-[80%] border-[2px] border-[#022581] rounded-xl bg-white">
+      <div className="drop-shadow-[0_1px_1px_black] h-fit w-full md:w-[70%] lg:w-[95%] xl:w-[75%] border-[2px] border-[#022581] rounded-xl bg-white">
         {/* PRICELIST */}
         <div className="h-[50%] border-b-[2px] border-[#022581]">
           <div className="flex justify-center h-[3rem]">

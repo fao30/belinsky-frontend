@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import VisionMission from "./components/VisionMission";
 import PhBs from "./phouse-bstudio/PhBs";
+import CompanyProfile from "./phouse-bstudio/components/CompanyProfile";
 
 const About = () => {
   return (
@@ -12,7 +13,7 @@ const About = () => {
       className="pt-10 pb-20 md:pt-20"
     >
       <VisionMission />
-      <PhBs />
+      <CompanyProfile />
     </motion.section>
   );
 };

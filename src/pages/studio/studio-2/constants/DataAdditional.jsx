@@ -4,7 +4,7 @@ export const dataAdditionalCat = [
     price: "15K",
   },
   {
-    category: "Persons/Pets",
+    category: "Person/Pets",
     price: "50K",
   },
   {

@@ -28,7 +28,7 @@ const EquipmentStudio2 = () => {
                 {dataAdditionalCat.map(({ category, price }) => (
                   <div className="flex justify-between">
                     <li>- {category}</li>
-                    <p>{price}</p>
+                    <p className="font-semibold">{price}</p>
                   </div>
                 ))}
               </ul>

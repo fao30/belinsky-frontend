@@ -27,15 +27,13 @@ const Studio2 = () => {
 
   return (
     <section className="w-full py-24 text-[#022581]">
-      <h1 className="text-center text-4xl   md:text-6xl lg:text-7xl">
-        STUDIO 2
-      </h1>
+      <h1 className="text-4xl text-center md:text-6xl lg:text-7xl">STUDIO 2</h1>
       <p className="text-lg text-center md:text-xl mt-7 md:mt-15 font-[400]">
         Area 3.6 x 5.5m²
       </p>
 
       {/* Carousel 1 */}
-      <div className="carousel carousel-center gap-4  bg-transparent h-full w-full mt-1">
+      <div className="w-full h-full gap-4 mt-1 bg-transparent carousel carousel-center">
         {dataCarStudio2First.map(({ img, blurPic }) => {
           return <CarouselStudio src={img} blurPic={blurPic} />;
         })}
@@ -45,7 +43,7 @@ const Studio2 = () => {
       <PriceList />
 
       {/* Carousel 2 */}
-      <div className="carousel carousel-center gap-4  bg-transparent h-full w-full mt-12 md:mt-24">
+      <div className="w-full h-full gap-4 mt-12 bg-transparent carousel carousel-center md:mt-24">
         {dataCarStudio2Second.map(({ img, blurPic }) => {
           return <CarouselStudio src={img} blurPic={blurPic} />;
         })}
@@ -53,7 +51,7 @@ const Studio2 = () => {
 
       {/* Self Studio */}
       <div className="w-full mt-16 md:mt-32">
-        <h1 className="text-center  text-2xl md:text-3xl lg:text-4xl">
+        <h1 className="text-2xl text-center md:text-3xl lg:text-4xl">
           Self Studio
         </h1>
         <div className="flex justify-center items-center w-full h-full gap-[3vw] px-[6vw] mt-5 md:mt-10">

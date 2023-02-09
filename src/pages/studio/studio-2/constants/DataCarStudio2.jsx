@@ -2,6 +2,9 @@
 import img1 from "../assets/2.jpg";
 import img2 from "../assets/1.jpg";
 import img3 from "../assets/3.jpg";
+import imgExtra1 from "../assets/studio2Extra1.jpg";
+import imgExtra2 from "../assets/studio2Extra2.jpg";
+import imgExtra3 from "../assets/studio2Extra3.jpg";
 
 // Images for Second Carousel
 import img6 from "../assets/6.jpg";
@@ -14,6 +17,10 @@ import img10 from "../assets/10.jpg";
 
 export const dataCarStudio2First = [
   {
+    img: imgExtra1,
+    blurPic: "LEM@Ju9g009F_NRjsSjX-=D%WE^+",
+  },
+  {
     img: img1,
     blurPic: "LGKKJLIS04%2_L9G4_be04og%1X9",
   },
@@ -22,8 +29,16 @@ export const dataCarStudio2First = [
     blurPic: "L5RfXs_N9Zof00E1E1M{004mt7kC",
   },
   {
+    img: imgExtra3,
+    blurPic: "LMJ7?nXAM{%Mt8XAxYt7~qt8M{a}",
+  },
+  {
     img: img3,
     blurPic: "LDI5JM~q00kCW,R*%Mxu00oJ_3IT",
+  },
+  {
+    img: imgExtra2,
+    blurPic: "LELgtk4:004p~q%LxZE2x^t6?asl",
   },
 ];
 

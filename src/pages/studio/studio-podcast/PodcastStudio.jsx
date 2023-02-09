@@ -8,9 +8,9 @@ const PodcastStudio = () => {
   return (
     <section className="py-24">
       {/* THE TITLE */}
-      <div className=" px-[6vw]  flex flex-col justify-center items-end text-end w-full text-[#022581] mb-12">
-        <h1 className="text-4xl   md:text-6xl lg:text-7xl">STUDIO PODCAST</h1>
-        <p className="    md:text-lg lg:text-2xl">
+      <div className=" px-[6vw] flex flex-col justify-center items-center text-center w-full text-[#022581] mb-12">
+        <h1 className="text-4xl md:text-6xl lg:text-7xl">STUDIO PODCAST</h1>
+        <p className="md:text-lg lg:text-2xl">
           Classic Dark Green Living Room with tamble lamp
         </p>
       </div>

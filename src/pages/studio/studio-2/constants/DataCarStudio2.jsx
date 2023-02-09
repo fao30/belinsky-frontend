@@ -17,12 +17,12 @@ import img10 from "../assets/10.jpg";
 
 export const dataCarStudio2First = [
   {
-    img: img1,
-    blurPic: "LGKKJLIS04%2_L9G4_be04og%1X9",
+    img: imgExtra1,
+    blurPic: "LMJ7?nXAM{%Mt8XAxYt7~qt8M{a}",
   },
   {
-    img: imgExtra3,
-    blurPic: "LMJ7?nXAM{%Mt8XAxYt7~qt8M{a}",
+    img: img1,
+    blurPic: "LGKKJLIS04%2_L9G4_be04og%1X9",
   },
   {
     img: img2,

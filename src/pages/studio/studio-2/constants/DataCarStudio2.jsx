@@ -17,20 +17,16 @@ import img10 from "../assets/10.jpg";
 
 export const dataCarStudio2First = [
   {
-    img: imgExtra1,
-    blurPic: "LEM@Ju9g009F_NRjsSjX-=D%WE^+",
-  },
-  {
     img: img1,
     blurPic: "LGKKJLIS04%2_L9G4_be04og%1X9",
   },
   {
-    img: img2,
-    blurPic: "L5RfXs_N9Zof00E1E1M{004mt7kC",
-  },
-  {
     img: imgExtra3,
     blurPic: "LMJ7?nXAM{%Mt8XAxYt7~qt8M{a}",
+  },
+  {
+    img: img2,
+    blurPic: "L5RfXs_N9Zof00E1E1M{004mt7kC",
   },
   {
     img: img3,

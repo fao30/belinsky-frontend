@@ -26,8 +26,15 @@ const PhBs = () => {
       {/* Checkout Company Profile */}
       <div className="w-full h-full">
         <div className="w-[90%] mx-auto">
-          <h2 className="text-[#022581] py-[4vh] text-center     text-2xl lg:text-3xl">
-            CHECK OUT OUR COMPANY PROFILE
+          <h2 className="text-[#022581] py-[4vh] font-normal text-center text-2xl lg:text-3xl">
+            <a
+              href="https://drive.google.com/file/d/1yX_xBSDsbJC37Ou5AaJNeIIXfnHGrCN8/view?usp=sharing"
+              rel="noopener noreferrer"
+              target="_blank"
+              className="hover:text-[#5484f1]"
+            >
+              CHECK OUT OUR COMPANY PROFILE
+            </a>
           </h2>
         </div>
         <div className="w-[90%] xl:w-[80%] h-full mx-auto bg-[#022581] rounded-lg drop-shadow-[0_2px_2px_transparent] shadow-lg shadow-slate-400 ">

@@ -26,7 +26,7 @@ const StudioPodcastPrice = [
 const PodcastPriceList = () => {
   return (
     <seection className="flex justify-center">
-      <div className="drop-shadow-[0_1px_1px_black] h-fit w-full md:w-[70%] lg:w-[85%] xl:w-[65%] border-[2px] border-[#022581] rounded-xl bg-white">
+      <div className="drop-shadow-[0_1px_1px_black] h-fit w-full md:w-[70%] lg:w-[95%] xl:w-[75%] border-[2px] border-[#022581] rounded-xl bg-white">
         {/* PRICELIST */}
         <div className="h-[50%] border-b-[2px] border-[#022581]">
           <div className="flex justify-center h-[3rem]">
@@ -63,8 +63,8 @@ const PodcastPriceList = () => {
         </div>
         {/* EQUIPMENT LIST */}
         <div className="h-[50%] text-[#022581] p-[4vw] md:p-[3vw] lg:py-[2vw] lg:px-[3vw] text-xl lg:text-2xl   ">
-          <div className="xl:ml-12 h-[30%] flex items-center max-lg:mb-4">
-            <h3 className="text-xl lg:text-2xl">Equipment List</h3>
+          <div className="xl:ml-12 h-[30%] flex items-center mb-4">
+            <h3 className="text-xl md:text-2xl">Equipment List</h3>
           </div>
           <div className=" xl:ml-12 h-[70%] flex justify-center">
             <div className="flex flex-wrap justify-between w-full">

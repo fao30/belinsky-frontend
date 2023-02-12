@@ -12,7 +12,7 @@ const Traveloka = () => {
       byWho: "Production House",
       srcvideo: TravelokaVid,
       byWho2: "WASEDA BOYS WITH TRAVELOKA",
-      desc: "Waseda boys have traveled around Indonesia with Traveloka, some of the destinations are Yogyakarta, Bali, Papua, Labuan Bajo, Manado, and Medan.",
+      desc: "Waseda Boys have traveled around Indonesia with Traveloka, some of the destinations are Yogyakarta, Bali, Papua, Labuan Bajo, Manado, and Medan.",
       date: "2022",
       category: "Reality Show",
       img1: img1,

@@ -1,5 +1,5 @@
 import CarouselStudio from "../components/CarouselStudio";
-import { dataCarStudio1 } from "./constants/DataCarStudio1";
+import { dataCardStudio1 } from "./constants/DataCardStudio1";
 import PriceList from "./components/PriceList";
 import { AspectRatio } from "@mui/joy";
 import video1 from "./assets/video_studio1.mp4";
@@ -29,11 +29,11 @@ const Studio1 = () => {
         <h1 className="text-center text-4xl   md:text-6xl lg:text-7xl">
           STUDIO 1
         </h1>
-        <p className="    md:text-lg lg:text-2xl">
+        <p className=" px-[6vw]  text-center  md:text-lg lg:text-2xl">
           3 Thematic Korean background + Makeup Room
         </p>
       </div>
-      <div className="flex justify-center w-full mt-7 md:mt-15 gap-x-4 md:gap-x-6 lg:gap-x-10 text-lg text-center md:text-xl">
+      <div className="flex justify-center w-full mt-7 md:mt-15 gap-x-2 md:gap-x-6 lg:gap-x-10 text-lg text-center md:text-xl">
         <p className="font-[400]">Length: 8,2m</p>
         <span>|</span>
         <p className="font-[400]">Height: 3m</p>
@@ -42,8 +42,8 @@ const Studio1 = () => {
       </div>
 
       {/* Carousel */}
-      <div className="carousel carousel-center gap-[6vw] lg:gap-[3vw] bg-transparent h-full w-full mt-1">
-        {dataCarStudio1.map(({ img, blurPic }) => {
+      <div className="carousel carousel-center gap-4 bg-transparent h-full w-full mt-1">
+        {dataCardStudio1?.map(({ img, blurPic }) => {
           return <CarouselStudio src={img} blurPic={blurPic} />;
         })}
       </div>
@@ -73,14 +73,14 @@ const Studio1 = () => {
           Photoshoot by our photographer
         </h1>
         <div className="flex justify-center w-full h-full gap-[3vw] px-[6vw] mt-5 md:mt-10">
-          {imagesPhotoshoot.map(({ img, blurPic }) => (
+          {imagesPhotoshoot?.map(({ img, blurPic }) => (
             <div className="relative">
               <LazyLoadImage
                 beforeLoad={() => setIsLoading(true)}
                 afterLoad={() => setIsLoading(false)}
                 src={img}
                 alt=""
-                className="w-full"
+                className="w-full lg:w-[25rem] lg:h-[40rem] object-cover"
               />
               {isLoading ? (
                 <BlurhashCanvas

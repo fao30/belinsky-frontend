@@ -23,7 +23,7 @@ const CardFounders = ({ src, h3, blurPic }) => {
           />
         ) : (
           <>
-            <h3 className="text-center mx-auto w-[80%] md:w-full md:text-lg">
+            <h3 className="text-center mx-auto w-[80%] md:w-full md:text-lg lg:text-2xl font-semibold mt-1">
               {h3}
             </h3>
           </>

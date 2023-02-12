@@ -7,7 +7,7 @@ const CardOverlayImg = ({ src, h3, p, navigate, blurPic, isDetails }) => {
   const [isLoading, setIsLoading] = useState(false);
   return (
     <>
-      <div className="h-[20rem] w-full lg:w-[27rem] bg-slate-400 relative group rounded-[1rem]">
+      <div className="md:h-[30rem] h-[17rem] lg:h-[20rem] w-full lg:w-[27rem] bg-slate-400 relative group rounded-[1rem]">
         <LazyLoadImage
           src={src}
           alt=""
@@ -32,7 +32,9 @@ const CardOverlayImg = ({ src, h3, p, navigate, blurPic, isDetails }) => {
               }
             }}
           >
-            <h3 className="text-[22px] text-white w-full">{h3}</h3>
+            <h3 className="text-xl md:text-2xl lg:text-xl text-white w-full">
+              {h3}
+            </h3>
             <p className="mt-2 w-full pr-6 drop-shadow-md text-[14px]">{p}</p>
           </div>
         )}

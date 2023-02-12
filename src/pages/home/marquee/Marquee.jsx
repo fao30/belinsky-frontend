@@ -18,7 +18,7 @@ const MarqueeSection = () => {
             WHAT OUR CLIENTS SAYS ABOUT US
           </h1>
         </div>
-        <div className="relative w-full h-72 mb-[3vh]">
+        <div className="relative w-full h-60 lg:h-52 mb-[3vh]">
           <LazyLoadImage
             alt=""
             src={bg}
@@ -34,8 +34,8 @@ const MarqueeSection = () => {
           ) : (
             <>
               <div className="absolute top-0 left-0 w-full h-full bg-[#0225818C]/50" />
-              <div className="absolute z-10 flex flex-col items-center justify-center gap-6 w-full h-full px-[4vw]">
-                <p className="text-center text-white text-base md:text-lg lg:w-[80%] xl:w-[75%] tracking-tight">
+              <div className="absolute z-10 flex flex-col items-center justify-center gap-4 w-full h-full px-[4vw]">
+                <p className="text-center text-white text-sm md:text-lg lg:w-[80%] xl:w-[75%] tracking-tight">
                   "I think Belinsky Studio has a really cool artistic of the
                   Korean mood set. The location is also very strategic,
                   considering that it is in Kemang, South Jakarta. The access is
@@ -59,8 +59,12 @@ const MarqueeSection = () => {
           className="bg-gradient-to-t from-[#D9D9D9] via-[#D9D9D9] to-transparent"
         >
           {dataMarquee.map(({ img }) => (
-            <div className="mx-10 lg:mx-14">
-              <img alt="" src={img} className="w-[5rem] lg:w-[7rem]" />
+            <div className="mx-7 lg:mx-14">
+              <img
+                alt=""
+                src={img}
+                className="w-[8rem] lg:w-[10rem] custom-marq"
+              />
             </div>
           ))}
         </Marquee>
@@ -70,5 +74,3 @@ const MarqueeSection = () => {
 };
 
 export default MarqueeSection;
-
-//

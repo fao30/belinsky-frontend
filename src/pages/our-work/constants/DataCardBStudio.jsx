@@ -22,6 +22,15 @@ export const dataCardBStudio = [
     blurPic: "LMFOoHtQMzR*~nxtjZj[x=bb%0of",
   },
   {
+    src: Couple,
+    h3: "Couple",
+    p: "Couple Photoshoot",
+    nav: "/ourwork/couple",
+    isHomepage: true,
+    isDetails: true,
+    blurPic: "LSJuDkRjWAIU~pofj[RjNHoLM{oz",
+  },
+  {
     src: Abnon,
     h3: "Abang None Jakarta Timur",
     p: "Top 30 Semi-finalist Abang None Jakarta Timur 2022 Photoshoot By Our Photographer",
@@ -56,15 +65,6 @@ export const dataCardBStudio = [
     isHomepage: true,
     isDetails: true,
     blurPic: "LGFYlii^_NozD%t89Faz9uaeaKj@",
-  },
-  {
-    src: Couple,
-    h3: "Couple",
-    p: "Couple Photoshoot",
-    nav: "/ourwork/couple",
-    isHomepage: true,
-    isDetails: true,
-    blurPic: "LSJuDkRjWAIU~pofj[RjNHoLM{oz",
   },
   {
     src: Kumaw,

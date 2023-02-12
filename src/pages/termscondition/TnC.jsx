@@ -90,12 +90,12 @@ const TnC = () => {
     >
       {/* TnC  */}
       <section className="text-[#022581] h-full w-full">
-        <h1 className="font-[900] text-center text-4xl md:text-5xl lg:text-6xl mb-16 md:mb-24">
+        <h1 className="   text-center text-4xl md:text-5xl lg:text-6xl mb-16 md:mb-24">
           TERMS & CONDITIONS
         </h1>
         <div className="flex flex-col gap-12 lg:px-[2vw]">
           <div>
-            <h1 className="text-xl md:text-xl">A. Sebelum Booking Studio</h1>
+            <h1 className="text-xl md:text-2xl">A. Sebelum Booking Studio</h1>
             <ol className="list-decimal pl-7 md:pl-14 mt-3">
               {ASebelumBook?.map((e) => {
                 return <li className="text-lg md:text-xl">{e?.li}</li>;
@@ -103,7 +103,7 @@ const TnC = () => {
             </ol>
           </div>
           <div>
-            <h1 className="text-xl md:text-xl">B. Penggunaan Studio</h1>
+            <h1 className="text-xl md:text-2xl">B. Penggunaan Studio</h1>
             <ol className="list-decimal pl-7 md:pl-14 mt-3">
               {BPenggunaanStudio?.map((e) => {
                 return <li className="text-lg md:text-xl">{e?.li}</li>;
@@ -111,8 +111,8 @@ const TnC = () => {
             </ol>
           </div>
           <div>
-            <h1 className="text-xl md:text-xl">C. Setelah Pemakaian Studio</h1>
-            <ol className="list-decimal pl-7 md:pl-14 mt-3 pb-12">
+            <h1 className="text-xl md:text-2xl">C. Setelah Pemakaian Studio</h1>
+            <ol className="list-decimal pl-7 md:pl-14 mt-3">
               {CPenggunaanStudio?.map((e) => {
                 return <li className="text-lg md:text-xl">{e?.li}</li>;
               })}
@@ -120,17 +120,17 @@ const TnC = () => {
           </div>
         </div>
         {/* COVID 19 */}
-        <section className="font-semibold text-lg md:text-xl">
-          <h1 className="font-[900] text-center text-4xl md:text-5xl lg:text-6xl my-12 lg:my-24">
+        <section className="   text-lg md:text-xl">
+          <h1 className="   text-center text-4xl md:text-5xl lg:text-6xl mt-24 mb-12 lg:mb-24 lg:mt-48">
             New Normal Protocol Related to COVID-19
           </h1>
-          <div className="flex  flex-col gap-3 lg:px-[2vw]">
-            <p className="font-semibold text-xl md:text-2xl">
+          <div className="flex  flex-col gap-3 lg:px-[12vw]">
+            <p>
               Peraturan Studio Belinsky selama masa New Normal Pandemi COVID-19:
-            </p>
+            </h1>
             <ol className="list-decimal pl-7 md:pl-14">
               {NewNormalProtocol?.map((e) => {
-                return <li className="   text-lg md:text-xl">{e?.li}</li>;
+                return <li className="text-lg md:text-xl">{e?.li}</li>;
               })}
             </ol>
             <p>
@@ -145,7 +145,7 @@ const TnC = () => {
               Terima kasih atas perhatian Anda.
             </p>
 
-            <p className="py-6">
+            <p>
               Salam hormat,
               <br />
               Management Studio Belinsky

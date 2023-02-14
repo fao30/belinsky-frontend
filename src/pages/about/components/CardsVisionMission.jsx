@@ -11,7 +11,7 @@ const CardsVisionMission = ({ src, h1, p, blurPic }) => {
         {/* <div className="relative"> */}
         <LazyLoadImage
           loading="lazy"
-          alt=""
+          alt="Belinsky Studio"
           src={src}
           beforeLoad={() => setIsLoading(true)}
           afterLoad={() => setIsLoading(false)}

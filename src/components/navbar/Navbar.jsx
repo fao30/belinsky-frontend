@@ -95,7 +95,7 @@ const Navbar = () => {
         <div className="w-[50%]">
           <img
             src={logo}
-            alt=""
+            alt="logo Belinsky Studio"
             className="w-[6rem] cursor-pointer"
             onClick={() => {
               navigate("/");

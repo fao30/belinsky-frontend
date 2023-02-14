@@ -26,7 +26,7 @@ const CardSliderVid = ({
           <div className="absolute z-10 w-full h-full">
             <BlurhashCanvas hash={blurPic} className="w-full h-full" />
             <img
-              alt=""
+              alt="Belinsky Studio"
               src={logoBelinsky}
               className="absolute w-24 animate-bounce left-16 top-16"
             />
@@ -39,7 +39,7 @@ const CardSliderVid = ({
           muted
           autoPlay
           playsInline
-          alt=""
+          alt="Belinsky Studio"
           onLoadStart={() => setIsLoadingVideo(true)}
           onLoadedData={() => setIsLoadingVideo(false)}
           className="absolute object-cover w-full h-full"

@@ -10,7 +10,7 @@ const CardOverlayImg = ({ src, h3, p, navigate, blurPic, isDetails }) => {
       <div className="md:h-[30rem] h-[17rem] lg:h-[20rem] w-full lg:w-[27rem] bg-slate-400 relative group rounded-[1rem]">
         <LazyLoadImage
           src={src}
-          alt=""
+          alt="Belinsky Studio"
           beforeLoad={() => setIsLoading(true)}
           afterLoad={() => setIsLoading(false)}
           className="absolute object-cover w-full h-full rounded-[1rem]"

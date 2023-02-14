@@ -6,7 +6,7 @@ const logoBelinskyElement = () => {
     <div className="flex justify-center ">
       <img
         src={logoBelinsky}
-        alt="logo Belinsky"
+        alt="logo Belinsky Studio"
         className="z-10 absolute w-[140px] h-[85px] p-3 rounded-b-xl -top-6 bg-white shadow-xl border-none"
       />
     </div>

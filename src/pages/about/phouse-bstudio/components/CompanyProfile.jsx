@@ -28,7 +28,7 @@ const CompanyProfile = () => {
             beforeLoad={() => setIsLoading(true)}
             afterLoad={() => setIsLoading(false)}
             src={bg}
-            alt=""
+            alt="Belinsky Studio"
             className="object-cover transition duration-300 ease-in rounded-t-lg grayscale hover:grayscale-0"
           />
           {isLoading ? (

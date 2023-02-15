@@ -20,7 +20,7 @@ const MarqueeSection = () => {
         </div>
         <div className="relative w-full h-60 lg:h-52 mb-[3vh]">
           <LazyLoadImage
-            alt=""
+            alt="Belinsky Studio"
             src={bg}
             className="absolute top-0 left-0 object-cover w-full h-full"
             beforeLoad={() => setIsLoading(true)}
@@ -61,7 +61,7 @@ const MarqueeSection = () => {
           {dataMarquee.map(({ img }) => (
             <div className="mx-7 lg:mx-14">
               <img
-                alt=""
+                alt="Belinsky Studio"
                 src={img}
                 className="w-[8rem] lg:w-[10rem] custom-marq"
               />

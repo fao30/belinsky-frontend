@@ -10,7 +10,7 @@ const CardFounders = ({ src, h3, blurPic }) => {
       <div className="flex flex-col w-[30%] md:w-[25%] lg:w-[20%] xl:w-[15%] gap-y-2 relative">
         <LazyLoadImage
           loading="lazy"
-          alt=""
+          alt="Belinsky Studio"
           src={src}
           className=" bg-[#626161] rounded-full"
           beforeLoad={() => setIsLoading(true)}

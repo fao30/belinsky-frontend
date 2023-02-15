@@ -27,7 +27,7 @@ const CardOverlayVid = ({ srcvideo, h3, p, navigate, blurPic, isDetails }) => {
         autoPlay
         playsInline
         preload="metadata"
-        alt=""
+        alt="Belinsky Studio"
         onLoadStart={() => setIsLoadingVideo(true)}
         onLoadedData={() => setIsLoadingVideo(false)}
         className="absolute object-cover w-full h-full rounded-[1rem]"

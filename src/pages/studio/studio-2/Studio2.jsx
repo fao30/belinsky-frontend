@@ -61,7 +61,7 @@ const Studio2 = () => {
                 beforeLoad={() => setIsLoading(true)}
                 afterLoad={() => setIsLoading(false)}
                 src={img}
-                alt=""
+                alt="Belinsky Studio"
                 className="w-full lg:w-[30rem] lg:h-[40rem] object-cover"
               />
               {isLoading ? (

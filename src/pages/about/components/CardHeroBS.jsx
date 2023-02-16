@@ -10,7 +10,7 @@ const CardHeroBS = ({ src, className, blurPic }) => {
       <LazyLoadImage
         loading="lazy"
         src={src}
-        alt="Belinsky Studio"
+        alt="Belinsky Studio Belinsky Production Studio"
         className={className}
         beforeLoad={() => setIsLoading(true)}
         afterLoad={() => setIsLoading(false)}

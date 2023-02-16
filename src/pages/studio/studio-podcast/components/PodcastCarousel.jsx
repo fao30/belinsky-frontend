@@ -11,7 +11,7 @@ const PodcastCarousel = ({ src, blurPic }) => {
         beforeLoad={() => SetIsLoading(true)}
         afterLoad={() => SetIsLoading(false)}
         className="h-[22rem] md:h-[25rem] lg:h-[30rem] xl:h-[45rem]"
-        alt="podcast studio"
+        alt="podcast studio  Belinsky Studio  backgroun color self studio studio2 turah parthayana  sijabat jerome polin"
       />
       {isLoading ? (
         <BlurhashCanvas

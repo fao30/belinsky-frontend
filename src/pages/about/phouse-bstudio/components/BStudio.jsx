@@ -18,6 +18,7 @@ const BStudio = () => {
           <div className="flex flex-col w-[50%] items-end gap-5 z-10">
             <CardHeroBS
               src={bh1}
+              alt="Belinsky Production House Studio Belinsky Korea Background"
               className="self-start object-cover transition duration-700 ease-in-out translate-x-16 md:translate-x-32 rounded-2xl grayscale hover:grayscale-0 group-hover:translate-x-0"
               blurPic="LAGuK_-;9^00D4xY4:IU00$~-;_N"
             />
@@ -25,6 +26,7 @@ const BStudio = () => {
           <div className="w-[50%]">
             <CardHeroBS
               src={bh2}
+              alt="Belinsky Production House Studio Belinsky White Limbo Background"
               className="object-cover transition duration-700 ease-in-out -translate-x-16 md:-translate-x-32 rounded-2xl grayscale hover:grayscale-0 group-hover:translate-x-0"
               blurPic="LBIEqi8^9ut5_NxU%Mt64;WUjEIV"
             />

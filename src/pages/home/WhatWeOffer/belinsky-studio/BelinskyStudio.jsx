@@ -28,6 +28,7 @@ const BelinskyStudio = () => {
               h2={h2}
               h3={h3}
               p={p}
+              alt="Belisnky Studio production house image"
               blurPic={blurPic}
               className=""
               navigate={() => navigate(`${nav}`)}

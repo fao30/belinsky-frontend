@@ -127,7 +127,7 @@ const TnC = () => {
           <div className="flex  flex-col gap-3 lg:px-[12vw]">
             <p>
               Peraturan Studio Belinsky selama masa New Normal Pandemi COVID-19:
-            </h1>
+            </p>
             <ol className="list-decimal pl-7 md:pl-14">
               {NewNormalProtocol?.map((e) => {
                 return <li className="text-lg md:text-xl">{e?.li}</li>;

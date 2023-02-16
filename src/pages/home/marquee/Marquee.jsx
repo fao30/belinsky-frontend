@@ -61,7 +61,7 @@ const MarqueeSection = () => {
           {dataMarquee.map(({ img }) => (
             <div className="mx-7 lg:mx-14">
               <img
-                alt="Belinsky Studio"
+                alt="Belinsky Studio Menantea Traveloka IndiHome Pluang+ Kumaw Ramen Jerome Polin "
                 src={img}
                 className="w-[8rem] lg:w-[10rem] custom-marq"
               />

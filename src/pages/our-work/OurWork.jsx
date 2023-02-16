@@ -37,7 +37,7 @@ const OurWork = () => {
           src={isProductionHouse ? bgPHouse : bgBStudio}
           beforeLoad={() => setIsLoading(true)}
           afterLoad={() => setIsLoading(false)}
-          alt="ourwork-header"
+          alt="ourwork-header belinsky studio"
           className="absolute object-cover w-full h-full"
         />
         {isLoading ? (
@@ -101,6 +101,7 @@ const OurWork = () => {
               src={src}
               h3={h3}
               p={p}
+              alt="ourwork-header belinsky studio"
               blurPic={blurPic}
               isDetails={isDetails}
               navigate={() => {
@@ -122,6 +123,7 @@ const OurWork = () => {
                 srcvideo={srcvideo}
                 h3={h3}
                 p={p}
+                alt="ourwork-header belinsky studio"
                 blurPic={blurPic}
                 isDetails={isDetails}
                 navigate={() => {

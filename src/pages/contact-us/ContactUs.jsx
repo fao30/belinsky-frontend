@@ -18,7 +18,7 @@ const ContactUs = () => {
     >
       <div className="relative h-[25rem] -z-10">
         <LazyLoadImage
-          alt="Belinsky Studio Contact"
+          alt="Belinsky Studio Contact Studi Podcast Korean Studio"
           src={bg}
           className="absolute object-cover w-full h-full"
           beforeLoad={() => setIsLoading(true)}

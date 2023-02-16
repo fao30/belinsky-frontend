@@ -39,7 +39,7 @@ const CardSliderVid = ({
           muted
           autoPlay
           playsInline
-          alt="Belinsky Studio"
+          alt="Belinsky Studio Studio Podcast Production Studio Turah Jerome"
           onLoadStart={() => setIsLoadingVideo(true)}
           onLoadedData={() => setIsLoadingVideo(false)}
           className="absolute object-cover w-full h-full"

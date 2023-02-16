@@ -43,7 +43,7 @@ const PhBs = () => {
               beforeLoad={() => setIsLoading(true)}
               afterLoad={() => setIsLoading(false)}
               src={bg}
-              alt="Belinsky Studio"
+              alt="Belinsky Studio Production House"
               className="object-cover transition duration-300 ease-in rounded-t-lg grayscale hover:grayscale-0"
             />
             {isLoading ? (

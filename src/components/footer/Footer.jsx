@@ -5,7 +5,6 @@ import logo from "./assets/logo-belinsky.png";
 const Footer = () => {
   return (
     <>
-      {/* <div className="w-full drop-shadow-[0px_5px_5px_black] bg-[#F5F5F5]"></div> */}
       <div className="px-[6vw] py-[5vh] lg:px-[6vw] w-full bg-[#F5F5F5]">
         <div className="flex flex-col">
           <img src={logo} alt="Belinsky Logo" className="w-[9rem]" />

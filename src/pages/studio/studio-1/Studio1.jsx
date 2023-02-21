@@ -59,7 +59,7 @@ const Studio1 = () => {
             muted
             loop
             playsInline
-            alt=""
+            alt="Belinsky Studio"
             className="rounded-sm shadow-lg"
           >
             <source src={video1} type="video/mp4" />
@@ -79,7 +79,7 @@ const Studio1 = () => {
                 beforeLoad={() => setIsLoading(true)}
                 afterLoad={() => setIsLoading(false)}
                 src={img}
-                alt=""
+                alt="Belinsky Studio Korean Background"
                 className="w-full lg:w-[25rem] lg:h-[40rem] object-cover"
               />
               {isLoading ? (

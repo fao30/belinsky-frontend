@@ -20,7 +20,7 @@ const BelinskyStudio = () => {
       </div>
 
       {/* Studio images */}
-      <div className="flex flex-col justify-between w-full h-full md:flex-row gap-y-5 max-lg:mt-[3vw] mt-[2vw]">
+      <div className="flex flex-cols-3 justify-between w-full md:h-[20%] md:flex-row gap-y-5 max-lg:mt-[3vw] mt-[2vw]">
         {dataCardBStudio?.map(({ src, h2, h3, p, blurPic, nav }) => {
           return (
             <CardOverlay
@@ -28,7 +28,9 @@ const BelinskyStudio = () => {
               h2={h2}
               h3={h3}
               p={p}
+              alt="Belisnky Studio production house image"
               blurPic={blurPic}
+              className=""
               navigate={() => navigate(`${nav}`)}
             />
           );

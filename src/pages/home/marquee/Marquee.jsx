@@ -20,7 +20,7 @@ const MarqueeSection = () => {
         </div>
         <div className="relative w-full h-60 lg:h-52 mb-[3vh]">
           <LazyLoadImage
-            alt=""
+            alt="Belinsky Studio"
             src={bg}
             className="absolute top-0 left-0 object-cover w-full h-full"
             beforeLoad={() => setIsLoading(true)}
@@ -59,11 +59,11 @@ const MarqueeSection = () => {
           className="bg-gradient-to-t from-[#D9D9D9] via-[#D9D9D9] to-transparent"
         >
           {dataMarquee.map(({ img }) => (
-            <div className="mx-8 lg:mx-16">
+            <div className="mx-7 lg:mx-14">
               <img
-                alt=""
+                alt="Belinsky Studio Menantea Traveloka IndiHome Pluang+ Kumaw Ramen Jerome Polin "
                 src={img}
-                className="w-[8rem] lg:w-[10rem] custom-marq "
+                className="w-[8rem] lg:w-[10rem] custom-marq"
               />
             </div>
           ))}

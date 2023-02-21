@@ -32,7 +32,7 @@ const ProjectDetails = ({
       <div className="w-full">
         <img
           src={src}
-          alt=""
+          alt="Belinsky Studio"
           className={`${src ? "w-full h-full" : "hidden"}`}
         />
         <video
@@ -87,7 +87,7 @@ const ProjectDetails = ({
             <div className="mt-4 justify-center flex-col items-center w-full max-md:flex hidden">
               <img
                 src={imgDirector}
-                alt="director"
+                alt="Belinsky Studio - Director"
                 className="max-sm:w-56 w-36 rounded-full"
               />
               <h3 className="text-center uppercase text-2xl  text-[#022581] mt-4">
@@ -98,7 +98,7 @@ const ProjectDetails = ({
               <div className="max-md:hidden w-[27.5%] flex flex-col gap-2">
                 <img
                   src={imgDirector}
-                  alt="director"
+                  alt="Belinsky Studio - Director"
                   className="rounded-full"
                 />
                 <h3 className="text-center uppercase text-xl">
@@ -146,14 +146,14 @@ const ProjectDetails = ({
           <div className="h-[48%]">
             <img
               src={img1}
-              alt="project details"
+              alt="Belinsky Studio - Project Details"
               className="h-full w-full object-cover"
             />
           </div>
           <div className="h-[48%]">
             <img
               src={img2}
-              alt="project details"
+              alt="Belinsky Studio - Project Details"
               className="h-full w-full object-cover"
             />
           </div>
@@ -161,16 +161,16 @@ const ProjectDetails = ({
         <div className="w-[48%]">
           <img
             src={img3}
-            alt="project details"
+            alt="Belinsky Studio - Project Details"
             className="h-full w-full object-cover"
           />
         </div>
       </div>
       {/* IMAGES MOBILE */}
       <div className="px-[6vw] lg:px-[10vw] w-full hidden flex-wrap gap-6 pb-24 max-md:flex">
-        <img src={img1} alt="project details" />
-        <img src={img2} alt="project details" />
-        <img src={img3} alt="project details" />
+        <img src={img1} alt="Belinsky Studio - Project Details" />
+        <img src={img2} alt="Belinsky Studio - Project Details" />
+        <img src={img3} alt="Belinsky Studio - Project Details" />
       </div>
     </section>
   );

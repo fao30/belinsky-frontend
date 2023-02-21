@@ -67,6 +67,7 @@ const Header = () => {
                 src={src}
                 blurPic={blurPic}
                 vidOrder={vidOrder}
+                alt="Belinsky Studio Yubi Menantea Short Movie IndiHome"
                 h1={h1}
                 navigate={() => {
                   navigate(`${nav}`);
@@ -80,6 +81,7 @@ const Header = () => {
                 blurPic={blurPic}
                 src={src}
                 h1={h1}
+                alt="Belinsky Studio Yubi Menantea Short Movie Traveloka Waseda"
                 navigate={() => {
                   navigate(`${nav}`);
                 }}

@@ -73,6 +73,7 @@ const ProductionHouse = () => {
                 srcvideo={srcvideo}
                 h3={h3}
                 p={p}
+                alt="belinsky production house menante traveloka short movie"
                 blurPic={blurPic}
                 isHomepage={isHomepage}
                 isDetails={isDetails}

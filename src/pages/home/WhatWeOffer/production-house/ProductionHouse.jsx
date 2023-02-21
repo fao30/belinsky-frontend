@@ -14,15 +14,17 @@ const ProductionHouse = () => {
       <section className="w-full px-[4vw] my-[5vh] lg:my-[10vh] xl:my-[15vh]">
         <div className="flex flex-wrap-reverse justify-around w-full h-full lg:flex-row text-[#022581] group">
           {/* The 3 images */}
-          <div className="flex w-[100%] lg:w-[45%] h-full items-center gap-5 max-lg:mt-[4vh]">
+          <div className="flex w-[100%] lg:w-[45%] h-full items-center gap-5 max-lg:mt-[4vh] ">
             <div className="flex flex-col w-[50%] gap-5 z-10">
               <CardHeroPH
                 src={ph1}
+                alt="belinsky studio studio menantea jeremy poline"
                 className="w-[100%] object-cover transition duration-700 ease-in-out translate-x-20 translate-y-20 md:translate-x-32 md:translate-y-48 rounded-2xl grayscale hover:grayscale-0 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:duration-700 group-hover:ease-in-out group-hover:delay-200"
                 blurPic="LPHeL6~qXSbv?GS5fkWE4UMxV@WB"
               />
               <CardHeroPH
                 src={ph2}
+                alt="belinsky studio studio menantea turah parthayana short movie squery penty"
                 className="w-[90%] object-cover transition duration-700 ease-in-out rounded-2xl grayscale hover:grayscale-0 translate-x-8 -translate-y-28 md:translate-x-16 md:-translate-y-36 z-20 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:duration-700 group-hover:ease-in-out group-hover:delay-75 ml-auto"
                 blurPic="LBI56w4n01E3019Fx]?b~pWC-;IU"
               />
@@ -30,6 +32,7 @@ const ProductionHouse = () => {
             <div className="w-[50%] md:w-[60%]">
               <CardHeroPH
                 src={ph3}
+                alt="belinsky studio studio waseda boys jeremy poline traveloka"
                 className="object-cover transition duration-700 ease-in-out -translate-x-16 -translate-y-16 md:-translate-x-28 md:-translate-y-24 rounded-2xl grayscale hover:grayscale-0 group-hover:translate-x-0 group-hover:translate-y-0 group-hover:duration-700 group-hover:ease-in-out group-hover:delay-150"
                 blurPic="LGGl6W00yDD%IA4T-;9F4.~q?HRj"
               />

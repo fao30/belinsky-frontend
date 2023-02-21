@@ -23,7 +23,7 @@ const CardSliderImg = ({
       <div className="xl:h-[28rem] xl:w-[45rem] h-[15rem] w-[22rem] sm:h-[15rem] sm:w-[30rem] md:h-[25rem] md:w-[40rem] bg-slate-400 relative group">
         <LazyLoadImage
           src={src}
-          alt="belinsky-studio"
+          alt="Belinsky Studio"
           beforeLoad={() => setIsLoading(true)}
           afterLoad={() => setIsLoading(false)}
           className="absolute object-cover w-full h-full"

@@ -51,7 +51,8 @@ const Footer = () => {
       </div>
       <footer className="py-5 bg-[#f5f5f5] border-t-2">
         <p className="text-[#474747] text-center md:text-base tracking-wide underline-offset-1">
-          © Belinsky Production 2023. Powered by{" "}
+          © Belinsky Production 2023.
+          <br className="sm:hidden" /> Powered by{" "}
           <a
             href="https://faotech.dev/"
             rel="noopener noreferrer"

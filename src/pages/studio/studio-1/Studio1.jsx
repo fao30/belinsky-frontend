@@ -26,14 +26,14 @@ const Studio1 = () => {
   return (
     <section className="py-24 w-full text-[#022581]">
       <div className="flex flex-col items-center w-full">
-        <h1 className="text-center text-4xl   md:text-6xl lg:text-7xl">
+        <h1 className="text-4xl text-center md:text-6xl lg:text-7xl">
           STUDIO 1
         </h1>
         <p className=" px-[6vw]  text-center  md:text-lg lg:text-2xl">
           3 Thematic Korean background + Makeup Room
         </p>
       </div>
-      <div className="flex justify-center w-full mt-7 md:mt-15 gap-x-2 md:gap-x-6 lg:gap-x-10 text-lg text-center md:text-xl">
+      <div className="flex justify-center w-full text-lg text-center mt-7 md:mt-15 gap-x-2 md:gap-x-6 lg:gap-x-10 md:text-xl">
         <p className="font-[400]">Length: 8,2m</p>
         <span>|</span>
         <p className="font-[400]">Height: 3m</p>
@@ -42,7 +42,7 @@ const Studio1 = () => {
       </div>
 
       {/* Carousel */}
-      <div className="carousel carousel-center gap-4 bg-transparent h-full w-full mt-1">
+      <div className="w-full h-full gap-4 mt-1 bg-transparent carousel carousel-center">
         {dataCardStudio1?.map(({ img, blurPic }) => {
           return <CarouselStudio src={img} blurPic={blurPic} />;
         })}
@@ -69,8 +69,8 @@ const Studio1 = () => {
 
       {/* Photoshoot Erika */}
       <div className="w-full mt-16 md:mt-32">
-        <h1 className="text-center text-2xl md:text-3xl lg:text-4xl">
-          Photoshoot by our photographer
+        <h1 className="text-2xl text-center md:text-3xl lg:text-4xl">
+          Photoshoot by Belinsky
         </h1>
         <div className="flex justify-center w-full h-full gap-[3vw] px-[6vw] mt-5 md:mt-10">
           {imagesPhotoshoot?.map(({ img, blurPic }) => (
@@ -95,7 +95,7 @@ const Studio1 = () => {
         </div>
 
         {/* Photoshoot Card Prices */}
-        <div className="flex items-center justify-center gap-[6vw] lg:gap-[3vw] flex-wrap p-[6vw]">
+        {/* <div className="flex items-center justify-center gap-[6vw] lg:gap-[3vw] flex-wrap p-[6vw]">
           <CardPhotoShootPrice
             p="Rp 550.000"
             h1="Couple/Studio Photo Session"
@@ -110,17 +110,17 @@ const Studio1 = () => {
               return <li>- {li}</li>;
             })}
           />
-        </div>
+        </div> */}
       </div>
 
       {/* Additional Prices */}
-      <div className="flex flex-col text-center text-lg md:text-2xl">
+      {/* <div className="flex flex-col text-lg text-center md:text-2xl">
         <p> Additional printed photo: Rp 10.000</p>
         <p>
           Soft copy all photo: Rp 25.000/person <br /> or tag @belinsky.studio
           on IG story
         </p>
-      </div>
+      </div> */}
 
       {/* Card Contact Us */}
       <CardContactUs />

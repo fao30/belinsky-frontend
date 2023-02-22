@@ -36,8 +36,14 @@ const Form = () => {
         values,
         process.env.REACT_APP_PUBLIC_KEY
       );
-      resetForm();
-      toast.success("Proposal Request Sent");
+      console.log(formik.values, "<----- ONSUBMIT");
+      toast.loading("Sending...", {
+        duration: 1000,
+      });
+      setTimeout(() => {
+        toast.success("Proposal Request Sent!");
+        resetForm();
+      }, 1000);
     },
   });
 
@@ -125,7 +131,7 @@ const Form = () => {
             ) : null}
             <button
               type="submit"
-              className="font-[600] py-[0.85rem] w-[5.5rem] md:py-4 md:w-[8rem] xl:py-[1.1rem] xl:w-[13rem] text-sm lg:  xl:text-lg text-center bg-[#022581] text-white mt-5 rounded-2xl uppercase  "
+              className="font-[600] py-[0.85rem] w-[5.5rem] md:py-4 md:w-[8rem] xl:py-[1.1rem] xl:w-[13rem] text-sm lg:  xl:text-lg text-center bg-[#022581] text-white mt-5 rounded-2xl uppercase active:bg-[#022581]/90 transition duration-300"
             >
               Send
             </button>

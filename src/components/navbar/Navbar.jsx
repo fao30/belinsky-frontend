@@ -24,7 +24,7 @@ const Navbar = () => {
   const location = useLocation();
 
   return (
-    <nav className="sticky top-0 z-20 w-full flex justify-between px-[3vw] md:px-[5vw] lg:px-[6vw] md:py-[1vh] items-center bg-opacity-80 backdrop-blur bg-white text-[#022581] shadow-lg shadow-black/30">
+    <nav className="sticky top-0 z-10 w-full flex justify-between px-[3vw] md:px-[5vw] lg:px-[6vw] md:py-[1vh] items-center bg-opacity-80 backdrop-blur bg-white text-[#022581] shadow-lg shadow-black/30">
       <div className="flex items-center justify-between w-full md:hidden">
         {/* Belinsky logo top-left */}
         <div className="w-[50%] ">

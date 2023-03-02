@@ -25,13 +25,13 @@ const CardContactUs = () => {
           </div>
 
           {/* Button Whatsapp Desktop Version */}
-          <div className="hidden lg:flex justify-end lg:-[30%] xl:w-[25%]">
+          <div className="hidden lg:flex justify-end lg:w-[35%] 2xl:w-[25%]">
             <a
               href="https://wa.me/6285810559415"
               target="break"
               className="ml-2"
             >
-              <button className=" text-xl md:text-2xl text-[#022581] bg-white rounded-xl   flex justify-center items-center px-6 py-2">
+              <button className=" text-xl md:text-2xl text-[#022581] bg-white rounded-xl flex justify-center items-center px-6 py-2">
                 <span>
                   <Icon icon="ic:baseline-whatsapp" width="35" height="35" />
                 </span>

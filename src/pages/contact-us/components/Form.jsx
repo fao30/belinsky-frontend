@@ -36,7 +36,6 @@ const Form = () => {
         values,
         process.env.REACT_APP_PUBLIC_KEY
       );
-      console.log(formik.values, "<----- ONSUBMIT");
       toast.loading("Sending...", {
         duration: 1000,
       });
@@ -53,7 +52,6 @@ const Form = () => {
         className="p-[3vw] lg:px-[8vw] h-fit w-[90%] md:w-[85%] xl:w-[70%] bg-white mx-auto -mt-16 drop-shadow-[0_1.5px_1.5px_black]"
         onSubmit={formik.handleSubmit}
       >
-        <Toaster />
         <div className="font-[600] flex flex-col md:flex-row justify-center w-full h-full text-[#022581] xl:text-2xl    gap-10 p-5">
           <InputForm
             label="Name"

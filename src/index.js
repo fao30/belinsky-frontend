@@ -5,10 +5,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { routesData } from "./store/Routes";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
+import { Toaster } from "react-hot-toast";
 
 const Index = () => {
   return (
     <BrowserRouter>
+      <Toaster />
       <Navbar />
       <Routes>
         {routesData?.map((e) => {
